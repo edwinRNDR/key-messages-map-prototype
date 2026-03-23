@@ -1,0 +1,6 @@
+
+// get all partners links
+[...document.querySelectorAll('.field--name-field-partners div div .ext')].map( p => { return { 'source' : 'project-999', 'target' : `partner-${p.innerText}`, 'type': 'project_partner' }})
+
+// get all partners
+[...document.querySelectorAll('.field--name-field-partners div div .ext')].map( p => { return { 'id' : `partner-${p.innerText}`, 'name': p.innerText, 'type': 'partner' }})
