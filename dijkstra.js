@@ -16,7 +16,6 @@ function findAdjacentSubtree(links, node) {
             subLinks.push({source: node, target:link.source})
         }
     }
-    console.log("adjacent nodes: ", adjacentNodes)
     return subLinks
 }
 
@@ -545,4 +544,14 @@ function findAllDegreesOfSeparation(links, startNode) {
     return distances;
 }
 
-export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation };
+/**
+ *
+ * @param {Array<{source: string, target: string, weight: number}>} edges
+ * @param {string} node
+ * @returns {Array<{source: string, target: string, weight: number}>}
+ */
+function findEdgesThroughNode(edges, node) {
+    return edges.filter(edge => edge.source === node || edge.target === node);
+}
+
+export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation, findEdgesThroughNode };

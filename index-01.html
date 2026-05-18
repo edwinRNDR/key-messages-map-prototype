@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Message Map Prototype</title>
+
+
+    <!--    <script src="//cdn.jsdelivr.net/npm/force-graph"></script>-->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #info-box {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+        }
+
+        #info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        #info-box p {
+            margin: 5px 0;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="info-box">
+    <h3>Graph Info</h3>
+    <p>Click on a node to see minimum spanning tree</p>
+    <p><span style="color: black;">●</span> Article</p>
+    <p><span style="color: red;">●</span> Project Topic</p>
+    <p><span style="color: blue;">●</span> Project</p>
+    <p><span style="color: green;">●</span> Partner</p>
+    <p><span style="color: orange;">●</span> Project Keyword</p>
+    <p><span style="color: cyan;">●</span> Cause-effect</p>
+    <p><span style="color: purple;">●</span> Chemical</p>
+    <p><span style="color: pink;">●</span> Condition</p>
+
+</div>
+<div id="graph"></div>
+
+<script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    import ForceGraph from "https://cdn.jsdelivr.net/npm/force-graph@1.49.5/+esm"
+    import { data } from "./data.js";
+    import { edges} from "./edges.js";
+    import { minimumSpanningTree } from "./dijkstra.js";
+
+    console.log(data);
+
+    const chemicals = ['PFAS', 'Plastics', 'Phthalates', 'Bisphenol', 'Arsenic'].map(chemical => ({id: chemical, type: 'chemical', name: chemical}))
+    const conditions = ['cancer', 'death', 'obesity', 'Metabolic disorder'].map(condition => ({id: condition, type: 'condition', name: condition}))
+
+    const causeEffect = [
+        'PFAS-cancer',
+        'PFAS-death',
+        'Plastics-death',
+        'Phthalates-obesity',
+        'Bisphenol-obesity',
+        'Arsenic-Metabolic disorder'
+    ].map(ca => ({id:ca, type: 'cause-effect', name: ca.split('-')[0]+' causes '+ca.split('-')[1]}))
+
+
+    const causeEffectToCause = causeEffect.map(ce => ({source: ce.id, target: ce.id.split('-')[0], type: 'cause-effect_cause'}))
+    const causeEffectToEffect = causeEffect.map(ce => ({source: ce.id, target: ce.id.split('-')[1], type: 'cause-effect_effect'}))
+
+
+    // Select random articles and link them to random causeEffect
+    const articleNodes = data.filter(node => !node.type );
+    const numArticlesToLink = articleNodes.length
+    const articleLinks = [];
+
+    for (let i = 0; i < numArticlesToLink; i++) {
+        const randomArticle = articleNodes[i];
+        const randomCauseEffect = causeEffect[Math.floor(Math.random() * causeEffect.length)];
+        articleLinks.push({
+            source: randomArticle.id,
+            target: randomCauseEffect.id,
+            type: 'article_cause-effect'
+        });
+    }
+
+    const gData = {
+        nodes: [...data, ...chemicals, ...conditions, ...causeEffect],
+        links: [...edges, ...articleLinks, ...causeEffectToCause, ...causeEffectToEffect]
+    };
+
+
+    const Graph = new ForceGraph()
+    (document.getElementById('graph'))
+        .nodeColor(node => {
+            if (node.type === 'article') {
+                return 'red';
+            } else if (node.type === 'project') {
+                return 'blue';
+            } else if (node.type === 'partner') {
+                return 'green';
+            } else if (node.type === 'project-topic') {
+                return 'red';
+            } else if (node.type === 'project-keyword') {
+                return 'orange';
+            } else if (node.type === 'chemical') {
+                return 'purple';
+            } else if (node.type === 'condition') {
+               return 'pink'
+            } else if (node.type === 'cause-effect') {
+                return 'cyan'
+            } else
+            {
+                return 'black';
+            }
+        })
+        .onNodeClick((node, event) => {
+            const newEdges = minimumSpanningTree(gData.links, node.id)
+            console.log(newEdges)
+            Graph.graphData( { nodes: gData.nodes, links: newEdges.mstEdges })
+        })
+        .graphData(gData);
+</script>
+</body>
+
+</html>
