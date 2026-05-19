@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Message Map Prototype</title>
+
+
+    <!--    <script src="//cdn.jsdelivr.net/npm/force-graph"></script>-->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #node-box {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+
+        #info-box {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+        }
+
+        #info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        #info-box p {
+            margin: 5px 0;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="node-box">
+    <h3>Node info</h3>
+</div>
+<div id="info-box">
+    <h3>Graph Info</h3>
+    <p>Click on a node to see minimum spanning tree</p>
+    <p><span style="color: black;">●</span> Article</p>
+    <p><span style="color: red;">●</span> Project Topic</p>
+    <p><span style="color: blue;">●</span> Project</p>
+    <p><span style="color: green;">●</span> Partner</p>
+    <p><span style="color: orange;">●</span> Project Keyword</p>
+    <p><span style="color: cyan;">●</span> Cause-effect</p>
+    <p><span style="color: purple;">●</span> Chemical</p>
+    <p><span style="color: pink;">●</span> Condition</p>
+
+</div>
+<div id="graph"></div>
+
+<script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    import { forceCollide } from 'https://esm.sh/d3-force';
+    import ForceGraph from "https://cdn.jsdelivr.net/npm/force-graph@1.49.5/+esm"
+    import {data} from "./data.js";
+    import {edges} from "./edges.js";
+    import {
+        minimumSpanningTree,
+        minimumSpanningTreeFromSubtree,
+        findEdgesThroughNode,
+        findAdjacentSubtree
+    } from "./dijkstra.js";
+
+    const chemicals = ['PFAS', 'Plastics', 'Phthalates', 'Bisphenol', 'Arsenic'].map(chemical => ({
+        id: chemical,
+        type: 'chemical',
+        name: chemical
+    }))
+    const conditions = ['cancer', 'death', 'obesity', 'Metabolic disorder'].map(condition => ({
+        id: condition,
+        type: 'condition',
+        name: condition
+    }))
+
+    const causeEffect = [
+        'PFAS-cancer',
+        'PFAS-death',
+        'Plastics-death',
+        'Phthalates-obesity',
+        'Bisphenol-obesity',
+        'Arsenic-Metabolic disorder'
+    ].map(ca => ({id: ca, type: 'cause-effect', name: ca.split('-')[0] + ' causes ' + ca.split('-')[1]}))
+
+
+    const causeEffectToCause = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('-')[0],
+        type: 'cause-effect_cause'
+    }))
+    const causeEffectToEffect = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('-')[1],
+        type: 'cause-effect_effect'
+    }))
+
+
+    // Select random articles and link them to random causeEffect
+    const articleNodes = data.filter(node => !node.type);
+    const numArticlesToLink = articleNodes.length
+    const articleLinks = [];
+
+    for (let i = 0; i < numArticlesToLink; i++) {
+        const randomArticle = articleNodes[i];
+        const randomCauseEffect = causeEffect[Math.floor(Math.random() * causeEffect.length)];
+        articleLinks.push({
+            source: randomArticle.id,
+            target: randomCauseEffect.id,
+            type: 'article_cause-effect'
+        });
+    }
+
+    const gData = {
+        nodes: [...data, ...chemicals, ...conditions, ...causeEffect],
+        links: [...edges, ...articleLinks, ...causeEffectToCause, ...causeEffectToEffect]
+    };
+
+    let selectedNodeId = null
+    let selectedNode = null
+
+    const Graph = new ForceGraph()
+    (document.getElementById('graph'))
+        .autoPauseRedraw(false)
+        .onNodeClick((node, event) => {
+            selectedNodeId = node.id
+            selectedNode = node
+            const adjacent = findAdjacentSubtree(gData.links, node.id)
+            const newEdges = minimumSpanningTreeFromSubtree(gData.links, adjacent)
+            Graph.graphData({nodes: gData.nodes, links: newEdges.mstEdges})
+
+            for (const edge of newEdges.mstEdges) {
+                edge.color = 'rgba(255, 255, 255, 0.1)'
+            }
+
+
+            for (const edge of findEdgesThroughNode(Graph.graphData().links, node.id)) {
+                edge.color = 'rgba(255, 255, 255, 0.5)'
+            }
+
+            for (const node of gData.nodes) {
+                delete node.fx;
+                delete node.fy;
+            }
+            node.fx = node.x;
+            node.fy = node.y;
+            document.getElementById('node-box').innerHTML = `<h3>Node info</h3><p>Type: ${node.type}</p><p>ID: ${node.name || node.title}</p>`
+        })
+        .onNodeHover((node, event) => {
+
+        })
+        .nodeCanvasObject((node, ctx) => nodePaint(node, ctx))
+        .onRenderFramePre((ctx, globalScale) => {
+            if (selectedNode != null) {
+                ctx.save()
+                const x = selectedNode.x
+                const y = selectedNode.y
+                const gradient = ctx.createRadialGradient(x, y, 0, x, y, 600);
+
+
+                const steps = 7
+                for (let i = 0; i < steps; ++i) {
+
+                    const opacity = 0.25 * (steps-1-i) / (steps-1)
+                    gradient.addColorStop(i / steps, nodeColor(selectedNode, opacity));
+                    gradient.addColorStop( (i + 1) / steps, nodeColor(selectedNode, opacity));
+                }
+
+                gradient.addColorStop(0.9, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient;
+                ctx.beginPath()
+                ctx.arc(x, y, 600.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+
+                const gradient2 = ctx.createRadialGradient(x, y, 0, x, y, 30);
+
+// Add three color stops
+                gradient2.addColorStop(0, nodeColor(selectedNode, 0.5));
+                gradient2.addColorStop(1.0, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient2;
+                ctx.beginPath()
+                ctx.arc(x, y, 30.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+
+
+                ctx.restore()
+            }
+        })
+
+        .graphData(gData)
+        .d3Force('collide', forceCollide(node => (node.type === 'project-keyword' || node.type === 'project-topic') ? 15.0 : 5.0))
+
+    function nodeColor(node, opacity = 1.0) {
+        if (node.type === 'article') {
+            return `rgba(255, 0, 0, ${opacity})`;
+        } else if (node.type === 'project') {
+            return `rgba(0, 0, 255, ${opacity})`;
+        } else if (node.type === 'partner') {
+            return `rgba(0, 127, 0, ${opacity})`;
+        } else if (node.type === 'project-topic') {
+            return `rgba(255, 0, 0, ${opacity})`;
+        } else if (node.type === 'project-keyword') {
+            return `rgba(255, 127, 0, ${opacity})`;
+        } else if (node.type === 'chemical') {
+            return `rgba(127, 0, 127, ${opacity})`;
+        } else if (node.type === 'condition') {
+            return `rgba(255, 127, 127, ${opacity})`;
+        } else if (node.type === 'cause-effect') {
+            return `rgba(0, 255, 255, ${opacity})`;
+        } else {
+            return `rgba(0, 0, 0, ${opacity})`;
+        }
+    }
+
+    function nodePaint({id, type, x, y}, ctx) {
+        ctx.fillStyle = nodeColor({'type': type})
+
+        ctx.beginPath()
+        var radius = 5.0;
+        if (type === 'project-keyword' || type === 'project-topic') {
+            radius = 10.0;
+        }
+        ctx.arc(x, y, radius, 0, 2 * Math.PI, false)
+        ctx.fill()
+        // if (id === selectedNodeId) {
+        //     ctx.strokeStyle = 'black'
+        //     ctx.lineWidth = 4
+        //     ctx.stroke()
+        //
+        //
+        // }
+    }
+
+</script>
+</body>
+
+</html>
