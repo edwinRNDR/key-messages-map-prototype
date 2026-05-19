@@ -19,6 +19,18 @@ function findAdjacentSubtree(links, node) {
     return subLinks
 }
 
+function findAdjacentNodes(links, node) {
+    const adjacentNodes = new Set();
+    for (const link of links) {
+        if ((link.source.id||link.source) === node) {
+            adjacentNodes.add(link.target);
+        } else if ((link.target.id||link.targe0) === node) {
+            adjacentNodes.add(link.source);
+        }
+    }
+    return adjacentNodes
+}
+
 function findShortestPath(edges, start, end) {
     // Build adjacency list from edges (bidirectional)
     const graph = buildUndirectedGraph(edges);
@@ -554,4 +566,4 @@ function findEdgesThroughNode(edges, node) {
     return edges.filter(edge => edge.source === node || edge.target === node);
 }
 
-export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation, findEdgesThroughNode };
+export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation, findEdgesThroughNode, findAdjacentNodes };
