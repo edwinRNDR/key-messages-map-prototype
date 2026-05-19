@@ -27,6 +27,17 @@
             height: 100%;
             overflow-y: scroll;
         }
+        .adjacent {
+
+        }
+        .adjacent:hover {
+            cursor: pointer;
+            color: blue;
+        }
+
+        .graph-hover {
+            background-color: gray;
+        }
 
         #info-box {
             position: fixed;
@@ -154,7 +165,17 @@
             selectNode(node)
         })
         .onNodeHover((node, event) => {
+            if (node != null)
+            [...document.getElementsByClassName('adjacent')].forEach(el => {
 
+                if (node !== null && el.id === `adjacent-${node.id}`) {
+                    el.classList.add('graph-hover')
+                    el.scrollIntoView({behavior: "smooth", block: 'start', container: 'nearest'})
+                } else {
+                    el.classList.remove('graph-hover')
+                }
+
+            })
         })
         .nodeCanvasObject((node, ctx) => nodePaint(node, ctx))
         .onRenderFramePre((ctx, globalScale) => {
@@ -356,7 +377,7 @@
     }
 
     function populateNodeBox(node, adjacent = []) {
-        const adjacentList = `${adjacent.map(node => `<p id="adjacent-${node.id}">${node.type || 'article' }: ${node.name || node.title || 'Unknown'}</p>`).join('')}`
+        const adjacentList = `${adjacent.map(node => `<p class="adjacent" id="adjacent-${node.id}">${node.type || 'article' }: ${node.name || node.title || 'Unknown'}</p>`).join('')}`
         document.getElementById('node-box').innerHTML = `<h3>${node.name || node.label}</h3>${adjacentList}`
         for (const node of adjacent) {
             document.getElementById(`adjacent-${node.id}`).addEventListener('click', () => {
