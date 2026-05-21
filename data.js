@@ -46,31 +46,6 @@ export const data = [
         "type": "project-keyword"
     },
     {
-        "name": "Environment",
-        "id": "project-keyword-1065",
-        "type": "project-keyword"
-    },
-    {
-        "name": "Health effects",
-        "id": "project-keyword-1063",
-        "type": "project-keyword"
-    },
-    {
-        "name": "Human health",
-        "id": "project-keyword-1058",
-        "type": "project-keyword"
-    },
-    {
-        "name": "Monitoring methods",
-        "id": "project-keyword-1060",
-        "type": "project-keyword"
-    },
-    {
-        "name": "Risk assessment",
-        "id": "project-keyword-1061",
-        "type": "project-keyword"
-    },
-    {
         "name": "NGRA",
         "id": "project-keyword-1066",
         "type": "project-keyword"

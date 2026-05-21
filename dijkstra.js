@@ -31,6 +31,24 @@ function findAdjacentNodes(links, node) {
     return adjacentNodes
 }
 
+function countAdjacentNodes(nodes, links) {
+    const nodeMap = new Map();
+
+    for (const node of nodes) {
+        nodeMap.set(node.id, node);
+        node.count = new Map()
+    }
+
+    for (const link of links) {
+        const source = nodeMap.get(link.source.id||link.source);
+        const target = nodeMap.get(link.target.id||link.target);
+        source.count.set(target.type, (source.count.get(target.type) || 0) + 1);
+        target.count.set(source.type, (target.count.get(source.type) || 0) + 1);
+    }
+
+}
+
+
 function findShortestPath(edges, start, end) {
     // Build adjacency list from edges (bidirectional)
     const graph = buildUndirectedGraph(edges);
@@ -566,4 +584,4 @@ function findEdgesThroughNode(edges, node) {
     return edges.filter(edge => edge.source === node || edge.target === node);
 }
 
-export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation, findEdgesThroughNode, findAdjacentNodes };
+export { findAdjacentSubtree, findShortestPath, findAllShortestPaths, minimumSpanningTree, minimumSpanningTreeFromSubtree, findAllDegreesOfSeparation, findEdgesThroughNode, findAdjacentNodes, countAdjacentNodes };
