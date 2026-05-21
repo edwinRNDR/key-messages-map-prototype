@@ -587,6 +587,21 @@
     </table>
 </div>
 `
+        let summaryCard = ''
+
+        if (node.type === 'partner') {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<p>${node.fullname}</p>
+<p>${node.itype}, ${node.country}</p>
+<p>${node.description}</p>
+</div>`
+        } else if (node.type === 'project') {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<p>${node.description}</p>
+</div>`
+        }
 
         const projectKeywords = adjacent.filter(node => node.type === 'project-keyword')
         const projectKeywordsCard = projectKeywords.length === 0 ? '' : `
@@ -715,6 +730,7 @@
     <h3>${node.type}</h3>
     <h1>${node.name || node.label}</h1>
 </div>
+${summaryCard}
 ${articleKeywordsCard}
 ${projectKeywordsCard}
 ${projectTopicsCard}

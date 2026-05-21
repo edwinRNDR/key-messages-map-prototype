@@ -71,67 +71,78 @@ export const data = [
         "name": "Developing a system to monitor chemicals in the environment",
         "id": "project-1282",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/developing-system-monitor-chemicals-environment"
+        "url": "https://www.eu-parc.eu/projects/developing-system-monitor-chemicals-environment",
+        "description": "Develops a flexible, transparent prioritisation framework to identify which chemicals, environmental matrices, and health/ecological effects need targeted monitoring, focusing on poorly monitored or overlooked substances including mixtures and emerging concerns."
     },
     {
         "name": "Enhancing data integration and risk assessment for chemical exposure",
         "id": "project-1279",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/enhancing-data-integration-and-risk-assessment-chemical-exposure"
+        "url": "https://www.eu-parc.eu/projects/enhancing-data-integration-and-risk-assessment-chemical-exposure",
+        "description": "Promotes a 'one health' approach by mapping, accessing, and connecting existing environmental data resources to improve chemical risk assessment for human health and ecosystems."
     },
     {
         "name": "Environmental and multisource monitoring: Pilot study on PFAS and endocrine disruptors",
         "id": "project-1281",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/environmental-and-multisource-monitoring-pilot-study-pfas-and-endocrine-disruptors"
+        "url": "https://www.eu-parc.eu/projects/environmental-and-multisource-monitoring-pilot-study-pfas-and-endocrine-disruptors",
+        'description': 'Launches a pilot project to establish and validate environmental monitoring structures for PFAS and endocrine disruptors using a multicompartment approach with advanced analytical methods and standardised QA/QC protocols.'
     },
     {
         "name": "Improving the environmental risk assessment for plant protection products",
         "id": "project-996",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/improving-environmental-risk-assessment-plant-protection-products"
+        "url": "https://www.eu-parc.eu/projects/improving-environmental-risk-assessment-plant-protection-products",
+        'description': "Seeks to improve prospective evaluation of plant protection product effects on biodiversity by overcoming substance-by-substance limitations and adopting holistic systems-based environmental risk assessment approaches."
     },
     {
         "name": "Innovative tools for an early warning system",
         "id": "project-1315",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/innovative-tools-early-warning-system"
+        "url": "https://www.eu-parc.eu/projects/innovative-tools-early-warning-system",
+        "description": "Supports establishment of an EU Early Warning System by demonstrating innovative non-targeted screening and effect-based methods across environmental, human, food, and consumer product samples to detect and prioritise potentially hazardous substances."
     },
     {
         "name": "Monitoring chemicals in wastewater using innovative techniques",
         "id": "project-994",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/monitoring-chemicals-wastewater-using-innovative-techniques"
+        "url": "https://www.eu-parc.eu/projects/monitoring-chemicals-wastewater-using-innovative-techniques",
+        "description": "Studies wastewater using innovative fingerprinting and screening methods to assess community-wide human exposure and release of Chemicals of Emerging Concern into the water cycle, supporting revision of EU water legislation."
     },
     {
         "name": "Tracking emerging chemicals in animal species: A new monitoring approach",
         "id": "project-995",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/tracking-emerging-chemicals-animal-species-new-monitoring-approach"
+        "url": "https://www.eu-parc.eu/projects/tracking-emerging-chemicals-animal-species-new-monitoring-approach",
+        "description": "Develops a proof-of-concept using sentinel animal species (gammarids and bees) combined with suspect/non-targeted screening and effect-directed analysis to detect chemicals of emerging concern in the environment and food chain.",
     },
     {
         "name": "Understanding volatile siloxanes in Europe to support regulation",
         "id": "project-1554",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/understanding-volatile-siloxanes-europe-support-regulation"
+        "url": "https://www.eu-parc.eu/projects/understanding-volatile-siloxanes-europe-support-regulation",
+        "description": "Generates high-quality environmental monitoring data on cyclic and linear volatile methylsiloxanes to address knowledge gaps in their environmental fate, long-range transport, and support future regulatory decisions under REACH and the Stockholm Convention."
     },
     {
         "name": "Advancing the characterisation of human chemical exposome with innovative methods",
         "id": "project-986",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-characterisation-human-chemical-exposome-innovative-methods"
+        "url": "https://www.eu-parc.eu/projects/advancing-characterisation-human-chemical-exposome-innovative-methods",
+        "description": "Identifies scientific barriers to incorporating non-targeted profiling, high-resolution mass spectrometry, and effect-directed analysis into regulatory monitoring programs and recommends ways to improve chemical exposure characterisation for next-generation risk assessment."
     },
     {
         "name": "Advancing tools, knowledge and regulatory options for an improved risk assessment and management of chemical mixtures",
         "id": "project-1613",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-tools-knowledge-and-regulatory-options-improved-risk-assessment-and-management"
+        "url": "https://www.eu-parc.eu/projects/advancing-tools-knowledge-and-regulatory-options-improved-risk-assessment-and-management",
+        "description": "Develops harmonised strategies for assessing and regulating chemical mixtures, building on prior PARC projects to provide practical case studies and proposals aligned with REACH revision, EFSA soil guidance, and the Water Framework Directive."
     },
     {
         "name": "Beyond food: Organic contaminants in daily environments",
         "id": "project-1491",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/beyond-food-organic-contaminants-daily-environments"
+        "url": "https://www.eu-parc.eu/projects/beyond-food-organic-contaminants-daily-environments",
+        "description": "Investigates human exposure to organic contaminants (PFAS, phthalates, bisphenols, pesticides, flame retardants) through non-food pathways by linking environmental monitoring data with human biomonitoring results."
     },
     {
         "name": "Enhancing the reusability of human biomonitoring data for improved health risk assessment",
@@ -143,48 +154,56 @@ export const data = [
         "name": "Establishment of advanced data processing methodologies and bioinformatic tools for a non-targeted screening repository",
         "id": "project-1555",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/establishment-advanced-data-processing-methodologies-and-bioinformatic-tools-non-targeted"
+        "url": "https://www.eu-parc.eu/projects/establishment-advanced-data-processing-methodologies-and-bioinformatic-tools-non-targeted",
+        "description": "Makes human biomonitoring datasets more accessible and reusable as FAIR resources by developing harmonised metadata, schema mappings, and governed access pathways while respecting privacy and ethical requirements."
     },
     {
         "name": "Harmonising quality of chemical and bio-effect directed suspect and non-target screening methods across fields",
         "id": "project-1271",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/harmonising-quality-chemical-and-bio-effect-directed-suspect-and-non-target-screening"
+        "url": "https://www.eu-parc.eu/projects/harmonising-quality-chemical-and-bio-effect-directed-suspect-and-non-target-screening",
+        "description": "Develops a sustainable, open-access automated data processing pipeline for suspect and non-targeted screening workflows, including QA/QC measures and a unified European mass spectrometry reference library to support early warning frameworks."
     },
     {
         "name": "Health-based guideline values for indoor air",
         "id": "project-1581",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/health-based-guideline-values-indoor-air"
+        "url": "https://www.eu-parc.eu/projects/health-based-guideline-values-indoor-air",
+        "description": "Establishes essential quality standards for suspect and non-targeted screening methods across environmental, food, and human biomonitoring domains by cataloguing existing QA/QC guidelines and aligning standards to ensure robust, consistent procedures."
     },
     {
         "name": "Leveraging HBM4EU data for chemical safety and zero pollution in Europe",
         "id": "project-985",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/leveraging-hbm4eu-data-chemical-safety-and-zero-pollution-europe"
+        "url": "https://www.eu-parc.eu/projects/leveraging-hbm4eu-data-chemical-safety-and-zero-pollution-europe",
+        "description": "Develops a harmonised methodology for deriving health-based guideline values for indoor air pollutants to support EU chemical safety policies and the 'One substance, one assessment' initiative."
     },
     {
         "name": "Streamlining data processing methods for suspect and non-target screening",
         "id": "project-988",
-        "type": "project"
+        "type": "project",
+        "description": "Conducts additional statistical analyses of HBM4EU data on PFAS, PAHs, pesticides, arsenic, cadmium, mercury, chromium VI, and diisocyanates to uncover new insights into chemical exposure sources, regional variations, and health effects supporting EU zero-pollution goals."
     },
     {
         "name": "Testing assessment tools for hazardous substances in consumer products and articles",
         "id": "project-989",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/testing-assessment-tools-hazardous-substances-consumer-products-and-articles"
+        "url": "https://www.eu-parc.eu/projects/testing-assessment-tools-hazardous-substances-consumer-products-and-articles",
+        "description": "Evaluates current data availability on chemicals in consumer products and articles and assesses how data quality impacts chemical enforcement, risk assessment, and sustainability evaluation tools such as Life Cycle Assessments."
     },
     {
         "name": "Toxicity of plastic-associated chemicals",
         "id": "project-1556",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/toxicity-plastic-associated-chemicals"
+        "url": "https://www.eu-parc.eu/projects/toxicity-plastic-associated-chemicals",
+        "description" : "Identifies the most hazardous chemicals leaching from commonly used plastic products using a tiered NAM-based hazard screening approach covering cytotoxicity, genotoxicity, endocrine disruption, immunotoxicity, and neurodevelopmental toxicity endpoints."
     },
     {
         "name": "Advancing detection mechanisms of hazardous chemicals in food",
         "id": "project-978",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-detection-mechanisms-hazardous-chemicals-food"
+        "url": "https://www.eu-parc.eu/projects/advancing-detection-mechanisms-hazardous-chemicals-food",
+        "description": "Develops and validates innovative high-resolution mass spectrometry-based tools for comprehensive food monitoring, comparing analytical strategies for detecting known, emerging, and unknown chemical contaminants including complex mixtures."
     },
     {
         "name": "Assessing chemicals exposure of waste management workers",
@@ -196,349 +215,409 @@ export const data = [
         "name": "Boosting data availability for environmental burden of disease calculations of chemicals",
         "id": "project-1425",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/boosting-data-availability-environmental-burden-disease-calculations-chemicals"
+        "url": "https://www.eu-parc.eu/projects/boosting-data-availability-environmental-burden-disease-calculations-chemicals",
+        "description": "Provides EU-specific data on chemical exposures of electronic and plastic waste management workers through environmental and biological monitoring, assessing regulatory effectiveness and translating occupational findings to general population exposure frameworks."
     },
     {
         "name": "Developing and testing new approaches for chemical exposure assessment of infants",
         "id": "project-976",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/developing-and-testing-new-approaches-chemical-exposure-assessment-infants"
+        "url": "https://www.eu-parc.eu/projects/developing-and-testing-new-approaches-chemical-exposure-assessment-infants",
+        "description": "Improves access to essential data for measuring health impacts of priority chemicals by identifying data gaps, increasing availability of high-quality exposure and health outcome information, and supporting environmental burden of disease calculations for EU policymakers."
     },
     {
         "name": "Developing a sustainable European human biomonitoring framework",
         "id": "project-975",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/developing-sustainable-european-human-biomonitoring-framework"
+        "url": "https://www.eu-parc.eu/projects/developing-sustainable-european-human-biomonitoring-framework",
+        "description": "Develops a long-term, sustainable, and inclusive European human biomonitoring framework building on HBM4EU and PARC aligned studies, aiming to deliver a blueprint for a cost-efficient EU-wide HBM program by 2028."
     },
     {
         "name": "Developing indicators for chemical risk and health impact assessment",
         "id": "project-1274",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/developing-indicators-chemical-risk-and-health-impact-assessment"
+        "url": "https://www.eu-parc.eu/projects/developing-indicators-chemical-risk-and-health-impact-assessment",
+        "description": "Develops health impact indicators for priority PARC chemicals by combining human biomonitoring data with socioeconomic variables to inform policymakers and support the Zero Pollution Action Plan."
     },
     {
         "name": "Enhancing healthy and safe working conditions in hospitals",
         "id": "project-971",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/enhancing-healthy-and-safe-working-conditions-hospitals"
+        "url": "https://www.eu-parc.eu/projects/enhancing-healthy-and-safe-working-conditions-hospitals",
+        "description": "Conducts a cross-sectional study in hospitals across EU member states to assess healthcare workers' exposure to hazardous medicinal products using human biomonitoring and environmental monitoring."
     },
     {
         "name": "Establishing health-based human biomonitoring guidance values",
         "id": "project-973",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/establishing-health-based-human-biomonitoring-guidance-values"
+        "url": "https://www.eu-parc.eu/projects/establishing-health-based-human-biomonitoring-guidance-values",
+        "description": "Develops harmonised health-based human biomonitoring guidance values for priority PARC chemicals for both general population and workers to standardise European chemical risk assessment."
     },
     {
         "name": "Hazard characterisation of emerging mycotoxins",
         "id": "project-1293",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/hazard-characterisation-emerging-mycotoxins"
+        "url": "https://www.eu-parc.eu/projects/hazard-characterisation-emerging-mycotoxins",
+        "description": "Identifies toxicological effects of selected enniatins and Alternaria toxins using in vitro methods to provide urgently needed data for appropriate risk assessment and support setting of health-based guidance values for food and feed."
     },
     {
         "name": "Human biomonitoring studies on the general population",
         "id": "project-968",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/human-biomonitoring-studies-general-population"
+        "url": "https://www.eu-parc.eu/projects/human-biomonitoring-studies-general-population",
+        "description": "Conducts PARC-aligned human biomonitoring studies across 24 European countries targeting children, teenagers, and adults to generate harmonised, comparable data on chemical exposure levels for regulatory risk assessment."
     },
     {
         "name": "Implementing human biomonitoring as sentinel surveillance system",
         "id": "project-970",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/implementing-human-biomonitoring-sentinel-surveillance-system"
+        "url": "https://www.eu-parc.eu/projects/implementing-human-biomonitoring-sentinel-surveillance-system",
+        "description": "Assesses the feasibility of using a European sentinel surveillance network of occupational physicians to enhance human biomonitoring surveys covering PFAS, pesticides, bisphenols, metals, and mercury in working adult populations."
     },
     {
         "name": "Improving chemical screening in human samples",
         "id": "project-1545",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/improving-chemical-screening-human-samples"
+        "url": "https://www.eu-parc.eu/projects/improving-chemical-screening-human-samples",
+        "description": "Enhances detection of human chemical exposure by evaluating complementary analytical strategies including advanced separation techniques, ion mobility mass spectrometry, and alternative non-invasive matrices such as hair."
     },
     {
         "name": "Investigating mono-n-hexyl phthalate (MnHexP) exposure",
         "id": "project-1490",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/investigating-mono-n-hexyl-phthalate-mnhexp-exposure"
+        "url": "https://www.eu-parc.eu/projects/investigating-mono-n-hexyl-phthalate-mnhexp-exposure",
+        "description": "Investigates sources and extent of unexpected MnHexP exposure identified in human biomonitoring data from Germany and Denmark, focusing on potential contamination of the UV filter DHHB with di-n-hexyl phthalate, using a tiered assessment approach."
     },
     {
         "name": "More accurate health impact assessment methodologies for chemicals",
         "id": "project-1430",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/more-accurate-health-impact-assessment-methodologies-chemicals"
+        "url": "https://www.eu-parc.eu/projects/more-accurate-health-impact-assessment-methodologies-chemicals",
+        "description": "Improves Environmental Burden of Disease and Health Impact Assessment calculations for chemical exposures by integrating wider demographic, epidemiological, and toxicological data to reduce uncertainties and strengthen the scientific basis for policymaking."
     },
     {
         "name": "Occupational biomonitoring of emerging chemicals: A new approach",
         "id": "project-1431",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/occupational-biomonitoring-emerging-chemicals-new-approach"
+        "url": "https://www.eu-parc.eu/projects/occupational-biomonitoring-emerging-chemicals-new-approach",
+        "description": "Demonstrates proof-of-concept use of innovative suspect/non-targeted screening methods and novel sampling tools (dried blood spots, silicone wristbands) for comprehensive occupational chemical exposure assessment across EU workplaces."
     },
     {
         "name": "PFAS in breast milk and infant health",
         "id": "project-1542",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/pfas-breast-milk-and-infant-health"
+        "url": "https://www.eu-parc.eu/projects/pfas-breast-milk-and-infant-health",
+        "description": "Measures PFAS exposure levels in breast milk and assesses potential health risks to infants, generating data to support risk assessment and regulatory action on PFAS restriction and the protection of vulnerable populations."
     },
     {
         "name": "Roadmap linking chemical substances and health",
         "id": "project-974",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/roadmap-linking-chemical-substances-and-health"
+        "url": "https://www.eu-parc.eu/projects/roadmap-linking-chemical-substances-and-health",
+        "description": "Develops a two-phase strategy to connect chemical exposures with health outcomes by integrating standardised effect biomarkers into HBM surveys and assessing retrospective exposure via biobanked samples."
     },
     {
         "name": "Tracking human exposure to environmental pollutants over time in Europe",
         "id": "project-1544",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/tracking-human-exposure-environmental-pollutants-over-time-europe"
+        "url": "https://www.eu-parc.eu/projects/tracking-human-exposure-environmental-pollutants-over-time-europe",
+        "description": "Assesses temporal trends in human exposure to phthalates, PFAS, bisphenols, pesticides, heavy metals, and other pollutants across Europe using harmonised HBM data from children, teenagers, and adults to evaluate policy effectiveness."
     },
     {
         "name": "Tracking PFAS exposure in children across Europe",
         "id": "project-1543",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/tracking-pfas-exposure-children-across-europe"
+        "url": "https://www.eu-parc.eu/projects/tracking-pfas-exposure-children-across-europe",
+        "description": "Generates harmonised EU-wide biomonitoring data on PFAS exposure in children aged 6–11 across several European countries, using aligned protocols and non-target screening to identify emerging PFAS and support regulatory action."
     },
     {
         "name": "Using case studies to assess health impact of exposure to chemical substances",
         "id": "project-983",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/using-case-studies-assess-health-impact-exposure-chemical-substances"
+        "url": "https://www.eu-parc.eu/projects/using-case-studies-assess-health-impact-exposure-chemical-substances",
+        "description": "Applies health impact assessment case study approaches for priority chemicals to develop indicators on health risk, contributing to improved environmental burden of disease calculations and policy-relevant exposure outcome data."
     },
     {
         "name": "Using general population human biomonitoring data to trace occupational exposure",
         "id": "project-969",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/using-general-population-human-biomonitoring-data-trace-occupational-exposure"
+        "url": "https://www.eu-parc.eu/projects/using-general-population-human-biomonitoring-data-trace-occupational-exposure",
+        "description": "Explores whether general population HBM data can identify elevated chemical exposure in workers compared to non-occupationally exposed groups, using ISCO-coded occupation data from HBM4EU studies for cadmium, chromium, PAHs, and bisphenols."
     },
     {
         "name": "Assessing the relevance of adverse outcome pathways (AOPs) and associated new approach methodologies (NAMs) for human health risk assessment",
         "id": "project-1612",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/assessing-relevance-adverse-outcome-pathways-aops-and-associated-new-approach"
+        "url": "https://www.eu-parc.eu/projects/assessing-relevance-adverse-outcome-pathways-aops-and-associated-new-approach",
+        "description": "Evaluates the relevance and applicability of adverse outcome pathways and associated NAMs for human health risk assessment, providing guidance for integrating these tools into regulatory chemical safety frameworks."
     },
     {
         "name": "Demonstrating the applicability of New Approach Methodologies for regulatory use",
         "id": "project-1614",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/demonstrating-applicability-new-approach-methodologies-regulatory-use"
+        "url": "https://www.eu-parc.eu/projects/demonstrating-applicability-new-approach-methodologies-regulatory-use",
+        "description": "Demonstrates through targeted case studies that new approach methodologies can be used in regulatory risk assessments, providing practical evidence to accelerate their acceptance and integration into chemical safety regulations."
     },
     {
         "name": "Harmonisation of the risk assessment of chemicals",
         "id": "project-1043",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/harmonisation-risk-assessment-chemicals"
+        "url": "https://www.eu-parc.eu/projects/harmonisation-risk-assessment-chemicals",
+        "description": "Develops harmonised approaches and shared guidance for chemical risk assessment across different regulatory domains, supporting the EU's 'one substance, one assessment' initiative and reducing duplication among agencies."
     },
     {
         "name": "Improving regulatory readiness of new testing methods",
         "id": "project-1611",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/improving-regulatory-readiness-new-testing-methods"
+        "url": "https://www.eu-parc.eu/projects/improving-regulatory-readiness-new-testing-methods",
+        "description": "Advances the regulatory readiness of novel testing approaches by establishing fit-for-purpose validation frameworks and providing structured guidance for their use in regulatory chemical hazard and risk assessment."
     },
     {
         "name": "Innovative testing strategies for the developing immune system",
         "id": "project-1558",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/innovative-testing-strategies-developing-immune-system"
+        "url": "https://www.eu-parc.eu/projects/innovative-testing-strategies-developing-immune-system",
+        "description": "Develops and validates new in vitro and mechanistic testing approaches for immunotoxicity during development, filling gaps in current methods for assessing chemical effects on the immature immune system."
     },
     {
         "name": "In vitro methods to assess respiratory uptake and toxicity",
         "id": "project-1564",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/vitro-methods-assess-respiratory-uptake-and-toxicity"
+        "url": "https://www.eu-parc.eu/projects/vitro-methods-assess-respiratory-uptake-and-toxicity",
+        "description": "Develops and validates in vitro methods to better assess respiratory uptake, deposition, and toxicity of inhaled chemicals, supporting more human-relevant inhalation risk assessment without animal testing."
     },
     {
         "name": "New tools for enforcing chemical safety in everyday items",
         "id": "project-1546",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/new-tools-enforcing-chemical-safety-everyday-items"
+        "url": "https://www.eu-parc.eu/projects/new-tools-enforcing-chemical-safety-everyday-items",
+        "description": "Develops and tests new analytical and regulatory tools to detect and enforce chemical safety requirements for hazardous substances in everyday consumer items, improving compliance monitoring capacity."
     },
     {
         "name": "New tools to assess fish thyroid disruption",
         "id": "project-1565",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/new-tools-assess-fish-thyroid-disruption"
+        "url": "https://www.eu-parc.eu/projects/new-tools-assess-fish-thyroid-disruption",
+        "description": "Develops and tests an Adverse Outcome Pathway network approach integrating in silico, in vitro, and in vivo data to identify thyroid hormone system disrupting chemicals in fish, supporting NAM-based endocrine disruptor regulation."
     },
     {
         "name": "Omics for chemical grouping and read-across",
         "id": "project-1563",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/omics-chemical-grouping-and-read-across"
+        "url": "https://www.eu-parc.eu/projects/omics-chemical-grouping-and-read-across",
+        "description": "Supports regulatory use of high-throughput transcriptomics and phenotypic profiling technologies combined with systems toxicology models to improve chemical grouping and read-across for faster, more reliable hazard assessment."
     },
     {
         "name": "Sex-based differences in susceptibility to liver toxicants",
         "id": "project-1562",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/sex-based-differences-susceptibility-liver-toxicants"
+        "url": "https://www.eu-parc.eu/projects/sex-based-differences-susceptibility-liver-toxicants",
+        "description": "Investigates how biological sex influences susceptibility to liver toxicants, developing sex-specific in vitro models and mechanistic insights to improve the human relevance of liver toxicity assessment."
     },
     {
         "name": "Skin sensitisation and mixtures effects",
         "id": "project-1566",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/skin-sensitisation-and-mixtures-effects"
+        "description": "Develops and validates non-animal methods for assessing skin sensitisation from chemical mixtures, filling a critical gap in current regulatory testing frameworks for mixture hazard assessment.",
+        "url": "https://www.eu-parc.eu/projects/skin-sensitisation-and-mixtures-effects",
+
     },
     {
         "name": "Tools, criteria and methods for risk assessment",
         "id": "project-1045",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/tools-criteria-and-methods-risk-assessment"
+        "url": "https://www.eu-parc.eu/projects/tools-criteria-and-methods-risk-assessment",
+        "description": "Develops and harmonises practical tools, criteria, and methodologies for improved chemical risk assessment, supporting a more consistent, transparent, and scientifically robust regulatory framework across EU agencies."
     },
     {
         "name": "Towards a harmonised approach in chemical risk assessment",
         "id": "project-1044",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/towards-harmonised-approach-chemical-risk-assessment"
+        "url": "https://www.eu-parc.eu/projects/towards-harmonised-approach-chemical-risk-assessment",
+        "description": "Advances harmonisation of chemical risk assessment practices across regulatory domains by developing shared guidance documents, common frameworks, and case studies for consistent application across EU regulatory agencies."
     },
     {
         "name": "Understanding how chemicals can disrupt hormones and reproductive health",
         "id": "project-1557",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/understanding-how-chemicals-can-disrupt-hormones-and-reproductive-health"
+        "url": "https://www.eu-parc.eu/projects/understanding-how-chemicals-can-disrupt-hormones-and-reproductive-health",
+        "description": "Investigates mechanisms by which chemicals disrupt the endocrine system and reproductive health, generating data and developing NAM-based approaches to improve identification of endocrine-disrupting chemicals for regulatory purposes."
     },
     {
         "name": "Advanced tools to identify metabolism-disrupting chemicals",
         "id": "project-1294",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advanced-tools-identify-metabolism-disrupting-chemicals"
+        "url": "https://www.eu-parc.eu/projects/advanced-tools-identify-metabolism-disrupting-chemicals",
+        "description": "Develops and applies new in vitro methods and adverse outcome pathways to identify chemicals that disrupt metabolic processes such as lipid and glucose metabolism, supporting their regulatory identification."
     },
     {
         "name": "Advancing endocrine disruptor assessment",
         "id": "project-1298",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-endocrine-disruptor-assessment"
+        "url": "https://www.eu-parc.eu/projects/advancing-endocrine-disruptor-assessment",
+        "description": "Advances mechanistic IATA models for thyroid and anti-androgenic endocrine activity applicable to both human health and environmental protection, supporting integrated testing strategies aligned with OECD frameworks."
     },
     {
         "name": "Assessing unknown mixtures using monitoring data and new approach methods",
         "id": "project-1432",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/assessing-unknown-mixtures-using-monitoring-data-and-new-approach-methods"
+        "url": "https://www.eu-parc.eu/projects/assessing-unknown-mixtures-using-monitoring-data-and-new-approach-methods",
+        "description": "Develops approaches to assess risks from complex unknown chemical mixtures using environmental monitoring data combined with NAMs, addressing the regulatory challenge of characterising combined exposures to uncharacterised substances."
     },
     {
         "name": "Better tools to spot hidden cancer risks",
         "id": "project-1005",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/better-tools-spot-hidden-cancer-risks"
+        "url": "https://www.eu-parc.eu/projects/better-tools-spot-hidden-cancer-risks",
+        "description": "Develops new approach methodologies for identifying non-genotoxic carcinogens and chemicals with hidden cancer risks, filling gaps in current regulatory testing by applying mechanistic and computational tools."
     },
     {
         "name": "Computational new approach methods based on machine learning and artificial intelligence",
         "id": "project-1429",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/computational-new-approach-methods-based-machine-learning-and-artificial-intelligence"
+        "url": "https://www.eu-parc.eu/projects/computational-new-approach-methods-based-machine-learning-and-artificial-intelligence",
+        "description": "Develops and validates computational models using machine learning and AI to predict chemical toxicity and support next-generation risk assessment, improving efficiency and human relevance of hazard characterisation."
     },
     {
         "name": "Developing toxicity roadmaps",
         "id": "project-1316",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/developing-toxicity-roadmaps"
+        "url": "https://www.eu-parc.eu/projects/developing-toxicity-roadmaps",
+        "description": "Develops mechanistic toxicity roadmaps for key endpoints to guide systematic chemical hazard assessment using NAMs, providing structured frameworks that link chemical exposure to adverse health outcomes via key events."
     },
     {
         "name": "Enhancing chemical mixture risk assessment and regulation",
         "id": "project-1016",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/enhancing-chemical-mixture-risk-assessment-and-regulation"
+        "url": "https://www.eu-parc.eu/projects/enhancing-chemical-mixture-risk-assessment-and-regulation",
+        "description": "Provides regulatory bodies with enhanced strategies and tools for assessing and managing chemical mixture risks, addressing current gaps in EU regulatory frameworks through case studies and harmonised guidance."
     },
     {
         "name": "Enhancing the risk assessment of chemical mixtures",
         "id": "project-1273",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/enhancing-risk-assessment-chemical-mixtures"
+        "url": "https://www.eu-parc.eu/projects/enhancing-risk-assessment-chemical-mixtures",
+        "description": "Advances scientific understanding of combined chemical effects by developing and validating methods to assess mixture toxicity across multiple endpoints, supporting more protective regulatory mixture risk assessment."
+
     },
     {
         "name": "Harmonised workflow for human relevance assessment of Adverse Outcome Pathways (AOPs) and New Approach Methodologies (NAMs)",
         "id": "project-1012",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/harmonised-workflow-human-relevance-assessment-adverse-outcome-pathways-aops-and-new"
+        "url": "https://www.eu-parc.eu/projects/harmonised-workflow-human-relevance-assessment-adverse-outcome-pathways-aops-and-new",
+        "description": "Establishes a harmonised workflow based on the mode of action/human relevance framework to enable structured and transparent assessment of whether adverse outcomes observed in animals are relevant to human health."
     },
     {
         "name": "Improving testing methods for thyroid hormone disrupting chemicals",
         "id": "project-1277",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/improving-testing-methods-thyroid-hormone-disrupting-chemicals"
+        "url": "https://www.eu-parc.eu/projects/improving-testing-methods-thyroid-hormone-disrupting-chemicals",
+        "description": "Develops and validates improved in vitro and in silico testing methods for identifying thyroid hormone disrupting chemicals, filling critical gaps in current regulatory testing frameworks and supporting endocrine disruptor identification."
     },
     {
-        "name": "Innovative approaches to assess developmental and adult neurotoxicity ",
+        "name": "Innovative approaches to assess developmental and adult neurotoxicity",
         "id": "project-1009",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/innovative-approaches-assess-developmental-and-adult-neurotoxicity"
+        "url": "https://www.eu-parc.eu/projects/innovative-approaches-assess-developmental-and-adult-neurotoxicity",
+        "description": "Creates faster and more human-relevant in vitro and zebrafish-based testing methods for developmental and adult neurotoxicity to overcome gaps in existing approaches and support their inclusion in regulatory testing frameworks."
     },
     {
         "name": "Innovative testing of chemical effects on the immune system",
         "id": "project-1278",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/innovative-testing-chemical-effects-immune-system"
+        "url": "https://www.eu-parc.eu/projects/innovative-testing-chemical-effects-immune-system",
+        "description": "Develops and validates new approach methodologies for immunotoxicity testing, providing mechanistic insights and practical tools that reduce reliance on animal testing while improving the assessment of chemical effects on the immune system."
     },
     {
         "name": "READYAI: Setting clear rules to assess when Artificial Intelligence can be trusted and used for evaluating chemical safety",
         "id": "project-1615",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/readyai-setting-clear-rules-assess-when-artificial-intelligence-can-be-trusted-and-used"
+        "url": "https://www.eu-parc.eu/projects/readyai-setting-clear-rules-assess-when-artificial-intelligence-can-be-trusted-and-used",
+        "description": "Establishes clear criteria and validation frameworks for determining when AI-based models can be trusted and used in regulatory chemical safety evaluations, supporting responsible adoption of AI tools in next-generation risk assessment."
     },
     {
         "name": "Rethinking genotoxicity testing: A non-animal approach",
         "id": "project-1014",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/rethinking-genotoxicity-testing-non-animal-approach"
+        "url": "https://www.eu-parc.eu/projects/rethinking-genotoxicity-testing-non-animal-approach",
+        "description": "Develops and validates a comprehensive non-animal testing strategy for genotoxicity assessment by combining in vitro, in silico, and mechanistic approaches to replace animal-based tests in regulatory frameworks."
     },
     {
         "name": "Trusting new ways to test chemicals – the importance of retrospective validation",
         "id": "project-1426",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/trusting-new-ways-test-chemicals-importance-retrospective-validation"
+        "url": "https://www.eu-parc.eu/projects/trusting-new-ways-test-chemicals-importance-retrospective-validation",
+        "description": "Demonstrates through retrospective validation studies that novel testing approaches produce reliable, regulatory-grade results, building confidence among regulators and industry to accept and implement NAMs for chemical safety testing."
     },
     {
         "name": "Advancing chemical risk assessment for diverse populations",
         "id": "project-1272",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-chemical-risk-assessment-diverse-populations"
+        "url": "https://www.eu-parc.eu/projects/advancing-chemical-risk-assessment-diverse-populations",
+        "description": "Improves chemical risk assessment for diverse and vulnerable populations by developing approaches that account for variability in susceptibility due to age, sex, genetic background, and lifestyle factors."
     },
     {
         "name": "Alternative predictive toxicology integrative approaches for chemical safety",
         "id": "project-1317",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/alternative-predictive-toxicology-integrative-approaches-chemical-safety"
+        "url": "https://www.eu-parc.eu/projects/alternative-predictive-toxicology-integrative-approaches-chemical-safety",
+        "description": "Develops and validates integrated predictive toxicology approaches combining in vitro, in silico, and kinetic methods to provide alternative, animal-free assessments of chemical safety for regulatory applications."
     },
     {
         "name": "Closing data gaps in physiologically-based kinetic modeling and quantitative in vitro to in vivo extrapolation",
         "id": "project-1428",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/closing-data-gaps-physiologically-based-kinetic-modeling-and-quantitative-vitro-vivo"
+        "url": "https://www.eu-parc.eu/projects/closing-data-gaps-physiologically-based-kinetic-modeling-and-quantitative-vitro-vivo",
+        "description": "Addresses critical data gaps in PBPK modelling and QIVIVE by generating new experimental data and developing improved models for predicting chemical kinetics in humans, supporting more accurate in vitro to in vivo extrapolation."
     },
     {
         "name": "From emission to impact: modelling chemical pathways to human exposure",
         "id": "project-1039",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/emission-impact-modelling-chemical-pathways-human-exposure"
+        "url": "https://www.eu-parc.eu/projects/emission-impact-modelling-chemical-pathways-human-exposure",
+        "description": "Develops integrated models that track chemical pathways from emission sources through environmental transport to human exposure, linking emission data with biomonitoring to support comprehensive exposure assessment."
     },
     {
         "name": "Integrating occupational and general exposure assessment",
         "id": "project-1040",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/integrating-occupational-and-general-exposure-assessment"
+        "url": "https://www.eu-parc.eu/projects/integrating-occupational-and-general-exposure-assessment",
+        "description": "Bridges gaps between occupational and general life exposure assessment by developing aggregate exposure strategies and case studies that consider multiple sources and routes in both work and everyday settings."
     },
     {
         "name": "New approaches to assess organ toxicity without animal testing",
         "id": "project-1038",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/new-approaches-assess-organ-toxicity-without-animal-testing"
+        "url": "https://www.eu-parc.eu/projects/new-approaches-assess-organ-toxicity-without-animal-testing",
+        "description": "Develops and validates novel human-relevant in vitro and computational methods to assess organ toxicity without animal testing, advancing the regulatory readiness of alternative approaches for organ-specific chemical hazard assessment."
     },
     {
         "name": "New directions in systems toxicology for chemical safety",
         "id": "project-1427",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/new-directions-systems-toxicology-chemical-safety"
+        "url": "https://www.eu-parc.eu/projects/new-directions-systems-toxicology-chemical-safety",
+        "description": "Explores and applies systems toxicology approaches integrating multi-omics and computational biology to characterise chemical-induced perturbations at the molecular level and inform next-generation risk assessment."
     },
     {
         "name": "Advancing safe pesticide use through landscape risk assessment",
         "id": "project-1297",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/advancing-safe-pesticide-use-through-landscape-risk-assessment"
+        "url": "https://www.eu-parc.eu/projects/advancing-safe-pesticide-use-through-landscape-risk-assessment",
+        "description": "Develops landscape-scale risk assessment approaches for pesticides that account for cumulative exposures, spatial heterogeneity, and ecological interactions to better protect biodiversity while enabling sustainable agricultural use."
     },
     {
         "name": "Assessing the effects of naturally occurring toxins on aquatic ecosystems",
         "id": "project-998",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/assessing-effects-naturally-occurring-toxins-aquatic-ecosystems"
+        "url": "https://www.eu-parc.eu/projects/assessing-effects-naturally-occurring-toxins-aquatic-ecosystems",
+        "description": "Investigates the ecotoxicological effects of naturally occurring toxins such as cyanotoxins and phytotoxins on aquatic ecosystems, providing risk assessment data for these substances under current and climate-change scenarios."
     },
     {
         "name": "Benchmarking the environmental risk assessment of plant protection products",
         "id": "project-1003",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/benchmarking-environmental-risk-assessment-plant-protection-products"
+        "url": "https://www.eu-parc.eu/projects/benchmarking-environmental-risk-assessment-plant-protection-products",
+        "description": "Demonstrates that environmental risk assessments of plant protection products can serve as benchmarks for comparing relative risks across substances and organism groups, creating a more consistent and comparable regulatory framework."
     },
     {
         "name": "Improving chemical risk assessment with new approach methods",
@@ -550,19 +629,22 @@ export const data = [
         "name": "Improving environmental risk assessments for plant protection products",
         "id": "project-1296",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/improving-environmental-risk-assessments-plant-protection-products"
+        "url": "https://www.eu-parc.eu/projects/improving-environmental-risk-assessments-plant-protection-products",
+        "description": "Advances the use of NAMs in environmental chemical risk assessment by developing and testing new ecotoxicological testing approaches that reduce reliance on animal testing while improving ecological relevance."
     },
     {
         "name": "Testing less complex pesticide risk assessment models for environmental regulation",
         "id": "project-1280",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/testing-less-complex-pesticide-risk-assessment-models-environmental-regulation"
+        "url": "https://www.eu-parc.eu/projects/testing-less-complex-pesticide-risk-assessment-models-environmental-regulation",
+        "description": "Simplifies environmental risk assessment of plant protection products by using monitoring data and effect modelling to develop and validate less complex but more realistic risk assessment models with a user-friendly software package."
     },
     {
         "name": "Understanding risks from BPA alternatives on the environment",
         "id": "project-999",
         "type": "project",
-        "url": "https://www.eu-parc.eu/projects/understanding-risks-bpa-alternatives-environment"
+        "url": "https://www.eu-parc.eu/projects/understanding-risks-bpa-alternatives-environment",
+        "description": "Closes critical data gaps on the environmental hazards and risks of BPA alternatives by providing toxicological data across multiple endpoints, supporting regulatory decisions on safer substitutions under EU chemicals legislation."
     },
     {
         "id": "article-1870",
@@ -1702,27 +1784,47 @@ export const data = [
     {
         "id": "partner-INERIS",
         "name": "INERIS",
-        "type": "partner"
+        "fullname": "INSTITUT NATIONAL DE L'ENVIRONNEMENT INDUSTRIEL ET DES RISQUES",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French national public research institute and industrial/commercial public establishment based in Verneuil-en-Halatte, France. It supports public authorities and industry on industrial and environmental risk prevention, including health, safety, pollution, and hazardous substances."
     },
     {
         "id": "partner-ANSES",
         "name": "ANSES",
-        "type": "partner"
+        "fullname": "AGENCE NATIONALE DE LA SECURITE SANITAIRE DE L'ALIMENTATION DE L'ENVIRONNEMENT ET DU TRAVAIL",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "France's national public health agency, based in Saint-Maurice, near Paris. It works to monitor, understand, prevent, and protect population health under the supervision of the Ministry of Health."
     },
     {
         "id": "partner-ARSO",
         "name": "ARSO",
-        "type": "partner"
+        "fullname": "MINISTRSTVO ZA OKOLJE, PODNEBJE IN ENERGIJO, AGENCIJA REPUBLIKE SLOVENIJE ZA OKOLJE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "Slovenian Environment Agency (ARSO) is a body within the Ministry of the Environment, Climate and Energy in Slovenia. It monitors water, air, weather, climate, and seismology, and provides related measurements, forecasts, reports, and public information."
     },
     {
         "id": "partner-BPI",
         "name": "BPI",
-        "type": "partner"
+        "fullname": "BENAKI PHYTOPATHOLOGICAL INSTITUTE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Greece",
+        "description": "A Greek public research institute in Athens focused on plant health, crop protection, and the assessment of agricultural chemical risks. It operates under the Hellenic Ministry of Rural Development and Food."
     },
     {
         "id": "partner-UKCEH",
         "name": "UKCEH",
+        "fullname": "UK CENTRE FOR ECOLOGY & HYDROLOGY",
         "type": "partner"
+        , "itype": "Research Institute",
+        "country": "United Kingdom",
+        "description": "Independent environmental research institute based in the United Kingdom, focused on ecology and hydrology. It conducts long-term environmental science and data-driven research on climate change, biodiversity, pollution, and natural resource management."
     },
     {
         "id": "partner-CNR-IRSA",
@@ -1732,17 +1834,29 @@ export const data = [
     {
         "id": "partner-CNRS",
         "name": "CNRS",
-        "type": "partner"
+        "fullname": "CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE CNRS",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French national public research organization based in France. It supports fundamental and applied research across all scientific fields, with a focus on advancing knowledge, innovation, and public benefit."
     },
     {
         "id": "partner-CSTB",
         "name": "CSTB",
-        "type": "partner"
+        "fullname": "CENTRE SCIENTIFIQUE ET TECHNIQUE DU BATIMENT",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French public establishment based in Champs-sur-Marne, France. It focuses on research, evaluation, certification, testing, and knowledge dissemination to improve the quality and safety of buildings and support innovation in the construction sector."
     },
     {
         "id": "partner-EAWAG",
         "name": "EAWAG",
-        "type": "partner"
+        "fullname": "EIDGENÖSSISCHE ANSTALT FÜR WASSERVERSORGUNG ABWASSERREINIGUNG UND GEWÄSSERSCHUTZ",
+        "type": "partner",
+        "itype": "other",
+        "country": "Switzerland",
+        "description": "Swiss federal aquatic research institute in Dübendorf and Kastanienbaum, near Zurich and Lucerne. It studies water as a habitat and resource, with work spanning drinking water, wastewater, biodiversity, pollutants, and aquatic ecosystems."
     },
     {
         "id": "partner-Fraunhofer",
@@ -1752,37 +1866,65 @@ export const data = [
     {
         "id": "partner-CSIC",
         "name": "CSIC",
-        "type": "partner"
+        "fullname": "AGENCIA ESTATAL CONSEJO SUPERIOR DE INVESTIGACIONES CIENTÍFICAS",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Spain",
+        "description": "Spain’s national public research agency, based in Madrid. It is the country’s largest public scientific research organization, focused on multidisciplinary basic and applied research, technology development, and science outreach."
     },
     {
         "id": "partner-INRAE",
         "name": "INRAE",
-        "type": "partner"
+        "fullname": "INSTITUT NATIONAL DE RECHERCHE POUR L'AGRICULTURE, L'ALIMENTATION ET L'ENVIRONNEMENT",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French public industrial and commercial research institute based in France. It specializes in preventing and assessing industrial, environmental, and health risks, with expertise in accident, chronic, and mining-related hazards."
     },
     {
         "id": "partner-ISS",
         "name": "ISS",
-        "type": "partner"
+        "fullname": "ISTITUTO SUPERIORE DI SANITÀ",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Italy",
+        "description": "Italy’s national public health institute, based in Rome. It supports the Ministry of Health through research, surveillance, technical-scientific advice, reference laboratories, and health information and training activities."
     },
     {
         "id": "partner-ISSeP",
         "name": "ISSeP",
-        "type": "partner"
+        "fullname": "INSTITUT SCIENTIFIQUE DE SERVICE PUBLIQUE",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "Belgium",
+        "description": "Walloon public scientific institute in Belgium, based in Liège and Colfontaine. It focuses on environmental monitoring, risk assessment and prevention, and scientific/technical research as a reference laboratory for Wallonia."
     },
     {
         "id": "partner-IVL",
         "name": "IVL",
-        "type": "partner"
+        "fullname": "IVL SVENSKA MILJÖINSTITUTET AB",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Sweden",
+        "description": "IVL Swedish Environmental Research Institute is an independent, non-profit research institute in Sweden focused on environmental and sustainability research and consultancy. It works on applied research supporting ecologically, economically, and socially sustainable development."
     },
     {
         "id": "partner-JSI",
         "name": "JSI",
-        "type": "partner"
+        "fullname": "INŠTITUT JOŽEF STEFAN",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "A leading Slovenian scientific research institute based in Ljubljana. It conducts basic and applied research across natural sciences, life sciences, engineering, and technology for the benefit of society."
     },
     {
         "id": "partner-LNS",
         "name": "LNS",
-        "type": "partner"
+        "fullname": "LABORATOIRE NATIONAL DE SANTÉ",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Luxembourg",
+        "description": "Public national health laboratory in Dudelange, Luxembourg, operating under the Ministry of Health. It provides diagnostic, reference, forensic, research, and teaching services focused on human health, disease prevention, and laboratory quality."
     },
     {
         "id": "partner-MU",
@@ -1792,32 +1934,56 @@ export const data = [
     {
         "id": "partner-NILU",
         "name": "NILU",
-        "type": "partner"
+        "fullname": "STIFTELSEN NILU",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "An independent, nonprofit climate and environmental research institute in Norway, based in Kjeller with an office in Tromsø. It focuses on atmospheric composition, air quality, climate change, environmental pollutants, and related health and environmental impacts."
     },
     {
         "id": "partner-NKUA",
         "name": "NKUA",
-        "type": "partner"
+        "fullname": "ETHNIKO KAI KAPODISTRIAKO PANEPISTIMIO ATHINON",
+        "type": "partner",
+        "itype": "University",
+        "country": "Greece",
+        "description": "Public university in Athens, Greece. It is the National and Kapodistrian University of Athens, one of the country's largest higher-education institutions, focused on teaching, research, and academic programs across a wide range of disciplines."
     },
     {
         "id": "partner-ONIRIS",
         "name": "ONIRIS",
-        "type": "partner"
+        "fullname": "ÉCOLE NATIONALE VÉTÉRINAIRE, AGROALIMENTAIRE ET DE L'ALIMENTATION NANTES ATLANTIQUE",
+        "type": "partner",
+        "itype": "University",
+        "country": "France",
+        "description": "Public higher education and research institution in Nantes, France, focused on veterinary medicine, agri-food engineering, food safety and quality, and related research and clinical services."
     },
     {
         "id": "partner-OVAM",
         "name": "OVAM",
-        "type": "partner"
+        "fullname": "OPENBARE VLAAMSE AFVALSTOFFENMAATSCHAPPIJ",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Belgium",
+        "description": "Flemish public agency in Belgium responsible for waste, materials, and soil policy. Based in Mechelen, it focuses on waste prevention, circular materials management, and soil remediation."
     },
     {
         "id": "partner-Sciensano",
         "name": "Sciensano",
-        "type": "partner"
+        "fullname": "Sciensano",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Belgium",
+        "description": "Belgian public health institute in Brussels, Belgium. It conducts scientific research and monitoring in human and animal health, food safety, and environmental health, supporting public authorities with independent expertise."
     },
     {
         "id": "partner-SLU",
         "name": "SLU",
-        "type": "partner"
+        "fullname": "SVERIGES LANTBRUKSUNIVERSITET",
+        "type": "partner",
+        "itype": "University",
+        "country": "Sweden",
+        "description": "Swedish public university based in Uppsala, Sweden, with campuses in Alnarp and Umeå. It focuses on education, research, and environmental analysis in agriculture, forestry, veterinary medicine, and related life sciences."
     },
     {
         "id": "partner-SpFrance",
@@ -1827,22 +1993,38 @@ export const data = [
     {
         "id": "partner-SYKE",
         "name": "SYKE",
-        "type": "partner"
+        "fullname": "SUOMEN YMPÄRISTÖKESKUS",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Finland",
+        "description": "Suomen ympäristökeskus (Syke) is Finland's national environmental research and expert institute, based in Helsinki. It provides research, monitoring, and services to support environmental policy, sustainable development, and solutions for climate and biodiversity challenges."
     },
     {
         "id": "partner-UAntwerpen",
         "name": "UAntwerpen",
-        "type": "partner"
+        "fullname": "UNIVERSITEIT ANTWERPEN",
+        "type": "partner",
+        "itype": "University",
+        "country": "Belgium",
+        "description": "University of Antwerp is a public research university in Antwerp, Belgium, focused on higher education and internationally oriented research across multiple disciplines."
     },
     {
         "id": "partner-UBA",
         "name": "UBA",
-        "type": "partner"
+        "fullname": "Umweltbundesamt",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Germany",
+        "description": "Germany’s federal environment agency, based in Dessau-Roßlau, that researches, advises, and informs on environmental protection, climate, chemicals, and environmental health."
     },
     {
         "id": "partner-UFZ",
         "name": "UFZ",
-        "type": "partner"
+        "fullname": "HELMHOLTZ-ZENTRUM FÜR UMWELTFORSCHUNG GMBH",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Germany",
+        "description": "German environmental research center headquartered in Leipzig, with sites in Halle and Magdeburg, focused on integrated research on ecosystems, water, soils, climate, land use, and chemicals to support sustainable use of natural resources."
     },
     {
         "id": "partner-ULFFA",
@@ -1867,32 +2049,56 @@ export const data = [
     {
         "id": "partner-AUTH",
         "name": "AUTH",
-        "type": "partner"
+        "fullname": "ARISTOTELIO PANEPISTIMIO THESSALONIKIS",
+        "type": "partner",
+        "itype": "University",
+        "country": "Greece",
+        "description": "Public university in Thessaloniki, Greece. It is a comprehensive higher-education institution focused on teaching, research, and service across the sciences, humanities, social sciences, and health fields."
     },
     {
         "id": "partner-INSA",
         "name": "INSA",
-        "type": "partner"
+        "fullname": "INSTITUTO NACIONAL DE SAÚDE DR. RICARDO JORGE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Portugal",
+        "description": "Portugal's national public health institute, based in Lisbon. It supports public health through epidemiology, laboratory services, research, and scientific training."
     },
     {
         "id": "partner-IOM",
         "name": "IOM",
-        "type": "partner"
+        "fullname": "INSTITUTE OF OCCUPATIONAL MEDICINE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "United Kingdom",
+        "description": "Independent research institute and charity based in Edinburgh, UK, focused on occupational and environmental health, workplace exposures, asbestos, hygiene, and risk."
     },
     {
         "id": "partner-MOH-CY/SGL",
         "name": "MOH-CY/SGL",
-        "type": "partner"
+        "fullname": "Υπουργείο Υγείας",
+        "type": "partner",
+        "itype": "Government/Ministry",
+        "country": "Cyprus",
+        "description": "Ministry of Health of Cyprus, a national government ministry based in Nicosia. It is responsible for public health policy, disease prevention, and the delivery and oversight of health services across Cyprus."
     },
     {
         "id": "partner-NIOM",
         "name": "NIOM",
-        "type": "partner"
+        "fullname": "INSTYTUT MEDYCYNY PRACY IMIENIA PROF. DRA MED. JERZEGO NOFERA W ŁODZI",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Poland",
+        "description": "A public research institute in Łódź, Poland, focused on occupational and environmental health and medical expertise for worker health protection."
     },
     {
         "id": "partner-STAMI",
         "name": "STAMI",
-        "type": "partner"
+        "fullname": "STATENS ARBEIDSMILJØINSTITUTT",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "Norway’s national research institute and knowledge organization for occupational health and safety, based in Oslo. It researches work environment and occupational health, and develops knowledge, tools, and statistics to support healthier working life."
     },
     {
         "id": "partner-ULUND",
@@ -1902,47 +2108,83 @@ export const data = [
     {
         "id": "partner-UMIL",
         "name": "UMIL",
-        "type": "partner"
+        "fullname": "UNIVERSITÀ DEGLI STUDI DI MILANO",
+        "type": "partner",
+        "itype": "University",
+        "country": "Italy",
+        "description": "A public research university in Milan, Italy. It offers undergraduate, graduate, and doctoral education with multidisciplinary research and international collaboration across areas such as innovation and the life sciences."
     },
     {
         "id": "partner-UNINA",
         "name": "UNINA",
-        "type": "partner"
+        "fullname": "UNIVERSITÀ DEGLI STUDI DI NAPOLI FEDERICO II",
+        "type": "partner",
+        "itype": "University",
+        "country": "Italy",
+        "description": "Public research university in Milan, Italy, focused on higher education and research across a wide range of disciplines. It is one of Italy’s largest universities and serves as a major academic and scientific center."
     },
     {
         "id": "partner-UNIPD",
         "name": "UNIPD",
-        "type": "partner"
+        "fullname": "UNIVERSITÀ DEGLI STUDI DI PADOVA",
+        "type": "partner",
+        "itype": "University",
+        "country": "Italy",
+        "description": "Public research university in Milan, Italy, focused on higher education and research across a wide range of disciplines. It is one of Italy’s largest universities and serves as a major academic and scientific center."
     },
     {
         "id": "partner-WULS-SGGW",
         "name": "WULS-SGGW",
-        "type": "partner"
+        "fullname": "SZKOŁA GŁÓWNA GOSPODARSTWA WIEJSKIEGO",
+        "type": "partner",
+        "itype": "University",
+        "country": "Poland",
+        "description": "Public university in Warsaw, Poland focused on life sciences, agriculture, and related research and education. It is one of Poland’s oldest and largest universities, with a broad international study offering."
     },
     {
         "id": "partner-HSE",
         "name": "HSE",
-        "type": "partner"
+        "fullname": "HEALTH AND SAFETY EXECUTIVE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "United Kingdom",
+        "description": "The Health and Safety Executive is a UK government public body and national regulator for workplace health and safety in Great Britain. It is based in Bootle, England, and focuses on preventing work-related death, injury and ill health."
     },
     {
         "id": "partner-UGR",
         "name": "UGR",
-        "type": "partner"
+        "fullname": "UNIVERSIDAD DE GRANADA",
+        "type": "partner",
+        "itype": "University",
+        "country": "Spain",
+        "description": "The University of Granada is a public university in Granada, Spain, focused on higher education and research across a wide range of academic disciplines."
     },
     {
         "id": "partner-BRGM",
         "name": "BRGM",
-        "type": "partner"
+        "fullname": "BUREAU DE RECHERCHES GÉOLOGIQUES ET MINIÈRES",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French national geological survey and public research institution based in Orléans, France. It focuses on geoscience research and public-service expertise for managing subsurface resources, groundwater, natural hazards, and mine safety."
     },
     {
         "id": "partner-KWR",
         "name": "KWR",
-        "type": "partner"
+        "fullname": "KWR WATER B.V.",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Netherlands",
+        "description": "KWR Water B.V. (KWR Water Research Institute) is an independent Dutch water research institute based in Nieuwegein, Netherlands. It focuses on applied scientific research on the water cycle and translating science into practical solutions for the water sector."
     },
     {
         "id": "partner-NIVA",
         "name": "NIVA",
-        "type": "partner"
+        "fullname": "NORSK INSTITUTT FOR VANNFORSKNING STI",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "Norwegian environmental research institute based in Oslo, focused on freshwater, marine, and coastal water research, monitoring, and advisory work. It is a non-profit foundation with national and international expertise in water-related environmental issues."
     },
     {
         "id": "partner-UniLU",
@@ -1952,22 +2194,39 @@ export const data = [
     {
         "id": "partner-UNIVIE",
         "name": "UNIVIE",
-        "type": "partner"
+        "fullname": "UNIVERSITÄT WIEN",
+        "type": "partner",
+        "itype": "University",
+        "country": "Austria",
+        "description": "Public research university in Vienna, Austria, focused on teaching, research, and innovation across a broad range of disciplines. It is one of Europe’s largest universities and serves as a major academic center in the heart of Vienna."
     },
     {
         "id": "partner-VITO",
         "name": "VITO",
-        "type": "partner"
+        "fullname": "VLAAMSE INSTELLING VOOR TECHNOLOGISCH ONDERZOEK N.V.",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Belgium",
+        "description": "Independent Flemish research and technology organization in Belgium, based in Mol. It focuses on cleantech, sustainable development, and science-based solutions and advice for industry, government, and society."
+
     },
     {
         "id": "partner-BfG",
         "name": "BfG",
-        "type": "partner"
+        "fullname": "Bundesanstalt für Gewässerkunde",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Germany",
+        "description": "German federal research institute for hydrology and inland waters, based in Koblenz, Germany. It studies and advises on waterway management, river systems, and related environmental issues."
     },
     {
         "id": "partner-EFSA",
         "name": "EFSA",
-        "type": "partner"
+        "fullname": "EUROPEAN FOOD SAFETY AUTHORITY",
+        "type": "partner",
+        "itype": "EU Agency",
+        "country": "Italy",
+        "description": "EU agency based in Parma, Italy, that provides independent scientific advice and communicates on risks linked to the food chain and food safety."
     },
     {
         "id": "partner-FOEN",
@@ -1977,22 +2236,38 @@ export const data = [
     {
         "id": "partner-KEMI",
         "name": "KEMI",
-        "type": "partner"
+        "fullname": "KEMIKALIEINSPEKTIONEN",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "Sweden",
+        "description": "The Swedish Chemicals Agency (KemI) is a Swedish government agency based in Sundbyberg, Sweden. It regulates chemicals and works to reduce risks to human health and the environment from chemical substances."
     },
     {
         "id": "partner-UOS",
         "name": "UOS",
-        "type": "partner"
+        "fullname": "UNIVERSITÄT OSNABRÜCK",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "Osnabrück University is a public research university in Osnabrück, Lower Saxony, Germany. Founded in 1974, it focuses on research and teaching with an international orientation and about 14,000 students."
     },
     {
         "id": "partner-MUI",
         "name": "MUI",
-        "type": "partner"
+        "fullname": "MEDIZINISCHE UNIVERSITÄT INNSBRUCK",
+        "type": "partner",
+        "itype": "University",
+        "country": "Austria",
+        "description": "A public medical university in Innsbruck, Austria, focused on medical education, research, and patient care. It is the leading medical research and education institution in western Austria."
     },
     {
         "id": "partner-ORU",
         "name": "ORU",
-        "type": "partner"
+        "fullname": "ÖREBRO UNIVERSITY",
+        "type": "partner",
+        "itype": "University",
+        "country": "Sweden",
+        "description": "Örebro University is a public university in Örebro, Sweden, focused on education and internationally prominent research across humanities, social sciences, medicine, health, science and technology."
     },
     {
         "id": "partner-UCPH",
@@ -2002,27 +2277,47 @@ export const data = [
     {
         "id": "partner-UBAH",
         "name": "UBAH",
-        "type": "partner"
+        "fullname": "UNIVERSITY OF BATH",
+        "type": "partner",
+        "itype": "University",
+        "country": "United Kingdom",
+        "description": "Public research university in Bath, England, known for teaching, research, and industry collaboration across undergraduate, postgraduate, and doctoral education."
     },
     {
         "id": "partner-IRFMN",
         "name": "IRFMN",
-        "type": "partner"
+        "fullname": "ISTITUTO DI RICERCHE FARMACOLOGICHE MARIO NEGRI",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Italy",
+        "description": "Italian nonprofit biomedical and pharmacological research institute based in Milan, with additional sites in Bergamo and Ranica. Its work focuses on drug research, clinical and translational biomedical studies, and public health information."
     },
     {
         "id": "partner-JU",
         "name": "JU",
-        "type": "partner"
+        "fullname": "JIHOČESKÁ UNIVERZITA V ČESKÝCH BUDĚJOVICÍCH",
+        "type": "partner",
+        "itype": "University",
+        "country": "Czech Republic",
+        "description": "Public university in České Budějovice, Czechia. It is a teaching and research institution focused on natural, humanities, social, and applied sciences."
     },
     {
         "id": "partner-OFB",
         "name": "OFB",
-        "type": "partner"
+        "fullname": "OFFICE FRANÇAIS DE LA BIODIVERSITÉ",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "France",
+        "description": "France's national public establishment for biodiversity and wildlife. It is based in France and works on protecting biodiversity, managing natural areas and wildlife, and supporting environmental knowledge and policy."
     },
     {
         "id": "partner-BfR",
         "name": "BfR",
-        "type": "partner"
+        "fullname": "BUNDESINSTITUT FÜR RISIKOBEWERTUNG",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Germany",
+        "description": "German Federal Institute for Risk Assessment, a federal scientific agency in Berlin, Germany. It assesses health risks from food, feed, chemicals, and products and provides independent scientific advice and public risk communication."
     },
     {
         "id": "partner-SU",
@@ -2037,7 +2332,11 @@ export const data = [
     {
         "id": "partner-ISCIII",
         "name": "ISCIII",
-        "type": "partner"
+        "fullname": "INSTITUTO DE SALUD CARLOS III",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Spain",
+        "description": "Spain’s national public research institute for health and biomedicine, under the Ministry of Health. Based in Madrid, it focuses on health research and innovation, public health surveillance, training, and evaluation of health technologies."
     },
     {
         "id": "partner-WR",
@@ -2047,17 +2346,29 @@ export const data = [
     {
         "id": "partner-EHESP",
         "name": "EHESP",
-        "type": "partner"
+        "fullname": "ÉCOLE DES HAUTES ÉTUDES EN SANTÉ PUBLIQUE",
+        "type": "partner",
+        "itype": "University",
+        "country": "France",
+        "description": "French public higher-education and research institution in Rennes, France, focused on public health, healthcare management, and social-sector training and research."
     },
     {
         "id": "partner-EV-ILVO",
         "name": "EV-ILVO",
-        "type": "partner"
+        "fullname": "EIGEN VERMOGEN VAN HET INSTITUUT VOOR LANDBOUW- EN VISSERIJONDERZOEK",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Belgium",
+        "description": "Own-capital fund of ILVO, the Flemish Research Institute for Agriculture, Fisheries and Food in Belgium. It manages project-research income and expenses for a public research institution focused on sustainable agriculture, fisheries, food safety and related socio-economic research."
     },
     {
         "id": "partner-INRS",
         "name": "INRS",
-        "type": "partner"
+        "fullname": "INSTITUT NATIONAL DE RECHERCHE ET DE SÉCURITÉ POUR LA PRÉVENTION DES ACCIDENTS DU TRAVAIL ET DES MALADIES PROFESSIONNELLES ASSOCIATION",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French public industrial and commercial research institute in France, under the Ministry of the Environment. It studies and helps prevent industrial and environmental risks affecting health, safety, property, and the environment."
     },
     {
         "id": "partner-SRU",
@@ -2067,17 +2378,28 @@ export const data = [
     {
         "id": "partner-AGES",
         "name": "AGES",
-        "type": "partner"
+        "fullname": "OSTERREICHISCHE AGENTUR FUR GESUNDHEIT UND ERNAHRUNGSSICHERHEIT GMBH",
+        "country": "Austria",
+        "itype": "Research Institute",
+        "type": "partner",
+        "description": "Austria’s federal environmental expert organization, based in Vienna. It provides scientific and technical support for sustainable environmental policy and advises politics, business, and civil society on environmental issues."
     },
     {
         "id": "partner-LSMU",
         "name": "LSMU",
-        "type": "partner"
+        "fullname": "LIETUVOS SVEIKATOS MOKSLU UNIVERSITETAS",
+        "type": "partner",
+        "country": "Lithuania",
+        "description": "Public university in Kaunas, Lithuania, focused on health, life, agricultural, and veterinary sciences education and research."
     },
     {
         "id": "partner-NLZOH",
         "name": "NLZOH",
-        "type": "partner"
+        "fullname": "NACIONALNI LABORATORIJ ZA ZDRAVJE, OKOLJE IN HRANO",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "Slovenian public institute and national laboratory based in Maribor. It is the country’s central public health laboratory, focused on public health, environmental protection, and chemical/microbiological testing of water, food, and other samples."
     },
     {
         "id": "partner-UI",
@@ -2087,32 +2409,56 @@ export const data = [
     {
         "id": "partner-UOB",
         "name": "UOB",
-        "type": "partner"
+        "fullname": "THE UNIVERSITY OF BIRMINGHAM",
+        "type": "partner",
+        "itype": "University",
+        "country": "United Kingdom",
+        "description": "A public research university in Birmingham, United Kingdom, focused on teaching, research, and international collaboration across a wide range of disciplines."
     },
     {
         "id": "partner-UAVR",
         "name": "UAVR",
-        "type": "partner"
+        "fullname": "UNIVERSIDADE DE AVEIRO",
+        "type": "partner",
+        "itype": "University",
+        "country": "Portugal",
+        "description": "Public university in Aveiro, Portugal. It provides undergraduate and postgraduate education and conducts research, with a focus on science, technology, and cooperation with society."
     },
     {
         "id": "partner-UL",
         "name": "UL",
-        "type": "partner"
+        "fullname": "UNIVERZA V LJUBLJANI",
+        "type": "partner",
+        "itype": "University",
+        "country": "Slovenia",
+        "description": "Public university in Ljubljana, Slovenia. The University of Ljubljana is the country's oldest and largest higher education and research institution, focused on teaching, research, and knowledge transfer across a broad range of disciplines."
     },
     {
         "id": "partner-VSCHT",
         "name": "VSCHT",
-        "type": "partner"
+        "fullname": "Vysoká škola chemicko-technologická v Praze",
+        "type": "partner",
+        "itype": "University",
+        "country": "Czech Republic",
+        "description": "Public university in Prague, Czechia, focused on chemistry, chemical engineering, food chemistry, environmental studies, and related research and education."
     },
     {
         "id": "partner-UU",
         "name": "UU",
-        "type": "partner"
+        "fullname": "UNIVERSITEIT UTRECHT",
+        "type": "partner",
+        "itype": "University",
+        "country": "Netherlands",
+        "description": "Public research university in Utrecht, Netherlands. It provides higher education and conducts leading international research aimed at improving society."
     },
     {
         "id": "partner-LNE",
         "name": "LNE",
-        "type": "partner"
+        "fullname": "Laboratoire national de métrologie et d'essais",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French public industrial and commercial establishment based in Paris. It serves as France’s national laboratory for metrology and testing, supporting measurement standards, calibration, certification, and technical research."
     },
 
     {
@@ -2133,47 +2479,81 @@ export const data = [
     {
         "id": "partner-EASP",
         "name": "EASP",
-        "type": "partner"
+        "fullname": "Escuela Andaluza de Salud Pública",
+        "type": "partner",
+        "itype": "Private/For-profit",
+        "country": "Spain",
+        "description": "Public health institution in Granada, Spain. It focuses on training, research, consultancy, and knowledge transfer to improve health systems, public health, and the management of health and social services."
+
     },
     {
         "id": "partner-INSERM",
         "name": "INSERM",
-        "type": "partner"
+        "fullname": "L'Institut national de la santé et de la recherche médicale",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French national public research organization based in Paris, dedicated entirely to human health. It conducts biomedical and public health research to improve understanding of disease and treatment."
     },
     {
         "id": "partner-NIJZ",
         "name": "NIJZ",
-        "type": "partner"
+        "fullname": "Nacionalni inštitut za javno zdravje",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "Slovenia’s independent public research institute for natural sciences and biology, based in Ljubljana. It focuses on basic, developmental and applied research in life sciences, biotechnology, biophysics, biomedicine, systems biology, and environmental and agricultural topics."
+
     },
     {
         "id": "partner-NIPH",
         "name": "NIPH",
-        "type": "partner"
+        "fullname": "FOLKEHELSEINSTITUTTET",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "Norway’s national public health institute, a state agency under the Ministry of Health and Care Services, based in Oslo and Bergen. It focuses on public health surveillance, research, disease prevention, and expert advice for health authorities and the public."
     },
     {
         "id": "partner-SZU-SK",
         "name": "SZU-SK",
-        "type": "partner"
+        "fullname": "Slovenská zdravotnícka univerzita v Bratislave",
+        "type": "partner",
+        "itype": "University",
+        "country": "Slovakia",
+        "description": "State university in Bratislava, Slovakia. It specializes in medical and health sciences education and research, including training for healthcare professionals and postgraduate study, with a campus in Bratislava and additional facilities in Slovakia."
     },
     {
         "id": "partner-UU-IRAS",
         "name": "UU-IRAS",
-        "type": "partner"
+        "type": "partner",
     },
     {
         "id": "partner-RISE",
         "name": "RISE",
-        "type": "partner"
+        "fullname": "RISE RESEARCH INSTITUTES OF SWEDEN",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Sweden",
+        "description": "Independent, state-owned research institute in Sweden, headquartered in Gothenburg. It develops technologies, products, services and processes to support sustainable growth, innovation, and a competitive business sector."
     },
     {
         "id": "partner-TNO",
         "name": "TNO",
-        "type": "partner"
+        "fullname": "NEDERLANDSE ORGANISATIE VOOR TOEGEPAST NATUURWETENSCHAPPELIJK ONDERZOEK",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Netherlands",
+        "description": "Independent Dutch applied research organization based in The Hague, focused on creating and applying scientific and technical knowledge for companies, government, and society, with work spanning innovation and public-interest research."
     },
     {
         "id": "partner-Tukes",
         "name": "Tukes",
-        "type": "partner"
+        "fullname": "TURVALLISUUS JA KEMIKAALIVIRASTO",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "Finland",
+        "description": "Finnish Safety and Chemicals Agency (Tukes) is a national government agency in Finland. It supervises and promotes product, service, chemical, and industrial safety to protect people, property, and the environment."
     },
     {
         "id": "partner-IEP-NRI",
@@ -2183,7 +2563,10 @@ export const data = [
     {
         "id": "partner-NIB",
         "name": "NIB",
-        "type": "partner"
+        "fullname": "Nacionalni inštitut za biologijo",
+        "type": "partner",
+        "itype": "Research Institute",
+
     },
     {
         "id": "partner-WU-TOX",
@@ -2193,7 +2576,11 @@ export const data = [
     {
         "id": "partner-CEA",
         "name": "CEA",
-        "type": "partner"
+        "fullname": "COMMISSARIAT À L'ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "France",
+        "description": "French public research organisation headquartered in France. It focuses on scientific, technological and industrial research in low-carbon energy, defence and security, and information and health technologies."
     },
     {
         "id": "partner-GCSL",
@@ -2203,32 +2590,52 @@ export const data = [
     {
         "id": "partner-DTU",
         "name": "DTU",
-        "type": "partner"
+        "fullname": "DANMARKS TEKNISKE UNIVERSITET",
+        "type": "partner",
+        "itype": "University",
+        "country": "Denmark",
+        "description": "A public technical university in Kongens Lyngby, Denmark. It focuses on education, research, scientific advice, and innovation in engineering and natural sciences."
     },
     {
         "id": "partner-FMUL",
         "name": "FMUL",
-        "type": "partner"
+        "type": "partner",
     },
     {
         "id": "partner-IISPV",
         "name": "IISPV",
-        "type": "partner"
+        "fullname": "Institut d'Investigació Sanitària Pere Virgili",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Spain",
+        "description": "Biomedical health research institute in Catalonia, Spain, based in Camp de Tarragona and Terres de l'Ebre. Its mission is to improve health and quality of life through patient-focused research and collaboration across clinical and academic partners."
     },
     {
         "id": "partner-OI",
         "name": "OI",
-        "type": "partner"
+        "fullname": "Onkološki inštitut Ljubljana",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "Public healthcare institute in Ljubljana, Slovenia, serving as the country’s national oncology center. It provides cancer prevention, diagnosis, treatment, nursing, rehabilitation, palliative care, and research and teaching in oncology."
     },
     {
         "id": "partner-USI",
         "name": "USI",
-        "type": "partner"
+        "fullname": "UNIVERSITÀ DELLA SVIZZERA ITALIANA",
+        "type": "partner",
+        "itype": "University",
+        "country": "Switzerland",
+        "description": "A public Swiss university in Lugano, Canton Ticino. It focuses on higher education and internationally relevant research across areas including economics, informatics, communication, architecture, and biomedical sciences."
     },
     {
         "id": "partner-KUM",
         "name": "KUM",
-        "type": "partner"
+        "fullname": "KLINIKUM DER LUDWIG-MAXIMILIANS-UNIVERSITÄT MÜNCHEN",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Germany",
+        "description": "University hospital in Munich, Germany, affiliated with Ludwig-Maximilians-Universität München. It is one of Germany’s largest university hospitals, providing highly specialized patient care, teaching, and medical research."
     },
     {
         "id": "partner-UNIABDN",
@@ -2243,11 +2650,16 @@ export const data = [
     {
         "id": "partner-INSST",
         "name": "INSST",
-        "type": "partner"
+        "fullname": "INSTITUTO NACIONAL DE SEGURIDAD Y SALUD EN EL TRABAJO",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "Spain",
+        "description": "Spain’s national scientific-technical public agency for occupational safety and health, based in Madrid. It studies workplace risks and promotes improved working conditions and prevention of occupational injuries and diseases."
     },
     {
         "id": "partner-RSU",
         "name": "RSU",
+        "fullname": "Rīgas Stradiņa universitāte",
         "type": "partner"
     },
     {
@@ -2258,7 +2670,11 @@ export const data = [
     {
         "id": "partner-SECO",
         "name": "SECO",
-        "type": "partner"
+        "fullname": "State Secretariat for Economic Affairs (SECO)",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Switzerland",
+        "description": "Swiss federal government state secretariat in Bern that serves as the centre of expertise for economic policy, foreign trade, labour market issues, and economic cooperation."
     },
     {
         "id": "partner-UOULU",
@@ -2268,42 +2684,74 @@ export const data = [
     {
         "id": "partner-UNISANTE",
         "name": "UNISANTE",
-        "type": "partner"
+        "fullname": "Policlinique médicale universitaire et dispensaire central de Lausanne",
+        "type": "partner",
+        "itype": "University",
+        "country": "Switzerland",
+        "description": "University outpatient clinic and public-law health institution in Lausanne, Switzerland. It focuses on university-based general medicine and public health, combining patient care, teaching, and research; it now presents publicly as Unisanté."
     },
     {
         "id": "partner-IMR",
         "name": "IMR",
-        "type": "partner"
+        "fullname": "HAVFORSKNINGSINSTITUTTET",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "Norway’s national Institute of Marine Research, headquartered in Bergen. It conducts marine research, monitoring, and advisory work on marine ecosystems, aquaculture, and sustainable management of ocean resources."
     },
     {
         "id": "partner-NVI",
         "name": "NVI",
-        "type": "partner"
+        "fullname": "VETERINAERINSTITUTTET",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Norway",
+        "description": "Norwegian Veterinary Institute (NVI) is a Norwegian biomedical research institute based in Ås. It focuses on animal health, fish health, food safety, and biosecurity."
     },
     {
         "id": "partner-TUB",
         "name": "TUB",
-        "type": "partner"
+        "fullname": "Technische Universität Berlin",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "Public research university in Berlin, Germany, focused on science, engineering, and technology education and research."
     },
     {
         "id": "partner-UNAV",
         "name": "UNAV",
-        "type": "partner"
+        "fullname": "UNIVERSIDAD DE NAVARRA",
+        "type": "partner",
+        "itype": "University",
+        "country": "Spain",
+        "description": "Private university in Spain, with campuses in Pamplona and other Spanish cities. Its focus is higher education and research, with an emphasis on international academic excellence."
     },
     {
         "id": "partner-PIH",
         "name": "PIH",
-        "type": "partner"
+        "fullname": "PROVINCIAAL INSTITUUT VOOR HYGIENE",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Belgium",
+        "description": "Provincial public health and environmental health institute in Antwerp, Belgium. It focuses on environmental health, laboratory analysis, and supporting public-health policy and services at provincial and local level."
     },
     {
         "id": "partner-REGIONH",
         "name": "REGIONH",
-        "type": "partner"
+        "fullname": "REGION HOVEDSTADEN",
+        "type": "partner",
+        "itype": "Government/Public Body",
+        "country": "Denmark",
+        "description": "Regional government of the Capital Region of Denmark, based in Hillerød/Copenhagen. It manages hospitals, research, emergency preparedness, environment, transport, education, and social services."
     },
     {
         "id": "partner-RIVM",
         "name": "RIVM",
-        "type": "partner"
+        "fullname": "RIJKSINSTITUUT VOOR VOLKSGEZONDHEID EN MILIEU",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Netherlands",
+        "description": "Dutch National Institute for Public Health and the Environment, based in Bilthoven. It advises the government and monitors public health, infectious diseases, environmental quality, and prevention programmes."
     },
     {
         "id": "partner-SZU-CZ",
@@ -2318,7 +2766,11 @@ export const data = [
     {
         "id": "partner-UH",
         "name": "UH",
-        "type": "partner"
+        "fullname": "UNIVERSITEIT HASSELT",
+        "type": "partner",
+        "itype": "University",
+        "country": "Belgium",
+        "description": "Hasselt University is a public university in Hasselt, Belgium, with campuses in Hasselt and Diepenbeek. It focuses on education, research, and innovation, with an international orientation."
     },
     {
         "id": "partner-UKHSA",
@@ -2328,42 +2780,73 @@ export const data = [
     {
         "id": "partner-UT",
         "name": "UT",
-        "type": "partner"
+        "fullname": "Tartu Ülikool",
+        "type": "partner",
+        "itype": "University",
+        "country": "Estonia",
+        "description": "Public research university in Tartu, Estonia. It is the country’s oldest and largest university, focused on higher education and research across a broad range of fields."
     },
     {
         "id": "partner-UPV-EHU",
         "name": "UPV-EHU",
-        "type": "partner"
+        "fullname": "Universidad del País Vasco / Euskal Herriko Unibertsitatea",
+        "type": "partner",
+        "itype": "University",
+        "country": "Spain"
     },
     {
         "id": "partner-KU Leuven",
         "name": "KU Leuven",
-        "type": "partner"
+        "fullname": "KATHOLIEKE UNIVERSITEIT LEUVEN",
+        "type": "partner",
+        "itype": "University",
+        "country": "Belgium",
+        "description": "KU Leuven is a major research university in Leuven, Belgium. It focuses on higher education and research across a broad range of disciplines, with campuses and activities across Flanders."
     },
     {
         "id": "partner-EEA",
         "name": "EEA",
-        "type": "partner"
+        "fullname": "EUROPEAN ENVIRONMENT AGENCY",
+        "type": "partner",
+        "itype": "EU Agency",
+        "country": "Denmark",
+        "description": "An agency of the European Union based in Copenhagen, Denmark. It provides independent environmental and climate information to support policy, public understanding, and sustainability decisions across Europe."
     },
     {
         "id": "partner-MUW",
         "name": "MUW",
-        "type": "partner"
+        "fullname": "Medizinische Universität Wien",
+        "itype": "University",
+        "type": "partner",
+        "country": "Austria",
+        "description": "Public medical university in Vienna, Austria, focused on medical education, research, and clinical training. It is one of Austria’s leading biomedical institutions and the university’s medical school."
     },
     {
         "id": "partner-UGent",
         "name": "UGent",
-        "type": "partner"
+        "fullname": "Universiteit Gent",
+        "country": "Belgium",
+        "itype": "University",
+        "type": "partner",
+        "description": "Ghent University (UGent) is a public research university in Ghent, Belgium. It focuses on higher education and research across a broad range of disciplines, with additional campuses in other Belgian cities and abroad."
     },
     {
         "id": "partner-ULPGC",
         "name": "ULPGC",
-        "type": "partner"
+        "fullname": "UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA",
+        "country": "Spain",
+        "itype": "University",
+        "type": "partner",
+        "description": "Public university in Las Palmas de Gran Canaria, Spain. It provides higher education and research across a broad range of disciplines, with a strong focus on innovation, internationalization, and research activity."
     },
     {
         "id": "partner-UOC",
         "name": "UOC",
-        "type": "partner"
+        "country": "Greece",
+        "fullname": "PANEPISTIMIO KRITIS",
+        "type": "partner",
+        "itype": "University",
+        "description": "Public university in Crete, Greece, focused on higher education and research across multiple disciplines. It operates campuses in Rethymno and Heraklion and serves as a major academic and research institution in the country."
     },
     {
         "id": "partner-SFA",
@@ -2373,16 +2856,27 @@ export const data = [
     {
         "id": "partner-LIST",
         "name": "LIST",
-        "type": "partner"
+        "country": "Luxembourg",
+        "type": "partner",
+        "fullname": "LUXEMBOURG INSTITUTE OF SCIENCE AND TECHNOLOGY",
+        "itype": "Research Institute"
     },
     {
         "id": "partner-IRSN",
         "name": "IRSN",
-        "type": "partner"
+        "fullname": "INSTITUT DE RADIOPROTECTION ET DE SURETE NUCLEAIRE",
+        "country": "France",
+        "itype": "Research Institute",
+        "type": "partner",
+        "description": "Former French public industrial and commercial research and expert institute headquartered in Fontenay-aux-Roses, focused on nuclear and radiological risk protection, safety, and radiation protection. It merged into ASNR on 1 January 2025."
     },
     {
         "id": "partner-UNIBAS",
         "name": "UNIBAS",
+        "fullname": "UNIVERSITE DE BASSE-NORMANDE",
+        "country": "Switzerland",
+        "itype": "University",
+        "description": "Public research university in Basel, Switzerland. It is Switzerland’s oldest university and a comprehensive, research-oriented institution with a strong focus on life sciences, medicine, and a broad range of academic disciplines.",
         "type": "partner"
     },
     {
@@ -2393,37 +2887,66 @@ export const data = [
     {
         "id": "partner-UCL",
         "name": "UCL",
-        "type": "partner"
+        "fullname": "UNIVERSITY COLLEGE LONDON",
+        "type": "partner",
+        "itype": "University",
+        "country": "United Kingdom",
+        "description": "A public research university in London, United Kingdom. It focuses on multidisciplinary teaching, research, innovation, and impact across a wide range of subjects."
     },
     {
         "id": "partner-IUF",
         "name": "IUF",
-        "type": "partner"
+        "fullname": "LEIBNIZ-INSTITUT FUR UMWELTMEDIZINISCHE FORSCHUNG GMBH",
+        "type": "partner",
+        "itype": "other",
+        "description": "An independent non-profit research institute in Düsseldorf, Germany, focused on preventing environmentally induced ageing and disease. It studies the health effects of air pollution, radiation, selected chemicals, and climate factors on the lung, skin, nervous system, and immune system.",
+        "country": "Germany"
+
     },
     {
         "id": "partner-LIH",
         "name": "LIH",
-        "type": "partner"
+        "fullname": "LUXEMBOURG INSTITUTE OF HEALTH",
+        "type": "partner",
+        "description": "Public biomedical research institute in Luxembourg focused on precision health. It conducts patient-centered translational research on cancer, immune disorders, and public health, aiming to turn scientific findings into clinical benefits.",
+        "country": "Luxembourg",
+        "itype": "Research Institute"
     },
     {
         "id": "partner-NMBU",
         "name": "NMBU",
-        "type": "partner"
+        "type": "partner",
+        "fullname": "NORGES MILJØ-OG BIOVITENSKAPELIGE UNIVERSITET",
+        "itype": "University",
+        "country": "Norway",
+        "description": "A public university in Ås, Norway, focused on life sciences, environmental sciences, biotechnology, and sustainable development. It is Norway’s Norwegian University of Life Sciences (NMBU)."
     },
     {
         "id": "partner-UG-PL",
         "name": "UG-PL",
-        "type": "partner"
+        "type": "partner",
+        "fullname": "UNIWERSYTET GDANSKI",
+        "itype": "University",
+        "country": "Poland",
+        "description": "A public university in Gdańsk, Poland, focused on higher education and scientific research across fields such as chemistry, law, medicine, and international studies."
     },
     {
         "id": "partner-SDU",
         "name": "SDU",
-        "type": "partner"
+        "fullname": "SYDDANSK UNIVERSITET",
+        "type": "partner",
+        "country": "Denmark",
+        "itype": "University",
+        "description": "University of Southern Denmark (SDU) is a public research university in Denmark. It focuses on higher education and research across multiple campuses, with main operations in Odense and regional sites nationwide."
     },
     {
         "id": "partner-Cefas-Defra",
         "name": "Cefas-Defra",
-        "type": "partner"
+        "fullname": "Centre for Environment, Fisheries and Aquaculture Science - THE SECRETARY OF STATE FOR ENVIRONMENT, FOOD AND RURAL AFFAIRS",
+        "type": "partner",
+        "itype": "Government/Ministry",
+        "country": "United Kingdom",
+        "description": "UK government department responsible for environmental, food and rural affairs policy and regulation, based in London, United Kingdom. It oversees areas such as the natural environment, farming, fisheries, food, and animal and plant health."
     },
     {
         "id": "partner-UHC",
@@ -2433,37 +2956,62 @@ export const data = [
     {
         "id": "partner-KIT",
         "name": "KIT",
-        "type": "partner"
+        "fullname": "KARLSRUHER INSTITUT FUER TECHNOLOGIE",
+        "itype": "University",
+        "type": "partner",
+        "country": "Germany",
+        "description": "A public research university and Helmholtz Association research center in Karlsruhe, Germany. Its mission is to advance research and education, with major focus areas including energy, mobility, information, and engineering."
     },
     {
         "id": "partner-VUB",
         "name": "VUB",
-        "type": "partner"
+        "fullname": "VRIJE UNIVERSITEIT BRUSSEL",
+        "itype": "University",
+        "type": "partner",
+        "country": "Belgium",
+        "description": "A public research university in Brussels, Belgium. It focuses on higher education and research across disciplines, with an international outlook and a commitment to serving society."
     },
     {
         "id": "partner-IfADo",
         "name": "IfADo",
-        "type": "partner"
+        "fullname": "FORSCHUNGSGESELLSCHAFT FUR ARBEITSPHYSIOLOGIE UND ARBEITSSCHUTZ EV",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "IfADo is a research organization in Dortmund, Germany, focused on working conditions, occupational health, ergonomics, and human factors in work-related environments."
     },
     {
         "id": "partner-UIBK",
         "name": "UIBK",
-        "type": "partner"
+        "fullname": "UNIVERSITAET INNSBRUCK",
+        "country": "Austria",
+        "type": "partner",
+        "itype": "University",
+        "description": "Public university in Innsbruck, Austria. It is the main research and education institution in western Austria, with a broad range of studies and research across disciplines."
     },
     {
         "id": "partner-EA",
         "name": "EA",
         "type": "partner"
+
     },
     {
         "id": "partner-RPTU",
         "name": "RPTU",
-        "type": "partner"
+        "fullname": "RHEINLAND-PFALZISCHE TECHNISCHE UNIVERSITAT",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "Public research university in Kaiserslautern and Landau, Germany. It focuses on teaching and research across engineering, natural sciences, and related disciplines at its two-campus university in Rhineland-Palatinate."
     },
     {
         "id": "partner-UGot",
         "name": "UGot",
-        "type": "partner"
+        "fullname": "GOETEBORGS UNIVERSITET",
+        "type": "partner",
+        "itype": "University",
+        "country": "Sweden",
+        "description": "Public university in Gothenburg, Sweden. It focuses on higher education and research across a broad range of disciplines."
     },
     {
         "id": "partner-BUL",
@@ -2473,12 +3021,20 @@ export const data = [
     {
         "id": "partner-FINBA",
         "name": "FINBA",
-        "type": "partner"
+        "fullname": "FUNDACION PARA LA INVESTIGACION Y LA INNOVACION BIOSANITARIA DEL PRINCIPADO DE ASTURIAS",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Spain",
+        "description": "Non-profit biosanitary research foundation in Oviedo, Spain. It manages biomedical research and innovation for the Principality of Asturias, supporting the regional health research institute and improving healthcare outcomes."
     },
     {
         "id": "partner-GeoZS",
         "name": "GeoZS",
-        "type": "partner"
+        "fullname": "GEOLOSKI ZAVOD SLOVENIJE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "A Slovenian public research institute based in Ljubljana. It provides geological expertise, maps, and data on Slovenia’s geology to support environmental protection, water supply, geohazard mitigation, spatial planning, and mineral resources management."
     },
     {
         "id": "partner-ICPS",
@@ -2488,42 +3044,73 @@ export const data = [
     {
         "id": "partner-AIT",
         "name": "AIT",
-        "type": "partner"
+        "fullname": "AUSTRIAN INSTITUTE OF TECHNOLOGY GMBH",
+        "itype": "Research Institute",
+        "type": "partner",
+        "description": "Austria’s largest non-university research and technology organization, based in Vienna and other Austrian sites. It focuses on applied research and technological development in infrastructure-related areas, including energy, mobility, digital safety, health, and automation."
     },
     {
         "id": "partner-TiHo",
         "name": "TiHo",
-        "type": "partner"
+        "fullname": "Stiftung Tierärztliche Hochschule Hannover",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "University of Veterinary Medicine Hannover (TiHo) is a public veterinary university foundation in Hannover, Lower Saxony, Germany. It focuses on veterinary medicine, animal health, biomedical research, teaching, and clinical care."
     },
     {
         "id": "partner-UKON",
         "name": "UKON",
-        "type": "partner"
+        "fullname": "Universität Konstanz",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "The University of Konstanz is a public reform university in Konstanz, Baden-Württemberg, Germany. It focuses on top-level research, excellent teaching, internationality, and interdisciplinary collaboration."
     },
     {
         "id": "partner-ETHZ",
         "name": "ETHZ",
-        "type": "partner"
+        "fullname": "Eidgenössische Technische Hochschule Zürich",
+        "type": "partner",
+        "itype": "University",
+        "country": "Switzerland",
+        "description": "Public research university in Zurich, Switzerland, focused on science, technology, engineering and mathematics education and research."
     },
     {
         "id": "partner-UCLM",
         "name": "UCLM",
-        "type": "partner"
+        "fullname": "Universidad de Castilla - La Mancha",
+        "type": "partner",
+        "itype": "University",
+        "country": "Spain",
+        "description": "Public university in Spain, based in the Castilla-La Mancha region, with campuses in Albacete, Ciudad Real, Cuenca and Toledo. It focuses on higher education, research and international academic activity."
     },
     {
         "id": "partner-UC",
         "name": "UC",
-        "type": "partner"
+        "fullname": "UNIVERSIDADE DE COIMBRA",
+        "type": "partner",
+        "itype": "University",
+        "country": "Portugal",
+        "description": "Public university in Coimbra, Portugal, focused on higher education and research across multiple disciplines. It is one of Portugal’s oldest and leading universities."
     },
     {
         "id": "partner-NIC",
-        "name": "UC",
-        "type": "partner"
+        "name": "NIC",
+        "fullname": "Kemijski inštitut",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Slovenia",
+        "description": "Slovenia's National Institute of Chemistry is a public research institute in Ljubljana focused on chemistry and related fields. It conducts basic and applied research in areas such as materials, biotechnology, environmental protection, analytical chemistry, and chemical engineering."
     },
     {
         "id": "partner-UPO",
         "name": "UC",
-        "type": "partner"
+        "fullname": "UNIVERSIDAD PABLO DE OLAVIDE",
+        "type": "partner",
+        "itype": "University",
+        "country": "Spain",
+        "description": "Public university in Seville, Spain, founded in 1997. It focuses on teaching and research across a wide range of academic fields."
     },
 
 ]
