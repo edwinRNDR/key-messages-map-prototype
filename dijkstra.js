@@ -470,7 +470,7 @@ function buildUndirectedGraph(edges, weightFunction) {
 
 
         const type = edge.type
-        let defaultWeight = 1
+        let defaultWeight = 10
         let source = edge.source.id || edge.source
         let target = edge.target.id || edge.target
 
@@ -478,6 +478,11 @@ function buildUndirectedGraph(edges, weightFunction) {
         if (!weightFunction) {
 
             switch (type) {
+                case 'article_article-keyword':
+                    defaultWeight = 1;
+                    break
+
+
                 case 'article_project':
                     defaultWeight = 3;
                     break;
