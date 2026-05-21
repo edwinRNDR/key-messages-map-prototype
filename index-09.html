@@ -522,7 +522,7 @@
     <thead>
     <tr><th>Topic</th><th>Projects</th></tr>
 </thead>
-    ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}"><td>${n.name || 'Unknown'}</td><td class="numeric">0</td></tr>`).join('')}
+    ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}"><td>${n.name || 'Unknown'}</td><td class="numeric">${n.count.get('project') || ''}</td></tr>`).join('')}
     </table>
 </div>
 `
