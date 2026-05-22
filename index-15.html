@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Message Map Prototype</title>
+    <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
+
+    <style>
+        @font-face {
+            font-family: 'Satoshi-Regular';
+            src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+            url('fonts/Satoshi-Regular.woff') format('woff'),
+            url('fonts/Satoshi-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Satoshi-Italic';
+            src: url('fonts/Satoshi-Italic.woff2') format('woff2'),
+            url('fonts/Satoshi-Italic.woff') format('woff'),
+            url('fonts/Satoshi-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Satoshi-Medium';
+            src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+            url('fonts/Satoshi-Medium.woff') format('woff'),
+            url('fonts/Satoshi-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-display: swap;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Satoshi-Regular', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #node-box {
+            font-family: 'Satoshi-Regular', sans-serif;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            width: 450px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .node-box-scroll {
+            flex-grow: 1;
+
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+
+        .node-card {
+            flex-grow: 0;
+            background-color: rgba(245, 245, 245, 1.0);
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+
+            img {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-family: 'Satoshi-Medium', sans-serif;
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            table {
+                /*border: 1px solid black;*/
+                /*background-color: green;*/
+                margin-top: 10px;
+                padding: 0;
+                width: 100%;
+            }
+
+            thead {
+
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            tr {
+                /*background-color: red;*/
+                /*border-top: 1px solid black;*/
+            }
+
+            td {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: 'Satoshi-Medium', sans-serif;
+                font-size: 20px;
+
+
+            }
+
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        .adjacent {
+
+        }
+
+        .adjacent:hover {
+            cursor: pointer;
+            color: blue;
+        }
+
+        .graph-hover {
+            background-color: gray;
+        }
+
+        #info-box {
+            position: fixed;
+            bottom: 10px;
+            right: 0;
+            background-color: rgba(245, 245, 245, 1.0);
+            border-radius: 5px;
+            z-index: 1000;
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .legend-item {
+            flex-grow: 1;
+            width: auto;
+            padding: 5px;
+        }
+
+        .legend-item:hover {
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div id="node-box">
+    <h3>Node info</h3>
+</div>
+
+<div id="info-box">
+    <div class="legend-item" id="legend-article">
+        <span style="color: black;">●</span>
+        <div class="legend-label">Article</div>
+    </div>
+    <div class="legend-item" id="legend-project-topic">
+        <span style="color: red;">●</span>
+        <div class="legend-label">Project Topic</div>
+    </div>
+    <div class="legend-item" id="legend-project">
+        <span style="color: blue;">●</span>
+        <div class="legend-label">Project</div>
+    </div>
+    <div class="legend-item" id="legend-partner">
+        <span style="color: green;">●</span>
+        <div class="legend-label">Partner</div>
+    </div>
+    <div class="legend-item" id="legend-project-keyword">
+        <span style="color: orange;">●</span>
+        <div class="legend-label">Project Keyword</div>
+    </div>
+    <div class="legend-item" id="legend-cause-effect">
+        <span style="color: cyan;">●</span>
+        <div class="legend-label">Cause-effect</div>
+    </div>
+    <div class="legend-item" id="legend-chemical">
+        <span style="color: purple;">●</span>
+        <div class="legend-label">Chemical</div>
+    </div>
+    <div class="legend-item" id="legend-condition">
+        <span style="color: pink;">●</span>
+        <div class="legend-label">Condition</div>
+    </div>
+    <div class="legend-item" id="legend-article-keyword">
+        <span style="color: rgb(127, 255, 0);">●</span>
+        <div class="legend-label">Article keyword</div>
+    </div>
+</div>
+<div id="graph"></div>
+
+<script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    import {forceCollide} from 'https://esm.sh/d3-force';
+    import ForceGraph from "https://cdn.jsdelivr.net/npm/force-graph@1.49.5/+esm"
+    import {data} from "./data.js";
+    import {edges} from "./edges.js";
+    import {
+        minimumSpanningTree,
+        minimumSpanningTreeFromSubtree,
+        findEdgesThroughNode,
+        findAdjacentSubtree,
+        findAdjacentNodes,
+        countAdjacentNodes
+    } from "./dijkstra.js";
+
+    const chemicals = ['PFAS', 'Plastics', 'Phthalates', 'Bisphenol', 'Arsenic'].map(chemical => ({
+        id: chemical,
+        type: 'chemical',
+        name: chemical
+    }))
+    const conditions = ['cancer', 'death', 'obesity', 'Metabolic disorder'].map(condition => ({
+        id: condition,
+        type: 'condition',
+        name: condition
+    }))
+
+    const causeEffect = [
+        'PFAS-cancer',
+        'PFAS-death',
+        'Plastics-death',
+        'Phthalates-obesity',
+        'Bisphenol-obesity',
+        'Arsenic-Metabolic disorder'
+    ].map(ca => ({id: ca, type: 'cause-effect', name: ca.split('-')[0] + ' causes ' + ca.split('-')[1]}))
+
+
+    const causeEffectToCause = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('-')[0],
+        type: 'cause-effect_cause'
+    }))
+    const causeEffectToEffect = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('-')[1],
+        type: 'cause-effect_effect'
+    }))
+
+    for (const item of data) {
+        if (!item.type) {
+            item.type = 'article'
+        }
+    }
+
+    // Select random articles and link them to random causeEffect
+    const articleNodes = data.filter(node => node.type === 'article');
+
+    const articleKeywords = new Map()
+
+    for (const article of articleNodes) {
+        const keywords = article.keywords.split(',').map(keyword => keyword.trim())
+        for (const keyword of keywords) {
+            if (!articleKeywords.has(keyword)) {
+                articleKeywords.set(keyword, [])
+            }
+            articleKeywords.get(keyword).push(article)
+        }
+    }
+
+    // Remove entries with fewer than 5 article
+    for (const [keyword, articles] of articleKeywords.entries()) {
+        if (articles.length < 5) {
+            articleKeywords.delete(keyword)
+        }
+    }
+
+    // Remove entries with very short keywords
+    for (const [keyword, articles] of articleKeywords.entries()) {
+        if (!keyword|| keyword.length < 2 ) {
+            articleKeywords.delete(keyword)
+        }
+    }
+
+    const articleKeywordNodes = Array.from(articleKeywords.entries()).map(([keyword, articles]) => ({
+        id: `article-keyword-${keyword}`,
+        type: 'article-keyword',
+        name: keyword,
+        label: keyword,
+    }))
+
+    const articleKeywordLinks = Array.from(articleKeywords.entries()).flatMap(([keyword, articles]) => articles.map(article => ({
+        source: article.id,
+        target: `article-keyword-${keyword}`,
+        type: 'article_article-keyword'
+    })))
+    const numArticlesToLink = articleNodes.length
+    const articleLinks = [];
+
+    for (let i = 0; i < numArticlesToLink; i++) {
+        const randomArticle = articleNodes[i];
+        const randomCauseEffect = causeEffect[Math.floor(Math.random() * causeEffect.length)];
+        articleLinks.push({
+            source: randomArticle.id,
+            target: randomCauseEffect.id,
+            type: 'article_cause-effect'
+        });
+    }
+
+    const gData = {
+        nodes: [...data, ...chemicals, ...conditions, ...causeEffect, ...articleKeywordNodes],
+        links: [...edges, ...articleLinks, ...causeEffectToCause, ...causeEffectToEffect, ...articleKeywordLinks,]
+    };
+    countAdjacentNodes(gData.nodes, gData.links)
+
+
+    let hoverNode = null
+    let selectedNodeId = null
+    let selectedNode = null
+
+    let centerAtTimeout = null
+
+    let storedEdgesColors = null
+
+    const Graph = new ForceGraph()
+    (document.getElementById('graph'))
+        .autoPauseRedraw(false)
+        .onNodeClick((node, event) => {
+            selectNode(node)
+        })
+        .onNodeHover((node, event) => {
+            hoverNode = node
+
+            if (storedEdgesColors == null) {
+                storedEdgesColors = Graph.graphData().links.map(edge => edge.color)
+            } else {
+                let index = 0
+                for (const edge of Graph.graphData().links) {
+                    edge.color = storedEdgesColors[index]
+                    index++
+                }
+            }
+            for (const edge of findEdgesThroughNode(Graph.graphData().links, node)) {
+                edge.color = 'rgba(0, 0, 0, 0.2)'
+            }
+        })
+
+        .nodeCanvasObject((node, ctx, globalScale) => nodePaint(node, ctx, globalScale))
+        .onRenderFramePre((ctx, globalScale) => {
+            if (selectedNode != null && selectedNode.x != null && selectedNode.y != null) {
+                ctx.save()
+                const x = selectedNode.x
+                const y = selectedNode.y
+                const gradient = ctx.createRadialGradient(x, y, 0, x, y, 600);
+
+
+                const steps = 7
+                for (let i = 0; i < steps; ++i) {
+
+                    const opacity = 0.25 * (steps - 1 - i) / (steps - 1)
+                    gradient.addColorStop(i / steps, nodeColor(selectedNode, opacity));
+                    gradient.addColorStop((i + 1) / steps, nodeColor(selectedNode, opacity));
+                }
+
+                gradient.addColorStop(0.9, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient;
+                ctx.beginPath()
+                ctx.arc(x, y, 600.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+
+                const gradient2 = ctx.createRadialGradient(x, y, 0, x, y, 30);
+
+// Add three color stops
+                gradient2.addColorStop(0, nodeColor(selectedNode, 0.5));
+                gradient2.addColorStop(1.0, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient2;
+                ctx.beginPath()
+                ctx.arc(x, y, 30.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+
+
+                ctx.restore()
+            }
+        })
+
+        .graphData(gData)
+        .d3Force('collide', forceCollide(node => (node.type === 'project-keyword' || node.type === 'project-topic') ? 15.0 : 5.0))
+
+    function nodeColor(node, opacity = 1.0) {
+        if (node.type === 'article') {
+            return `rgba(0, 0, 0, ${opacity})`;
+        } else if (node.type === 'article-keyword') {
+            return `rgba(127, 255, 0, ${opacity})`;
+        } else if (node.type === 'project') {
+            return `rgba(0, 0, 255, ${opacity})`;
+        } else if (node.type === 'partner') {
+            return `rgba(0, 127, 0, ${opacity})`;
+        } else if (node.type === 'project-topic') {
+            return `rgba(255, 0, 0, ${opacity})`;
+        } else if (node.type === 'project-keyword') {
+            return `rgba(255, 127, 0, ${opacity})`;
+        } else if (node.type === 'chemical') {
+            return `rgba(127, 0, 127, ${opacity})`;
+        } else if (node.type === 'condition') {
+            return `rgba(255, 127, 127, ${opacity})`;
+        } else if (node.type === 'cause-effect') {
+            return `rgba(0, 255, 255, ${opacity})`;
+        } else {
+            return `rgba(0, 0, 0, ${opacity})`;
+        }
+    }
+
+    function nodePaint({id, type, x, y, name, count}, ctx, globalScale) {
+        ctx.fillStyle = nodeColor({'type': type})
+
+        ctx.beginPath()
+        var radius = 5.0;
+        if (type === 'project-keyword' || type === 'project-topic' || type === 'article-keyword') {
+            radius = 10.0;
+        }
+        ctx.arc(x, y, radius, 0, 2 * Math.PI, false)
+        ctx.fill()
+
+        if (id === hoverNode?.id) {
+            ctx.beginPath
+            ctx.arc(x, y, radius * 2, 0, 2 * Math.PI, false)
+            ctx.stroke()
+        }
+
+        //
+        if (type === 'project-keyword' || type === 'project-topic' || type === 'article-keyword'
+            || id === selectedNode?.id
+
+        ) {
+            const label = name || '';
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Sans-Serif`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            // ctx.fillRect(x - bckgDimensions[0] / 2, y - bckgDimensions[1] / 2, ...bckgDimensions);
+
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = 'black'
+            ctx.fillText(label, x, y + radius + 1.0);
+        }
+
+        const valence = count?.get('total') || 0
+        const logValence = Math.log(valence + 1)
+        if (globalScale > 3.0 - logValence * 0.25 || id === selectedNode?.id || id === hoverNode?.id) {
+            const label = valence > 0 ? valence : '';
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Sans-Serif`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = 'white'
+            ctx.fillText(label, x, y);
+        }
+    }
+
+    document.getElementById('legend-article').addEventListener('click', () => {
+        const articles = gData.nodes.filter(node => node.type === 'article')
+        const articleHub = {"id": "article-hub", "type": "article-hub"}
+        const hubLinks = articles.map(article => ({source: article.id, target: articleHub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(articleHub), links: mst.mstEdges})
+        selectedNode = articleHub
+        selectedNodeId = articleHub.id
+        populateNodeBox(articleHub, articles)
+
+    })
+    document.getElementById('legend-project-topic').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'project-topic')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+    document.getElementById('legend-project').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'project')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+    document.getElementById('legend-partner').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'partner')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+    document.getElementById('legend-project-keyword').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'project-keyword')
+        const hub = {"id": "hub", "type": "hub"}
+        populateNodeBox(hub, items)
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+    })
+    document.getElementById('legend-cause-effect').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'cause-effect')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+
+    document.getElementById('legend-chemical').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'chemical')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+
+    document.getElementById('legend-condition').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'condition')
+        const hub = {"id": "hub", "type": "hub"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        populateNodeBox(hub, items)
+    })
+
+    document.getElementById('legend-article-keyword').addEventListener('click', () => {
+        const items = gData.nodes.filter(node => node.type === 'article-keyword')
+        const hub = {"id": "hub", "type": "hub"}
+        populateNodeBox(hub, items)
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+    })
+
+    function selectNode(node) {
+        storedEdgesColors = null
+        if (centerAtTimeout) {
+            clearTimeout(centerAtTimeout)
+            centerAtTimeout = null
+        }
+        selectedNodeId = node.id
+        selectedNode = node
+        const adjacent = findAdjacentSubtree(gData.links, node.id)
+        const adjacentNodes = findAdjacentNodes(gData.links, node.id)
+        const newEdges = minimumSpanningTreeFromSubtree(gData.links, adjacent)
+        Graph.graphData({nodes: gData.nodes, links: newEdges.mstEdges})
+
+        for (const edge of newEdges.mstEdges) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, node.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        for (const node of gData.nodes) {
+            delete node.fx;
+            delete node.fy;
+        }
+        node.fx = node.x;
+        node.fy = node.y;
+        populateNodeBox(node, [...adjacentNodes])
+        Graph.centerAt(node.x, node.y)
+    }
+
+    function populateNodeBox(node, adjacent = []) {
+        hoverNode = null
+        const projectTopics = adjacent.filter(node => node.type === 'project-topic')
+        const projectTopicsCard = projectTopics.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Project Topics</h3>
+    <table class="sortable">
+    <thead>
+    <tr><th>Topic</th><th>Projects</th></tr>
+</thead>
+    ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}"><td>${n.name || 'Unknown'}</td><td class="numeric">${n.count.get('project') || ''}</td></tr>`).join('')}
+    </table>
+</div>
+`
+        let summaryCard = ''
+
+        if (node.type === 'partner') {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<p>${node.fullname}</p>
+<p>${node.itype}, ${node.country}</p>
+<p>${node.description}</p>
+</div>`
+        } else if (node.type === 'project') {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<p>${node.description}</p>
+</div>`
+        } else if (node.type === 'article') {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<img src="${node.image}" alt="article cover art"/>
+<p>${node["date-of-publication"]}</p>
+<p>${node.authors}</p>
+</div>`
+        }
+
+        const projectKeywords = adjacent.filter(node => node.type === 'project-keyword')
+        const projectKeywordsCard = projectKeywords.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Project Keywords</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th>Keyword</th>
+        <th>Projects</th>
+    </tr>
+</thead>
+    ${projectKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="numeric">${n.count.get('project') || ''}</td>
+    </tr>`).join('')}
+    </table>
+</div>
+`
+        const partners = adjacent.filter(node => node.type === 'partner')
+        const partnersCard = partners.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Partners</h3>
+    <table class="sortable">
+    <thead>
+    <tr style="width: 100%;">
+        <th>Name</th>
+        <th>Projects</th></tr>
+</thead>
+    ${partners.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td>${n.count.get('project') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>`
+
+        const articleKeywords = adjacent.filter(node => node.type === 'article-keyword')
+        const articleKeywordsCard = articleKeywords.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Article keywords</h3>
+    <table class="sortable">
+    <thead>
+    <tr><th>Description</th><th>Articles</th></tr>
+</thead>
+    ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}"><td>${n.name || 'Unknown'}</td><td class="numeric">${n.count.get('article') || ''}</td></td></tr>`).join('')}
+    </table>
+</div>`
+        const articles = adjacent.filter(node => node.type === 'article')
+        const articlesCard = articles.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Articles</h3>
+    <table class="sortable">
+    <thead>
+    <tr><th>Title</th><th>Projects</th></tr>
+</thead>
+    ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}"><td>${n.name || 'Unknown'}</td><td class="numeric">${n.count.get('project') || ''}</td></td></tr>`).join('')}
+    </table>
+</div>
+`
+        const projects = adjacent.filter(node => node.type === 'project')
+        const projectsCard = projects.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Projects</h3>
+    <table class="sortable">
+    <thead><tr>
+    <th>Project</th>
+    <th>Partners</th>
+    <th>Articles</th>
+</tr></thead>
+    ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="numeric">${n.count.get('partner') || ''}</td>
+    <td class="numeric">${n.count.get('article') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>
+`
+        const chemicals = adjacent.filter(node => node.type === 'chemical')
+        const chemicalsCard = chemicals.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Chemicals</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th>Description</th>
+        <th>Effects</th>
+    </tr></thead>
+    ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>
+`
+
+        const conditions = adjacent.filter(node => node.type === 'condition')
+        const conditionsCard = conditions.length === 0 ? '' : `
+<div class="node-card">
+    <h3>Health effects</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th>Description</th>
+        <th>Causes</th>
+    </tr></thead>
+    ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>
+`
+        const causeEffects = adjacent.filter(node => node.type === 'cause-effect')
+        const causeEffectsCard = causeEffects.length === 0 ? '' : `
+        <div class="node-card">
+    <h3>Cause and condition</h3>
+    <table class="sortable">
+        <thead><tr>
+        <th>Description</th>
+        <th>Articles</th>
+    </tr></thead>
+
+    ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td>
+<td class="numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
+    </table>
+</div>
+`
+        document.getElementById('node-box').innerHTML = `
+<div class="node-card">
+    <h3>${node.type}</h3>
+    <h1>${node.name || node.label}</h1>
+</div>
+<div class="node-box-scroll">
+${summaryCard}
+${articleKeywordsCard}
+${projectKeywordsCard}
+${projectTopicsCard}
+${causeEffectsCard}
+${chemicalsCard}
+${conditionsCard}
+${projectsCard}
+${articlesCard}
+${partnersCard}
+</div>
+`
+
+        for (const node of adjacent) {
+            document.getElementById(`adjacent-${node.id}`).addEventListener('click', () => {
+                selectNode(node)
+            })
+            document.getElementById(`adjacent-${node.id}`).addEventListener('mousemove', () => {
+                const g = Graph.graphData()
+                const target = g.nodes.find(n => n.id === node.id)
+
+                if (centerAtTimeout) {
+                    clearTimeout(centerAtTimeout)
+                }
+                centerAtTimeout = setTimeout(() => {
+                    Graph.centerAt(target.x, target.y, 300)
+                }, 200)
+
+                hoverNode = target
+            })
+        }
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@4.1.7/dist/sortable.auto.js"></script>
+</body>
+
+</html>
