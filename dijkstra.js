@@ -43,7 +43,9 @@ function countAdjacentNodes(nodes, links) {
         const source = nodeMap.get(link.source.id||link.source);
         const target = nodeMap.get(link.target.id||link.target);
         source.count.set(target.type, (source.count.get(target.type) || 0) + 1);
+        source.count.set('total', (source.count.get('total') || 0) + 1);
         target.count.set(source.type, (target.count.get(source.type) || 0) + 1);
+        target.count.set('total', (target.count.get('total') || 0) + 1);
     }
 
 }
@@ -482,6 +484,9 @@ function buildUndirectedGraph(edges, weightFunction) {
                     defaultWeight = 1;
                     break
 
+                case 'project-topic_project':
+                    defaultWeight = 2;
+                    break
 
                 case 'article_project':
                     defaultWeight = 3;
