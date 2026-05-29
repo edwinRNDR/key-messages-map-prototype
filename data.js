@@ -1934,7 +1934,10 @@ export const data = [
 
     {
         "id": "partner-AU",
-        "name": "AU",
+        "fullname": "Aarhus Universitet",
+        "itype": "University",
+        "country": "Denmark",
+        "description": "Public research university in Aarhus, Denmark, focused on higher education and internationally recognized research across multiple disciplines.",
         "type": "partner"
     },
     {
@@ -1985,7 +1988,11 @@ export const data = [
     {
         "id": "partner-CNR-IRSA",
         "name": "CNR-IRSA",
-        "type": "partner"
+        "fullname": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Italy",
+        "description": "Italy's national public research council, headquartered in Rome. It conducts, promotes, and coordinates scientific and technological research across disciplines to advance national and international knowledge and innovation."
     },
     {
         "id": "partner-CNRS",
@@ -2017,7 +2024,11 @@ export const data = [
     {
         "id": "partner-Fraunhofer",
         "name": "Fraunhofer",
-        "type": "partner"
+        "fullname": "FRAUNHOFER GESELLSCHAFT ZUR FÖRDERUNG DER ANGEWANDTEN FORSCHUNG",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Germany",
+        "description": "Fraunhofer-Gesellschaft is a German nonprofit research organization and one of Europe’s leading institutes for applied research. Headquartered in Germany, it focuses on transferring research results into practical applications and industry."
     },
     {
         "id": "partner-CSIC",
@@ -2085,7 +2096,11 @@ export const data = [
     {
         "id": "partner-MU",
         "name": "MU",
-        "type": "partner"
+        "fullname": "Masarykova univerzita",
+        "type": "partner",
+        "itype": "University",
+        "country": "Czechia",
+        "description": "Masaryk University is a public university in Brno, Czechia. It is a major teaching and research institution with ten faculties and a broad focus across medicine, science, humanities, social sciences, and technology."
     },
     {
         "id": "partner-NILU",
@@ -2144,7 +2159,11 @@ export const data = [
     {
         "id": "partner-SpFrance",
         "name": "SpFrance",
-        "type": "partner"
+        "fullname": "AGENCE NATIONALE DE SANTÉ PUBLIQUE",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "country": "France",
+        "description": "Santé publique France is France's national public health agency, a public institution under the Ministry of Health. Based in Saint-Maurice, it monitors population health, supports prevention, and helps prepare responses to health risks."
     },
     {
         "id": "partner-SYKE",
@@ -2185,21 +2204,37 @@ export const data = [
     {
         "id": "partner-ULFFA",
         "name": "ULFFA",
+        "fullname": "UNIVERZA V LJUBLJANI, FACULTY OF PHARMACY",
+        "itype": "University",
+        "country": "Slovenia",
+        "description": "Public university in Ljubljana, Slovenia. The University of Ljubljana is the country's oldest and largest higher education and research institution, focused on teaching, research, and knowledge transfer across a broad range of disciplines.",
         "type": "partner"
     },
     {
         "id": "partner-VUA",
         "name": "VUA",
-        "type": "partner"
+        "fullname": "STICHTING VU",
+        "itype": "University",
+        "country": "Netherlands",
+        "type": "partner",
+        "description": "Dutch university foundation in Amsterdam that serves as the legal entity of Vrije Universiteit Amsterdam. It focuses on higher education, research, and public engagement from Amsterdam, the Netherlands."
     },
     {
         "id": "partner-ENSP",
         "name": "ENSP",
+        "fullname": "UNIVERSIDADE NOVA DE LISBOA, ESCOLA NACIONAL DE SAÚDE PÚBLICA",
+        "itype": "University",
+        "country": "Portugal",
+        "description": "NOVA University Lisbon is a public university in Lisbon, Portugal, focused on higher education and research across multiple academic fields. It is headquartered in Campolide, Lisbon, and serves students through a multi-campus structure in the Lisbon metropolitan area.",
         "type": "partner"
     },
     {
         "id": "partner-TTL",
         "name": "TTL",
+        "fullname": "TYÖTERVEYSLAITOS",
+        "description": "Finnish Institute of Occupational Health; an independent research and specialist organization in Finland focused on occupational health, safety, and well-being at work.",
+        "country":"Finland",
+        "itype": "Research Institute",
         "type": "partner"
     },
     {
@@ -2259,7 +2294,11 @@ export const data = [
     {
         "id": "partner-ULUND",
         "name": "ULUND",
-        "type": "partner"
+        "fullname": "LUNDS UNIVERSITET",
+        "type": "partner",
+        "itype": "University",
+        "country": "Sweden",
+        "description": "Public research university in Lund, Sweden, with campuses in Lund, Malmö, and Helsingborg. It focuses on higher education and research across a broad range of disciplines."
     },
     {
         "id": "partner-UMIL",
@@ -2345,7 +2384,11 @@ export const data = [
     {
         "id": "partner-UniLU",
         "name": "UniLU",
-        "type": "partner"
+        "fullname": "UNIVERSITÉ DU LUXEMBOURG",
+        "type": "partner",
+        "itype": "University",
+        "country": "Luxembourg",
+        "description": "The University of Luxembourg is a public research university in Luxembourg, founded in 2003. It focuses on multilingual, interdisciplinary teaching and research with a mission to address societal challenges."
     },
     {
         "id": "partner-UNIVIE",
@@ -2428,7 +2471,11 @@ export const data = [
     {
         "id": "partner-UCPH",
         "name": "UCPH",
-        "type": "partner"
+        "fullname": "KØBENHAVNS UNIVERSITET",
+        "type": "partner",
+        "itype":"university",
+        "country": "Denmark",
+        "description": "Public research university in Copenhagen, Denmark, focused on higher education and research across a broad range of disciplines. It is one of the Nordic region's largest universities."
     },
     {
         "id": "partner-UBAH",
@@ -2478,12 +2525,20 @@ export const data = [
     {
         "id": "partner-SU",
         "name": "SU",
-        "type": "partner"
+        "fullname": "STOCKHOLMS UNIVERSITET",
+        "itype" : "University",
+        "type": "partner",
+        "country": "Sweden",
+        "description": "Stockholm University is a public research university in Stockholm, Sweden, focused on education and research across humanities, social sciences, natural sciences, and law."
     },
     {
         "id": "partner-UG-AT",
         "name": "UG-AT",
-        "type": "partner"
+        "fullname": "UNIVERSITÄT GRAZ",
+        "type": "partner",
+        "itype": "University",
+        "country": "Austria",
+        "description": "Public university in Graz, Austria. It is one of Austria's major universities, focused on research, teaching, and academic training across a broad range of disciplines."
     },
     {
         "id": "partner-ISCIII",
@@ -2497,6 +2552,10 @@ export const data = [
     {
         "id": "partner-WR",
         "name": "WR",
+        "fullname": "STICHTING WAGENINGEN RESEARCH",
+        "itype": "Research Institute",
+        "country": "Netherlands",
+        "description": "Dutch research foundation within Wageningen University & Research, based in Wageningen, Netherlands. It carries out application-oriented research in food, agriculture, environment, and related life-science fields.",
         "type": "partner"
     },
     {
@@ -2529,7 +2588,11 @@ export const data = [
     {
         "id": "partner-SRU",
         "name": "SRU",
-        "type": "partner"
+        "fullname": "STICHTING RADBOUD UNIVERSITAIR MEDISCH CENTRUM",
+        "type": "partner",
+        "itype": "University",
+        "country": "Netherlands",
+        "description": "Dutch university foundation in Amsterdam that serves as the legal entity of Vrije Universiteit Amsterdam. It focuses on higher education, research, and public engagement from Amsterdam, the Netherlands."
     },
     {
         "id": "partner-AGES",
@@ -2560,7 +2623,11 @@ export const data = [
     {
         "id": "partner-UI",
         "name": "UI",
-        "type": "partner"
+        "fullname": "HÁSKÓLI ISLANDS",
+        "type": "partner",
+        "itype": "University",
+        "country": "Iceland",
+        "description": "University of Iceland (Háskóli Íslands), a public research university in Reykjavík, Iceland. It is the country’s oldest and largest higher-education institution, focused on teaching and research across major academic disciplines."
     },
     {
         "id": "partner-UOB",
@@ -2620,17 +2687,29 @@ export const data = [
     {
         "id": "partner-NCPHP",
         "name": "NCPHP",
-        "type": "partner"
+        "fullname": "NEMZETI NÉPEGÉSZSÉGÜGYI ÉS GYÓGYSZERÉSZETI KÖZPONT",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Hungary",
+        "description": "Hungary's national public health and pharmaceutical authority, based in Budapest. It oversees public health, epidemiology, health promotion, and pharmaceutical regulatory functions nationwide."
     },
     {
         "id": "partner-EAA",
         "name": "EAA",
-        "type": "partner"
+        "fullname": "UMWELTBUNDESAMT GESELLSCHAFT MIT BESCHRÄNKTER HAFTUNG",
+        "type": "partner",
+        "itype": "Other",
+        "country": "Austria",
+        "description": "Austria’s federal environmental expert organization, based in Vienna. It provides scientific and technical support for sustainable environmental policy and advises politics, business, and civil society on environmental issues."
     },
     {
         "id": "partner-KI",
         "name": "KI",
-        "type": "partner"
+        "fullname": "Karolinska Institutet",
+        "type": "partner",
+        "itype": "University",
+        "country": "Sweden",
+        "description": "Karolinska Institutet is a public medical university in Solna and Stockholm, Sweden. It focuses on medical education, research, and advancing human health."
     },
     {
         "id": "partner-EASP",
@@ -2682,7 +2761,11 @@ export const data = [
     {
         "id": "partner-UU-IRAS",
         "name": "UU-IRAS",
+        "fullname": "Universiteit Utrecht, Institute for Risk Assessment Sciences",
         "type": "partner",
+        "itype": "University",
+        "country": "Netherlands",
+        "description": "Public research university in Utrecht, Netherlands. It provides higher education and conducts leading international research aimed at improving society."
     },
     {
         "id": "partner-RISE",
@@ -2714,7 +2797,11 @@ export const data = [
     {
         "id": "partner-IEP-NRI",
         "name": "IEP-NRI",
-        "type": "partner"
+        "fullname": "INSTYTUT OCHRONY ŚRODOWISKA - PAŃSTWOWY INSTYTUT BADAWCZY",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Poland",
+        "description" :"Poland's national environmental protection research institute, based in Warsaw. It conducts scientific and applied research on environmental protection, climate, air quality, waste, chemicals, and related policy support."
     },
     {
         "id": "partner-NIB",
@@ -2727,7 +2814,11 @@ export const data = [
     {
         "id": "partner-WU-TOX",
         "name": "WU-TOX",
-        "type": "partner"
+        "fullname": "WAGENINGEN UNIVERSITY",
+        "type": "partner",
+        "itype": "University",
+        "country": "Netherlands",
+        "description": "Public research university in Wageningen, the Netherlands, focused on life sciences, agriculture, food, climate, biodiversity, and the living environment. Its mission is to explore nature's potential to improve quality of life."
     },
     {
         "id": "partner-CEA",
@@ -2741,7 +2832,11 @@ export const data = [
     {
         "id": "partner-GCSL",
         "name": "GCSL",
-        "type": "partner"
+        "type": "partner",
+        "fullname": "Independent Authority for Public Revenue (IAPR)",
+        "itype": "Regulatory Agency",
+        "country": "Greece",
+        "description": "Greece’s independent tax and public revenue authority, responsible for collecting taxes and customs/excise duties and supporting tax administration. Based in Athens, it is the country’s main revenue administration body."
     },
     {
         "id": "partner-DTU",
@@ -2755,7 +2850,11 @@ export const data = [
     {
         "id": "partner-FMUL",
         "name": "FMUL",
+        "fullname": "FACULDADE DE MEDICINA DA UNIVERSIDADE DE LISBOA",
         "type": "partner",
+        "itype": "University",
+        "country":"Portugal",
+        "description": "Public medical school of the University of Lisbon in Lisbon, Portugal. It focuses on medical education, research, and postgraduate training in health sciences."
     },
     {
         "id": "partner-IISPV",
@@ -2796,7 +2895,12 @@ export const data = [
     {
         "id": "partner-UNIABDN",
         "name": "UNIABDN",
-        "type": "partner"
+        "fullname": "THE UNIVERSITY COURT OF THE UNIVERSITY OF ABERDEEN",
+        "type": "partner",
+        "itype": "University",
+        "country": "United Kingdom",
+        "description": "The University Court is the University of Aberdeen’s governing body in Scotland, with ultimate responsibility for the institution. It oversees strategy, resources, and governance for a broad-based research-intensive university in Aberdeen, UK."
+
     },
     {
         "id": "partner-FOPH",
@@ -2821,7 +2925,11 @@ export const data = [
     {
         "id": "partner-MOH",
         "name": "MOH",
-        "type": "partner"
+        "fullname": "MINISTRY OF HEALTH",
+        "country": "Israel",
+        "type": "partner",
+        "description": "Israel’s national Ministry of Health, a government ministry based in Jerusalem. It sets health policy and oversees the country’s healthcare system, public health, licensing, and related services.",
+        "itype": "Government/Ministry"
     },
     {
         "id": "partner-SECO",
@@ -2835,7 +2943,11 @@ export const data = [
     {
         "id": "partner-UOULU",
         "name": "UOULU",
-        "type": "partner"
+        "fullname": "OULUN YLIOPISTO",
+        "type": "partner",
+        "itype" : "University",
+        "country": "Finland",
+        "description": "A public university in Oulu, Finland. Its mission is research and education that produce new scientific knowledge and solutions for a more sustainable, intelligent, and humane world."
     },
     {
         "id": "partner-UNISANTE",
@@ -2912,7 +3024,12 @@ export const data = [
     {
         "id": "partner-SZU-CZ",
         "name": "SZU-CZ",
-        "type": "partner"
+        "fullname": "STÁTNÍ ZDRAVOTNÍ ÚSTAV",
+        "type": "partner",
+        "country": "Czech Republic",
+        "itype" : "Research Institute",
+        "description": "Czechia’s National Institute of Public Health, based in Prague. It is a state-funded public health institute focused on health protection and promotion, disease prevention, research, reference services, and public-health guidance."
+        
     },
     {
         "id": "partner-UCD",
@@ -2931,7 +3048,11 @@ export const data = [
     {
         "id": "partner-UKHSA",
         "name": "UKHSA",
+        "fullname": "Department of Health",
+        "itype": "Research Institute",
         "type": "partner"
+        ,"country": "United Kingdom",
+        "description": "Ministerial department of the UK government based in London. It leads health and social care policy in England, overseeing public health, the NHS, and adult social care."
     },
     {
         "id": "partner-UT",
@@ -3007,7 +3128,11 @@ export const data = [
     {
         "id": "partner-SFA",
         "name": "SFA",
-        "type": "partner"
+        "fullname" : "LIVSMEDELSVERKET",
+        "type": "partner",
+        "itype": "Regulatory Agency",
+        "description": "Swedish Food Agency, a national government authority in Sweden based in Uppsala. It protects consumers by ensuring safe food and drinking water, fair practices in the food chain, and evidence-based dietary guidance."
+
     },
     {
         "id": "partner-LIST",
@@ -3038,7 +3163,11 @@ export const data = [
     {
         "id": "partner-UL-LACDR",
         "name": "UL-LACDR",
-        "type": "partner"
+        "fullname": "Universiteit Leiden, Centre for Drug Research",
+        "type": "partner",
+        "itype": "University",
+        "country": "Netherlands",
+        "description": "Leiden University is a public research university in Leiden and The Hague, Netherlands, focused on higher education and research across the arts, sciences, and social sciences."
     },
     {
         "id": "partner-UCL",
@@ -3148,7 +3277,11 @@ export const data = [
     {
         "id": "partner-EA",
         "name": "EA",
-        "type": "partner"
+        "fullname": "ENVIRONMENT AGENCY",
+        "type": "partner",
+        "country": "United Kingdom",
+        "itype": "Research Institute",
+        "description": "UK executive non-departmental public body based in Bristol, England. It protects and improves the environment by regulating pollution, managing flood risk, and overseeing water, waste, fisheries, and other environmental resources in England."
 
     },
     {
@@ -3172,7 +3305,11 @@ export const data = [
     {
         "id": "partner-BUL",
         "name": "BUL",
-        "type": "partner"
+        "fullname": "BRUNEL UNIVERSITY LONDON",
+        "country": "United Kingdom",
+        "itype": "University",
+        "type": "partner",
+        "description": "A public research university in Uxbridge, London, UK. It focuses on teaching and research across engineering, science, business, arts, health, and the social sciences."
     },
     {
         "id": "partner-FINBA",

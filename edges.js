@@ -3552,7 +3552,7 @@ export const edges = [
     {
         "source": "project-978",
         "target": "partner-GCSL",
-        "type": "project_partner"
+        "type": "project_partner",
     },
     {
         "source": "project-978",

@@ -333,6 +333,11 @@
     };
     countAdjacentNodes(gData.nodes, gData.links)
 
+    for (const node of data) {
+        if (node.type === 'partner' && !node.fullname) {
+            console.log(`Partner node without fullname found: ${node.name}`)
+        }
+    }
 
     let hoverNode = null
     let selectedNodeId = null
