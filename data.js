@@ -2115,7 +2115,7 @@ export const data = [
         "fullname": "Masarykova univerzita",
         "type": "partner",
         "itype": "University",
-        "country": "Czechia",
+        "country": "Czech Republic",
         "description": "Masaryk University is a public university in Brno, Czechia. It is a major teaching and research institution with ten faculties and a broad focus across medicine, science, humanities, social sciences, and technology."
     },
     {
@@ -2825,7 +2825,8 @@ export const data = [
         "fullname": "Nacionalni inštitut za biologijo",
         "type": "partner",
         "itype": "Research Institute",
-
+        "country": "Slovenia",
+        "description": "Public research institute in Ljubljana, Slovenia. It conducts basic, applied, and developmental research in biology and related natural sciences, with work spanning biotechnology, biomedicine, ecology, and environmental protection."
     },
     {
         "id": "partner-WU-TOX",
@@ -2920,8 +2921,13 @@ export const data = [
     },
     {
         "id": "partner-FOPH",
+        "fullname": "Federal Office of Public Health",
         "name": "FOPH",
-        "type": "partner"
+        "type": "partner",
+        "country": "Switzerland",
+        "itype": "Government/Public Body",
+        "description": "The Federal Office of Public Health (FOPH) is dedicated to the health of the Swiss population. It’s responsible for national healthcare policy and for health and accident insurance; and it promotes healthcare issues and interests on the international stage."
+
     },
     {
         "id": "partner-INSST",
@@ -2936,7 +2942,10 @@ export const data = [
         "id": "partner-RSU",
         "name": "RSU",
         "fullname": "Rīgas Stradiņa universitāte",
-        "type": "partner"
+        "type": "partner",
+        "country": "Latvia",
+        "itype": "University",
+        "description": "Rīga Stradiņš University (RSU) is a public university in Riga, Latvia. It focuses on higher education and research in medicine, healthcare, pharmacy, social sciences, and sports science."
     },
     {
         "id": "partner-MOH",
@@ -3050,7 +3059,11 @@ export const data = [
     {
         "id": "partner-UCD",
         "name": "UCD",
-        "type": "partner"
+        "fullname": "UNIVERSITY COLLEGE DUBLIN",
+        "type": "partner",
+        "itype": "University",
+        "country": "Ireland",
+        "description": "University College Dublin (UCD) is Ireland’s largest public research university, founded in 1854 and located in Dublin, offering a wide range of disciplines and hosting over 38,000 students from more than 150 countries."
     },
     {
         "id": "partner-UH",
@@ -3147,6 +3160,7 @@ export const data = [
         "fullname" : "LIVSMEDELSVERKET",
         "type": "partner",
         "itype": "Regulatory Agency",
+        "country": "Sweden",
         "description": "Swedish Food Agency, a national government authority in Sweden based in Uppsala. It protects consumers by ensuring safe food and drinking water, fair practices in the food chain, and evidence-based dietary guidance."
 
     },
@@ -3252,7 +3266,11 @@ export const data = [
     {
         "id": "partner-UHC",
         "name": "UHC",
-        "type": "partner"
+        "fullname": "Center for Molecular Medicine Cologne",
+        "type": "partner",
+        "itype": "University",
+        "country": "Germany",
+        "description": "The Center for Molecular Medicine Cologne is an interdisciplinary bio-medical and educational research center embedded in the Life Science Campus at the University of Cologne. It is an innovative joint venture of the Faculty of Medicine and Faculty of Mathematics and Natural Sciences and is affiliated with the University Hospital Cologne."
     },
     {
         "id": "partner-KIT",
@@ -3356,6 +3374,7 @@ export const data = [
         "fullname": "AUSTRIAN INSTITUTE OF TECHNOLOGY GMBH",
         "itype": "Research Institute",
         "type": "partner",
+        "country": "Austria",
         "description": "Austria’s largest non-university research and technology organization, based in Vienna and other Austrian sites. It focuses on applied research and technological development in infrastructure-related areas, including energy, mobility, digital safety, health, and automation."
     },
     {
