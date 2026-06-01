@@ -532,7 +532,7 @@
 
     document.getElementById('legend-article').addEventListener('click', () => {
         const articles = gData.nodes.filter(node => node.type === 'article')
-        const articleHub = {"id": "article-hub", "type": "article-hub"}
+        const articleHub = {"id": "hub", "type": "article", "name": "All articles"}
         const hubLinks = articles.map(article => ({source: article.id, target: articleHub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -544,7 +544,7 @@
     })
     document.getElementById('legend-project-topic').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'project-topic')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "project-topic", "name": "All project topics"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -555,7 +555,7 @@
     })
     document.getElementById('legend-project').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'project')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "project", "name": "All projects"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -566,7 +566,7 @@
     })
     document.getElementById('legend-partner').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'partner')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "partner", "name": "All partners"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -577,7 +577,7 @@
     })
     document.getElementById('legend-project-keyword').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'project-keyword')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "project-keyword", "name": "All project keywords"}
         populateNodeBox(hub, items)
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
@@ -588,7 +588,7 @@
     })
     document.getElementById('legend-cause-effect').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'cause-effect')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "cause-effect", "name": "All cause-effect pairs"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -600,7 +600,7 @@
 
     document.getElementById('legend-chemical').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'chemical')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "chemical", "name": "All chemicals"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -612,7 +612,7 @@
 
     document.getElementById('legend-condition').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'condition')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "condition", "name": "All conditions"}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -624,7 +624,7 @@
 
     document.getElementById('legend-article-keyword').addEventListener('click', () => {
         const items = gData.nodes.filter(node => node.type === 'article-keyword')
-        const hub = {"id": "hub", "type": "hub"}
+        const hub = {"id": "hub", "type": "article-keyword", "name": "All article keywords"}
         populateNodeBox(hub, items)
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
