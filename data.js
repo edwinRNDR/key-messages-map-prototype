@@ -1949,6 +1949,7 @@ export const data = [
 
     {
         "id": "partner-AU",
+        "name": "AU",
         "fullname": "Aarhus Universitet",
         "itype": "University",
         "country": "Denmark",
