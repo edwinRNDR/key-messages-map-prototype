@@ -23,47 +23,58 @@ export const data = [
     {
         "name": "Environment",
         "id": "project-keyword-1065",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC develops next‑generation methods and monitoring to better understand and reduce the impacts of hazardous chemicals on the environment in line with the EU Green Deal zero‑pollution ambition."
     },
     {
         "name": "Health effects",
         "id": "project-keyword-1063",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC generates mechanistic and epidemiological evidence on the health effects of chemical exposures to strengthen regulatory decisions and support more preventive protection of the population."
     },
     {
         "name": "Human health",
         "id": "project-keyword-1058",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "The partnership’s core aim is to provide data, tools and models that enable better assessment and management of chemical risks to human health across Europe.",
     },
     {
         "name": "Monitoring methods",
         "id": "project-keyword-1060",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC advances innovative human and environmental monitoring methods, including non‑target screening and novel sampling strategies, to generate higher‑quality exposure data for risk assessment."
     },
     {
         "name": "Risk assessment",
         "id": "project-keyword-1061",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "As an EU‑wide partnership, PARC develops data, methodologies and networks to modernise chemical risk assessment and make it more efficient, predictive and fit for regulatory use."
+
     },
     {
         "name": "NGRA",
         "id": "project-keyword-1066",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC strengthens the scientific basis for next‑generation risk assessment (NGRA) by integrating new approach methodologies, mechanistic data and modelling into future regulatory practice."
     },
     {
         "name": "Mixtures",
         "id": "project-keyword-1062",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC develops concepts, data and frameworks to assess real‑life exposure to complex mixtures of chemicals, improving how combined risks are addressed in regulation."
     },
     {
         "name": "Human biomonitoring",
         "id": "project-keyword-1059",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "Building on HBM4EU, PARC consolidates and expands EU‑wide human biomonitoring to measure internal chemical exposure and associated health markers in the general population and specific groups."
+
     },
     {
         "name": "Workers",
         "id": "project-keyword-1064",
-        "type": "project-keyword"
+        "type": "project-keyword",
+        "description": "PARC conducts targeted occupational human biomonitoring and exposure studies in high‑risk sectors to better characterise and manage chemical risks to workers’ health."
     },
     // projects
 
@@ -1914,22 +1925,26 @@ export const data = [
     {
         "name": "Address chemical pollution in the natural environment",
         "id": "project-topic-1001",
-        "type": "project-topic"
+        "type": "project-topic",
+        "description": "PARC develops next‑generation chemical risk assessment methods that explicitly consider environmental exposure pathways, mixture toxicity and the fate of substances in air, water and soil to better characterise chemical pollution pressures on ecosystems. It builds large, EU‑wide monitoring and data infrastructures, extending work like HBM4EU, to detect emerging contaminants, close data gaps and provide regulators with actionable evidence to reduce pollution in the natural environment in line with the EU Green Deal “zero pollution” ambition."
     },
     {
         "name": "Provide protection against most harmful chemicals",
         "id": "project-topic-1000",
-        "type": "project-topic"
+        "type": "project-topic",
+        "description": "The partnership supports the EU Chemicals Strategy for Sustainability by generating high‑quality data, tools and guidance that enable authorities to identify substances of concern earlier, assess complex exposure scenarios and take timely risk‑management decisions for the most harmful chemicals. By strengthening scientific capacity across nearly 200 organisations and aligning national and EU‑level work, PARC aims to make chemical risk assessment more preventive, consistent and health‑protective, ultimately reducing the use and impact of hazardous substances on people and the environment."
     },
     {
         "name": "Shift away from animal testing",
         "id": "project-topic-1003",
-        "type": "project-topic"
+        "type": "project-topic",
+        "description": "PARC is a key enabler of the EU’s transition to next‑generation, non‑animal risk assessment through the development, evaluation and regulatory uptake of alternative methods such as in vitro approaches, in silico models and integrated evidence frameworks. By embedding these approaches in guidance, roadmaps and cross‑disciplinary training, the partnership helps implement the EU commitment to reduce and ultimately phase out animal testing for chemical safety assessment, while maintaining a high level of protection for human health and the environment."
     },
     {
         "name": "Biodiversity protection",
         "id": "project-topic-1002",
-        "type": "project-topic"
+        "type": "project-topic",
+        "description": "PARC contributes to EU biodiversity goals by addressing chemical pollution as a key pressure on ecosystems, improving understanding of how hazardous substances affect species, habitats and ecological functions. Its work supports policies under the EU Biodiversity Strategy 2030 and the Green Deal by providing the evidence base needed to limit harmful chemical emissions, manage risks from priority substances and mixtures, and thereby help safeguard biodiversity and ecosystem resilience."
     },
 
     {

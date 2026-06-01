@@ -79,8 +79,6 @@
         }
 
 
-
-
         #node-box {
             font-family: 'Satoshi-Regular', sans-serif;
             position: fixed;
@@ -93,10 +91,8 @@
             flex-direction: column;
         }
 
-
         .node-box-scroll {
             flex-grow: 1;
-
             overflow-y: scroll;
             scrollbar-width: none;
         }
@@ -110,8 +106,6 @@
             padding-bottom: 1px;
             padding-right: 10px;
             margin-bottom: 10px;
-
-
 
             img {
                 max-width: 100%;
@@ -712,6 +706,16 @@
 <p>${node["date-of-publication"]}</p>
 <p>${node.authors}</p>
 </div>`
+        } else if (node.type === 'project-topic') {
+            summaryCard = `<div class="node-card type-project-topic">
+<h3>Summary</h3>
+<p>${node["description"]}</p>
+</div>`
+        } else if (node.type === 'project-keyword') {
+            summaryCard = `<div class="node-card type-project-keyword">
+<h3>Summary</h3>
+<p>${node["description"]}</p>
+</div>`
         }
 
         const projectKeywords = adjacent.filter(node => node.type === 'project-keyword')
@@ -834,10 +838,9 @@
         <th class="type-cause-effect">Description</th>
         <th class="type-article">Articles</th>
     </tr></thead>
-
     ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td class="type-cause-effect">${n.name || 'Unknown'}</td>
-<td class="type-article     numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
+<td class="type-article numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
     </table>
 </div>
 `
