@@ -47,7 +47,6 @@ function countAdjacentNodes(nodes, links) {
         target.count.set(source.type, (target.count.get(source.type) || 0) + 1);
         target.count.set('total', (target.count.get('total') || 0) + 1);
     }
-
 }
 
 
