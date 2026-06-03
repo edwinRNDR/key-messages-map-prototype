@@ -820,6 +820,36 @@
         Graph.focusAt(hub)
         populateNodeBox(hub, items)
     })
+
+    document.getElementById('legend-country').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'country')
+        const hub = {"id": "hub", "type": "country", "name": "All countries"}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks = gData.links.filter( edge => edge.type === 'partner_country')
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.0)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+        Graph.focusAt(hub)
+        populateNodeBox(hub, items)
+    })
+
+
     document.getElementById('legend-project-keyword').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'project-keyword')
