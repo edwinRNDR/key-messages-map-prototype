@@ -53,9 +53,14 @@
         }
 
         body {
-            font-family: 'Satoshi-Regular', sans-serif;
+            font-family: 'Satoshi-Medium', sans-serif;
             margin: 0;
             padding: 0;
+
+        }
+
+        html, body {
+            overscroll-behavior-x: none;
 
         }
 
@@ -151,7 +156,7 @@
 
 
         #node-box {
-            font-family: 'Satoshi-Regular', sans-serif;
+            font-family: 'Satoshi-Medium', sans-serif;
             position: fixed;
             top: 10px;
             left: 10px;
@@ -194,7 +199,7 @@
             h3 {
                 font-size: 12px;
                 text-transform: uppercase;
-
+                letter-spacing: 8%;
                 padding-bottom: 0px;
                 font-family: 'Satoshi-Medium', sans-serif;
             }
@@ -216,6 +221,7 @@
             thead {
                 text-align: left;
                 text-transform: uppercase;
+                letter-spacing: 8%;
                 font-size: 12px;
 
                 th:nth-child(2) {
@@ -279,7 +285,6 @@
 
         #info-box {
             user-select: none;
-            position: fixed;
             height: auto;
             right: 0;
             background-color: rgba(255, 255, 255, 0.75);
@@ -359,6 +364,42 @@
             user-select: none;
         }
 
+        #read-disclaimer {
+            position: fixed;
+            bottom: 10px;
+            right: 70px;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Satoshi-Medium', sans-serif;
+            pointer-events: fill;
+            z-index: 1000;
+        }
+
+        #read-disclaimer:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+        }
+
+        #graph-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            pointer-events: none;
+            user-select: none;
+            overflow-y: scroll;
+
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -369,10 +410,10 @@
 <div id="info-box-container">
     <div id="info-box">
         <div class="legend-item" id="legend-article">
-            <span class="type-article">●</span>Article
+            <span class="type-article">●</span>Publication
         </div>
         <div class="legend-item" id="legend-article-keyword">
-            <span class="type-article-keyword">●</span>Article keyword
+            <span class="type-article-keyword">●</span>Publication keyword
         </div>
 
         <div class="legend-item" id="legend-project">
@@ -407,16 +448,18 @@
         </div>
 
     </div>
-    <div id="read-disclaimer">
-        DISCLAIMER
-    </div>
+
+</div>
+<div id="read-disclaimer">
+    DISCLAIMER
 </div>
 <div id="graph"></div>
+<div id="graph-overlay"></div>
 
 <div id="disclaimer">
     <p>
         This prototype of an interactive map brings together a large part of the work produced within the PARC
-        partnership, showing how research projects, partners, publications, chemicals and health effects are
+        partnership, showing how <span class="type-project">research projects</span>, <span class="type-partner">partners</span>, <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span class="type-condition">health effects</span> are
         interconnected. It helps you to explore relationships across different areas of PARC's work and better
         understand the project’s key messages. It currently contains only limited information on chemicals and is a
         prototype that will later be integrated into the PARC website, so that updates to projects and publications
@@ -466,6 +509,10 @@
         document.getElementById('disclaimer').classList.add('hidden')
     })
 
+    document.getElementById('read-disclaimer').addEventListener('click', () => {
+        document.getElementById('disclaimer').classList.remove('hidden')
+    })
+
     const chemicals = ['PFAS', 'Plastics', 'Phthalates', 'Bisphenol', 'Arsenic'].map(chemical => ({
         id: chemical,
         type: 'chemical',
@@ -484,7 +531,7 @@
         'Phthalates-obesity',
         'Bisphenol-obesity',
         'Arsenic-Metabolic disorder'
-    ].map(ca => ({id: ca, type: 'cause-effect', name: ca.split('-')[0] + ' causes ' + ca.split('-')[1]}))
+    ].map(ca => ({id: ca, type: 'cause-effect', name: ca.split('-')[0] + ' is linked to ' + ca.split('-')[1]}))
 
 
     const causeEffectToCause = causeEffect.map(ce => ({
@@ -578,9 +625,6 @@
             type: 'partner_country'
         }
     ))
-
-    console.log('Country nodes:', countryNodes)
-    console.log('Country links:', countryLinks)
 
     const gData = {
         nodes: [...data, ...chemicals, ...conditions, ...causeEffect, ...articleKeywordNodes, ...countryNodes],
@@ -684,6 +728,19 @@
                 const x = selectedNode.x
                 const y = selectedNode.y
                 const gradient = ctx.createRadialGradient(x, y, 0, x, y, 600);
+
+                const screenCoords = Graph.graph2ScreenCoords(selectedNode.x - 70, selectedNode.y - 70.0)
+                const screenCoords2 = Graph.graph2ScreenCoords(selectedNode.x + 70, selectedNode.y + 70.0)
+                const overlay = document.getElementById("graph-overlay")
+
+                overlay.style.left = screenCoords.x + "px"
+                overlay.style.top = screenCoords.y + "px"
+                const width = (screenCoords2.x - screenCoords.x)
+                overlay.style.width = width + "px"
+                overlay.style.height = (screenCoords2.y - screenCoords.y) + "px"
+
+
+                overlay.innerHTML = width < 100? '' : `<p>${selectedNode.name || selectedNode.title}</p>`
 
 
                 const steps = 7
@@ -790,11 +847,7 @@
                 // ctx.fillRect(x - bckgDimensions[0] / 2, y - bckgDimensions[1] / 2, ...bckgDimensions);
 
                 if (id === selectedNode?.id) {
-                    labels.push({
-                        "label": label,
-                        "x": x,
-                        "y": y + 20.0 / globalScale,
-                    })
+
                 } else {
                     labels.push({
                         "label": label,
@@ -851,7 +904,7 @@
         storedEdgesColors = null
 
         const items = gData.nodes.filter(node => node.type === 'article')
-        const hub = {"id": "hub", "type": "article", "name": "All articles"}
+        const hub = {"id": "hub", "type": "article", "name": "All publications"}
         hub.x = 0.0
         hub.y = 0.0
         hub.fx = 0.0
@@ -1186,7 +1239,7 @@
     document.getElementById('legend-article-keyword').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'article-keyword')
-        const hub = {"id": "hub", "type": "article-keyword", "name": "All article keywords"}
+        const hub = {"id": "hub", "type": "article-keyword", "name": "All publication keywords"}
         hub.x = 0.0
         hub.y = 0.0
         hub.fx = 0.0
@@ -1364,10 +1417,10 @@
         const articleKeywords = adjacent.filter(node => node.type === 'article-keyword')
         const articleKeywordsCard = articleKeywords.length === 0 ? '' : `
 <div class="node-card">
-    <h3 class="type-article-keyword">Article keywords</h3>
+    <h3 class="type-article-keyword">Publication keywords</h3>
     <table class="sortable">
     <thead>
-    <tr><th class="type-article-keyword">Description</th><th class="type-article">Articles</th></tr>
+    <tr><th class="type-article-keyword">Description</th><th class="type-article">Publications</th></tr>
 </thead>
     ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
@@ -1376,7 +1429,7 @@
         const articles = adjacent.filter(node => node.type === 'article')
         const articlesCard = articles.length === 0 ? '' : `
 <div class="node-card">
-    <h3 class="type-article" class="type-article">Articles</h3>
+    <h3 class="type-article" class="type-article">Publications</h3>
     <table class="sortable">
     <thead>
     <tr><th class="type-article">Title</th><th class="type-project">Projects</th></tr>
@@ -1411,7 +1464,7 @@
     <thead><tr>
     <th class="type-project">Project</th>
     <th class="type-partner">Partners</th>
-    <th class="type-article">Articles</th>
+    <th class="type-article">Publications</th>
 </tr></thead>
     ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td>${n.name || 'Unknown'}</td>
@@ -1460,7 +1513,7 @@
     <table class="sortable">
         <thead><tr>
         <th class="type-cause-effect">Description</th>
-        <th class="type-article">Articles</th>
+        <th class="type-article">Publications</th>
     </tr></thead>
     ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td>
