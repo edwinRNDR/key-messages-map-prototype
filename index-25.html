@@ -388,7 +388,7 @@
             height: 100px;
             pointer-events: none;
             user-select: none;
-            overflow-y: scroll;
+            overflow: hidden;
 
             display: flex;
             align-items: center;
@@ -697,6 +697,12 @@
         })
 
         .nodeCanvasObject((node, ctx, globalScale) => nodePaint(node, ctx, globalScale))
+        .nodePointerAreaPaint((node, color, ctx) => {
+            ctx.fillStyle = color
+            ctx.beginPath()
+            ctx.arc(node.x, node.y, node.__radius + 2.0, 0, 2 * Math.PI, false)
+            ctx.fill()
+        })
         .onRenderFramePost((ctx, globalScale) => {
             ctx.save()
             const fontSize = 12 / globalScale;
@@ -810,7 +816,10 @@
         }
     }
 
-    function nodePaint({id, type, x, y, name, count}, ctx, globalScale) {
+    function nodePaint(node, ctx, globalScale) {
+
+        const {id, type, x, y, name, count} = node
+
         ctx.fillStyle = nodeColor({'type': type})
 
         ctx.beginPath()
@@ -821,6 +830,10 @@
         if (id === selectedNodeId) {
             radius = 100.0;
         }
+
+        node.__radius = radius
+
+
         ctx.arc(x, y, radius, 0, 2 * Math.PI, false)
         ctx.fill()
 
@@ -892,10 +905,10 @@
 
 
         centerAtTimeout = setTimeout(() => {
-            const axis = Math.min(Graph.width() - 450.0, Graph.height())
-            const zoomFactor = axis / 1200.0
+            const axis = Math.min(Graph.width() - 350.0, Graph.height())
+            const zoomFactor = axis / 1000.0
             Graph.zoom(zoomFactor, 1000)
-            const x = node.x - 450.0 / zoomFactor * 0.5
+            const x = node.x - 250.0 / zoomFactor * 0.5
             Graph.centerAt(x, node.y, 1000)
         }, 600)
     }
@@ -1279,6 +1292,10 @@
     })
 
     function selectNode(node) {
+
+        if (node.type === 'hub') {
+            return
+        }
         storedEdgesColors = null
 
         selectedNodeId = node.id
