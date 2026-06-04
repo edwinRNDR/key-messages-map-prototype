@@ -607,7 +607,9 @@
         })
 
         .graphData(gData)
-        .d3Force('collide', forceCollide(node => (node.id === selectedNodeId)? 150.0 :  (node.type === 'project-keyword' || node.type === 'project-topic') ? 15.0 : 5.0))
+        .d3Force('collide',
+            forceCollide(node => (node.id === selectedNodeId)? 150.0 :  (node.type === 'project-keyword' || node.type === 'project-topic' || node.type === 'article-keyword') ? 13.0 : 7.0)
+        )
 
 
     const linkForce = Graph.d3Force('link')
