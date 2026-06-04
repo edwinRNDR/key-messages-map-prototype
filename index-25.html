@@ -244,10 +244,13 @@
                 padding-bottom: 5px;
                 font-family: 'Satoshi-Medium', sans-serif;
                 font-size: 18px;
-
-
             }
 
+            th::after {
+                content-visibility: hidden;
+            margin-right: -4px !important;
+                padding-right: 0 !important;
+            }
         }
 
         .numeric {
@@ -344,7 +347,8 @@
             width: 100vw;
             height: 100vh;
             background-color: rgba(255, 255, 255, 0.95);
-            padding: 10px;
+            box-sizing: border-box;
+            padding: 200px;
             font-size: 20px;
             font-family: 'Satoshi-Medium', sans-serif;
             z-index: 1000;
@@ -459,7 +463,9 @@
 <div id="disclaimer">
     <p>
         This prototype of an interactive map brings together a large part of the work produced within the PARC
-        partnership, showing how <span class="type-project">research projects</span>, <span class="type-partner">partners</span>, <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span class="type-condition">health effects</span> are
+        partnership, showing how <span class="type-project">research projects</span>, <span class="type-partner">partners</span>,
+        <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span
+            class="type-condition">health effects</span> are
         interconnected. It helps you to explore relationships across different areas of PARC's work and better
         understand the project’s key messages. It currently contains only limited information on chemicals and is a
         prototype that will later be integrated into the PARC website, so that updates to projects and publications
@@ -746,7 +752,7 @@
                 overlay.style.height = (screenCoords2.y - screenCoords.y) + "px"
 
 
-                overlay.innerHTML = width < 100? '' : `<p>${selectedNode.name || selectedNode.title}</p>`
+                overlay.innerHTML = width < 100 ? '' : `<p>${selectedNode.name || selectedNode.title}</p>`
 
 
                 const steps = 7
@@ -838,8 +844,9 @@
         ctx.fill()
 
         if (id === hoverNode?.id) {
+            ctx.lineWidth = 1.0 / globalScale
             ctx.beginPath()
-            ctx.arc(x, y, radius * 2, 0, 2 * Math.PI, false)
+            ctx.arc(x, y, radius + 5 / globalScale, 0, 2 * Math.PI, false)
             ctx.stroke()
         }
 
@@ -865,16 +872,18 @@
                     labels.push({
                         "label": label,
                         "x": x,
-                        "y": y + radius + 5.0 / globalScale,
+                        "y": y + radius + 10.0 / globalScale,
                     })
-
                 }
             }
-
         }
 
         const valence = count?.get('total') || 0
         const logValence = Math.log(valence + 1)
+
+        if (id === selectedNode?.id && 150.0 * globalScale > 100.0)
+            return
+
         if (globalScale > 3.0 - logValence * 0.25 || id === selectedNode?.id || id === hoverNode?.id) {
             const label = valence > 0 ? valence : '';
             const fontSize = 12 / globalScale;
@@ -1351,7 +1360,7 @@
     <thead>
     <tr>
     <th class="type-project-topic">Topic</th>
-    <th class="type-project">Projects</th>
+    <th class="type-project indicator-left numeric">Projects</th>
     </tr>
 </thead>
     ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1365,31 +1374,31 @@
 
         if (node.type === 'partner' && node.description) {
             summaryCard = `<div class="node-card">
-<h3 >Summary</h3>
+<h3>Summary</h3>
 <p>${node.fullname}</p>
 <p>${node.itype}, ${node.country}</p>
 <p>${node.description}</p>
 </div>`
         } else if (node.type === 'project' && node.description) {
-            summaryCard = `<div class="node-card type-project">
-<h3>Summary</h3>
+            summaryCard = `<div class="node-card">
+<h3 class="type-project">Summary</h3>
 <p>${node.description}</p>
 </div>`
         } else if (node.type === 'article' && node.authors) {
-            summaryCard = `<div class="node-card type-article">
-<h3>Summary</h3>
+            summaryCard = `<div class="node-card">
+<h3 class="type-article">Summary</h3>
 <img src="${node.image}" alt="article cover art"/>
 <p>${node["date-of-publication"]}</p>
 <p>${node.authors}</p>
 </div>`
         } else if (node.type === 'project-topic' && node.description) {
-            summaryCard = `<div class="node-card type-project-topic">
-<h3>Summary</h3>
+            summaryCard = `<div class="node-card">
+<h3 class="type-project-topic">Summary</h3>
 <p>${node["description"]}</p>
 </div>`
         } else if (node.type === 'project-keyword' && node.description) {
-            summaryCard = `<div class="node-card type-project-keyword">
-<h3>Summary</h3>
+            summaryCard = `<div class="node-card">
+<h3 class="type-project-keyword">Summary</h3>
 <p>${node["description"]}</p>
 </div>`
         }
@@ -1402,7 +1411,7 @@
     <table class="sortable">
     <thead><tr>
         <th class="type-project-keyword">Keyword</th>
-        <th class="type-project">Projects</th>
+        <th class="type-project indicator-left numeric">Projects</th>
     </tr>
 </thead>
     ${projectKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1421,7 +1430,7 @@
     <tr style="width: 100%;">
         <th class="type-partner">Name</th>
         <th class="type-partner">Country</th>
-        <th class="type-project">Projects</th></tr>
+        <th class="type-project indicator-left numeric">Projects</th></tr>
 </thead>
     ${partners.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td class="type-partner">${n.name || 'Unknown'}</td>
@@ -1437,7 +1446,9 @@
     <h3 class="type-article-keyword">Publication keywords</h3>
     <table class="sortable">
     <thead>
-    <tr><th class="type-article-keyword">Description</th><th class="type-article">Publications</th></tr>
+    <tr>
+    <th class="type-article-keyword">Description</th>
+    <th class="type-article indicator-left numeric">Publications</th></tr>
 </thead>
     ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
@@ -1464,7 +1475,9 @@
     <h3 class="type-country" class="type-country">Countries</h3>
     <table class="sortable">
     <thead>
-    <tr><th class="type-article">Country</th><th class="type-partner">Partners</th></tr>
+    <tr>
+    <th class="type-article">Country</th>
+    <th class="type-partner indicator-left numeric">Partners</th></tr>
 </thead>
     ${countries.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td>
@@ -1480,8 +1493,8 @@
     <table class="sortable">
     <thead><tr>
     <th class="type-project">Project</th>
-    <th class="type-partner">Partners</th>
-    <th class="type-article">Publications</th>
+    <th class="type-partner indicator-left numeric">Partners</th>
+    <th class="type-article indicator-left numeric">Publications</th>
 </tr></thead>
     ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td>${n.name || 'Unknown'}</td>
@@ -1498,7 +1511,7 @@
     <table class="sortable">
     <thead><tr>
         <th class="type-chemical">Description</th>
-        <th class="type-condition">Conditions</th>
+        <th class="type-condition indicator-left numeric">Conditions</th>
     </tr></thead>
     ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td>${n.name || 'Unknown'}</td>
@@ -1514,7 +1527,7 @@
     <table class="sortable">
     <thead><tr>
         <th class="type-condition">Description</th>
-        <th class="type-cause-effect">Links</th>
+        <th class="type-cause-effect indicator-left numeric">Links</th>
     </tr></thead>
     ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td>${n.name || 'Unknown'}</td>
@@ -1530,7 +1543,7 @@
     <table class="sortable">
         <thead><tr>
         <th class="type-cause-effect">Description</th>
-        <th class="type-article">Publications</th>
+        <th class="type-article indicator-left numeric">Publications</th>
     </tr></thead>
     ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td>
