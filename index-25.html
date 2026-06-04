@@ -1302,7 +1302,7 @@
 
     function selectNode(node) {
 
-        if (node.type === 'hub') {
+        if (node.id === 'hub' || node.id === selectedNode.id) {
             return
         }
         storedEdgesColors = null
@@ -1460,7 +1460,8 @@
     <h3 class="type-article" class="type-article">Publications</h3>
     <table class="sortable">
     <thead>
-    <tr><th class="type-article">Title</th><th class="type-project">Projects</th></tr>
+    <tr><th class="type-article">Title</th>
+    <th class="type-project indicator-left numeric">Projects</th></tr>
 </thead>
     ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td>
