@@ -555,44 +555,44 @@
     })
 
     const causeEffectData = [
-        'arsenic_cancer',
-        'arsenic_skin disorders',
-        'arsenic_metabolic disorders',
-        'arsenic_reproductive toxicity',
-        'arsenic_development anomalies',
-        'mercury_damage to the brain',
-        'mercury_impaired development of the brain',
-        'mercury_cardiovascular disease',
-        'mercury_damage to lungs',
-        'mercury_damage to digestive tract',
-        'mercury_kidney damage',
-        'pesticides_nervous system disruption',
-        'pesticides_impaired development of the brain',
-        'pesticides_hormonal system disruption',
-        'pesticides_cancer',
-        'pesticides_skin irritation',
-        'pesticides_reproductive system disruption',
-        'phthalates_ADHD',
-        'phthalates_hormonal system disruption',
-        'phthalates_asthma',
-        'phthalates_insulin resistance',
-        'phthalates_obesity',
-        'phthalates_infertility',
-        'PFAS_immunotocity',
-        'PFAS_tyroid disease',
-        'PFAS_increased cholesterol level',
-        'PFAS_liver damage',
-        'PFAS_kidney cancer',
-        'PFAS_testical cancer',
-        'PFAS_development toxicity',
-        'PFAS_reproductive system disruption',
-        'bisphenols_neurodevelopment effects',
-        'bisphenols_immunodevelopment effects',
-        'bisphenols_cardiovascualar disease',
-        'bisphenols_hormone related cancer risk',
-        'bisphenols_low birth weight',
-        'bisphenols_obesity',
-        'bisphenols_infertility'
+        'Arsenic_Cancer',
+        'Arsenic_Skin disorders',
+        'Arsenic_Metabolic disorders',
+        'Arsenic_Reproductive toxicity',
+        'Arsenic_Development anomalies',
+        'Mercury_Damage to the brain',
+        'Mercury_Impaired development of the brain',
+        'Mercury_Cardiovascular disease',
+        'Mercury_Damage to lungs',
+        'Mercury_Damage to digestive tract',
+        'Mercury_Kidney damage',
+        'Pesticides_Nervous system disruption',
+        'Pesticides_Impaired development of the brain',
+        'Pesticides_Hormonal system disruption',
+        'Pesticides_Cancer',
+        'Pesticides_Skin irritation',
+        'Pesticides_Reproductive system disruption',
+        'Phthalates_ADHD',
+        'Phthalates_Hormonal system disruption',
+        'Phthalates_Asthma',
+        'Phthalates_Insulin resistance',
+        'Phthalates_Obesity',
+        'Phthalates_Infertility',
+        'PFAS_Immunotocity',
+        'PFAS_Tyroid disease',
+        'PFAS_Increased cholesterol level',
+        'PFAS_Liver damage',
+        'PFAS_Kidney cancer',
+        'PFAS_Testical cancer',
+        'PFAS_Development toxicity',
+        'PFAS_Reproductive system disruption',
+        'Bisphenols_Neurodevelopment effects',
+        'Bisphenols_Immunodevelopment effects',
+        'Bisphenols_Cardiovascualar disease',
+        'Bisphenols_Hormone related cancer risk',
+        'Bisphenols_Low birth weight',
+        'Bisphenols_Obesity',
+        'Bisphenols_Infertility'
 
     ]
     const chemicalData = [...new Set(causeEffectData.map( n => n.split('_')[0]))]
@@ -1625,11 +1625,13 @@
     <h3 class="type-cause-effect">Cause and effect</h3>
     <table class="sortable">
         <thead><tr>
-        <th aria-sort="ascending" class="type-cause-effect">Description</th>
+        <th aria-sort="ascending" class="type-cause-effect">Cause</th>
+        <th aria-sort="ascending" class="type-cause-effect">Effect</th>
         <th class="type-article indicator-left numeric">Publications</th>
     </tr></thead>
     ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.name || 'Unknown'}</td>
+<td>${n.id.split('_')[0] || 'Unknown'}</td>
+<td>${n.id.split('_')[1] || 'Unknown'}</td>
 <td class="type-article numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
     </table>
 </div>
