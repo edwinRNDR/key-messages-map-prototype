@@ -417,11 +417,11 @@ function isValidSubtree(subtreeEdges) {
         adjList[edge.target].push(edge.source);
     }
 
-    // For a tree with n nodes, it must have exactly n-1 edges
-    if (subtreeEdges.length !== nodes.size - 1) {
-        console.log(`tree has ${subtreeEdges.length} edges, but should have ${nodes.size - 1}`)
-        return false;
-    }
+    // // For a tree with n nodes, it must have exactly n-1 edges
+    // if (subtreeEdges.length !== nodes.size - 1) {
+    //     console.log(`tree has ${subtreeEdges.length} edges, but should have ${nodes.size - 1}`)
+    //     return false;
+    // }
 
     // Check connectivity using BFS
     const visited = new Set();

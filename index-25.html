@@ -233,6 +233,8 @@
                 }
             }
 
+
+
             tr {
                 /*background-color: red;*/
                 /*border-top: 1px solid black;*/
@@ -394,6 +396,7 @@
             user-select: none;
             overflow: hidden;
 
+            color: white;
             display: flex;
             align-items: center;
 
@@ -1352,7 +1355,7 @@
 
     function populateNodeBox(node, adjacent = []) {
         hoverNode = null
-        const projectTopics = adjacent.filter(node => node.type === 'project-topic')
+        const projectTopics = adjacent.filter(node => node.type === 'project-topic').sort((a, b) => b.count.get('project') - a.count.get('project'))
         const projectTopicsCard = projectTopics.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-project-topic">Project Topics</h3>
@@ -1360,7 +1363,7 @@
     <thead>
     <tr>
     <th class="type-project-topic">Topic</th>
-    <th class="type-project indicator-left numeric">Projects</th>
+    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th>
     </tr>
 </thead>
     ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1404,13 +1407,13 @@
         }
 
 
-        const projectKeywords = adjacent.filter(node => node.type === 'project-keyword')
+        const projectKeywords = adjacent.filter(node => node.type === 'project-keyword').sort((a, b) => a.name.localeCompare(b.name))
         const projectKeywordsCard = projectKeywords.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-project-keyword">Project Keywords</h3>
     <table class="sortable">
     <thead><tr>
-        <th class="type-project-keyword">Keyword</th>
+        <th aria-sort="ascending" class="type-project-keyword">Keyword</th>
         <th class="type-project indicator-left numeric">Projects</th>
     </tr>
 </thead>
@@ -1421,14 +1424,14 @@
     </table>
 </div>
 `
-        const partners = adjacent.filter(node => node.type === 'partner')
+        const partners = adjacent.filter(node => node.type === 'partner').sort((a, b) => a.name.localeCompare(b.name))
         const partnersCard = partners.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-partner">Partners</h3>
     <table class="sortable">
     <thead>
     <tr style="width: 100%;">
-        <th class="type-partner">Name</th>
+        <th aria-sort="ascending" class="type-partner">Name</th>
         <th class="type-partner">Country</th>
         <th class="type-project indicator-left numeric">Projects</th></tr>
 </thead>
@@ -1440,28 +1443,29 @@
     </table>
 </div>`
 
-        const articleKeywords = adjacent.filter(node => node.type === 'article-keyword')
+        const articleKeywords = adjacent.filter(node => node.type === 'article-keyword').sort((a, b) => a.name.localeCompare(b.name))
         const articleKeywordsCard = articleKeywords.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-article-keyword">Publication keywords</h3>
     <table class="sortable">
     <thead>
     <tr>
-    <th class="type-article-keyword">Description</th>
+    <th aria-sort="ascending" class="type-article-keyword">Description</th>
     <th class="type-article indicator-left numeric">Publications</th></tr>
 </thead>
     ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
     </table>
 </div>`
-        const articles = adjacent.filter(node => node.type === 'article')
+        const articles = adjacent.filter(node => node.type === 'article').toSorted((a, b) => (b.count.get('project')||0) - (a.count.get('project')||0))
+        console.log(articles)
         const articlesCard = articles.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-article" class="type-article">Publications</h3>
     <table class="sortable">
     <thead>
     <tr><th class="type-article">Title</th>
-    <th class="type-project indicator-left numeric">Projects</th></tr>
+    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th></tr>
 </thead>
     ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
 <td>${n.name || 'Unknown'}</td>
@@ -1470,14 +1474,14 @@
     </table>
 </div>
 `
-        const countries = adjacent.filter(node => node.type === 'country')
+        const countries = adjacent.filter(node => node.type === 'country').sort((a, b) => a.name.localeCompare(b.name))
         const countriesCard = countries.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-country" class="type-country">Countries</h3>
     <table class="sortable">
     <thead>
     <tr>
-    <th class="type-article">Country</th>
+    <th aria-sort="ascending" class="type-article">Country</th>
     <th class="type-partner indicator-left numeric">Partners</th></tr>
 </thead>
     ${countries.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1487,31 +1491,31 @@
     </table>
 </div>`
 
-        const projects = adjacent.filter(node => node.type === 'project')
+        const projects = adjacent.filter(node => node.type === 'project').sort((a, b) => b.count.get('partner') - a.count.get('partner'))
         const projectsCard = projects.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-project">Projects</h3>
     <table class="sortable">
     <thead><tr>
-    <th class="type-project">Project</th>
-    <th class="type-partner indicator-left numeric">Partners</th>
-    <th class="type-article indicator-left numeric">Publications</th>
-</tr></thead>
+        <th class="type-project">Project</th>
+        <th aria-sort="descending" class="type-partner indicator-left numeric">Partners</th>
+        <th class="type-article indicator-left numeric">Publications</th>
+    </tr></thead>
     ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-    <td>${n.name || 'Unknown'}</td>
-    <td class="type-partner numeric">${n.count.get('partner') || ''}</td>
-    <td class="type-article numeric">${n.count.get('article') || ''}</td>
-</tr>`).join('')}
+        <td>${n.name || 'Unknown'}</td>
+        <td class="type-partner numeric">${n.count.get('partner') || ''}</td>
+        <td class="type-article numeric">${n.count.get('article') || ''}</td>
+    </tr>`).join('')}
     </table>
 </div>
 `
-        const chemicals = adjacent.filter(node => node.type === 'chemical')
+        const chemicals = adjacent.filter(node => node.type === 'chemical').sort((a, b) => a.name.localeCompare(b.name))
         const chemicalsCard = chemicals.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-chemical">Chemicals</h3>
     <table class="sortable">
     <thead><tr>
-        <th class="type-chemical">Description</th>
+        <th aria-sort="ascending" class="type-chemical">Description</th>
         <th class="type-condition indicator-left numeric">Conditions</th>
     </tr></thead>
     ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1521,13 +1525,13 @@
     </table>
 </div>
 `
-        const conditions = adjacent.filter(node => node.type === 'condition')
+        const conditions = adjacent.filter(node => node.type === 'condition').sort((a, b) => a.name.localeCompare(b.name))
         const conditionsCard = conditions.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-condition">Conditions</h3>
     <table class="sortable">
     <thead><tr>
-        <th class="type-condition">Description</th>
+        <th aria-sort="ascending" class="type-condition">Description</th>
         <th class="type-cause-effect indicator-left numeric">Links</th>
     </tr></thead>
     ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
@@ -1537,13 +1541,13 @@
     </table>
 </div>
 `
-        const causeEffects = adjacent.filter(node => node.type === 'cause-effect')
+        const causeEffects = adjacent.filter(node => node.type === 'cause-effect').sort((a, b) => a.name.localeCompare(b.name))
         const causeEffectsCard = causeEffects.length === 0 ? '' : `
         <div class="node-card">
     <h3 class="type-cause-effect">Cause and condition</h3>
     <table class="sortable">
         <thead><tr>
-        <th class="type-cause-effect">Description</th>
+        <th aria-sort="ascending" class="type-cause-effect">Description</th>
         <th class="type-article indicator-left numeric">Publications</th>
     </tr></thead>
     ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
