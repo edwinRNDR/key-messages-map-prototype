@@ -14,8 +14,12 @@
             --color-project-keyword: #F58296;
             --color-project-topic: #D21A46;
             --color-cause-effect: #F5D475;
+            --color-cause-effect-dark: #F1C23C;
             --color-chemical: #E0C7F5;
+            --color-chemical-dark: #B070E5;
             --color-condition: #31D9C4;
+            --color-country: #9BCBC6;
+            --color-country-dark: #7CA6A2;
         }
 
         hr {
@@ -95,19 +99,42 @@
         }
 
         .type-cause-effect {
+            color: var(--color-cause-effect-dark);
+            text-decoration-color: var(--color-cause-effect-dark);
+        }
+
+        .type-cause-effect-light {
             color: var(--color-cause-effect);
             text-decoration-color: var(--color-cause-effect);
         }
 
+
         .type-chemical {
+            color: var(--color-chemical-dark);
+            text-decoration-color: var(--color-chemical-dark);
+        }
+
+        .type-chemical-light {
             color: var(--color-chemical);
             text-decoration-color: var(--color-chemical);
         }
+
 
         .type-condition {
             color: var(--color-condition);
             text-decoration-color: var(--color-condition);
         }
+
+        .type-country {
+            color: var(--color-country-dark);
+            text-decoration-color: var(--color-country-dark);
+        }
+
+        .type-country-light {
+            color: var(--color-country);
+            text-decoration-color: var(--color-country);
+        }
+
 
         .type-article-bg {
             background-color: var(--color-article) !important;
@@ -140,17 +167,22 @@
         }
 
         .type-cause-effect-bg {
-            background-color: var(--color-cause-effect) !important;
-            color: black !important;
+            background-color: var(--color-cause-effect-dark) !important;
+            color: white !important;
         }
 
         .type-chemical-bg {
-            background-color: var(--color-chemical) !important;
+            background-color: var(--color-chemical-dark) !important;
             color: white !important;
         }
 
         .type-condition-bg {
             background-color: var(--color-condition) !important;
+            color: white !important;
+        }
+
+        .type-country-bg {
+            background-color: var(--color-country-dark) !important;
             color: white !important;
         }
 
@@ -440,15 +472,15 @@
         </div>
 
         <div class="legend-item" id="legend-country">
-            <span class="type-country">●</span>Country
+            <span class="type-country-light">●</span>Country
         </div>
 
 
         <div class="legend-item" id="legend-cause-effect">
-            <span class="type-cause-effect">●</span>Cause-effect
+            <span class="type-cause-effect-light">●</span>Cause-effect
         </div>
         <div class="legend-item" id="legend-chemical">
-            <span class="type-chemical">●</span>Chemical
+            <span class="type-chemical-light">●</span>Chemical
         </div>
         <div class="legend-item" id="legend-condition">
             <span class="type-condition">●</span>Condition
@@ -820,6 +852,8 @@
             return `rgba(49, 217, 196, ${opacity})`;
         } else if (node.type === 'cause-effect') {
             return `rgba(245, 212, 117, ${opacity})`;
+        } else if (node.type === 'country') {
+            return `rgba(155, 203, 198, ${opacity})`;
         } else {
             return `rgba(0, 0, 0, ${opacity})`;
         }
