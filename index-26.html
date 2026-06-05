@@ -483,7 +483,7 @@
             <span class="type-chemical-light">●</span>Chemical
         </div>
         <div class="legend-item" id="legend-condition">
-            <span class="type-condition">●</span>Condition
+            <span class="type-condition">●</span>Health effect
         </div>
 
     </div>
@@ -1313,7 +1313,7 @@
     document.getElementById('legend-condition').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'condition')
-        const hub = {"id": "hub", "type": "condition", "name": "All conditions", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hub = {"id": "hub", "type": "condition", "name": "All health effects", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -1594,7 +1594,7 @@
     <table class="sortable">
     <thead><tr>
         <th aria-sort="ascending" class="type-chemical">Description</th>
-        <th class="type-condition indicator-left numeric">Conditions</th>
+        <th class="type-condition indicator-left numeric">Health effects</th>
     </tr></thead>
     ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
     <td>${n.name || 'Unknown'}</td>
@@ -1606,7 +1606,7 @@
         const conditions = adjacent.filter(node => node.type === 'condition').sort((a, b) => a.name.localeCompare(b.name))
         const conditionsCard = conditions.length === 0 ? '' : `
 <div class="node-card">
-    <h3 class="type-condition">Conditions</h3>
+    <h3 class="type-condition">Health effects</h3>
     <table class="sortable">
     <thead><tr>
         <th aria-sort="ascending" class="type-condition">Description</th>
@@ -1622,7 +1622,7 @@
         const causeEffects = adjacent.filter(node => node.type === 'cause-effect').sort((a, b) => a.name.localeCompare(b.name))
         const causeEffectsCard = causeEffects.length === 0 ? '' : `
         <div class="node-card">
-    <h3 class="type-cause-effect">Cause and condition</h3>
+    <h3 class="type-cause-effect">Cause and effect</h3>
     <table class="sortable">
         <thead><tr>
         <th aria-sort="ascending" class="type-cause-effect">Description</th>
@@ -1652,7 +1652,7 @@
             "project-topic": "Project topic",
             "project-keyword": "Project keyword",
             "chemical": "Chemical",
-            "condition": "Condition",
+            "condition": "Health effect",
             "cause-effect": "Cause-effect"
         }
 
