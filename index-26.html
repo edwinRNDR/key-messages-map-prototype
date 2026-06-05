@@ -1276,7 +1276,7 @@
     document.getElementById('legend-chemical').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'chemical')
-        const hub = {"id": "hub", "type": "chemical", "name": "All chemicals"}
+        const hub = {"id": "hub", "type": "chemical", "name": "All chemicals", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -1313,7 +1313,7 @@
     document.getElementById('legend-condition').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'condition')
-        const hub = {"id": "hub", "type": "condition", "name": "All conditions"}
+        const hub = {"id": "hub", "type": "condition", "name": "All conditions", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -1348,11 +1348,7 @@
     document.getElementById('legend-article-keyword').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'article-keyword')
-        const hub = {"id": "hub", "type": "article-keyword", "name": "All publication keywords"}
-        hub.x = 0.0
-        hub.y = 0.0
-        hub.fx = 0.0
-        hub.fy = 0.0
+        const hub = {"id": "hub", "type": "article-keyword", "name": "All publication keywords", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
 
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
