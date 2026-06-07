@@ -266,7 +266,6 @@
             }
 
 
-
             tr {
                 /*background-color: red;*/
                 /*border-top: 1px solid black;*/
@@ -282,7 +281,7 @@
 
             th::after {
                 content-visibility: hidden;
-            margin-right: -4px !important;
+                margin-right: -4px !important;
                 padding-right: 0 !important;
             }
         }
@@ -382,24 +381,53 @@
             height: 100vh;
             background-color: rgba(255, 255, 255, 0.95);
             box-sizing: border-box;
-            padding: 200px;
             font-size: 20px;
             font-family: 'Satoshi-Medium', sans-serif;
             z-index: 1000;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            align-content: center;
+
+            #disclaimer-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+
+                #disclaimer-text {
+                    max-width: 700px;
+                }
+
+                #limitations {
+                    font-size: 14px;
+                    font-family: 'Satoshi-Medium', sans-serif;
+                }
+
+            }
+
+
         }
 
         .hidden {
-            display: none;
+            display: none !important;
         }
 
         #enter-map-button {
             padding: 20px 50px 20px 50px;
             background-color: #008273;
+            font-size: 16px;
+            font-family: 'Satoshi-Medium', sans-serif;
+
+            letter-spacing: 8%;
             color: white;
             width: fit-content;
+            margin: 50px auto;
             border-radius: 80px;
             cursor: pointer;
             user-select: none;
+            pointer-events: fill;
         }
 
         #read-disclaimer {
@@ -496,38 +524,75 @@
 <div id="graph-overlay"></div>
 
 <div id="disclaimer">
-    <p>
-        This prototype of an interactive map brings together a large part of the work produced within the PARC
-        partnership, showing how <span class="type-project">research projects</span>, <span class="type-partner">partners</span>,
-        <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span
-            class="type-condition">health effects</span> are
-        interconnected. It helps you to explore relationships across different areas of PARC's work and better
-        understand the project’s key messages. It currently contains only limited information on chemicals and is a
-        prototype that will later be integrated into the PARC website, so that updates to projects and publications
-        there will automatically appear in the map.
-    </p>
-    <p>
-        The information is visualised as a directed graph: a set of nodes connected by one‑way edges that represent
-        relationships from one node to another, but not necessarily back. The map is an interactive view that rearranges
-        itself based on the node you select: the clicked node reveals all its connections, while the others show only
-        their strongest links, ensuring that each node appears only once, even when multiple interconnections exist.
-    </p>
-    <p>
-        The prototype is meant to illustrate the concept, explore its potential, and collect feedback for a future
-        version that will automatically updated from eu‑parc.eu. Clicking on the legend will group the information
-        around the corresponding topics, helping you explore different thematic perspectives.
-    </p>
+    <div id="disclaimer-container">
+        <div id="disclaimer-text">
+            <p>
+                <span class="type-partner">PARC knowledge map</span><br/>
+                Connecting knowledge across the PARC partnership
+            </p>
+            <p>
+                This interactive map prototype brings together a large part of the work
+                produced within the PARC partnership, showing how research <span class="type-project">projects</span>, <span
+                    class="type-partner">partners</span>,
+                <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span
+                    class="type-condition">health effects</span> are
+                interconnected.  It
+                helps you to explore relationships across different areas of PARC's work and
+                better understand the project's key messages.
+            </p>
+            <p>
+                The current version contains only limited information on chemicals. A future
+                version will be integrated into the PARC website, allowing updates to projects
+                and publications to be automatically reflected in the map            </p>
+            <p>
+                The information is visualised as a directed graph: a set of nodes connected by
+                one-way links that represent relationships from one node to another, but not
+                necessarily back. The map rearranges itself based on the node you select: the
+                clicked node displays all its connections, while the others show only their
+                strongest links, ensuring that each node appears only once, even when
+                multiple interconnections exist.
+            </p>
+            <p>
+                The prototype is meant to illustrate the concept, explore its potential, and
+                collect feedback for a future version that will be automatically update from eu-
+                parc.eu. Clicking on the legend groups the information by topic, allowing you
+                explore different thematic perspectives.
+            </p>
+        </div>
+        <div id="limitations">
+            <p>
+                Known limitations
+                <ul>
+                    <li>Largely based on data available in late 2025</li>
+                    <li>The underlying data is not yet fully validated and includes synthetic examples</li>
+                    <li>This version is made for the general meeting in Dublin and does not contains outside links</li>
+                </ul>
+            </p>
+            <p>
+                Planned improvements
+                <ul>
+            <li>Add links to publications via DOIs.</li>
+            <li>Expand information on chemicals and health effects.</li>
+            <li>Validate and enrich the content.</li>
+            <li>Improve map labels.</li>
+            <li>Integrate automatic updates from eu-parc.eu.</li>
+                </ul>
+            </p>
+            <p>
+                Future ideas
+                <ul>
+                <li>Link publication authors to partner organisations.</li>
+                <li>Connect the map to PARC thematic areas and tools.</li>
+                <li>Include information on policy relevance.</li>
+        </ul>
+            </p>
+        </div>
 
-    <p>
-        Known limitations:<br/>
-        Largely based on data available in late 2025</br>
-        The underlying data is not yet fully validated and includes synthetic examples<br/>
-        This version is made for the general meeting in Dublin and does not contains outside links<br/>
-    </p>
-
+    </div>
     <div id="enter-map-button">
         ENTER MAP
     </div>
+
 </div>
 
 <script type="module">
@@ -595,14 +660,14 @@
         'Bisphenols_Infertility'
 
     ]
-    const chemicalData = [...new Set(causeEffectData.map( n => n.split('_')[0]))]
+    const chemicalData = [...new Set(causeEffectData.map(n => n.split('_')[0]))]
     const chemicals = chemicalData.map(chemical => ({
         id: chemical,
         type: 'chemical',
         name: chemical
     }))
 
-    const conditionData = [...new Set(causeEffectData.map( n => n.split('_')[1]))]
+    const conditionData = [...new Set(causeEffectData.map(n => n.split('_')[1]))]
     const conditions = conditionData.map(condition => ({
         id: condition,
         type: 'condition',
@@ -1313,7 +1378,15 @@
     document.getElementById('legend-condition').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'condition')
-        const hub = {"id": "hub", "type": "condition", "name": "All health effects", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hub = {
+            "id": "hub",
+            "type": "condition",
+            "name": "All health effects",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
@@ -1348,7 +1421,15 @@
     document.getElementById('legend-article-keyword').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'article-keyword')
-        const hub = {"id": "hub", "type": "article-keyword", "name": "All publication keywords", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hub = {
+            "id": "hub",
+            "type": "article-keyword",
+            "name": "All publication keywords",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
 
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
@@ -1536,7 +1617,7 @@
 <td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
     </table>
 </div>`
-        const articles = adjacent.filter(node => node.type === 'article').toSorted((a, b) => (b.count.get('project')||0) - (a.count.get('project')||0))
+        const articles = adjacent.filter(node => node.type === 'article').toSorted((a, b) => (b.count.get('project') || 0) - (a.count.get('project') || 0))
         const articlesCard = articles.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-article" class="type-article">Publications</h3>
