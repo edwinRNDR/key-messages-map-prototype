@@ -8450,7 +8450,726 @@ export const edges = [
         "target": "project-999",
         "type": "article_project"
     },
-
+    {
+        "source": "article-1159",
+        "target": "partner-SLU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-NKUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-ISS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-INERIS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-ORU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-AUTH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-VUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-NILU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1159",
+        "target": "partner-AU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-SLU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-NKUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-IRFMN",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-AU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-RISE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-AUTH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-IISPV",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1158",
+        "target": "partner-UL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-MU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-JSI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-UL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-INRAE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-ONIRIS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-VUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-KWR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-VITO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-EHESP",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-LNS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-IEP-NRI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-KU Leuven",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-CSIC",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-INRS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-EAWAG",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-ETHZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-MUI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-UIBK",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-783",
+        "target": "partner-BRGM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-UGR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-KUM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-SZU-SK",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-JSI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-UL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-VITO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-ISCIII",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1150",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-MU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-KEMI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-RISE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-Tukes",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-VUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1244",
+        "target": "partner-ETHZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-VITO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-DTU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-CNRS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-BPI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-Sciensano",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-KUM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1306",
+        "target": "partner-IISPV",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-RIVM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-VITO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-ISCIII",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-UNINA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-AUTH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-MU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-UOB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-INSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-35",
+        "target": "partner-KEMI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-707",
+        "target": "partner-EAWAG",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-707",
+        "target": "partner-ETHZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-2109",
+        "target": "partner-CSIC",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-2109",
+        "target": "partner-IMR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-2109",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-2109",
+        "target": "partner-UPV-EHU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1631",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1631",
+        "target": "partner-VITO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1631",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1631",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1631",
+        "target": "partner-UGR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-LIST",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-UL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-NVI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-MUI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-UIBK",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-UIBK",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1675",
+        "target": "partner-IEP-NRI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-VUB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-ISCIII",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-EHESP",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-IEP-NRI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-VUA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-RIVM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-520",
+        "target": "partner-RIVM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-KI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-TTL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1102",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-507",
+        "target": "partner-KI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-507",
+        "target": "partner-SLU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-KUM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1479",
+        "target": "partner-OFB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1322",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-INRAE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-IEP-NRI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-UNAV",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-MU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-IRFMN",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-IRFMN",
+        "type": "article_partner"
+    }
 
 
 

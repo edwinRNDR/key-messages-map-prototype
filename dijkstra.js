@@ -42,6 +42,17 @@ function countAdjacentNodes(nodes, links) {
     for (const link of links) {
         const source = nodeMap.get(link.source.id||link.source);
         const target = nodeMap.get(link.target.id||link.target);
+
+        if (!source) {
+            console.log('source not found', link.source.id||link.source)
+            continue;
+        }
+
+        if (!target) {
+            console.log('target not found', link.target.id||link.target)
+            continue;
+        }
+
         source.count.set(target.type, (source.count.get(target.type) || 0) + 1);
         source.count.set('total', (source.count.get('total') || 0) + 1);
         target.count.set(source.type, (target.count.get(source.type) || 0) + 1);
