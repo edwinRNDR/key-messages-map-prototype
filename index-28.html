@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Message Map Prototype</title>
+    <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet"/>
+
+    <style>
+        :root {
+            --color-project: #E45C4D;
+            --color-partner: #008475;
+            --color-article: #1C85FF;
+            --color-article-keyword: #AED3FF;
+            --color-project-keyword: #F58296;
+            --color-project-topic: #D21A46;
+            --color-cause-effect: #F5D475;
+            --color-cause-effect-dark: #F1C23C;
+            --color-chemical: #E0C7F5;
+            --color-chemical-dark: #B070E5;
+            --color-condition: #31D9C4;
+            --color-country: #9BCBC6;
+            --color-country-dark: #7CA6A2;
+        }
+
+        hr {
+            border-top: 1px solid white;
+        }
+
+        @font-face {
+            font-family: 'Satoshi-Regular';
+            src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+            url('fonts/Satoshi-Regular.woff') format('woff'),
+            url('fonts/Satoshi-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Satoshi-Italic';
+            src: url('fonts/Satoshi-Italic.woff2') format('woff2'),
+            url('fonts/Satoshi-Italic.woff') format('woff'),
+            url('fonts/Satoshi-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Satoshi-Medium';
+            src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+            url('fonts/Satoshi-Medium.woff') format('woff'),
+            url('fonts/Satoshi-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-display: swap;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Satoshi-Medium', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html, body {
+            overscroll-behavior-x: none;
+
+        }
+
+        .type-project {
+            color: var(--color-project);
+            text-decoration-color: var(--color-project);
+        }
+
+        .type-partner {
+            color: var(--color-partner);
+            text-decoration-color: var(--color-partner);
+        }
+
+        .type-article {
+            color: var(--color-article);
+            text-decoration-color: var(--color-article);
+        }
+
+        .type-article-keyword {
+            color: var(--color-article-keyword);
+            text-decoration-color: var(--color-article-keyword);
+        }
+
+        .type-project-keyword {
+            color: var(--color-project-keyword);
+            text-decoration-color: var(--color-project-keyword);
+        }
+
+        .type-project-topic {
+            color: var(--color-project-topic);
+            text-decoration-color: var(--color-project-topic);
+        }
+
+        .type-cause-effect {
+            color: var(--color-cause-effect-dark);
+            text-decoration-color: var(--color-cause-effect-dark);
+        }
+
+        .type-cause-effect-light {
+            color: var(--color-cause-effect);
+            text-decoration-color: var(--color-cause-effect);
+        }
+
+
+        .type-chemical {
+            color: var(--color-chemical-dark);
+            text-decoration-color: var(--color-chemical-dark);
+        }
+
+        .type-chemical-light {
+            color: var(--color-chemical);
+            text-decoration-color: var(--color-chemical);
+        }
+
+
+        .type-condition {
+            color: var(--color-condition);
+            text-decoration-color: var(--color-condition);
+        }
+
+        .type-country {
+            color: var(--color-country-dark);
+            text-decoration-color: var(--color-country-dark);
+        }
+
+        .type-country-light {
+            color: var(--color-country);
+            text-decoration-color: var(--color-country);
+        }
+
+
+        .type-article-bg {
+            background-color: var(--color-article) !important;
+            color: white !important;
+        }
+
+        .type-article-keyword-bg {
+            background-color: var(--color-article-keyword) !important;
+            color: white !important;
+        }
+
+        .type-project-bg {
+            background-color: var(--color-project) !important;
+            color: white !important;
+        }
+
+        .type-project-topic-bg {
+            background-color: var(--color-project-topic) !important;
+            color: white !important;
+        }
+
+        .type-project-keyword-bg {
+            background-color: var(--color-project-keyword) !important;
+            color: white !important;
+        }
+
+        .type-partner-bg {
+            background-color: var(--color-partner) !important;
+            color: white !important;
+        }
+
+        .type-cause-effect-bg {
+            background-color: var(--color-cause-effect-dark) !important;
+            color: white !important;
+        }
+
+        .type-chemical-bg {
+            background-color: var(--color-chemical-dark) !important;
+            color: white !important;
+        }
+
+        .type-condition-bg {
+            background-color: var(--color-condition) !important;
+            color: white !important;
+        }
+
+        .type-country-bg {
+            background-color: var(--color-country-dark) !important;
+            color: white !important;
+        }
+
+        #left-container {
+            position: fixed;
+            height: 100vh;
+            width: 450px;
+            z-index: 1000;
+
+        }
+
+
+        #search {
+            z-index: 1000;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+
+            input[type="text"] {
+                font-family: 'Satoshi-Medium', sans-serif;
+                font-size: 20px;
+            }
+        }
+
+        #search-input {
+            font-family: 'Satoshi-Medium', sans-serif;
+            width: 100%;
+            height: 2em;
+            box-sizing: border-box;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            padding-left: 1em;
+            border-radius: 5px;
+
+        }
+
+        #node-box {
+            font-family: 'Satoshi-Medium', sans-serif;
+            left: 10px;
+            z-index: 1000;
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .node-box-scroll {
+            flex-grow: 1;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            pointer-events: none;
+        }
+
+
+        .node-card {
+            flex-grow: 0;
+            background-color: rgba(245, 245, 245, 1.0);
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            pointer-events: fill;
+
+
+            .fold-trigger {
+                cursor: pointer;
+            }
+            .fold-trigger:hover {
+                text-decoration-line: underline;
+                text-underline-offset: 5px;
+            }
+            .folded {
+                display: none;
+            }
+
+
+            img {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-family: 'Satoshi-Medium', sans-serif;
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 8%;
+                padding-bottom: 0px;
+                font-family: 'Satoshi-Medium', sans-serif;
+            }
+
+            p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: 1.2em;
+            }
+
+            table {
+                /*border: 1px solid black;*/
+                /*background-color: green;*/
+                margin-top: 10px;
+                padding: 0;
+                width: 100%;
+            }
+
+            thead {
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 8%;
+                font-size: 12px;
+
+                th:nth-child(2) {
+                    width: 50px;
+                }
+
+                th:nth-child(3) {
+                    width: 50px;
+                }
+            }
+
+
+            tr {
+                /*background-color: red;*/
+                /*border-top: 1px solid black;*/
+            }
+
+            td {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: 'Satoshi-Medium', sans-serif;
+                font-size: 18px;
+            }
+
+            th::after {
+                content-visibility: hidden;
+                margin-right: -4px !important;
+                padding-right: 0 !important;
+            }
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        .adjacent {
+
+        }
+
+        .adjacent:hover {
+            cursor: pointer;
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+        }
+
+        .graph-hover {
+            background-color: gray;
+        }
+
+        #info-box-container {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: auto auto;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            height: 100vh;
+            pointer-events: none;
+            align-items: center;
+
+
+        }
+
+        #info-box {
+            user-select: none;
+            height: auto;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 5px;
+            z-index: 1000;
+            width: 180px;
+
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            pointer-events: fill;
+
+        }
+
+        #info-box:hover {
+            background-color: rgba(255, 255, 255, 1.0);
+            transition: background-color 0.3s ease;
+        }
+
+        #info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .legend-item {
+            flex-grow: 1;
+            width: auto;
+            padding: 5px;
+
+
+            font: 16px Satoshi-Medium;
+            color: #777;
+
+            span {
+                margin-right: 15px;
+                font: 24px Satoshi-Medium;
+                line-height: 1.0em;
+                float: left;
+                display: block;
+                margin-top: -2px;
+            }
+
+        }
+
+        .legend-item:hover {
+            cursor: pointer;
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+            font: 16px Satoshi-Medium;
+            color: black;
+        }
+
+        #disclaimer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Satoshi-Medium', sans-serif;
+            z-index: 1000;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            align-content: center;
+
+            #disclaimer-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+
+                #disclaimer-text {
+                    max-width: 700px;
+                }
+
+                #limitations {
+                    font-size: 14px;
+                    font-family: 'Satoshi-Medium', sans-serif;
+                }
+
+            }
+
+
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        #enter-map-button {
+            padding: 20px 50px 20px 50px;
+            background-color: #008273;
+            font-size: 16px;
+            font-family: 'Satoshi-Medium', sans-serif;
+
+            letter-spacing: 8%;
+            color: white;
+            width: fit-content;
+            margin: 50px auto;
+            border-radius: 80px;
+            cursor: pointer;
+            user-select: none;
+            pointer-events: fill;
+        }
+
+        #read-disclaimer {
+            position: fixed;
+            bottom: 10px;
+            right: 70px;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Satoshi-Medium', sans-serif;
+            pointer-events: fill;
+            z-index: 1000;
+        }
+
+        #read-disclaimer:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+        }
+
+        #graph-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            pointer-events: none;
+            user-select: none;
+            overflow: hidden;
+
+            color: white;
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div id="left-container">
+    <div id="search">
+        <input type="text" id="search-input" placeholder="Search..."/>
+    </div>
+
+    <div id="node-box"></div>
+</div>
+
+<div id="info-box-container">
+    <div id="info-box">
+        <div class="legend-item" id="legend-article">
+            <span class="type-article">●</span>Publication
+        </div>
+        <div class="legend-item" id="legend-article-keyword">
+            <span class="type-article-keyword">●</span>Publication keyword
+        </div>
+
+        <div class="legend-item" id="legend-project">
+            <span class="type-project">●</span>Project
+        </div>
+
+        <div class="legend-item" id="legend-project-topic">
+            <span class="type-project-topic">●</span>Project Topic
+        </div>
+
+        <div class="legend-item" id="legend-project-keyword">
+            <span class="type-project-keyword">●</span>Project Keyword
+        </div>
+
+        <div class="legend-item" id="legend-partner">
+            <span class="type-partner">●</span>Partner
+        </div>
+
+        <div class="legend-item" id="legend-country">
+            <span class="type-country-light">●</span>Country
+        </div>
+
+
+        <div class="legend-item" id="legend-cause-effect">
+            <span class="type-cause-effect-light">●</span>Cause-effect
+        </div>
+        <div class="legend-item" id="legend-chemical">
+            <span class="type-chemical-light">●</span>Chemical
+        </div>
+        <div class="legend-item" id="legend-condition">
+            <span class="type-condition">●</span>Health effect
+        </div>
+
+    </div>
+
+</div>
+<div id="read-disclaimer">
+    DISCLAIMER
+</div>
+<div id="graph"></div>
+<div id="graph-overlay"></div>
+
+<div id="disclaimer">
+    <div id="disclaimer-container">
+        <div id="disclaimer-text">
+            <p>
+                <span class="type-partner">PARC knowledge map</span><br/>
+                Connecting knowledge across the PARC partnership
+            </p>
+            <p>
+                This interactive map prototype brings together a large part of the work
+                produced within the PARC partnership, showing how research <span class="type-project">projects</span>,
+                <span
+                        class="type-partner">partners</span>,
+                <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span
+                    class="type-condition">health effects</span> are
+                interconnected. It
+                helps you to explore relationships across different areas of PARC's work and
+                better understand the project's key messages.
+            </p>
+            <p>
+                The current version contains only limited information on chemicals. A future
+                version will be integrated into the PARC website, allowing updates to projects
+                and publications to be automatically reflected in the map </p>
+            <p>
+                The information is visualised as a directed graph: a set of nodes connected by
+                one-way links that represent relationships from one node to another, but not
+                necessarily back. The map rearranges itself based on the node you select: the
+                clicked node displays all its connections, while the others show only their
+                strongest links, ensuring that each node appears only once, even when
+                multiple interconnections exist.
+            </p>
+            <p>
+                The prototype is meant to illustrate the concept, explore its potential, and
+                collect feedback for a future version that will be automatically update from eu-
+                parc.eu. Clicking on the legend groups the information by topic, allowing you
+                explore different thematic perspectives.
+            </p>
+        </div>
+        <div id="limitations">
+            <p>
+                Known limitations
+            <ul>
+                <li>Largely based on data available in late 2025</li>
+                <li>The underlying data is not yet fully validated and includes synthetic examples</li>
+                <li>This version is made for the general meeting in Dublin and does not contains outside links</li>
+            </ul>
+            </p>
+            <p>
+                Planned improvements
+            <ul>
+                <li>Add links to publications via DOIs.</li>
+                <li>Expand information on chemicals and health effects.</li>
+                <li>Validate and enrich the content.</li>
+                <li>Improve map labels.</li>
+                <li>Integrate automatic updates from eu-parc.eu.</li>
+            </ul>
+            </p>
+            <p>
+                Future ideas
+            <ul>
+                <li>Link publication authors to partner organisations.</li>
+                <li>Connect the map to PARC thematic areas and tools.</li>
+                <li>Include information on policy relevance.</li>
+            </ul>
+            </p>
+        </div>
+
+    </div>
+    <div id="enter-map-button">
+        ENTER MAP
+    </div>
+
+</div>
+
+<script type="module">
+    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+    import {forceCollide} from 'https://esm.sh/d3-force';
+    import ForceGraph from "https://cdn.jsdelivr.net/npm/force-graph@1.49.5/+esm"
+    import {data} from "./data.js";
+    import {edges} from "./edges.js";
+    import {
+        minimumSpanningTree,
+        minimumSpanningTreeFromSubtree,
+        findEdgesThroughNode,
+        findAdjacentSubtree,
+        findAdjacentNodes,
+        countAdjacentNodes,
+        findAllDegreesOfSeparation
+    } from "./dijkstra.js";
+
+    document.getElementById('enter-map-button').addEventListener('click', () => {
+        document.getElementById('disclaimer').classList.add('hidden')
+    })
+
+    document.getElementById('read-disclaimer').addEventListener('click', () => {
+        document.getElementById('disclaimer').classList.remove('hidden')
+    })
+
+    const causeEffectData = [
+        'Arsenic_Cancer',
+        'Arsenic_Skin disorders',
+        'Arsenic_Metabolic disorders',
+        'Arsenic_Reproductive toxicity',
+        'Arsenic_Development anomalies',
+        'Mercury_Damage to the brain',
+        'Mercury_Impaired development of the brain',
+        'Mercury_Cardiovascular disease',
+        'Mercury_Damage to lungs',
+        'Mercury_Damage to digestive tract',
+        'Mercury_Kidney damage',
+        'Pesticides_Nervous system disruption',
+        'Pesticides_Impaired development of the brain',
+        'Pesticides_Hormonal system disruption',
+        'Pesticides_Cancer',
+        'Pesticides_Skin irritation',
+        'Pesticides_Reproductive system disruption',
+        'Phthalates_ADHD',
+        'Phthalates_Hormonal system disruption',
+        'Phthalates_Asthma',
+        'Phthalates_Insulin resistance',
+        'Phthalates_Obesity',
+        'Phthalates_Infertility',
+        'PFAS_Immunotocity',
+        'PFAS_Tyroid disease',
+        'PFAS_Increased cholesterol level',
+        'PFAS_Liver damage',
+        'PFAS_Kidney cancer',
+        'PFAS_Testical cancer',
+        'PFAS_Development toxicity',
+        'PFAS_Reproductive system disruption',
+        'Bisphenols_Neurodevelopment effects',
+        'Bisphenols_Immunodevelopment effects',
+        'Bisphenols_Cardiovascualar disease',
+        'Bisphenols_Hormone related cancer risk',
+        'Bisphenols_Low birth weight',
+        'Bisphenols_Obesity',
+        'Bisphenols_Infertility'
+
+    ]
+    const chemicalData = [...new Set(causeEffectData.map(n => n.split('_')[0]))]
+    const chemicals = chemicalData.map(chemical => ({
+        id: chemical,
+        type: 'chemical',
+        name: chemical
+    }))
+
+    const conditionData = [...new Set(causeEffectData.map(n => n.split('_')[1]))]
+    const conditions = conditionData.map(condition => ({
+        id: condition,
+        type: 'condition',
+        name: condition
+    }))
+
+    const causeEffect = causeEffectData.filter(ca => ca.split('_')[0] !== ca.split('_')[1])
+        .map(ca => ({id: ca, type: 'cause-effect', name: ca.split('_')[0] + ' is linked to ' + ca.split('_')[1]}))
+
+
+    const causeEffectToCause = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('_')[0],
+        type: 'cause-effect_cause'
+    }))
+    const causeEffectToEffect = causeEffect.map(ce => ({
+        source: ce.id,
+        target: ce.id.split('_')[1],
+        type: 'cause-effect_effect'
+    }))
+
+    for (const item of data) {
+        if (!item.type) {
+            item.type = 'article'
+        }
+    }
+
+
+    var storedNodeBox = ""
+
+    // Select random articles and link them to random causeEffect
+    const articleNodes = data.filter(node => node.type === 'article');
+
+    const articleKeywords = new Map()
+
+    for (const article of articleNodes) {
+        const keywords = article.keywords.split(',').map(keyword => keyword.trim())
+        for (const keyword of keywords) {
+            if (!articleKeywords.has(keyword)) {
+                articleKeywords.set(keyword, [])
+            }
+            articleKeywords.get(keyword).push(article)
+        }
+    }
+
+    // Remove entries with fewer than 5 article
+    for (const [keyword, articles] of articleKeywords.entries()) {
+        if (articles.length < 5) {
+            articleKeywords.delete(keyword)
+        }
+    }
+
+    // Remove entries with very short keywords
+    for (const [keyword, articles] of articleKeywords.entries()) {
+        if (!keyword || keyword.length < 2) {
+            articleKeywords.delete(keyword)
+        }
+    }
+
+    const articleKeywordNodes = Array.from(articleKeywords.entries()).map(([keyword, articles]) => ({
+        id: `article-keyword-${keyword}`,
+        type: 'article-keyword',
+        name: keyword,
+        label: keyword,
+    }))
+
+    const articleKeywordLinks = Array.from(articleKeywords.entries()).flatMap(([keyword, articles]) => articles.map(article => ({
+        source: article.id,
+        target: `article-keyword-${keyword}`,
+        type: 'article_article-keyword'
+    })))
+    const numArticlesToLink = articleNodes.length
+    const articleLinks = [];
+
+    for (let i = 0; i < numArticlesToLink; i++) {
+        const randomArticle = articleNodes[i];
+        const randomCauseEffect = causeEffect[Math.floor(Math.random() * causeEffect.length)];
+        articleLinks.push({
+            source: randomArticle.id,
+            target: randomCauseEffect.id,
+            type: 'article_cause-effect'
+        });
+    }
+
+    const partnerNodes = data.filter(node => node.type === 'partner');
+    const countryNames = new Set()
+    for (const partner of partnerNodes) {
+        if (partner.country) {
+            countryNames.add(partner.country)
+        }
+    }
+    const countryNodes = [...countryNames].map(country => ({
+        name: country,
+        id: "country-" + country,
+        type: "country"
+    }))
+
+    const countryLinks = partnerNodes.map(partner => (
+        {
+            source: partner.id,
+            target: `country-${partner.country || 'Netherlands'}`,
+            type: 'partner_country'
+        }
+    ))
+
+    const gData = {
+        nodes: [...data, ...chemicals, ...conditions, ...causeEffect, ...articleKeywordNodes, ...countryNodes],
+        links: [...edges, ...articleLinks, ...causeEffectToCause, ...causeEffectToEffect, ...articleKeywordLinks, ...countryLinks]
+    };
+
+    // Find duplicate IDs
+    const idMap = new Map();
+    const duplicates = [];
+    for (const node of gData.nodes) {
+        if (idMap.has(node.id)) {
+            duplicates.push({id: node.id, first: idMap.get(node.id), duplicate: node});
+        } else {
+            idMap.set(node.id, node);
+        }
+    }
+
+    if (duplicates.length > 0) {
+        console.log('Duplicate IDs found:');
+        for (const dup of duplicates) {
+            console.log(`ID: ${dup.id}`);
+            console.log('First occurrence:', dup.first);
+            console.log('Duplicate occurrence:', dup.duplicate);
+        }
+    }
+
+    countAdjacentNodes(gData.nodes, gData.links)
+
+    for (const node of data) {
+        if (!node.name) {
+            console.log(`Node without name found: ${node.id}`)
+        }
+        if (node.type === 'partner' && !node.fullname) {
+            console.log(`Partner node without fullname found: ${node.name}`)
+        }
+    }
+
+    let hoverNode = null
+    let selectedNodeId = null
+    let selectedNode = null
+
+    let centerAtTimeout = null
+
+    let storedEdgesColors = null
+
+    let labels = []
+    const Graph = new ForceGraph()
+    (document.getElementById('graph'))
+        .autoPauseRedraw(false)
+        .onNodeClick((node, event) => {
+            selectNode(node)
+        })
+        .onNodeHover((node, event) => {
+            hoverNode = node
+
+            if (storedEdgesColors == null) {
+                storedEdgesColors = Graph.graphData().links.map(edge => edge.color)
+            } else {
+                let index = 0
+                for (const edge of Graph.graphData().links) {
+                    edge.color = storedEdgesColors[index]
+                    index++
+                }
+            }
+            for (const edge of findEdgesThroughNode(Graph.graphData().links, node)) {
+                edge.color = 'rgba(0, 0, 0, 0.2)'
+            }
+        })
+
+        .nodeCanvasObject((node, ctx, globalScale) => nodePaint(node, ctx, globalScale))
+        .nodePointerAreaPaint((node, color, ctx) => {
+            ctx.fillStyle = color
+            ctx.beginPath()
+            ctx.arc(node.x, node.y, node.__radius + 2.0, 0, 2 * Math.PI, false)
+            ctx.fill()
+        })
+        .onRenderFramePost((ctx, globalScale) => {
+            ctx.save()
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Satoshi-Medium`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            // ctx.fillStyle = 'rgba(255, 255, 255, 0.5)'
+            //
+            // for (const label of labels) {
+            //     ctx.fillText(label.label, label.x-1.0/globalScale, label.y+0.0/globalScale)
+            //     ctx.fillText(label.label, label.x+1.0/globalScale, label.y+0.0/globalScale)
+            //     ctx.fillText(label.label, label.x+0.0/globalScale, label.y+1.0/globalScale)
+            //     ctx.fillText(label.label, label.x+0.0/globalScale, label.y-1.0/globalScale)
+            // }
+
+
+            ctx.fillStyle = 'black'
+
+            for (const label of labels) {
+                ctx.fillText(label.label, label.x, label.y)
+            }
+            labels = []
+            ctx.restore()
+        })
+        .onRenderFramePre((ctx, globalScale) => {
+            if (selectedNode != null && selectedNode.x != null && selectedNode.y != null) {
+                ctx.save()
+                const x = selectedNode.x
+                const y = selectedNode.y
+                const gradient = ctx.createRadialGradient(x, y, 0, x, y, 600);
+
+                const screenCoords = Graph.graph2ScreenCoords(selectedNode.x - 70, selectedNode.y - 70.0)
+                const screenCoords2 = Graph.graph2ScreenCoords(selectedNode.x + 70, selectedNode.y + 70.0)
+                const overlay = document.getElementById("graph-overlay")
+
+                overlay.style.left = screenCoords.x + "px"
+                overlay.style.top = screenCoords.y + "px"
+                const width = (screenCoords2.x - screenCoords.x)
+                overlay.style.width = width + "px"
+                overlay.style.height = (screenCoords2.y - screenCoords.y) + "px"
+
+
+                overlay.innerHTML = width < 100 ? '' : `<p>${selectedNode.name || selectedNode.title}</p>`
+
+
+                const steps = 7
+                for (let i = 0; i < steps; ++i) {
+
+                    const opacity = 0.25 * (steps - 1 - i) / (steps - 1)
+                    gradient.addColorStop(i / steps, nodeColor(selectedNode, opacity));
+                    gradient.addColorStop((i + 1) / steps, nodeColor(selectedNode, opacity));
+                }
+
+                gradient.addColorStop(0.9, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient;
+                ctx.beginPath()
+                ctx.arc(x, y, 600.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+
+                const gradient2 = ctx.createRadialGradient(x, y, 0, x, y, 30);
+
+// Add three color stops
+                gradient2.addColorStop(0, nodeColor(selectedNode, 0.5));
+                gradient2.addColorStop(1.0, nodeColor(selectedNode, 0.0));
+                ctx.fillStyle = gradient2;
+                ctx.beginPath()
+                ctx.arc(x, y, 30.0, 0, 2 * Math.PI, false)
+                ctx.fill()
+                ctx.restore()
+            }
+        })
+
+        .graphData(gData)
+        .d3Force('collide',
+            forceCollide(node => (node.id === selectedNodeId) ? 150.0 : (node.type === 'project-keyword' || node.type === 'project-topic' || node.type === 'article-keyword') ? 13.0 : 7.0)
+        )
+
+    window.addEventListener('resize', () => {
+        Graph.width(window.innerWidth).height(window.innerHeight);
+    })
+
+    const linkForce = Graph.d3Force('link')
+    linkForce.distance(l => (l.source === selectedNode || l.target === selectedNode) ? 10 : 30)
+    linkForce.strength(l => (l.source === selectedNode || l.target === selectedNode) ? 1.0 : 0.5)
+
+    setTimeout(() => {
+        showProjectTopics()
+    }, 1000)
+
+    function nodeColor(node, opacity = 1.0) {
+        if (node.type === 'article') {
+            return `rgba(28, 133, 255, ${opacity})`;
+        } else if (node.type === 'article-keyword') {
+            return `rgba(174, 211, 255, ${opacity})`;
+        } else if (node.type === 'project') {
+            return `rgba(228, 92, 77, ${opacity})`;
+        } else if (node.type === 'partner') {
+            return `rgba(0, 132, 117, ${opacity})`;
+        } else if (node.type === 'project-topic') {
+            return `rgba(210, 26, 70, ${opacity})`;
+        } else if (node.type === 'project-keyword') {
+            return `rgba(245, 130, 150, ${opacity})`;
+        } else if (node.type === 'chemical') {
+            return `rgba(224, 119, 245, ${opacity})`;
+        } else if (node.type === 'condition') {
+            return `rgba(49, 217, 196, ${opacity})`;
+        } else if (node.type === 'cause-effect') {
+            return `rgba(245, 212, 117, ${opacity})`;
+        } else if (node.type === 'country') {
+            return `rgba(155, 203, 198, ${opacity})`;
+        } else {
+            return `rgba(0, 0, 0, ${opacity})`;
+        }
+    }
+
+    function nodePaint(node, ctx, globalScale) {
+
+        const {id, type, x, y, name, count} = node
+
+        ctx.fillStyle = nodeColor({'type': type})
+
+        ctx.beginPath()
+        var radius = 5.0;
+        if (type === 'project-keyword' || type === 'project-topic' || type === 'article-keyword') {
+            radius = 10.0;
+        }
+        if (id === selectedNodeId) {
+            radius = 100.0;
+        }
+
+        node.__radius = radius
+
+
+        ctx.arc(x, y, radius, 0, 2 * Math.PI, false)
+        ctx.fill()
+
+        if (id === hoverNode?.id) {
+            ctx.lineWidth = 1.0 / globalScale
+            ctx.beginPath()
+            ctx.arc(x, y, radius + 5 / globalScale, 0, 2 * Math.PI, false)
+            ctx.stroke()
+        }
+
+        //
+        if (type === 'project-keyword' || type === 'project-topic' || type === 'article-keyword' || type === 'country'
+            || id === selectedNode?.id
+
+        ) {
+            const label = name || '';
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Satoshi-Medium`;
+            const textWidth = ctx.measureText(label).width;
+
+            if (textWidth / globalScale < 8.0 * radius / globalScale) {
+                const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                // ctx.fillRect(x - bckgDimensions[0] / 2, y - bckgDimensions[1] / 2, ...bckgDimensions);
+
+                if (id === selectedNode?.id) {
+
+                } else {
+                    labels.push({
+                        "label": label,
+                        "x": x,
+                        "y": y + radius + 10.0 / globalScale,
+                    })
+                }
+            }
+        }
+
+        const valence = count?.get('total') || 0
+        const logValence = Math.log(valence + 1)
+
+        if (id === selectedNode?.id && 150.0 * globalScale > 100.0)
+            return
+
+        if (globalScale > 3.0 - logValence * 0.25 || id === selectedNode?.id || id === hoverNode?.id) {
+            const label = valence > 0 ? valence : '';
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Satoshi-Medium`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = 'white'
+
+            ctx.fillText(label, x, y);
+        }
+    }
+
+    Graph.focusAt = function (node, radial = null) {
+        if (centerAtTimeout) {
+            clearTimeout(centerAtTimeout)
+            centerAtTimeout = null
+        }
+
+
+        // const radial = d3.forceRadial( (n) => n.type === 'article'? 100.0 : 500 , node.x, node.y)
+        //     .strength(1.0)
+        Graph.d3Force('radial', radial)
+
+
+        centerAtTimeout = setTimeout(() => {
+            const axis = Math.min(Graph.width() - 350.0, Graph.height())
+            const zoomFactor = axis / 1000.0
+            Graph.zoom(zoomFactor, 1000)
+            const x = node.x - 250.0 / zoomFactor * 0.5
+            Graph.centerAt(x, node.y, 1000)
+        }, 600)
+    }
+
+    document.getElementById('legend-article').addEventListener('click', () => {
+        storedEdgesColors = null
+
+        const items = gData.nodes.filter(node => node.type === 'article')
+        const hub = {"id": "hub", "type": "article", "name": "All publications"}
+        hub.x = 0.0
+        hub.y = 0.0
+        hub.fx = 0.0
+        hub.fy = 0.0
+        const hubLinks = items.map(article => ({source: article.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks0 = gData.links.filter(edge => edge.type === 'article_article-keyword')
+        const toAddLinks1 = gData.links.filter(edge => edge.type === 'article_project')
+        const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "article": 100.0,
+            "article-keyword": 400.0
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+
+        populateNodeBox(hub, items, false)
+    })
+
+    function showProjectTopics() {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'project-topic')
+        const hub = {
+            "id": "hub",
+            "type": "project-topic",
+            "name": "All project topics",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+        const radii = {
+            "project-topic": 100.0,
+            "project": 400.0,
+            "project-keyword": 400.0
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    }
+
+    document.getElementById('legend-project-topic').addEventListener('click', () => {
+        showProjectTopics()
+    })
+    document.getElementById('legend-project').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'project')
+        const hub = {"id": "hub", "type": "project", "name": "All projects", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks0 = gData.links.filter(edge => edge.type === 'project-topic_project')
+        //const toAddLinks1 = gData.links.filter( edge => edge.type === 'project-keyword_project')
+        //const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks0)
+
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.0)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "project": 100.0,
+            "project-topic": 400.0,
+            "project-keyword": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+    document.getElementById('legend-partner').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'partner')
+        const hub = {"id": "hub", "type": "partner", "name": "All partners", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks = gData.links.filter(edge => edge.type === 'partner_country')
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.0)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "partner": 100.0,
+            "country": 400.0,
+            "project": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+    document.getElementById('legend-country').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'country')
+        const hub = {"id": "hub", "type": "country", "name": "All countries", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks = gData.links.filter(edge => edge.type === 'partner_country')
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.0)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "country": 100.0,
+            "partner": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+
+    document.getElementById('legend-project-keyword').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'project-keyword')
+        const hub = {
+            "id": "hub",
+            "type": "project-keyword",
+            "name": "All project keywords",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
+        populateNodeBox(hub, items, false)
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks0 = gData.links.filter(edge => edge.type === 'project-keyword_project')
+        const toAddLinks1 = gData.links.filter(edge => edge.type === 'project-topic_project')
+
+        const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.0)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+
+        const radii = {
+            "project-keyword": 100.0,
+            "project-topic": 400.0,
+            "project": 350.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+
+    })
+    document.getElementById('legend-cause-effect').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'cause-effect')
+        const hub = {
+            "id": "hub",
+            "type": "cause-effect",
+            "name": "All cause-effect pairs",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "cause-effect": 100.0,
+            "chemical": 400.0,
+            "condition": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+    document.getElementById('legend-chemical').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'chemical')
+        const hub = {"id": "hub", "type": "chemical", "name": "All chemicals", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks0 = gData.links.filter(edge => edge.type === 'article_cause-effect')
+        const toAddLinks1 = gData.links.filter(edge => edge.type === 'article_project')
+        const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+        const radii = {
+            "chemical": 100.0,
+            "cause-effect": 400.0,
+            "condition": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+    document.getElementById('legend-condition').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'condition')
+        const hub = {
+            "id": "hub",
+            "type": "condition",
+            "name": "All health effects",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: mst.mstEdges})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+        const radii = {
+            "condition": 100.0,
+            "cause-effect": 400.0,
+            "chemical": 400.0,
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+    document.getElementById('legend-article-keyword').addEventListener('click', () => {
+        storedEdgesColors = null
+        const items = gData.nodes.filter(node => node.type === 'article-keyword')
+        const hub = {
+            "id": "hub",
+            "type": "article-keyword",
+            "name": "All publication keywords",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
+
+        const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
+        const edges = gData.links.concat(hubLinks)
+        const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
+
+        const toAddLinks0 = gData.links.filter(edge => edge.type === 'article_article-keyword')
+        const toAddLinks1 = gData.links.filter(edge => edge.type === 'article_project')
+        const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
+        selectedNode = hub
+        selectedNodeId = hub.id
+
+        for (const edge of Graph.graphData().links) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, hub.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        const radii = {
+            "article": 400.0,
+            "article-keyword": 100.0
+        }
+        const radial = d3.forceRadial((n) => radii[n.type] || 500.0, hub.x, hub.y)
+            .strength(1.0)
+
+
+        Graph.focusAt(hub, radial)
+        populateNodeBox(hub, items, false)
+    })
+
+    function selectNode(node) {
+
+        if (node.id === 'hub' || node.id === selectedNode.id) {
+            return
+        }
+        storedEdgesColors = null
+
+        selectedNodeId = node.id
+        selectedNode = node
+        const adjacent = findAdjacentSubtree(gData.links, node.id)
+        const adjacentNodes = findAdjacentNodes(gData.links, node.id)
+        const newEdges = minimumSpanningTreeFromSubtree(gData.links, adjacent)
+
+        const toAddLinks = gData.links.filter(edge => edge.type === 'partner_country')
+        const newLinks = newEdges.mstEdges.concat(toAddLinks)
+
+        Graph.graphData({nodes: gData.nodes, links: newLinks})
+
+
+        for (const edge of newLinks) {
+            edge.color = 'rgba(255, 255, 255, 0.1)'
+        }
+
+        for (const edge of findEdgesThroughNode(Graph.graphData().links, node.id)) {
+            edge.color = 'rgba(255, 255, 255, 0.5)'
+        }
+
+        for (const node of gData.nodes) {
+            delete node.fx;
+            delete node.fy;
+        }
+        node.fx = node.x;
+        node.fy = node.y;
+        node.radius = 100.0;
+        populateNodeBox(node, [...adjacentNodes])
+
+        const separation = findAllDegreesOfSeparation(Graph.graphData().links, node.id)
+        const radial = d3.forceRadial((n) => Math.min(separation[n.id], 4) * 100.0, node.x, node.y)
+            .strength(1.0)
+
+        Graph.focusAt(node, radial)
+    }
+
+    function cardTemplate(items, cssType, caption, folded, tableFunc) {
+        return items.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="fold-trigger"${cssType}">${caption}</h3>
+    <div class="foldable ${folded ? 'folded' : ''}">
+        ${tableFunc(items)}
+    </div>
+</div>`
+    }
+
+    function createProjectTopicsCard(projectTopics, folded = false) {
+        return cardTemplate(
+            projectTopics,
+            'type-project-topic',
+            'Project Topics',
+            folded,
+            projectTopics => `
+                <table class="sortable">
+                <thead>
+                <tr>
+                <th class="type-project-topic">Topic</th>
+                <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th>
+                </tr>
+            </thead>
+                ${projectTopics.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+            <td>${n.name || 'Unknown'}</td>
+            <td class="type-project numeric">${n.count.get('project') || ''}</td>
+            </tr>`).join('')}
+                </table>
+            `
+        )
+    }
+
+    function createProjectKeywordsCard(projectKeywords, folded = false) {
+        return cardTemplate(
+            projectKeywords,
+            'type-project-keyword',
+            'Project Keywords',
+            folded,
+            projectKeywords => `
+                <table class="sortable">
+                <thead><tr>
+                    <th aria-sort="ascending" class="type-project-keyword">Keyword</th>
+                    <th class="type-project indicator-left numeric">Projects</th>
+                </tr></thead>
+                ${projectKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+                <td>${n.name || 'Unknown'}</td>
+                <td class="type-project numeric">${n.count.get('project') || ''}</td>
+                </tr>`).join('')}
+                </table>
+            `
+        )
+    }
+
+    function createArticleKeywordsCard(articleKeywords, folded = false) {
+        return cardTemplate(
+            articleKeywords,
+            'type-article-keyword',
+            'Publication keywords',
+            folded,
+            articleKeywords => `
+            <table class="sortable">
+            <thead><tr>
+                <th aria-sort="ascending" class="type-article-keyword">Description</th>
+                <th class="type-article indicator-left numeric">Publications</th>
+            </tr></thead>
+            ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+            <td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
+            </table>
+        `)
+    }
+
+    function createPartnersCard(partners, folded = false) {
+        return cardTemplate(partners, 'type-partner', 'Partners', folded, partners => `
+<table class="sortable">
+    <thead>
+    <tr style="width: 100%;">
+        <th aria-sort="ascending" class="type-partner">Name</th>
+        <th class="type-partner">Country</th>
+        <th class="type-project indicator-left numeric">Projects</th></tr>
+</thead>
+    ${partners.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td class="type-partner">${n.name || 'Unknown'}</td>
+    <td class="type-partner">${n.country || 'Unknown'}</td>
+    <td class="type-project numeric">${n.count.get('project') || ''}</td>
+</tr>`).join('')}
+    </table>
+            `)
+    }
+
+    function createArticleCard(articles, folded = false) {
+        return cardTemplate(articles, 'type-article', 'Publications', folded, articles => `
+    <table class="sortable">
+    <thead>
+    <tr><th class="type-article">Title</th>
+    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th></tr>
+</thead>
+    ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td>
+<td class="type-project numeric">${n.count.get('project') || ''}</td>
+</tr>`).join('')}
+    </table>
+            `)
+    }
+
+    function createCountriesCard(countries, folded = false) {
+        return cardTemplate(countries, 'type-country', 'Countries', folded, countries => `
+        <table class="sortable">
+    <thead>
+    <tr>
+    <th aria-sort="ascending" class="type-article">Country</th>
+    <th class="type-partner indicator-left numeric">Partners</th></tr>
+</thead>
+    ${countries.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td>
+<td class="type-partner numeric">${n.count.get('partner') || ''}</td>
+</tr>`).join('')}
+    </table>
+        `)
+    }
+
+    function createProjectsCard(projects, folded = false) {
+
+        return cardTemplate(projects, 'type-project', 'Projects', folded, projects => `
+<table class="sortable">
+    <thead><tr>
+        <th class="type-project">Project</th>
+        <th aria-sort="descending" class="type-partner indicator-left numeric">Partners</th>
+        <th class="type-article indicator-left numeric">Publications</th>
+    </tr></thead>
+    ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+        <td>${n.name || 'Unknown'}</td>
+        <td class="type-partner numeric">${n.count.get('partner') || ''}</td>
+        <td class="type-article numeric">${n.count.get('article') || ''}</td>
+    </tr>`).join('')}
+    </table>
+
+            `)
+    }
+
+    function createChemicalsCard(chemicals, folded = false) {
+
+        return cardTemplate(chemicals, 'type-chemical', 'Chemicals', folded, chemicals => `
+<table class="sortable">
+    <thead><tr>
+        <th aria-sort="ascending" class="type-chemical">Description</th>
+        <th class="type-condition indicator-left numeric">Health effects</th>
+    </tr></thead>
+    ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="type-condition numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+        `)
+    }
+
+    function createConditionsCard(conditions, folded = false) {
+
+        return cardTemplate(conditions, 'type-condition', 'Health effects', folded, conditions => `
+    <table class="sortable">
+    <thead><tr>
+        <th aria-sort="ascending" class="type-condition">Description</th>
+        <th class="type-cause-effect indicator-left numeric">Links</th>
+    </tr></thead>
+    ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="type-cause-effect numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+        `)
+    }
+
+    function createCauseEffectsCard(causeEffects, folded = false) {
+        return cardTemplate(causeEffects, 'type-cause-effect', 'Cause and effect', folded, causeEffects => `
+            <table class="sortable">
+        <thead><tr>
+        <th aria-sort="ascending" class="type-cause-effect">Cause</th>
+        <th aria-sort="ascending" class="type-cause-effect">Effect</th>
+        <th class="type-article indicator-left numeric">Publications</th>
+    </tr></thead>
+    ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.id.split('_')[0] || 'Unknown'}</td>
+<td>${n.id.split('_')[1] || 'Unknown'}</td>
+<td class="type-article numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
+    </table>
+        `)
+    }
+
+    function createCard(items, folded = false) {
+        if (items.length === 0) {
+            return ''
+        }
+        const type = items[0].type
+
+        switch (type) {
+            case 'article':
+                return createArticleCard(items, folded)
+            case 'article-keyword':
+                return createArticleKeywordsCard(items, folded)
+            case 'project-topic':
+                return createProjectTopicsCard(items, folded)
+            case 'project-keyword':
+                return createProjectKeywordsCard(items, folded)
+            case 'partner':
+                return createPartnersCard(items, folded)
+            case 'country':
+                return createCountriesCard(items, folded)
+            case 'chemical':
+                return createChemicalsCard(items, folded)
+            case 'condition':
+                return createConditionsCard(items, folded)
+            case 'cause-effect':
+                return createCauseEffectsCard(items, folded)
+
+        }
+        return ''
+    }
+
+    function setupNodeBoxEvents(adjacent) {
+        for (const node of adjacent) {
+            document.getElementById(`adjacent-${node.id}`)?.addEventListener('click', () => {
+                selectNode(node)
+            })
+            document.getElementById(`adjacent-${node.id}`)?.addEventListener('mousemove', () => {
+                const g = Graph.graphData()
+                const target = g.nodes.find(n => n.id === node.id)
+                Graph.focusAt(target)
+                hoverNode = target
+            })
+        }
+
+        document.getElementById('node-box').querySelectorAll('.fold-trigger').forEach(el => {
+            console.log(el)
+            el.addEventListener('click', () => {
+                el.nextElementSibling.classList.toggle('folded')
+            })
+
+        })
+    }
+
+    var populateNode = null
+    var populateAdjacent = []
+
+    function populateNodeBox(node, adjacent = [], folded = true) {
+        populateNode = node
+        populateAdjacent = adjacent
+
+        hoverNode = null
+        let summaryCard = ''
+        if (node.type === 'partner' && node.description) {
+            summaryCard = `<div class="node-card">
+<h3>Summary</h3>
+<p>${node.fullname}</p>
+<p>${node.itype}, ${node.country}</p>
+<p>${node.description}</p>
+</div>`
+        } else if (node.type === 'project' && node.description) {
+            summaryCard = `<div class="node-card">
+<h3 class="type-project">Summary</h3>
+<p>${node.description}</p>
+</div>`
+        } else if (node.type === 'article' && node.authors) {
+            summaryCard = `<div class="node-card">
+<h3 class="type-article">Summary</h3>
+<img src="${node.image}" alt="article cover art"/>
+<p>${node["date-of-publication"]}</p>
+<p>${node.authors}</p>
+</div>`
+        } else if (node.type === 'project-topic' && node.description) {
+            summaryCard = `<div class="node-card">
+<h3 class="type-project-topic">Summary</h3>
+<p>${node["description"]}</p>
+</div>`
+        } else if (node.type === 'project-keyword' && node.description) {
+            summaryCard = `<div class="node-card">
+<h3 class="type-project-keyword">Summary</h3>
+<p>${node["description"]}</p>
+</div>`
+        }
+
+        const projectTopics = adjacent.filter(node => node.type === 'project-topic').sort((a, b) => b.count.get('project') - a.count.get('project'))
+        const projectTopicsCard = createProjectTopicsCard(projectTopics, folded)
+
+        const projectKeywords = adjacent.filter(node => node.type === 'project-keyword').sort((a, b) => a.name.localeCompare(b.name))
+        const projectKeywordsCard = createProjectKeywordsCard(projectKeywords, folded)
+
+        const partners = adjacent.filter(node => node.type === 'partner').sort((a, b) => a.name.localeCompare(b.name))
+        const partnersCard = createPartnersCard(partners)
+
+        const articleKeywords = adjacent.filter(node => node.type === 'article-keyword').sort((a, b) => a.name.localeCompare(b.name))
+        const articleKeywordsCard = createArticleKeywordsCard(articleKeywords, folded)
+
+        const articles = adjacent.filter(node => node.type === 'article').toSorted((a, b) => (b.count.get('project') || 0) - (a.count.get('project') || 0))
+        const articlesCard = createArticleCard(articles)
+        const countries = adjacent.filter(node => node.type === 'country').sort((a, b) => a.name.localeCompare(b.name))
+        const countriesCard = createCountriesCard(countries)
+
+        const projects = adjacent.filter(node => node.type === 'project').sort((a, b) => b.count.get('partner') - a.count.get('partner'))
+        const projectsCard = createProjectsCard(projects)
+
+        const chemicals = adjacent.filter(node => node.type === 'chemical').sort((a, b) => a.name.localeCompare(b.name))
+        const chemicalsCard = createChemicalsCard(chemicals)
+
+        const conditions = adjacent.filter(node => node.type === 'condition').sort((a, b) => a.name.localeCompare(b.name))
+        const conditionsCard = createConditionsCard(conditions)
+
+        const causeEffects = adjacent.filter(node => node.type === 'cause-effect').sort((a, b) => a.name.localeCompare(b.name))
+        const causeEffectsCard = createCauseEffectsCard(causeEffects)
+        let linksCard = ""
+        if (node.count?.get('total') > 0) linksCard =
+            `
+<hr/>
+<p>This node is linked to ${node.count?.get('total') || 0} other nodes</p>
+
+
+
+`
+        const typeNames = {
+            "article": "Publication",
+            "article-keyword": "Publication keyword",
+            "partner": "Partner",
+            "partner-country": "Partner country",
+            "project": "Project",
+            "project-topic": "Project topic",
+            "project-keyword": "Project keyword",
+            "chemical": "Chemical",
+            "condition": "Health effect",
+            "cause-effect": "Cause-effect"
+        }
+
+
+        document.getElementById('node-box').innerHTML = `
+<div class="node-card type-${node.type}-bg">
+    <h3>${typeNames[node.type]}</h3>
+    <h1>${node.name || node.label}</h1>
+    ${linksCard}
+</div>
+<div class="node-box-scroll">
+${summaryCard}
+${articleKeywordsCard}
+${projectKeywordsCard}
+${projectTopicsCard}
+${causeEffectsCard}
+${chemicalsCard}
+${conditionsCard}
+${projectsCard}
+${articlesCard}
+${partnersCard}
+${countriesCard}
+</div>
+`
+        storedNodeBox = document.getElementById('node-box').innerHTML
+        setupNodeBoxEvents(adjacent)
+    }
+
+
+    document.getElementById("search-input").addEventListener("input", (e) => {
+        const searchValue = e.target.value;
+
+        if (searchValue.length === 0) {
+            populateNodeBox(populateNode, populateAdjacent)
+        } else {
+
+            const g = Graph.graphData()
+            const result = g.nodes
+                .filter(node => node.id !== 'hub')
+                .filter(node => node.name.toLowerCase().includes(searchValue.toLowerCase()))
+
+            const grouped = Object.groupBy(result, node => node.type)
+
+            const cards = Object.entries(grouped).map(([type, items]) => {
+                return createCard(items)
+            })
+            document.getElementById('node-box').innerHTML = `
+                <div class="node-box-scroll">
+                    ${cards.join('')}
+                </div>
+            `
+            setupNodeBoxEvents(result)
+        }
+    })
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@4.1.7/dist/sortable.auto.js"></script>
+
+
+</body>
+
+</html>
