@@ -202,12 +202,12 @@
             padding-bottom: 10px;
             box-sizing: border-box;
 
-            input[type="text"]
-            {
+            input[type="text"] {
                 font-family: 'Satoshi-Medium', sans-serif;
                 font-size: 20px;
             }
         }
+
         #search-input {
             font-family: 'Satoshi-Medium', sans-serif;
             width: 100%;
@@ -220,6 +220,7 @@
             border-radius: 5px;
 
         }
+
         #node-box {
             font-family: 'Satoshi-Medium', sans-serif;
             left: 10px;
@@ -569,18 +570,19 @@
             </p>
             <p>
                 This interactive map prototype brings together a large part of the work
-                produced within the PARC partnership, showing how research <span class="type-project">projects</span>, <span
-                    class="type-partner">partners</span>,
+                produced within the PARC partnership, showing how research <span class="type-project">projects</span>,
+                <span
+                        class="type-partner">partners</span>,
                 <span class="type-article">publications</span>, <span class="type-chemical">chemicals</span> and <span
                     class="type-condition">health effects</span> are
-                interconnected.  It
+                interconnected. It
                 helps you to explore relationships across different areas of PARC's work and
                 better understand the project's key messages.
             </p>
             <p>
                 The current version contains only limited information on chemicals. A future
                 version will be integrated into the PARC website, allowing updates to projects
-                and publications to be automatically reflected in the map            </p>
+                and publications to be automatically reflected in the map </p>
             <p>
                 The information is visualised as a directed graph: a set of nodes connected by
                 one-way links that represent relationships from one node to another, but not
@@ -599,29 +601,29 @@
         <div id="limitations">
             <p>
                 Known limitations
-                <ul>
-                    <li>Largely based on data available in late 2025</li>
-                    <li>The underlying data is not yet fully validated and includes synthetic examples</li>
-                    <li>This version is made for the general meeting in Dublin and does not contains outside links</li>
-                </ul>
+            <ul>
+                <li>Largely based on data available in late 2025</li>
+                <li>The underlying data is not yet fully validated and includes synthetic examples</li>
+                <li>This version is made for the general meeting in Dublin and does not contains outside links</li>
+            </ul>
             </p>
             <p>
                 Planned improvements
-                <ul>
-            <li>Add links to publications via DOIs.</li>
-            <li>Expand information on chemicals and health effects.</li>
-            <li>Validate and enrich the content.</li>
-            <li>Improve map labels.</li>
-            <li>Integrate automatic updates from eu-parc.eu.</li>
-                </ul>
+            <ul>
+                <li>Add links to publications via DOIs.</li>
+                <li>Expand information on chemicals and health effects.</li>
+                <li>Validate and enrich the content.</li>
+                <li>Improve map labels.</li>
+                <li>Integrate automatic updates from eu-parc.eu.</li>
+            </ul>
             </p>
             <p>
                 Future ideas
-                <ul>
+            <ul>
                 <li>Link publication authors to partner organisations.</li>
                 <li>Connect the map to PARC thematic areas and tools.</li>
                 <li>Include information on policy relevance.</li>
-        </ul>
+            </ul>
             </p>
         </div>
 
@@ -1555,10 +1557,9 @@
         Graph.focusAt(node, radial)
     }
 
-    function populateNodeBox(node, adjacent = []) {
-        hoverNode = null
-        const projectTopics = adjacent.filter(node => node.type === 'project-topic').sort((a, b) => b.count.get('project') - a.count.get('project'))
-        const projectTopicsCard = projectTopics.length === 0 ? '' : `
+    function createProjectTopicsCard(projectTopics) {
+
+        return projectTopics.length === 0 ? '' : `
 <div class="node-card">
     <h3 class="type-project-topic">Project Topics</h3>
     <table class="sortable">
@@ -1573,10 +1574,230 @@
 <td class="type-project numeric">${n.count.get('project') || ''}</td>
 </tr>`).join('')}
     </table>
+</div>`
+    }
+
+    function createProjectKeywordsCard(projectKeywords) {
+        return projectKeywords.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-project-keyword">Project Keywords</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th aria-sort="ascending" class="type-project-keyword">Keyword</th>
+        <th class="type-project indicator-left numeric">Projects</th>
+    </tr>
+</thead>
+    ${projectKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="type-project numeric">${n.count.get('project') || ''}</td>
+    </tr>`).join('')}
+    </table>
 </div>
 `
-        let summaryCard = ''
+    }
 
+    function createArticleKeywordsCard(articleKeywords) {
+        return articleKeywords.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-article-keyword">Publication keywords</h3>
+    <table class="sortable">
+    <thead>
+    <tr>
+    <th aria-sort="ascending" class="type-article-keyword">Description</th>
+    <th class="type-article indicator-left numeric">Publications</th></tr>
+</thead>
+    ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
+    </table>
+</div>`
+    }
+
+    function createPartnersCard(partners) {
+        return partners.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-partner">Partners</h3>
+    <table class="sortable">
+    <thead>
+    <tr style="width: 100%;">
+        <th aria-sort="ascending" class="type-partner">Name</th>
+        <th class="type-partner">Country</th>
+        <th class="type-project indicator-left numeric">Projects</th></tr>
+</thead>
+    ${partners.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td class="type-partner">${n.name || 'Unknown'}</td>
+    <td class="type-partner">${n.country || 'Unknown'}</td>
+    <td class="type-project numeric">${n.count.get('project') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>`
+    }
+
+    function createArticleCard(articles) {
+        return articles.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-article" class="type-article">Publications</h3>
+    <table class="sortable">
+    <thead>
+    <tr><th class="type-article">Title</th>
+    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th></tr>
+</thead>
+    ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td>
+<td class="type-project numeric">${n.count.get('project') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>
+`
+    }
+
+    function createCountriesCard(countries) {
+        return countries.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-country" class="type-country">Countries</h3>
+    <table class="sortable">
+    <thead>
+    <tr>
+    <th aria-sort="ascending" class="type-article">Country</th>
+    <th class="type-partner indicator-left numeric">Partners</th></tr>
+</thead>
+    ${countries.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.name || 'Unknown'}</td>
+<td class="type-partner numeric">${n.count.get('partner') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>`
+    }
+
+    function createProjectsCard(projects) {
+        return projects.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-project">Projects</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th class="type-project">Project</th>
+        <th aria-sort="descending" class="type-partner indicator-left numeric">Partners</th>
+        <th class="type-article indicator-left numeric">Publications</th>
+    </tr></thead>
+    ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+        <td>${n.name || 'Unknown'}</td>
+        <td class="type-partner numeric">${n.count.get('partner') || ''}</td>
+        <td class="type-article numeric">${n.count.get('article') || ''}</td>
+    </tr>`).join('')}
+    </table>
+</div>
+`
+    }
+
+    function createChemicalsCard(chemicals) {
+        return chemicals.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-chemical">Chemicals</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th aria-sort="ascending" class="type-chemical">Description</th>
+        <th class="type-condition indicator-left numeric">Health effects</th>
+    </tr></thead>
+    ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="type-condition numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>`
+    }
+
+    function createConditionsCard(conditions) {
+        return conditions.length === 0 ? '' : `
+<div class="node-card">
+    <h3 class="type-condition">Health effects</h3>
+    <table class="sortable">
+    <thead><tr>
+        <th aria-sort="ascending" class="type-condition">Description</th>
+        <th class="type-cause-effect indicator-left numeric">Links</th>
+    </tr></thead>
+    ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+    <td>${n.name || 'Unknown'}</td>
+    <td class="type-cause-effect numeric">${n.count.get('cause-effect') || ''}</td>
+</tr>`).join('')}
+    </table>
+</div>
+`
+    }
+
+    function createCauseEffectsCard(causeEffects) {
+        return causeEffects.length === 0 ? '' : `
+        <div class="node-card">
+    <h3 class="type-cause-effect">Cause and effect</h3>
+    <table class="sortable">
+        <thead><tr>
+        <th aria-sort="ascending" class="type-cause-effect">Cause</th>
+        <th aria-sort="ascending" class="type-cause-effect">Effect</th>
+        <th class="type-article indicator-left numeric">Publications</th>
+    </tr></thead>
+    ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
+<td>${n.id.split('_')[0] || 'Unknown'}</td>
+<td>${n.id.split('_')[1] || 'Unknown'}</td>
+<td class="type-article numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
+    </table>
+</div>
+`
+    }
+
+    function createCard(items) {
+        if (items.length === 0) {
+            return ''
+        }
+        const type = items[0].type
+
+        switch (type) {
+            case 'article':
+                return createArticleCard(items)
+            case 'article-keyword':
+                return createArticleKeywordsCard(items)
+            case 'project-topic':
+                return createProjectTopicsCard(items)
+            case 'project-keyword':
+                return createProjectKeywordsCard(items)
+            case 'partner':
+                return createPartnersCard(items)
+            case 'country':
+                return createCountriesCard(items)
+            case 'chemical':
+                return createChemicalsCard(items)
+            case 'condition':
+                return createConditionsCard(items)
+            case 'cause-effect':
+                return createCauseEffectsCard(items)
+
+        }
+        return ''
+
+
+    }
+
+    function setupNodeBoxEvents(adjacent) {
+        for (const node of adjacent) {
+            document.getElementById(`adjacent-${node.id}`)?.addEventListener('click', () => {
+                selectNode(node)
+            })
+            document.getElementById(`adjacent-${node.id}`)?.addEventListener('mousemove', () => {
+                const g = Graph.graphData()
+                const target = g.nodes.find(n => n.id === node.id)
+                Graph.focusAt(target)
+                hoverNode = target
+            })
+        }
+    }
+
+    var populateNode = null
+    var populateAdjacent = []
+    function populateNodeBox(node, adjacent = []) {
+        populateNode = node
+        populateAdjacent = adjacent
+
+        hoverNode = null
+        const projectTopics = adjacent.filter(node => node.type === 'project-topic').sort((a, b) => b.count.get('project') - a.count.get('project'))
+        const projectTopicsCard = createProjectTopicsCard(projectTopics)
+        let summaryCard = ''
         if (node.type === 'partner' && node.description) {
             summaryCard = `<div class="node-card">
 <h3>Summary</h3>
@@ -1609,155 +1830,30 @@
         }
 
         const projectKeywords = adjacent.filter(node => node.type === 'project-keyword').sort((a, b) => a.name.localeCompare(b.name))
-        const projectKeywordsCard = projectKeywords.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-project-keyword">Project Keywords</h3>
-    <table class="sortable">
-    <thead><tr>
-        <th aria-sort="ascending" class="type-project-keyword">Keyword</th>
-        <th class="type-project indicator-left numeric">Projects</th>
-    </tr>
-</thead>
-    ${projectKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-    <td>${n.name || 'Unknown'}</td>
-    <td class="type-project numeric">${n.count.get('project') || ''}</td>
-    </tr>`).join('')}
-    </table>
-</div>
-`
+        const projectKeywordsCard = createProjectKeywordsCard(projectKeywords)
+
         const partners = adjacent.filter(node => node.type === 'partner').sort((a, b) => a.name.localeCompare(b.name))
-        const partnersCard = partners.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-partner">Partners</h3>
-    <table class="sortable">
-    <thead>
-    <tr style="width: 100%;">
-        <th aria-sort="ascending" class="type-partner">Name</th>
-        <th class="type-partner">Country</th>
-        <th class="type-project indicator-left numeric">Projects</th></tr>
-</thead>
-    ${partners.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-    <td class="type-partner">${n.name || 'Unknown'}</td>
-    <td class="type-partner">${n.country || 'Unknown'}</td>
-    <td class="type-project numeric">${n.count.get('project') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>`
+        const partnersCard = createPartnersCard(partners)
 
         const articleKeywords = adjacent.filter(node => node.type === 'article-keyword').sort((a, b) => a.name.localeCompare(b.name))
-        const articleKeywordsCard = articleKeywords.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-article-keyword">Publication keywords</h3>
-    <table class="sortable">
-    <thead>
-    <tr>
-    <th aria-sort="ascending" class="type-article-keyword">Description</th>
-    <th class="type-article indicator-left numeric">Publications</th></tr>
-</thead>
-    ${articleKeywords.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.name || 'Unknown'}</td><td class="numeric type-article">${n.count.get('article') || ''}</td></tr>`).join('')}
-    </table>
-</div>`
+        const articleKeywordsCard = createArticleKeywordsCard(articleKeywords)
+
         const articles = adjacent.filter(node => node.type === 'article').toSorted((a, b) => (b.count.get('project') || 0) - (a.count.get('project') || 0))
-        const articlesCard = articles.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-article" class="type-article">Publications</h3>
-    <table class="sortable">
-    <thead>
-    <tr><th class="type-article">Title</th>
-    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th></tr>
-</thead>
-    ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.name || 'Unknown'}</td>
-<td class="type-project numeric">${n.count.get('project') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>
-`
+        const articlesCard = createArticleCard(articles)
         const countries = adjacent.filter(node => node.type === 'country').sort((a, b) => a.name.localeCompare(b.name))
-        const countriesCard = countries.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-country" class="type-country">Countries</h3>
-    <table class="sortable">
-    <thead>
-    <tr>
-    <th aria-sort="ascending" class="type-article">Country</th>
-    <th class="type-partner indicator-left numeric">Partners</th></tr>
-</thead>
-    ${countries.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.name || 'Unknown'}</td>
-<td class="type-partner numeric">${n.count.get('partner') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>`
+        const countriesCard = createCountriesCard(countries)
 
         const projects = adjacent.filter(node => node.type === 'project').sort((a, b) => b.count.get('partner') - a.count.get('partner'))
-        const projectsCard = projects.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-project">Projects</h3>
-    <table class="sortable">
-    <thead><tr>
-        <th class="type-project">Project</th>
-        <th aria-sort="descending" class="type-partner indicator-left numeric">Partners</th>
-        <th class="type-article indicator-left numeric">Publications</th>
-    </tr></thead>
-    ${projects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-        <td>${n.name || 'Unknown'}</td>
-        <td class="type-partner numeric">${n.count.get('partner') || ''}</td>
-        <td class="type-article numeric">${n.count.get('article') || ''}</td>
-    </tr>`).join('')}
-    </table>
-</div>
-`
+        const projectsCard = createProjectsCard(projects)
+
         const chemicals = adjacent.filter(node => node.type === 'chemical').sort((a, b) => a.name.localeCompare(b.name))
-        const chemicalsCard = chemicals.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-chemical">Chemicals</h3>
-    <table class="sortable">
-    <thead><tr>
-        <th aria-sort="ascending" class="type-chemical">Description</th>
-        <th class="type-condition indicator-left numeric">Health effects</th>
-    </tr></thead>
-    ${chemicals.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-    <td>${n.name || 'Unknown'}</td>
-    <td class="type-condition numeric">${n.count.get('cause-effect') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>
-`
+        const chemicalsCard = createChemicalsCard(chemicals)
+
         const conditions = adjacent.filter(node => node.type === 'condition').sort((a, b) => a.name.localeCompare(b.name))
-        const conditionsCard = conditions.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-condition">Health effects</h3>
-    <table class="sortable">
-    <thead><tr>
-        <th aria-sort="ascending" class="type-condition">Description</th>
-        <th class="type-cause-effect indicator-left numeric">Links</th>
-    </tr></thead>
-    ${conditions.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-    <td>${n.name || 'Unknown'}</td>
-    <td class="type-cause-effect numeric">${n.count.get('cause-effect') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>
-`
+        const conditionsCard = createConditionsCard(conditions)
+
         const causeEffects = adjacent.filter(node => node.type === 'cause-effect').sort((a, b) => a.name.localeCompare(b.name))
-        const causeEffectsCard = causeEffects.length === 0 ? '' : `
-        <div class="node-card">
-    <h3 class="type-cause-effect">Cause and effect</h3>
-    <table class="sortable">
-        <thead><tr>
-        <th aria-sort="ascending" class="type-cause-effect">Cause</th>
-        <th aria-sort="ascending" class="type-cause-effect">Effect</th>
-        <th class="type-article indicator-left numeric">Publications</th>
-    </tr></thead>
-    ${causeEffects.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.id.split('_')[0] || 'Unknown'}</td>
-<td>${n.id.split('_')[1] || 'Unknown'}</td>
-<td class="type-article numeric">${n.count.get('article') || ''}</td></tr>`).join('')}
-    </table>
-</div>
-`
+        const causeEffectsCard = createCauseEffectsCard(causeEffects)
         let linksCard = ""
         if (node.count?.get('total') > 0) linksCard =
             `
@@ -1802,17 +1898,7 @@ ${countriesCard}
 </div>
 `
         storedNodeBox = document.getElementById('node-box').innerHTML
-        for (const node of adjacent) {
-            document.getElementById(`adjacent-${node.id}`).addEventListener('click', () => {
-                selectNode(node)
-            })
-            document.getElementById(`adjacent-${node.id}`).addEventListener('mousemove', () => {
-                const g = Graph.graphData()
-                const target = g.nodes.find(n => n.id === node.id)
-                Graph.focusAt(target)
-                hoverNode = target
-            })
-        }
+        setupNodeBoxEvents(adjacent)
     }
 
 
@@ -1820,33 +1906,25 @@ ${countriesCard}
         const searchValue = e.target.value;
 
         if (searchValue.length === 0) {
-            document.getElementById('node-box').innerHTML = storedNodeBox
+            populateNodeBox(populateNode, populateAdjacent)
         } else {
 
             const g = Graph.graphData()
-            const result = g.nodes.filter(node => node.name.toLowerCase().includes(searchValue.toLowerCase()))
+            const result = g.nodes
+                .filter(node => node.id !== 'hub')
+                .filter(node => node.name.toLowerCase().includes(searchValue.toLowerCase()))
 
-            const articles = result.filter(node => node.type === 'article')
-            const articlesCard = articles.length === 0 ? '' : `
-<div class="node-card">
-    <h3 class="type-article" class="type-article">Publications</h3>
-    <table class="sortable">
-    <thead>
-    <tr><th class="type-article">Title</th>
-    <th aria-sort="descending" class="type-project indicator-left numeric">Projects</th></tr>
-</thead>
-    ${articles.map(n => `<tr class="adjacent" id="adjacent-${n.id}">
-<td>${n.name || 'Unknown'}</td>
-<td class="type-project numeric">${n.count.get('project') || ''}</td>
-</tr>`).join('')}
-    </table>
-</div>`
+            const grouped = Object.groupBy(result, node => node.type)
 
-            document.getElementById("node-box").innerHTML = `
-            <div class="node-box-scroll">
-            ${articlesCard}
-            </div>
+            const cards = Object.entries(grouped).map(([type, items]) => {
+                return createCard(items)
+            })
+            document.getElementById('node-box').innerHTML = `
+                <div class="node-box-scroll">
+                    ${cards.join('')}
+                </div>
             `
+            setupNodeBoxEvents(result)
         }
     })
 
