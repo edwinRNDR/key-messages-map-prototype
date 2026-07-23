@@ -3440,5 +3440,90 @@ export const data = [
         "country": "Spain",
         "description": "Public university in Seville, Spain, founded in 1997. It focuses on teaching and research across a wide range of academic fields."
     },
+    {
+        "id": "cluster-1",
+        "name": "NAMs Replacing Animal Testing (REACH)",
+        "type": "cluster",
+        "description": "Projects developing and validating New Approach Methodologies (NAMs), IATA, and computational/AI tools to replace animal testing and support regulatory acceptance under REACH and related chemical safety frameworks."
+    },
+    {
+        "id": "cluster-2",
+        "name": "Endocrine and Metabolism Disruptor Assessment",
+        "type": "cluster",
+        "description": "Projects focused on identifying and testing chemicals that disrupt the endocrine system, thyroid hormone system, or metabolism, feeding into ECHA/EFSA guidance and CLP hazard classification criteria."
+    },
+    {
+        "id": "cluster-3",
+        "name": "Human Biomonitoring Frameworks and Guidance Values",
+        "type": "cluster",
+        "description": "Projects building the EU human biomonitoring infrastructure and guidance values, extending the HBM4EU legacy to support chemical risk assessment and public health policy."
+    },
+    {
+        "id": "cluster-4",
+        "name": "Chemical Mixture Risk Assessment",
+        "type": "cluster",
+        "description": "Projects developing tools, data, and regulatory options to assess the combined risk of chemical mixtures across regulatory sectors, informing REACH revision and water legislation."
+    },
+    {
+        "id": "cluster-5",
+        "name": "Environmental Monitoring and Early Warning Systems",
+        "type": "cluster",
+        "description": "Projects establishing non-target screening, monitoring networks, and early-warning capacity to detect emerging and unregulated chemicals of concern across environment, food and human matrices."
+    },
+    {
+        "id": "cluster-6",
+        "name": "Aquatic and Water Framework Directive Risk Assessment",
+        "type": "cluster",
+        "description": "Projects assessing chemical and toxin risks in aquatic ecosystems, directly supporting thresholds and prioritisation under the Water Framework and Marine Strategy Framework Directives."
+    },
+    {
+        "id": "cluster-7",
+        "name": "Plant Protection Products Environmental Risk Assessment",
+        "type": "cluster",
+        "description": "Projects improving environmental risk assessment methods and models for pesticides/plant protection products, supporting national plans under the Sustainable Use Directive and Regulation 1107/2009."
+    },
+    {
+        "id": "cluster-8",
+        "name": "Occupational Exposure and Worker Safety",
+        "type": "cluster",
+        "description": "Projects generating exposure data and surveillance tools for workers handling hazardous chemicals, supporting OSH regulation and REACH occupational risk management."
+    },
+    {
+        "id": "cluster-9",
+        "name": "Zero Pollution and Health Impact / Burden of Disease",
+        "type": "cluster",
+        "description": "Projects developing indicators, health impact assessments and burden-of-disease estimates that feed directly into the EU Green Deal's Zero Pollution ambition and Chemicals Strategy for Sustainability."
+    },
+    {
+        "id": "cluster-10",
+        "name": "Food Safety and Mycotoxin Contaminant Assessment",
+        "type": "cluster",
+        "description": "Projects closing data gaps on food contaminants and mycotoxins, directly feeding EFSA regulatory assessments and food law thresholds."
+    },
+    {
+        "id": "cluster-11",
+        "name": "Chemical Enforcement and Consumer Product Safety",
+        "type": "cluster",
+        "description": "Projects developing screening and identification tools that directly strengthen enforcement of chemical restrictions in consumer products and articles."
+    },
+    {
+        "id": "cluster-12",
+        "name": "Harmonisation and One Substance One Assessment",
+        "type": "cluster",
+        "description": "Projects tackling inconsistencies and data gaps across regulatory sectors to support the EU's 'One Substance, One Assessment' harmonisation initiative."
+    },
+    {
+        "id": "cluster-13",
+        "name": "PFAS-Specific Exposure and Regulation",
+        "type": "cluster",
+        "description": "Projects specifically generating PFAS exposure and monitoring data to support the ongoing PFAS restriction process under REACH and the POP Regulation."
+    },
+    {
+        "id": "cluster-14",
+        "name": "Immunotoxicity, Neurotoxicity and Sensitisation Testing",
+        "type": "cluster",
+        "description": "Projects developing NAM-based test methods for specific toxicological endpoints (immunotoxicity, neurotoxicity, skin/respiratory sensitisation) to close ECHA-identified regulatory data gaps."
+    }
+
 
 ]

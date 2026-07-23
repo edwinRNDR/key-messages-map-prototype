@@ -9167,12 +9167,877 @@ export const edges = [
     },
     {
         "source": "article-527",
-        "target": "partner-IRFMN",
+        "target": "partner-INSERM",
         "type": "article_partner"
+    },
+    {
+        "source": "article-527",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-768",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1093",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1113",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-NIPH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-IUF",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-FMUL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-UNIBAS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-RIVM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-IEP-NRI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-UOB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-UOB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-NVI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-UKON",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-AIT",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1587",
+        "target": "partner-ISCIII",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-AUTH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-NIVA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-JSI",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-IISPV",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1302",
+        "target": "partner-UOB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1638",
+        "target": "partner-ETHZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1638",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1250",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-ISCIII",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-INRAE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-OFB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-EFSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UOS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-IMR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UAVR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-CSIC",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UCLM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-NIVA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-BfG",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UKCEH",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UC",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-AU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-UBA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1139",
+        "target": "partner-ANSES",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1108",
+        "target": "partner-IMR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1108",
+        "target": "partner-UAVR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1108",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-MU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-EAWAG",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UG-PL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UFZ",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-INERIS",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UL",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-NIVA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-BfG",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UKON",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-INRAE",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UAVR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-NIB",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-UPO",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-BfR",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-SDU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-MUW",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-INSERM",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-SLU",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-INSA",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-ENSP",
+        "type": "article_partner"
+    },
+    {
+        "source": "article-1103",
+        "target": "partner-BPI",
+        "type": "article_partner"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1317",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1612",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1428",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1429",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1614",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1316",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1012",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1295",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1611",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1038",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1427",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1563",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1615",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1014",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1562",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1426",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-1427",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1294",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1298",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1428",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1281",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1277",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1565",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-1557",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1272",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-975",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-976",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-990",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-973",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-968",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-970",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1545",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-985",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1431",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1542",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1544",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-1543",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-969",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1613",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1432",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1016",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1016",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1273",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-1566",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-4",
+        "target": "project-999",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-978",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-986",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1491",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1282",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1555",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1271",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1315",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-994",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-995",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-5",
+        "target": "project-1554",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-6",
+        "target": "project-998",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-6",
+        "target": "project-1432",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-6",
+        "target": "project-1016",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-6",
+        "target": "project-1043",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-6",
+        "target": "project-994",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-7",
+        "target": "project-1297",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-7",
+        "target": "project-1003",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-7",
+        "target": "project-1296",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-7",
+        "target": "project-996",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-7",
+        "target": "project-1280",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-972",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-971",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-970",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-1040",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-1431",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-969",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-1425",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-1274",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-1039",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-1430",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-974",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-9",
+        "target": "project-983",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-10",
+        "target": "project-978",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-10",
+        "target": "project-1491",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-10",
+        "target": "project-1293",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-10",
+        "target": "project-995",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-11",
+        "target": "project-1490",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-11",
+        "target": "project-1546",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-11",
+        "target": "project-1556",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-975",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-1279",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-1043",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-1581",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-1045",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-1044",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-13",
+        "target": "project-1281",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-13",
+        "target": "project-1546",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-13",
+        "target": "project-1542",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-13",
+        "target": "project-1543",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1005",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1564",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1009",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1278",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1558",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-14",
+        "target": "project-1566",
+        "type": "cluster_project"
     }
-
-
-
-
-
 ]
