@@ -212,7 +212,20 @@
             padding: 5px 10px 5px 10px;
             border: solid 1px black;
             border-radius: 25px;
+            width: fit-content;
+            max-width: 200px;
+            overflow: hidden;
+            display: inline-block;
+            box-sizing: border-box;
+            text-wrap: nowrap;
+
+            background-color: white;
+            color: black;
+            transition: border 1s ease-in-out,
+            color 1s ease-in-out,
+            background-color 1s ease-in-out;
         }
+
         .breadcrumb:hover {
             text-decoration-line: underline;
             text-underline-offset: 5px;
@@ -227,6 +240,33 @@
             padding: 10px 0px 0px 0px;
             box-sizing: border-box;
             pointer-events: fill;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .newly-added {
+            color: transparent;
+            border: solid 1px transparent;
+        }
+
+        .removed {
+            max-width: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 5px 0px 5px 0px;
+            border: solid 0px transparent;
+
+            visibility: hidden;
+            transition-delay: 1s;
+            transition-property: visibility;
+
+
+            transition: max-width 1.0s ease-in-out,
+            margin-left 1.0s ease-in-out,
+            margin-right 1.0s ease-in-out,
+            padding 1.0s ease-in-out,
+            border 1.0s ease-in-out,
+            visibility 1.0s ease-in-out;
+
         }
 
         #search {
@@ -241,6 +281,7 @@
                 font-family: 'Satoshi-Medium', sans-serif;
                 font-size: 20px;
             }
+
             flex-grow: 0;
             flex-shrink: 0;
         }
@@ -569,7 +610,6 @@
     <div id="node-box"></div>
 
 
-
 </div>
 
 <div id="info-box-container">
@@ -724,28 +764,50 @@
     })
 
     let breadcrumbs = []
+    let breadcrumbElements = []
 
-    function smoothstep (min, max, value) {
-        var x = Math.max(0, Math.min(1, (value-min)/(max-min)));
-        return x*x*(3 - 2*x);
+    function smoothstep(min, max, value) {
+        var x = Math.max(0, Math.min(1, (value - min) / (max - min)));
+        return x * x * (3 - 2 * x);
     }
 
     function updateBreadcrumbs(id, type, label, action) {
-        if (breadcrumbs.find(breadcrumb => breadcrumb.id === id)) {
-            breadcrumbs = breadcrumbs.filter(breadcrumb => breadcrumb.id !== id)
-        }
+        // if (breadcrumbs.find(breadcrumb => breadcrumb.id === id)) {
+        //
+        // }
         breadcrumbs.push({id: id, type: type, label: label, action: action})
-        if (breadcrumbs.length > 3) {
-            breadcrumbs.shift()
+
+        const parent = document.getElementById('breadcrumbs')
+        const breadcrumb = document.createElement('div')
+        breadcrumb.classList.add('breadcrumb')
+        breadcrumb.classList.add('newly-added')
+        breadcrumb.innerText = type
+        breadcrumbElements.push(breadcrumb)
+        setTimeout(() => {
+            breadcrumb.classList.remove('newly-added')
+        },1)
+        //breadcrumb.classList.remove('newly-added')
+
+        for (let i = 0; i < breadcrumbElements.length - 3; i++) {
+            breadcrumbElements[i].classList.add('removed')
         }
 
-        document.getElementById('breadcrumbs').innerHTML = breadcrumbs.map((breadcrumb, index) => `<span id="breadcrumb-${index}" class="breadcrumb">${breadcrumb.type}</span>`).join(' > ')
-
-        breadcrumbs.forEach((breadcrumb, index) => {
-            document.getElementById(`breadcrumb-${index}`).addEventListener('click', (event) => {
-                breadcrumb.action()
-            })
+        breadcrumb.addEventListener('click', (event) => {
+            action()
         })
+
+        parent.appendChild(breadcrumb)
+        // if (breadcrumbs.length > 3) {
+        //     breadcrumbs.shift()
+        // }
+
+        // document.getElementById('breadcrumbs').innerHTML = breadcrumbs.map((breadcrumb, index) => `<div id="breadcrumb-${index}" class="breadcrumb">${breadcrumb.type}</div>`).join('')
+        //
+        // breadcrumbs.forEach((breadcrumb, index) => {
+        //     document.getElementById(`breadcrumb-${index}`).addEventListener('click', (event) => {
+        //         breadcrumb.action()
+        //     })
+        // })
 
     }
 
@@ -1008,7 +1070,7 @@
                 ctx.save()
                 const x = selectedNode.x
                 const y = selectedNode.y
-                const dt = Math.min(1.0, Math.max(0.0,  (Date.now() - lastSelectTime) / 4000.0))
+                const dt = Math.min(1.0, Math.max(0.0, (Date.now() - lastSelectTime) / 4000.0))
                 const sdt = smoothstep(0.0, 1.0, dt)
                 const gradient = ctx.createRadialGradient(x, y, 0, x, y, 600);
 
@@ -1103,7 +1165,8 @@
             return `rgba(155, 203, 198, ${opacity})`;
         } else if (node.type === 'cluster') {
             return `rgba(127, 0, 0, ${opacity})`;
-        } {
+        }
+        {
             return `rgba(0, 0, 0, ${opacity})`;
         }
     }
@@ -1337,7 +1400,15 @@
     document.getElementById('legend-cluster').addEventListener('click', () => {
         storedEdgesColors = null
         const items = gData.nodes.filter(node => node.type === 'cluster')
-        const hub = {"id": "hub", "type": "cluster", "name": "All policy clusters", "x": 0.0, "y": 0.0, "fx": 0.0, "fy": 0.0}
+        const hub = {
+            "id": "hub",
+            "type": "cluster",
+            "name": "All policy clusters",
+            "x": 0.0,
+            "y": 0.0,
+            "fx": 0.0,
+            "fy": 0.0
+        }
         const hubLinks = items.map(item => ({source: item.id, target: hub.id, weight: 1.0}))
         const edges = gData.links.concat(hubLinks)
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
