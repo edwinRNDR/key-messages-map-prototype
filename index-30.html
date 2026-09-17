@@ -1366,9 +1366,9 @@
         const mst = minimumSpanningTreeFromSubtree(edges, hubLinks)
 
         const toAddLinks0 = gData.links.filter(edge => edge.type === 'project-topic_project')
-        //const toAddLinks1 = gData.links.filter( edge => edge.type === 'project-keyword_project')
-        //const toAddLinks = toAddLinks0.concat(toAddLinks1)
-        const newLinks = mst.mstEdges.concat(toAddLinks0)
+        const toAddLinks1 = gData.links.filter( edge => edge.type === 'cluster_project')
+        const toAddLinks = toAddLinks0.concat(toAddLinks1)
+        const newLinks = mst.mstEdges.concat(toAddLinks)
 
 
         Graph.graphData({nodes: gData.nodes.concat(hub), links: newLinks})
