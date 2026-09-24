@@ -1,25 +1,24 @@
 export const data = [
     {
-        'id': 'ta-risk-assessment',
-        'type': 'thematic-area',
-        'name': 'Risk Assessment'
+        "id": "ta-risk-assessment",
+        "type": "thematic-area",
+        "name": "Risk Assessment"
     },
     {
-        'id': 'ta-tools-resources',
-        'type': 'thematic-area',
-        'name': 'Tools & Resources'
+        "id": "ta-tools-resources",
+        "type": "thematic-area",
+        "name": "Tools & Resources"
     },
     {
-        'id': 'ta-building-infrastructure-human-capacities',
-        'type': 'thematic-area',
-        'name': 'Building infrastructure and human capacities'
+        "id": "ta-building-infrastructure-human-capacities",
+        "type": "thematic-area",
+        "name": "Building infrastructure and human capacities"
     },
     {
-        'id': 'ta-science-to-policy',
-        'type': 'thematic-area',
-        'name': 'Science to policy'
+        "id": "ta-science-to-policy",
+        "type": "thematic-area",
+        "name": "Science to policy"
     },
-    // project keywords
     {
         "name": "Environment",
         "id": "project-keyword-1065",
@@ -36,7 +35,7 @@ export const data = [
         "name": "Human health",
         "id": "project-keyword-1058",
         "type": "project-keyword",
-        "description": "The partnership’s core aim is to provide data, tools and models that enable better assessment and management of chemical risks to human health across Europe.",
+        "description": "The partnership’s core aim is to provide data, tools and models that enable better assessment and management of chemical risks to human health across Europe."
     },
     {
         "name": "Monitoring methods",
@@ -49,7 +48,6 @@ export const data = [
         "id": "project-keyword-1061",
         "type": "project-keyword",
         "description": "As an EU‑wide partnership, PARC develops data, methodologies and networks to modernise chemical risk assessment and make it more efficient, predictive and fit for regulatory use."
-
     },
     {
         "name": "NGRA",
@@ -68,7 +66,6 @@ export const data = [
         "id": "project-keyword-1059",
         "type": "project-keyword",
         "description": "Building on HBM4EU, PARC consolidates and expands EU‑wide human biomonitoring to measure internal chemical exposure and associated health markers in the general population and specific groups."
-
     },
     {
         "name": "Workers",
@@ -76,8 +73,6 @@ export const data = [
         "type": "project-keyword",
         "description": "PARC conducts targeted occupational human biomonitoring and exposure studies in high‑risk sectors to better characterise and manage chemical risks to workers’ health."
     },
-    // projects
-
     {
         "name": "Developing a system to monitor chemicals in the environment",
         "id": "project-1282",
@@ -97,14 +92,14 @@ export const data = [
         "id": "project-1281",
         "type": "project",
         "url": "https://www.eu-parc.eu/projects/environmental-and-multisource-monitoring-pilot-study-pfas-and-endocrine-disruptors",
-        'description': 'Launches a pilot project to establish and validate environmental monitoring structures for PFAS and endocrine disruptors using a multicompartment approach with advanced analytical methods and standardised QA/QC protocols.'
+        "description": "Launches a pilot project to establish and validate environmental monitoring structures for PFAS and endocrine disruptors using a multicompartment approach with advanced analytical methods and standardised QA/QC protocols."
     },
     {
         "name": "Improving the environmental risk assessment for plant protection products",
         "id": "project-996",
         "type": "project",
         "url": "https://www.eu-parc.eu/projects/improving-environmental-risk-assessment-plant-protection-products",
-        'description': "Seeks to improve prospective evaluation of plant protection product effects on biodiversity by overcoming substance-by-substance limitations and adopting holistic systems-based environmental risk assessment approaches."
+        "description": "Seeks to improve prospective evaluation of plant protection product effects on biodiversity by overcoming substance-by-substance limitations and adopting holistic systems-based environmental risk assessment approaches."
     },
     {
         "name": "Innovative tools for an early warning system",
@@ -125,7 +120,7 @@ export const data = [
         "id": "project-995",
         "type": "project",
         "url": "https://www.eu-parc.eu/projects/tracking-emerging-chemicals-animal-species-new-monitoring-approach",
-        "description": "Develops a proof-of-concept using sentinel animal species (gammarids and bees) combined with suspect/non-targeted screening and effect-directed analysis to detect chemicals of emerging concern in the environment and food chain.",
+        "description": "Develops a proof-of-concept using sentinel animal species (gammarids and bees) combined with suspect/non-targeted screening and effect-directed analysis to detect chemicals of emerging concern in the environment and food chain."
     },
     {
         "name": "Understanding volatile siloxanes in Europe to support regulation",
@@ -207,7 +202,7 @@ export const data = [
         "id": "project-1556",
         "type": "project",
         "url": "https://www.eu-parc.eu/projects/toxicity-plastic-associated-chemicals",
-        "description" : "Identifies the most hazardous chemicals leaching from commonly used plastic products using a tiered NAM-based hazard screening approach covering cytotoxicity, genotoxicity, endocrine disruption, immunotoxicity, and neurodevelopmental toxicity endpoints."
+        "description": "Identifies the most hazardous chemicals leaching from commonly used plastic products using a tiered NAM-based hazard screening approach covering cytotoxicity, genotoxicity, endocrine disruption, immunotoxicity, and neurodevelopmental toxicity endpoints."
     },
     {
         "name": "Advancing detection mechanisms of hazardous chemicals in food",
@@ -430,8 +425,7 @@ export const data = [
         "id": "project-1566",
         "type": "project",
         "description": "Develops and validates non-animal methods for assessing skin sensitisation from chemical mixtures, filling a critical gap in current regulatory testing frameworks for mixture hazard assessment.",
-        "url": "https://www.eu-parc.eu/projects/skin-sensitisation-and-mixtures-effects",
-
+        "url": "https://www.eu-parc.eu/projects/skin-sensitisation-and-mixtures-effects"
     },
     {
         "name": "Tools, criteria and methods for risk assessment",
@@ -509,7 +503,6 @@ export const data = [
         "type": "project",
         "url": "https://www.eu-parc.eu/projects/enhancing-risk-assessment-chemical-mixtures",
         "description": "Advances scientific understanding of combined chemical effects by developing and validating methods to assess mixture toxicity across multiple endpoints, supporting more protective regulatory mixture risk assessment."
-
     },
     {
         "name": "Harmonised workflow for human relevance assessment of Adverse Outcome Pathways (AOPs) and New Approach Methodologies (NAMs)",
@@ -658,1271 +651,6 @@ export const data = [
         "description": "Closes critical data gaps on the environmental hazards and risks of BPA alternatives by providing toxicological data across multiple endpoints, supporting regulatory decisions on safer substitutions under EU chemicals legislation."
     },
     {
-        "id": "article-1870",
-        "name": "Zebra_K+ : High-throughput analysis of acoustic startle response plasticity in zebrafish embryos and larvae in neurotoxicity testing",
-        "keywords": "Zebrafish larvae, Acoustic startle response, Prepulse inhibition, Habituation, Neuroplasticity, Neurotoxicity screening",
-        "authors": "Tagkalidou Niki, Aljabasini Ouwais, Pujol Sergi, Porta José María, Prats Eva, Barata Carlos, Raldua Demetrio",
-        "date-of-publication": "23.12.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/from-prioritization-to-implementation-updating-MC1yLXMtci0wLTA.png?itok=U4rrvG31"
-    },
-    {
-        "id": "article-1869",
-        "name": "A regulatory perspective on the applicability of NAMs in genotoxicity and carcinogenicity assessment in EU: current practices and future directions",
-        "keywords": "",
-        "authors": "Bossa Cecilia, Alivernini Silvia, Andreoli Cristina, Aquilina Gabriele, Attias Leonello, Benfenati Emilio, Dusinska Maria, El Yamani Naouale, Louro Henriqueta, Marcon Francesca, Raitano Giuseppa, Rundén-Pran Elise, Russo Maria Teresa, Silva Maria Joao, Battistelli Chiara Laura",
-        "date-of-publication": "21.11.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/a-regulatory-perspective-on-the-MTk1MDYyLWgtcy1yLTAtMA.png?itok=dOrOujwB"
-    },
-    {
-        "id": "article-1832",
-        "name": "The European Commission's safe and sustainable by design framework: bridging innovation and legislation",
-        "keywords": "",
-        "authors": "Schwirn Kathrin, Völker Doris, Løfstedt Magnus, Fantke Peter, Bossa Cecilia, Sharma Anežka, Posthuma Leo, Karakoltzidis Achilleas, Nikiforou Fotini, Mikołajczyk Alicja, Westra Jaco, Karakitsios Spyros, Sarigiannis Dimosthenis, Garmendia Aguirre Irantzu",
-        "date-of-publication": "07.11.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/the-european-commissions-safe-and-MTk1MDYyLXgtcy1yLTAtMA.png?itok=rPUDV0sO"
-    },
-    {
-        "id": "article-1721",
-        "name": "Exploring the genotoxic potential of bisphenol A and its emerging alternatives in an advanced in vitro 3D zebrafish hepatic cell model",
-        "keywords": "BPA, BPAF, BPAP, BPPH, Cytotoxicity, Genotoxicity, ZFL spheroids",
-        "authors": "Štern Alja, Kološa Katja, Rozman Špela, Žegura Bojana",
-        "date-of-publication": "22.09.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/chemical-mixture-risk-drivers-and-MC1zLXMtci0wLTA.png?itok=RDjjXljH"
-    },
-    {
-        "id": "article-1676",
-        "name": "Identification of concepts of importance for the assessment of internal validity of in vitro toxicology studies using a modified Delphi technique",
-        "keywords": "Cell culture, NAMs, Generation risk assessment, Risk of bias",
-        "authors": "Mathisen Gro Haarklou, Svendsen Camilla, Vist Gunn E., Husøy Trine, Ames Heather, Bearth Angela, Audebert Marc, Bernhard Annette, Beronius Anna, Bruzell Ellen M., Di Consiglio Emma, Davenport Miles, Druwe Ingrid, Geci René, Gundert-Remy Ursula, Hartung Thomas, Hoffmann Sebastian, Hogberg Helena, Hooijmans Carlijn R, Lizarraga Lucina, Olker Jennifer, Prieto Pilar, Robinson Joshua, Rooney Andrew, Sebollela Adriano, Smith Nicola, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Wang Amy, Yost Erin, Zilliacus Johanna, Whaley Paul",
-        "date-of-publication": "05.09.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_1.png?itok=puSamoSW"
-    },
-    {
-        "id": "article-1718",
-        "name": "Beyond estrogenicity: a comparative assessment of bisphenol A and its alternatives in in vitro assays questions safety of replacements",
-        "keywords": "BPA, In vitro bioassay, New approach methodologies (NAM), Bisphenol alternatives, Metabolic activation",
-        "authors": "Srebny Vanessa, Henneberger Luise, König Maria, Huchthausen Julia, Braasch Jenny, Escher Beate Isabella",
-        "date-of-publication": "16.08.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/beyond-estrogenicity-a-comparative-assessment-MC1zLXMtci0wLTA.png?itok=CtAVITUv"
-    },
-    {
-        "id": "article-1602",
-        "name": "MCDA applications in chemical alternatives assessment: a narrative review",
-        "keywords": "Multicriteria decision analysis, Chemical alternatives assessment, Chemical hazard assessment, Chemical product development, Regrettable substitution",
-        "authors": "Lantto Eero",
-        "date-of-publication": "06.08.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_1.png?itok=npsrowPQ",
-    },
-    {
-        "id": "article-2109",
-        "name": "Methodological approach for a simultaneous determination of persistent and non-persistent organic pollutants in human blood (serum/plasma) using gas chromatography and mass spectrometry techniques",
-        "keywords": "Persistent organic pollutants, Human serum/plasma, Human biomonitoring, Gas chromatography and mass spectrometry, Deca-BDE, Vinclozolin",
-        "authors": "Bustamante Carolina M., Ruiz Paula, Rifat Atiya B., Bravo Natalia, Grimalt Joan O., Garí Mercè",
-        "date-of-publication": "19.07.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/methodological-approach-for-a-simultaneous-MTk1MDYyLXQtcy1yLTAtMA.png?itok=44u4n2Bh"
-    },
-    {
-        "id": "article-1594",
-        "name": "Genetic and epigenetic biomarkers in human biomonitoring: why needed and how can Oxford Nanopore sequencing contribute?",
-        "keywords": "Susceptibility biomarker, Effect biomarker, SNP, Human biomonitoring, Oxford nanopore technologies, Large-population study",
-        "authors": "Gand Mathieu, Soubry Adelheid, Mertens Birgit, Roosens Nancy H C J, De Keersmaecker Sigrid C.J.",
-        "date-of-publication": "01.07.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_2.png?itok=AYOeYBay"
-    },
-    {
-        "id": "article-1690",
-        "name": "Shinyscreen: mass spectrometry data inspection and quality checking utility",
-        "keywords": "High Resolution Mass Spectrometry, Shiny, Spectral data analysis, Data processing, Visualisation, Metfrag, Compound identification, Non-targeted analysis, Docker",
-        "authors": "Kondić Todor, Elapavalore Anjana, Krier Jessy, Lai Shuen Lyn Adelene, Mohammed Taha Hiba, Narayanan Mira, Schymanski Emma",
-        "date-of-publication": "20.06.2025"
-    },
-    {
-        "id": "article-1495",
-        "name": "Interdisciplinary assessment of children's lead exposure in residential areas degraded by mining (Upper Meža Valley, Slovenia)",
-        "keywords": "IEUBK model, Blood lead level, Soil, House dust, Dietary exposure, Risk assessment",
-        "authors": "Bavec Špela, Čeru Teja, Kirinčič Stanislava, Ivartnik Matej, Golja Viviana, Turšič Janja, Teran Klemen, Miler Miloš",
-        "date-of-publication": "14.06.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_3.png?itok=_QtUfrdd"
-    },
-    {
-        "id": "article-1691",
-        "name": "Unravelling immunomodulatory effects of bisphenol A substitutes on human macrophages, T and B lymphocytes using in vitro models",
-        "keywords": "Bisphenol A, BPA substitutes, Pergafast201, Immunotoxicity, Cytokine, Endocrine disruption, Immunomodulation, TLR4, MHC-I, NF-kB/AP-1",
-        "authors": "Franko Nina, Markovič Tijana, Žižek Pia, Kodila Anja, Mlinarič Raščan Irena, Sollner Dolenc Marija",
-        "date-of-publication": "30.05.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/unravelling-immunomodulatory-effects-of-bisphenol-MC1oLXMtci0wLTA.png?itok=jxE9CyQU"
-    },
-    {
-        "id": "article-1585",
-        "name": "A tiered next-generation risk assessment framework integrating toxicokinetics and NAM-based toxicodynamics: \"Proof of Concept\" case study using pyrethroids",
-        "keywords": "Next-generation risk assessment (NGRA), New Alternative Methods (NAMs), ADME toxicokinetics, Toxicodynamics,  Pyrethroids",
-        "authors": "Fernandez-Agudo Ana, Tarazona Jose V.",
-        "date-of-publication": "07.05.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Nextgeneration.png?itok=Uy6hMa_3"
-    },
-    {
-        "id": "article-1692",
-        "name": "In vitro to in vivo extrapolation modeling to facilitate the integration of transcriptomics data into genotoxicity assessment",
-        "keywords": "Transcriptomics, Genotoxicity, In vitro to in vivo extrapolation, New approach methodologies, Benchmark dose modeling, TempO-Seq®",
-        "authors": "Thienpont Anouck, Cho Eunnara, Williams Andrew, Meier Matthew J., Yauk Carole L., Beal Marc A., Van Goethem Freddy, Rogiers Vera, Vanhaecke Tamara, Mertens Birgit",
-        "date-of-publication": "25.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/in-vitro-to-in-vivo-MC1jLXMtci0wLTA.png?itok=iDH6O6v4"
-    },
-    {
-        "id": "article-1424",
-        "name": "Mapping chemicals across EU's legal frameworks towards a 'one substance, one assessment' approach",
-        "keywords": "Chemical regulation, One substance one assessment, Regulatory risk assessment, Chemical identifiers",
-        "authors": "Andreassen Mathilda, Rudén Christina, Ågerstrand Marlene",
-        "date-of-publication": "22.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_4.png?itok=drrl-gVV"
-    },
-    {
-        "id": "article-1628",
-        "name": "Spatio-temporal transcriptomic analysis reveals distinct nephrotoxicity, DNA damage, and regeneration response after cisplatin",
-        "keywords": "Nephrons, Cisplatin, Transcriptomics, Nephrotoxicity, Spatial, Temporal",
-        "authors": "Wijaya Lukas S., Kunnen Steven J., Trairatphisan Panuwat, Fisher Ciarán P., Crosby Meredith E., Schaefer Kai, Bodié Karen, Vaughan Erin E., Breidenbach Laura, Reich Thomas, Clausznitzer Diana, Bonnet Sylvestre, Zheng Sipeng, Pont Chantal, Stevens James L., Le Dévédec Sylvia E., van de Water Bob",
-        "date-of-publication": "21.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_2.png?itok=20qa_Kbz"
-    },
-    {
-        "id": "article-1640",
-        "name": "Reusing chemical data across disciplines initiatives and common challenges",
-        "keywords": "",
-        "authors": "Mustafa Fatima, Lynch Iseult, Theunis Jan, Elapavalore Anjana, Taha Hiba Mohammed, Frey Jeremy, Bach Felix, Bonatto Minella Christian, McEwen Leah",
-        "date-of-publication": "21.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_1.png?itok=6JGoz50d"
-    },
-    {
-        "id": "article-1308",
-        "name": "Towards prospective identification of respiratory sensitizers: effects of piperazine, chloramine-T, and toluene-diisocyanate in an air-liquid interface model comprising human bronchial epithelial cells",
-        "keywords": "Air–liquid interface, Calu-3 human bronchial epithelial cell line, IL-6, Epithelial barrier, AOP",
-        "authors": "Duistermaat Evert, de Bruijn Véronique M. P., Vermeulen Jolanda P., Gremmer Eric R., Vandebriel Rob J.",
-        "date-of-publication": "06.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_1.png?itok=JnR5iy36"
-    },
-    {
-        "id": "article-2111",
-        "name": "Report of the European Commission workshop on \"The roadmap towards phasing out animal testing for chemical safety assessments\", Brussels, 11–12 December 2023",
-        "keywords": "Roadmap, Alternatives to animal testing, Chemicals, Pharmaceuticals, Regulatory policy, European Commission, European Citizens' Initiative, Save cruelty-free cosmetics, Next generation risk assessment, Three Rs",
-        "authors": "Cronin Mark T.D., Berggren Elisabet, Camorani Sofia, Desaintes Christian, Fabbri Marco, Fabrega Julia, Herzler Matthias, Ingram Jay D.E., Lacasse Katia, Louhimies Susanna, Maxwell Gavin, Schutte Katrin, Sobanski Tomasz, Streck Georg, Terron Andrea, Worth Andrew P.",
-        "date-of-publication": "04.04.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/report-of-the-european-commission-MTk1MDYyLWMtcy1yLTAtMA.png?itok=ZBahmVZx"
-    },
-    {
-        "id": "article-1716",
-        "name": "EU roadmap for phasing out animal testing for chemical safety assessments: Recommendations from a multi-stakeholder roundtable",
-        "keywords": "Non-animal methods, Regulatory framework, Transition to non-animal science, Change management, Validation",
-        "authors": "Walder Laurence, Pallocca Giorgia, Bastos Luísa F., Beekhuijzen Manon, Busquet Francois, Constantino Helder, Corvaro Marco, Courtot Lilas, Escher Beate, Fernandez Rebeca, Gougeon Emeline, Hansell Love, Herzler Matthias, Holden Laura, Hornek-Gausterer Romana, Irizar Amaia, Kandarova Helena, Kern Petra, Kolle Susanne, Lacasse Katia, Lee Isabelle, Macmillan Donna S., Maxwell Gavin, Moriarty Orla, Nadzialek Stephanie, Pochat Julia, Reid Kirsty, Revel Marion, Ritskes-Hoitinga Merel, Sobanski Tomasz, Stoddart Gilly, Underhill Dylan, Veillette Mandy, Vriend Jelle, Westmoreland Carl, Baines Julia",
-        "date-of-publication": "26.03.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/eu-roadmap-for-phasing-out-MC10LXMtci0wLTA.png?itok=h1KvH0cz"
-    },
-    {
-        "id": "article-1481",
-        "name": "Evaluating PFAS-Induced modulation of peripheral blood mononuclear cells (PBMCs) immune response to SARS-CoV-2 spike in COVID-19 Vaccinees",
-        "keywords": "PFAS mixtures, PFAS exposure, Severe Acute Respiratory Coronavirus (SARS-CoV-2), Spike protein, Peripheral blood mononuclear cells (PBMCs), COVID-19 vaccination, COVID-19 infection, Proinflammatory chemokines",
-        "authors": "Ayuk Humblenoble Stembridge, Pierzchalski Arkadiusz, Tal Tamara, Myhre Oddvar, Lindeman Birgitte, Smith Nicola Margareta, Stojanovska Violeta, Zenclussen Ana Claudia",
-        "date-of-publication": "25.03.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_1.png?itok=Fa1buxZX"
-    },
-    {
-        "id": "article-1257",
-        "name": "Modeling zebrafish escape swim reveals maximum neuromuscular power output and efficient body movement adaptation to increased water viscosity",
-        "keywords": "Kinematics, Neuroscience, Biophysics",
-        "authors": "Ravel Guillaume, Mercé Théo, Bergmann Michel, Knoll-Gellida Anja, Bouharguane Afaf, Al Kassir Sara, Iollo Angelo, Babin Patrick J.",
-        "date-of-publication": "17.02.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_1.png?itok=V9b0oGjn"
-    },
-    {
-        "id": "article-1270",
-        "name": "Motor and non-motor effects of acute MPTP in adult zebrafish: insights into Parkinson's disease",
-        "keywords": "MPTP, Adult zebrafish, Parkinson's disease, Prepulse inhibition, Psychosis, Turning difficulties, Hypokinesia",
-        "authors": "Tagkalidou Niki, Stevanović Marija, Romero Alfano Irene, Elizalde-Velazquez Gustavo Axel, Herrera-Vazquez Selene Elizabeth, Prats Eva, Gómez-Canela Cristian, Gómez-Oliván Leobardo Manuel, Raldúa Demetrio",
-        "date-of-publication": "16.02.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_2.png?itok=J-24djEI"
-    },
-    {
-        "id": "article-1245",
-        "name": "MLinvitroTox reloaded for high‑throughput hazard‑based prioritization of high‑resolution mass spectrometry data",
-        "keywords": "ToxCast, Tox21, Toxicity, In vitro assay, Activity prediction, HRMS/MS, Binary classifcation, XGBoost, SIRIUS",
-        "authors": "Hollender Juliane, Arturi Katarzyna, Harris Eliza J., Gasser Lilian, Escher Beate I., Braun Georg, Bosshard Robin",
-        "date-of-publication": "31.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_1.png?itok=uxHqzuSl"
-    },
-    {
-        "id": "article-1639",
-        "name": "The European Partnership PARC's role in actively promoting the uptake of new approach methodologies and next-generation risk assessment into regulatory risk assessment practice",
-        "keywords": "",
-        "authors": "Herzler Matthias, Luijten Mirjam, Marx-Stoelting Philip, Rivière Gilles",
-        "date-of-publication": "29.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_3.png?itok=yZUx4xSe"
-    },
-    {
-        "id": "article-1300",
-        "name": "Automated curation of spatial metadata in environmental monitoring data",
-        "keywords": "Environmental monitoring, Spatial data accuracy, Automated data curation, Big data analytics, AI applications in hydrology",
-        "authors": "Mutlu Ilhan, Hackermüller Jörg, Schor Jana",
-        "date-of-publication": "27.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_3.png?itok=5m_evBQC"
-    },
-    {
-        "id": "article-1475",
-        "name": "Metabolic and molecular characterization, following dietary exposure to DINCH, reveals new Implications for its role as a metabolism-disrupting chemical",
-        "keywords": "DINCH, MINCH, Metabolic disruption, Obesity, Adipose tissue",
-        "authors": "Krupka Sontje, Aldehoff Alix Sarah, Goerdeler Cornelius, Engelmann Beatrice, Rolle-Kampczyk Ulrike, Schubert Kristin, Klöting Nora, von Bergen Martin, Blüher Matthias",
-        "date-of-publication": "26.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_2.png?itok=F5bzFm7F"
-    },
-    {
-        "id": "article-1244",
-        "name": "Toward product safety and circularity: understanding the information structure of global databases on chemicals in products and articles",
-        "keywords": "Consumer products, REACH, Compliance, Regulations, Enforcement",
-        "authors": "Olisah Chijioke, Melymuk Lisa, Vestergren Robin, Rumar Karin, Wickman Tonie, Melander Nina, Talasniemi Petteri, Brandsma Sicco, af Gennäs Urban Boije, Scheringer Martin",
-        "date-of-publication": "26.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_2.png?itok=eto5zOsT"
-
-    },
-    {
-        "id": "article-1719",
-        "name": "PubChemLite plus collision cross section (CCS) values for enhanced interpretation of nontarget environmental data",
-        "keywords": "Nontarget screening, Identification, PubChemLite, Exposomics, Ion mobility, Collision cross section, PubChem",
-        "authors": "Elapavalore Anjana, Ross Dylan, GROUÈS Valentin, Aurich Dagny, Krinsky Allison, Kim Sunghwan, Thiessen Paul, Zhang Jian, Dodds James, Baker Erin, Bolton Evan, Xu Libin, Schymanski Emma",
-        "date-of-publication": "24.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/pubchemlite-plus-collision-cross-section-MC1oLXMtci0wLTA.png?itok=ah93rlqb"
-    },
-    {
-        "id": "article-1684",
-        "name": "AOP-networkFinder - A versatile and user-friendly tool for FAIR reconstruction of Adverse Outcome Pathway networks from the AOP-Wiki",
-        "keywords": "",
-        "authors": "Nurettin Yarar, Martens Marvin, Torbjørn Rognes, Jan Lavender, Hubert Dirven, Audouze Karine, Marcin W. Wojewodzic",
-        "date-of-publication": "22.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_2.png?itok=DvG7tAYC"
-    },
-    {
-        "id": "article-1586",
-        "name": "Unveiling landscape-level drivers of freshwater biodiversity dynamics",
-        "keywords": "Biodiversity, Environmental DNA, Environmental pollutants, Lakes, Machine learning",
-        "authors": "Eastwood Niamh, Watson Arron, Zhou Jiarui, Orsini Luisa",
-        "date-of-publication": "21.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Unveiling.png?itok=qYDDtNwZ"
-    },
-    {
-        "id": "article-1470",
-        "name": "Daphnids can safeguard the use of alternative bioassays to the acute fish toxicity test: a focus on neurotoxicity",
-        "keywords": "Aquatic toxicology, Variability, Alternative methods, Integrated approaches to testing and assessment",
-        "authors": "Schür Christoph, Paparella Martin, Faßbender Christopher, Stoddart Gilly, Jesi Marco Baity, Schirmer Kristin",
-        "date-of-publication": "21.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_3.png?itok=BxHS9mqk"
-    },
-    {
-        "id": "article-1685",
-        "name": "Endocrine disrupting toxicity of bisphenol A and its analogs: implications in the neuro-immune milieu",
-        "keywords": "EDC, RACK1, In vitro screening tool, Immune system, INEN, System toxicology, HPA axis, Glucocorticoids, BDNF, Neurodegeneration",
-        "authors": "Buoso Erica, Masi Mirco, Limosani Roberta Valeria, Oliviero Chiara, Saeed Sabrina, Iulini Martina, Passoni Francesca Carlotta, Racchi Marco, Corsini Emanuela",
-        "date-of-publication": "17.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_3.png?itok=jnNsNJbL"
-    },
-    {
-        "id": "article-1246",
-        "name": "New approach methodologies in human health risk assessment across European regulatory frameworks: Status quo, barriers and drivers for regulatory acceptance and use",
-        "keywords": "Next generation risk assessment, New approach methodologies, Chemical regulation, Barriers, Drivers, Perspectives, Social science, Survey",
-        "authors": "Bearth Angela, Roth Nicolas, Jansen Tom, Holden Laura, Cavoski Aleksandra, Di Consiglio Emma, Hauzenberger Ingrid, Lee Robert, Mombelli Enrico, Tcheremenskaia Olga, Wendt-Rasch Lina, Wilks Martin",
-        "date-of-publication": "11.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_3.png?itok=7YfthbRG"
-    },
-    {
-        "id": "article-1258",
-        "name": "Collecting perspectives on project prioritisation process in the EU co-funded multinational partnership for the assessment of risks from chemicals (PARC) through focus group discussion",
-        "keywords": "PARC, Chemical risk assessment, Research and innovation need prioritisation, EU partnership coordination, Focus group discussion, Regulatory relevance",
-        "authors": "Permana Katya Manuella, Tannous Maria, Mouaziz Hanna, Sanders Pascal, Bonvallot Nathalie, Rousselle Christophe",
-        "date-of-publication": "03.01.2025",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_2.png?itok=2XucnT7D"
-    },
-    {
-        "id": "article-1188",
-        "name": "Zebra_K, a kinematic analysis automated platform for assessing sensitivity, habituation and prepulse inhibition of the acoustic startle response in adult zebrafish",
-        "keywords": "Acoustic startle response, Neuroplasticity, Habituation, Prepulse inhibition, Sensorimotor gating, Adult zebrafish, Kinematic analysis platform",
-        "authors": "Stevanović Marija, Tagkalidou Niki, Multisanti Cristiana Roberta, Pujol Sergi, Aljabasini Ouwais, Prats Eva, Faggio Caterina, Porta Josep M, Barata Carlos, Raldua Demetrio",
-        "date-of-publication": "15.12.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_4.png?itok=BReLgU0k"
-    },
-    {
-        "id": "article-1256",
-        "name": "A cognitive and sensory approach based on workshops using the zebrafish model promotes the discovery of life sciences in the classroom",
-        "keywords": "Cognitive and sensory approach, Biology education, Teacher-researcher partnership, Zebrafish",
-        "authors": "Bourcier Laure M., Babin Patrick J.",
-        "date-of-publication": "06.12.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_3.png?itok=CMG5MHyo"
-    },
-    {
-        "id": "article-1251",
-        "name": "Association of environmental pollutants with asthma and allergy, and the mediating role of oxidative stress and immune markers in adolescents",
-        "keywords": "Asthma, Allergy, Airway inflammation, Oxidative stress, Immune biomarkers, Human biomonitoring, Mixture, Adolescents",
-        "authors": "Hassen Y. Hamid, Govarts Eva, Remy Sylvie, Cox Bianca, Iszatt Nina, Portengen Lützen, Covaci Adrian, Schoeters Greet, Den Hond Elly, De Henauw Stefaan, Bruckers Liesbeth, Koppen Gudrun, Verheyen Veerle J.",
-        "date-of-publication": "23.11.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_4.png?itok=9nBrtIfu"
-    },
-    {
-        "id": "article-1303",
-        "name": "A comprehensive library of lifetime physiological equations for PBK models: Enhancing dietary exposure modeling with mercury as a case study",
-        "keywords": "ADME toxicokinetics, Lifetime dietary exposure, Total mercury, Toxicological reference values",
-        "authors": "Gastellu Thomas, Karakoltzidis Achilleas, Ratier Aude, Bellouard Marie, Alavarez jean claude, Rivière Gilles, Le Bizec Bruno, Karakitsios Spyros, Sarigiannis Dimosthenis, Vogs Carolina",
-        "date-of-publication": "22.11.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_4.png?itok=n_ALfKkn"
-    },
-    {
-        "id": "article-1250",
-        "name": "Developing quantitative Adverse Outcome Pathways: An ordinary differential equation-based computational framework",
-        "keywords": "Ordinary differential equations (ODEs), Quantitative Adverse Outcome Pathway (qAOP), Key event relationships (KERs), Adverse outcome (AO), Response–response modeling, Predictive toxicology, Markov chain Monte Carlo (MCMC), Population variability",
-        "authors": "Di Tillio Filippo, Beltman Joost",
-        "date-of-publication": "02.11.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_5.png?itok=5tou9_5_"
-    },
-    {
-        "id": "article-1152",
-        "name": "A comprehensive item bank of internal validity issues of relevance to invitro toxicology studies",
-        "keywords": "In vitro methods, Toxicology, NAMs, Risk of bias, Internal validity",
-        "authors": "Vist Gunn E., Ames Heather M., Mathisen Gro H., Husøy Trine, Svendsen Camilla, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Prieto Pilar, Robinson Joshua F., Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Whaley Paul",
-        "date-of-publication": "31.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_4.png?itok=n_ALfKkn"
-    },
-    {
-        "id": "article-1541",
-        "name": "Evaluating the performance of multi-omics integration - a thyroid toxicity case study",
-        "keywords": "Multi-omics, Toxicology, Chemical exposure, Risk assessment, Data integration",
-        "authors": "Canzler Sebastian, Schubert Kristin, Rolle-Kampczyk Ulrike E., Wang Zhipeng, Schreiber Stephan, Seitz Hervé, Mockly Sophie, Kamp Hennicke, Haake Volker, Huisinga Maike, von Bergen Martin, Buesen Roland, Hackermüller Jörg",
-        "date-of-publication": "23.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Evaluating.png?itok=_850Gu-T"
-    },
-    {
-        "id": "article-1306",
-        "name": "A preliminary estimate of the environmental burden of disease associated with exposure to pyrethroid insecticides and ADHD in Europe based on human biomonitoring",
-        "keywords": "",
-        "authors": "Purece Anthony, Thomsen Sofie Theresa, Plass Dietrich, Spyropoulou Anastasia, Machera Kyriaki, Palmont Philippe, Crépet Amélie, Benchrih Rafiqa, Devleesschauwer Brecht, Wieland Nina, Scheepers Paul, Deepika Deepika, Kumar Vikas, Sanchez Gerardo, Bessems Jos, Piselli Dario, Buekers Jurgen",
-        "date-of-publication": "23.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_5.png?itok=0LhAdd2v"
-    },
-    {
-        "id": "article-1144",
-        "name": "A critical review to identify data gaps and improve risk assessment of bisphenol A alternatives for human health",
-        "keywords": "Bisphenol A alternatives, Endocrine disruption, Metabolism, Toxicokinetic, Immunotoxicity, Developmental neurotoxicity, Genotoxicity, Carcinogenesis, Human health",
-        "authors": "Mhaouty-Kodja Sakina, Zalko Daniel, Tait Sabrina, Testai Emanuela, Viguié Catherine, Corsini Emanuela, Grova Nathalie, Buratti Franca Maria, Cabaton Nicolas J., Coppola Lucia, De la Vieja Antonio, Dusinska Maria, El Yamani Naouale, Galbiati Valentina, Iglesias-Hernández Patricia, Kohl Yvonne, Maddalon Ambra, Marcon Francesca, Naulé Lydie, Rundén-Pran Elise, Salani Francesca, Santori Nicoletta, Torres-Ruiz Mónica, Turner Jonathan D., Adamovsky Ondrej, Aiello-Holden Kiara, Dirven Hubert, Louro Henriqueta, Silva Maria Joao",
-        "date-of-publication": "22.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_2.png?itok=Ox3byZiG"
-    },
-    {
-        "id": "article-1187",
-        "name": "Extremely high levels of PBDEs in children's toys from European markets: causes and implications for the circular economy",
-        "keywords": "Flame retardants, Consumer products, Plastic recycling, E-waste, Enforcement, Compliance",
-        "authors": "Olisah Chijioke , Melymuk Lisa, Audy Ondrej , Kukucka Petr , Pribylova Petra, Boudot Martin",
-        "date-of-publication": "14.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_5.png?itok=BVa9jcA1"
-    },
-    {
-        "id": "article-1158",
-        "name": "Computational tools to facilitate early warning of new emerging risk chemicals",
-        "keywords": "Early warning system (EWS), New and emerging risk chemicals (NERCs), Computational toxicology, Risk assessment, Artificial intelligence (AI), QSAR, Exposure assessment, Effect assessment",
-        "authors": "Farina Tariq, Lutz Ahrens, Nikiforos A. Alygizakis, Karine Audouze, Emilio Benfenati, Pedro N. Carvalho, Ioana Chelcea, Spyros Karakitsios, Achilleas Karakoltzidis, Vikas Kumar, Liadys Mora Lagares, Dimosthenis Sarigiannis, Gianluca Selvestrel, Olivier Taboureau, Katrin Vorkamp, Patrik L. Andersson",
-        "date-of-publication": "12.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_6.png?itok=EX9AkMxS",
-    },
-    {
-        "id": "article-1675",
-        "name": "New approach methodologies to enhance human health risk assessment of immunotoxic properties of chemicals — a PARC (Partnership for the Assessment of Risk from Chemicals) project",
-        "keywords": "PARC, New approach methodologies, NAMs, Immunotoxicology, Immunosuppression, Regulatory toxicology, Chemical toxicology",
-        "authors": "Snapkow Igor, Smith Nicola M., Arnesdotter Emma, Beekmann Karsten, Blanc Etienne B., Braeuning Albert, Corsini Emanuela, Dolenc Marija Sollner, Duivenvoorde Loes P. M., Eriksen Gunnar Sundstøl, Franko Nina, Galbiati Valentina, Gostner Johanna M., Grova Nathalie, Gutleb Arno C., Hargitai Rita, Janssen Aafke W. F., Krapf Solveig A., Lindeman Birgitte, Lumniczky Katalin, Maddalon Ambra, Mollerup Steen, Parráková Lucia, Pierzchalski Arkadiusz, Pieters Raymond H. H., Silva Maria J., Solhaug Anita, Staal Yvonne C. M., Straumfors Anne, Szatmári Tünde, Turner Jonathan D., Vandebriel Rob J., Zenclussen Ana Claudia, Barouki Robert",
-        "date-of-publication": "09.10.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_6.png?itok=G5ACox8N"
-    },
-    {
-        "id": "article-1139",
-        "name": "A conceptual framework for landscape-based environmental risk assessment (ERA) of pesticides",
-        "keywords": "Functional ecotoxicology, Landscape, Modelling, Pesticide exposure and effects, Biodiversity, Ecological framework",
-        "authors": "Tarazona Jose V., de Alba-Gonzalez Mercedes, Bedos Carole, Benoit Pierre, Bertrand Colette, Crouzet Olivier, Dagès Cécile, CM Dorne Jean-Lou, Fernandez-Agudo Ana, Focks Andreas, Gonzalez-Caballero Maria del Carmen, Kroll Alexandra, Liess Matthias, Loureiro Susana, Ortiz-Santaliestra Manuel E., Rasmussen Jes J., Royauté Raphaël, Rundlöf Maj, Schäfer Ralf B., Short Stephen, Siddique Ayesha, Sousa José Paulo, Spurgeon Dave, Staub Pierre-François, Topping Chris J., Voltz Marc, Axelman Johan, Aldrich Annette, Duquesne Sabine, Mazerolles Vanessa, Devos Yann",
-        "date-of-publication": "10.09.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_1.png?itok=U2ppql3w"
-    },
-    {
-        "id": "article-1150",
-        "name": "Associations between urinary phthalate metabolites with BDNF and behavioral function among european children from five HBM4EU aligned studies",
-        "keywords": "Phthalate, Behavior, BDNF, Effect biomarker, Exposure biomarker, HBM4EU, PARC",
-        "authors": "Salamanca-Fernandez Elena, Espín-Moreno Lydia, Olivas-Martínez Alicia, Pérez-Cantero Ainhoa, Martín-Rodríguez José L., Poyatos Rafael M., Barbone Fabio, Rosolen Valentina, Mariuz Marika, Ronfani Luca, Palkovičová Murínová Ľubica, Fábelová Lucia, Szigeti Tamás, Kakucs Réka, Sakhi Amrit K., Haug Line S., Lindeman Birgitte, Snoj Tratnik Janja, Kosjek Tina, Jacobs Griet, Voorspoels Stefan, Jurdáková Helena, Górová Renáta, Petrovičová Ida, Kolena Branislav, Esteban Marta, Pedraza-Díaz Susana, Kolossa-Gehring Marike, Remy Sylvie, Govarts Eva, Schoeters Greet, Fernández Mariana F., Mustieles Vicente",
-        "date-of-publication": "31.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_3.png?itok=TUVslfDy"
-    },
-    {
-        "id": "article-1674",
-        "name": "Adverse outcomes of the newly emerging bisphenol A substitutes",
-        "keywords": "BPA substitutes, Thermal paper, Endocrine disruption, Adverse outcomes, Bisphenol occurrence, Pergafast 201",
-        "authors": "Franko Nina, Kodila Anja, Dolenc Marija Sollner",
-        "date-of-publication": "19.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_4.png?itok=Mb0QSXXR"
-    },
-    {
-        "id": "article-1682",
-        "name": "Evaluation of THP-1 and jurkat cell lines coculture for the in vitro assessment of the effects of immunosuppressive substances",
-        "keywords": "Immunosuppression, Coculture, In vitro, New approach method, Cell lines, Bisphenols",
-        "authors": "Franko Nina, Dolenc Marija Sollner",
-        "date-of-publication": "19.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_5.png?itok=6YYkjhRo"
-    },
-    {
-        "id": "article-1595",
-        "name": "A systematic workflow for compliancetesting of emerging international classwide restrictions on PFAS",
-        "keywords": "PFAS, Compliance testing, Analytical methods, Classwide restrictions",
-        "authors": "Vestergren Robin, Appelblom Anders, Bălan Simona A., Brandsma Sicco H., Bruton Thomas A., Cousins Ian T., Gauthier Jeremy R., Heggelund Audun, Ivarsson Jenny, Kärrman Anna, Melymuk Lisa, Olisah Chijioke, Rosen Amanda, Savvidou Eleni K., Schellenberger Steffen, Skedung Lisa, Talasniemi Petteri, Wickman Tonie, Zweigle Jonathan, Zwiener Christian, Benskin Jonathan P.",
-        "date-of-publication": "14.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_5.png?itok=fRbrbddo"
-    },
-    {
-        "id": "article-1108",
-        "name": "A short-term exposure to saxitoxin triggers a multitude of deleterious effects in Daphnia magna at levels deemed safe for human health",
-        "keywords": "Neurotoxins, Harmful algal blooms, Cyanotoxins, Saxitoxins, Oxidative stress biomarkers, Epigenetic biomarkers",
-        "authors": "Ribeiro Pinto Albano, Asselman Jana, Pereira Patricia, Pereira Joana Luisa, Macário Inês P.E., Marques Sérgio M, Lourenço Joana, Domingues Inês, Botelho Maria João",
-        "date-of-publication": "14.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_1.png?itok=EOOD7HF3"
-    },
-    {
-        "id": "article-1159",
-        "name": "Pioneering an effect-based early warning system for hazardous chemicals in the environment",
-        "keywords": "Contaminants of emerging concern, Bioassays, Effect-based methods, Effect-directed analysis, Environmental monitoring, Toxicity",
-        "authors": "Niarchos Georgios, Alygizakis Nikiforos, Carere Mario, Dulio Valeria, Engwall Magnus, Hyötyläinen Tuulia, Kallenborn Roland, Karakitsios Spyros, Karakoltzidis Achilleas, Kärrman Anna, Lamoree Marja, Larsson Maria, Lundqvist Johan, Mancini Laura, Mottaghipisheh Javad, Rostkowski Pawel, Sarigiannis Dimosthenis, Vorkamp Katrin, Ahrens Lutz",
-        "date-of-publication": "05.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_7.png?itok=vBMcznb3"
-    },
-    {
-        "id": "article-1109",
-        "name": "High precision blood lead radiogenic isotope signatures in a community exposed to Pb contaminated soils and implications for the current Pb exposure of the European population",
-        "keywords": "Epidemiology, Biokinetic model, Urban environment, Allotment garden, Historical metallurgy, Isotope forensics",
-        "authors": "Petit Jérôme C.J., Mattielli Nadine , De Jong Jeroen , Bouhoulle Elodie , Debouge Wendy , Maggi Patrick , Hublet Geneviève , Fagel Nathalie , Pirard Catherine , Charlier Corinne , Suzanne Remy",
-        "date-of-publication": "02.08.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_2.png?itok=-2bgNsPY"
-    },
-    {
-        "id": "article-1307",
-        "name": "Chemical respiratory sensitization — Current status of mechanistic understanding, knowledge gaps and possible identification methods of sensitizers",
-        "keywords": "Adverse outcome pathway (AOP), Chemical respiratory allergy, Chemical sensitizer, Chemical-induced hypersensitivity, Key event, New approach methodology (NAM), Occupational asthma, Respiratory sensitization",
-        "authors": "Hargitai Rita, Parráková Lucia, Szatmári Tünde, Monfort-Lanzas Pablo, Galbiati Valentina, Audouze Karine, Jornod Florence, Staal Yvonne C. M., Burla Sabina, Chary Aline, Gutleb Arno C., Lumniczky Katalin, Vandebriel Rob J., Gostner Johanna M.",
-        "date-of-publication": "29.07.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_7.png?itok=8hhV0Lph"
-    },
-    {
-        "id": "article-1540",
-        "name": "Investigation of peroxisome proliferator-activated receptor genes as requirements for visual startle response hyperactivity in larval zebrafish exposed to structurally similar per- and polyfluoroalkyl substances (PFAS)",
-        "keywords": "",
-        "authors": "Gutsfeld Sebastian, Wehmas Leah, Omoyeni Ifeoluwa, Schweiger Nicole, Leuthold David, Michaelis Paul, Howey Xia Meng, Gaballah Shaza, Herold Nadia, Vogs Carolina, Wood Carmen, Bertotto Luísa, Wu Gi-Mick, Klüver Nils, Busch Wibke, Scholz Stefan, Schor Jana, Tal Tamara",
-        "date-of-publication": "24.07.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Investigation.png?itok=aJZuMIOt"
-    },
-    {
-        "id": "article-1283",
-        "name": "Progress, applications, and challenges in high-throughput effect-directed analysis for toxicity driver identification — is it time for HT-EDA?",
-        "keywords": "HT-EDA, NTS, Bioanalytical methods, Mass spectrometry",
-        "authors": "Alvarez Mora Iker, Arturi Katarzyna, Béen Frederic, Buchinger Sebastian, El Mais Abd El Rahman, Gallampois Christine, Hahn Meike, Hollender Juliane, Houtman Corine, Johann Sarah, Krauss Martin, Lamoree Marja, Margalef Maria, Massei Riccardo, Brack Werner, Muz Melis",
-        "date-of-publication": "12.07.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_6.png?itok=RG-izC3R"
-    },
-    {
-        "id": "article-1157",
-        "name": "Cross-mapping of terms used in chemical risk assessment with those used in systematic review: research protocol",
-        "keywords": "Conceptual overlap, Cross-mapping, Definitions, Interoperability, Terminology",
-        "authors": "Svendsen Camilla, Mathisen Gro Haarklou, Vist Gunn E., Husøy Trine, Ames Heather, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Robinson Joshua F. , Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Whaley Paul",
-        "date-of-publication": "12.07.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_4.png?itok=StK0mT2u"
-    },
-    {
-        "id": "article-1480",
-        "name": "Predicting the combined effects of multiple stressors and stress adaptation in Gammarus pulex",
-        "keywords": "Combined effects, Mixture toxicity, Fitness costs, Genetic adaptation",
-        "authors": "Shahid Naeem, Siddique Ayesha, Liess Matthias",
-        "date-of-publication": "10.07.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_4.png?itok=5830fxOh"
-    },
-    {
-        "id": "article-1593",
-        "name": "Automated liquid handling extraction and rapid quantification of underivatized amino acids and tryptophan metabolites from human serum and plasma using dual-column U(H)PLC-MRM-MS and its application to prostate cancer study",
-        "keywords": "Tryptophan metabolites analysis, LC-MS, Mixed-mode chromatography",
-        "authors": "Kipura Tobias, Hotze Madlen, Hofer Alexa, Egger Anna-Sophia, Timpen Lea E., Opitz Christiane A., Townsend Paul A., Gethings Lee A., Thedieck Kathrin, Kwiatkowski Marcel",
-        "date-of-publication": "30.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_6.png?itok=vsQoyMuT"
-    },
-    {
-        "id": "article-1102",
-        "name": "Occupational exposure limits for reproductive toxicants – A comparative analysis",
-        "keywords": "Health risk assessment, Industrial hygiene, Maximum allowable concentration, Route-to-route extrapolation, Uncertainty factors, TLV, DNEL, Reproductive toxicology",
-        "authors": "Schenk Linda, Ho Meng-Rung, Taxell Piia, Huuskonen Pasi, Leite Mimmi, Martinsone Inese, Nordby Karl-Christian, Paegle Linda, Strumylaite Loreta",
-        "date-of-publication": "26.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_3.png?itok=LyhAviLO"
-    },
-    {
-        "id": "article-2110",
-        "name": "Method optimization for a simultaneous determination of neonicotinoid, carbamate/thiocarbamate, triazole, organophosphate and pyrethroid pesticides and their metabolites in urine using UPLC-MS/MS",
-        "keywords": "Human biomonitoring, Neonicotinoid pesticides, Method optimization, UPLC-MS/MS, Urinary metabolites",
-        "authors": "Bustamante Carolina M., Bravo Natalia, Ruiz Paula, Grimalt Joan O., Garí Mercè",
-        "date-of-publication": "19.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/method-optimization-for-a-simultaneous-MjkyNTkzLWgtcy1yLTAtMA.png?itok=JzCnMsm2"
-    },
-    {
-        "id": "article-1114",
-        "name": "Internal flames: Metal(loid) exposure linked to alteration of the lipid profile in Czech male firefighters (CELSPAC-FIREexpo study)",
-        "keywords": "Firefighters, Occupational exposure, Metals, Cholesterol, Cardiovascular disease, Mixture analysis",
-        "authors": "Pálešová Nina, Řiháčková Katarína, Kuta Jan, Pindur Aleš, Šebejová Ludmila, Čupr Pavel",
-        "date-of-publication": "12.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_2.png?itok=YQLOPgtI"
-    },
-    {
-        "id": "article-1127",
-        "name": "Effects of metabolic disruption on lipid metabolism and yolk retention in zebrafish embryos",
-        "keywords": "Aquatic toxicology, Developmental toxicity, Endocrine-disrupting compounds, Toxicity mechanisms",
-        "authors": "van den Boom Rik, Vergauwen Lucia, Knapen Dries",
-        "date-of-publication": "11.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_3.png?itok=yxvCYSGz"
-    },
-    {
-        "id": "article-1630",
-        "name": "Machine learning-based prediction of fish acute mortality: Implementation, interpretation, and regulatory relevance",
-        "keywords": "Machine learning, Ecotoxicology, Fish, Hazard assessment, Chemical regulation",
-        "authors": "Gasser Lilian, Schür Christoph, Perez-Cruz Fernando, Schirmer Kristin, Baity-Jesi Marco",
-        "date-of-publication": "03.06.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_4.png?itok=civiMCP6"
-    },
-    {
-        "id": "article-1243",
-        "name": "How wastewater reflects human metabolism - suspect screening of pharmaceutical metabolites in wastewater influent",
-        "keywords": "Drug Metabolites, Human Pharmaceutical Metabolism, Suspect Screening, Wastewater, High Resolution Mass Spectrometry, Sirius/csi:fingerid, Metfrag, Molecular Network",
-        "authors": "Hollender Juliane, Meyer Corina, Stravs Michael A.",
-        "date-of-publication": "24.05.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_8.png?itok=LnW2UHPq"
-    },
-    {
-        "id": "article-1103",
-        "name": "Exploring BPA alternatives – Environmental levels and toxicity review",
-        "keywords": "BPA alternatives, Biological activity, In silico, Invertebrates, Vertebrates",
-        "authors": "Adamovsky Ondrej, Groh Ksenia J., Białk-Bielińska Anna, Escher Beate I., Beaudouin R., Lagares Liadys Mora, Tollefsen Knut Erik, Fenske Martina, Mulkiewicz Ewa, Creusot Nicolas, Sosnowska Anita, Loureiro Susana, Beyer Jonny, Repetto Guillermo, Štern Alja, Lopes Isabel, Monteiro Marta, Zikova-Kloas Andrea, Eleršek Tina, Vračko Marjan, Kyriakopoulou Katerina, Zdybel Szymon, Puzyn Tomasz, Koczur Weronika, Morthorst Jane Ebsen, Holbech Henrik, Carlsson Gunnar, Örn Stefan, Herrero Óscar, Siddique Ayesha, Liess Matthias, Braun Georg, Srebny Vanessa, Žegura Bojana, Hinfray Nathalie, Brion François, Knapen Dries, Vandeputte Ellen, Stinckens Evelyn, Vergauwen Lucia, Behrendt Lars, Silva Maria João, Blaha Ludek",
-        "date-of-publication": "23.05.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_4.png?itok=WR3-FayU"
-    },
-    {
-        "id": "article-1093",
-        "name": "Regulatory and practical considerations on the implementation of a mixture allocation factor in REACH",
-        "keywords": "Co-exposure, Mixture risk assessment, Risk management measures, Unintentional mixtures, MAF",
-        "authors": "Hassold Enken, Schulze Jona , Galert Wiebke, Treu Gabriele",
-        "date-of-publication": "19.05.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_5.png?itok=RDoWml3q"
-    },
-    {
-        "id": "article-1601",
-        "name": "Two-stage machine learning-based approach to predict points of departure for human noncancer and developmental/reproductive effects",
-        "keywords": "QSAR model, Toxicity prediction, Chemical risk assessment, High-throughput screening, Life cycle impact assessment (LCIA)",
-        "authors": "Kvasnicka Jacob, Aurisano Nicolo, von Borries Kerstin, lU En-Hsuan, Fantke Peter, Jolliet Olivier, Wright Fred A., Chiu Weihsueh A.",
-        "date-of-publication": "02.05.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_7.png?itok=UhU7PV8r"
-    },
-    {
-        "id": "article-742",
-        "name": "Protocol: Testing the performance of INVITES-IN, a tool for assessing the internal validity of in vitro studies",
-        "keywords": "Cell culture, Evidence-based toxicology, Risk of bias, User testing",
-        "authors": "Mathisen Gro Haarklou, Vist Gunn E, Whaley Paul, White Richard A, Husøy Trine, Ames Heather M, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Prieto Pilar, Robin Joshua F, Roggen Erwin, Rooney Andrew A, Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Svendsen Camilla",
-        "date-of-publication": "01.05.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_1.png?itok=SxAUESrA"
-    },
-    {
-        "id": "article-1629",
-        "name": "The integrated stress response-related expression of CHOP dueto mitochondrial toxicity is a warning sign for DILI liability",
-        "keywords": "CHOP, Drug-induced liver injury, High-throughput screening, Integrated stress response, Mitochondrial toxicity",
-        "authors": "Vlasveld Matthijs, Callegaro Giulia, Fisher Ciarán, Eakins Julie, Walker Paul, Lok Samantha, van Oost Siddh, de Jong Brechtje, Pellegrino-Coppola Damiano, Burger Gerhard, Wink Steven, van de Water Bob",
-        "date-of-publication": "28.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_6.png?itok=BuwOWKNY"
-    },
-    {
-        "id": "article-1638",
-        "name": "Physiologically based kinetic (PBK) modeling as a new approach methodology (NAM) for predicting systemic levels of gut microbial metabolites",
-        "keywords": "Kinetic modeling, New approach methodologies, Gut microbial metabolism, Ex vivo/in vitro models, Gut microbiome",
-        "authors": "Stevanoska Maja, Folz Jacob, Beekmann Karsten, Aichinger Georg",
-        "date-of-publication": "27.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_5.png?itok=uONuXPcR"
-    },
-    {
-        "id": "article-1587",
-        "name": "New approach methods to assess developmental and adult neurotoxicity for regulatory use: a PARC work package 5 project",
-        "keywords": "Developmental neurotoxicity (DNT), New approach method (NAM), Adult neurotoxicity (ANT), DNT-IVB, Applicability domain",
-        "authors": "Tal Tamara, Myhre Oddvar, Fritsche Ellen, Rüegg Joëlle, Craenen Kai, Aiello-Holden Kiara, Agrillo Caroline, Babin Patrick J., Escher Beate I., Dirven Hubert, Hellsten Kati, Dolva Kristine, Hessel Ellen, Heusinkveld Harm J., Hadzhiev Yavor, Hurem Selma, Jagiello Karolina, Judzinska Beata, Klüver Nils, Knoll-Gellida Anja, Kühne Britta A., Leist Marcel, Lislien Malene, Lyche Jan L., Müller Ferenc, Colbourne John K., Neuhaus Winfried, Pallocca Giorgia, Seeger Bettina, Scharkin Ilka, Scholz Stefan, Spjuth Ola, Torres-Ruiz Monica, Bartmann Kristina",
-        "date-of-publication": "26.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Approach.png?itok=ewoDHpZe"
-    },
-    {
-        "id": "article-1467",
-        "name": "Single and mixture effects of bisphenol A and benzophenone-3 on in vitro T helper cell differentiation",
-        "keywords": "TH17 cell, Regulatory T cell, In vitro differentiation, Endocrine disruptor, Bisphenol A, Benzophenone-3, Chemical mixture",
-        "authors": "Fischer Florence, Ermer Miriam Rebecca, Howanski Julia, Yin Ziran, Bauer Mario, Wagner Marita, Fink Beate, Zenclussen Ana C., Schumacher Anne",
-        "date-of-publication": "21.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_5.png?itok=olijBlAx"
-    },
-    {
-        "id": "article-1479",
-        "name": "Metabolomics in human SGBS cells as new approach method for studying adipogenic effects: Analysis of the effects of DINCH and MINCH on central carbon metabolism",
-        "keywords": "LOD, MDC, Metabolism-disrupting chemical, PPARA, Peroxisome proliferator-activated receptor alpha, PPARG, Peroxisome proliferator-activated receptor gamma, PPP, TCA, Tricarboxylic acid, TZD, Thiazolidinedione",
-        "authors": "Goerdeler Cornelius, Engelmann Beatrice, Aldehoff Alix Sarah, Schaffert Alexandra, Blüher Matthias, Heiker John T., Wabitsch Martin, Schubert Kristin, Rolle-Kampczyk Ulrike, von Bergen Martin",
-        "date-of-publication": "04.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_6.png?itok=uav0NTLh"
-    },
-    {
-        "id": "article-889",
-        "name": "Estimating the dynamic early life exposure to PFOA and PFOS of the HELIX children: Emerging profiles via prenatal exposure, breastfeeding, and diet",
-        "keywords": "PBPK model, Reverse dosimetry, Longitudinal cohorts, Children, Human biomonitoring",
-        "authors": "Ratier Aude, Casas Maribel, Grazuleviciene Regina, Slama Rémy, Haug Line Småstuen, Thomsen Cathrine, Vafeiadi Marina, Wright John, Zeman Florence A, Vrijheid Martine, Brochot Céline",
-        "date-of-publication": "02.04.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_1.png?itok=y3I9w0Gt"
-    },
-    {
-        "id": "article-1056",
-        "name": "Inconsistencies in the EU regulatory risk assessment of PFAS call for readjustment",
-        "keywords": "PFAS, Risk assessment, Health protection, Contamination, Quality standard, Policy",
-        "authors": "Reinikainen Jussi, Bouhoulle Elodie, Sorvari Jaana",
-        "date-of-publication": "29.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_1.png?itok=-odT8t-m"
-    },
-    {
-        "id": "article-1113",
-        "name": "Exposure to benzotriazoles and benzothiazoles in Czech male population and its associations with biomarkers of liver function, serum lipids and oxidative stress",
-        "keywords": "Benzotriazole, Human biomonitoring, Liver Function, Serum lipids, Oxidative stress",
-        "authors": "Pálešová Nina, Bláhová Lucie, Janoš Tomáš, Řiháčková Katarína, Pindur Aleš, Šebejová Ludmila, Čupr Pavel",
-        "date-of-publication": "28.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_4.png?itok=pvcCVQ3f"
-    },
-    {
-        "id": "article-1302",
-        "name": "AOPWIKI-EXPLORER: An interactive graph-based query engine leveraging large language models",
-        "keywords": "Adverse outcome pathway, Large language model, Graph database, Risk assessment, Artificial intelligence, Data integration, Information retrieval, Information extraction",
-        "authors": "Kumar Saurav, Deepika Deepika, Slater Karin, Kumar Vikas",
-        "date-of-publication": "21.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_8.png?itok=Vu6-h5qj"
-    },
-    {
-        "id": "article-1589",
-        "name": "Water quality monitoring with the multiplexed assay MitoOxTox for mitochondrial toxicity, oxidative stress response and cytotoxicity in AREc32 cells",
-        "keywords": "Mitochondrial membrane potential, Mitochondrial toxicity, Oxidative stress, Environmental monitoring, Mixture, AREc32",
-        "authors": "Lee Jungeun, König Maria, Braun Georg, Escher Beate Isabella",
-        "date-of-publication": "19.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Water.png?itok=FJPfGtYK"
-    },
-    {
-        "id": "article-783",
-        "name": "Innovative analytical methodologies for characterizing chemical exposure with a view to next-generation risk assessment",
-        "keywords": "High-resolution mass spectrometry, Effect-based methods, Sampling strategies, Chemical exposure, Chemical risk assessment , Effect-directed analysis",
-        "authors": "Tkalec Žiga, Antignac Jean-Philippe, Bandow Nicole, Béen Frederic M., Belova Lidia, Bessems Jos, Le Bizec Bruno, Brack Werner, Cano-Sancho German, Chaker Jade, Covaci Adrian, Creusot Nicolas, David Arthur, Debrauwer Laurent, Dervilly Gaud, Duca Radu - Corneliu, Fessard Valerie, Grimalt Joan, Guerin Thierry, Habchi Baninia, Hecht Helge, Hollender Juliane, Jamin Emilien L., Klanova Jana, Kosjek Tina, Krauss Martin, Lamoree Marja, Lavison-Bompard Gwenaelle, Meijer Jeroen, Moeller Ruth, Mol Hans, Mompelat Sophie, Van Nieuwenhuyse An, Oberacher Herbert, Parinet Julien, Van Poucke Christof, Roškar Robert, Togola Anne, Trontelj Jurij, Price Elliott",
-        "date-of-publication": "17.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_2.png?itok=BLZ_IZxL"
-    },
-    {
-        "id": "article-1247",
-        "name": "Intuitive toxicology in the 21st century—Bridging the perspectives of the public and risk assessors in Europe",
-        "keywords": "Chemical risk assessment, intuitive toxicology, New approach methodologies, next-generation riskassessment, risk perception",
-        "authors": "Bearth Angela, Roth Nicolas, Wilks Martin, Siegrist Michael",
-        "date-of-publication": "15.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_9.png?itok=H8gKJrRe"
-    },
-    {
-        "id": "article-1717",
-        "name": "Comprehensive mapping of the AOP-Wiki database: identifying biological and disease gaps",
-        "keywords": "Adverse outcome pathway, AOP network, Immunotoxicity, Neurotoxicity, Nongenotoxic carcinogenesis, Diseases, PARC",
-        "authors": "Jaylet Thomas, Coustillet Thibaut, Smith Nicola M., Viviani Barbara, Lindeman Birgitte, Vergauwen Lucia, Myhre Oddvar, Yarar Nurettin, Gostner Johanna M., Monfort-Lanzas Pablo, Jornod Florence, Holbech Henrik, Coumoul Xavier, Sarigiannis Dimosthenis A., Antczak Philipp, Bal-Price Anna, Fritsche Ellen, Kuchovska Eliska, Stratidakis Antonios, Barouki Robert, Kim Min Ji, Taboureau Olivier, Wojewodzic Marcin, Knapen Dries, Audouze Karine",
-        "date-of-publication": "08.03.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/comprehensive-mapping-of-the-aopwiki-MC1oLXMtci0wLTA.png?itok=RYIexVi4"
-    },
-    {
-        "id": "article-1301",
-        "name": "Revealing the cascade of pesticide effects from gene to community",
-        "keywords": "Adaptation, Neonicotinoids, Genetic diversity, AFLP, G. pulex",
-        "authors": "Siddique Ayesha, Shahid Naeem, Liess Matthias",
-        "date-of-publication": "29.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_9.png?itok=AKlIgwRO"
-    },
-    {
-        "id": "article-1637",
-        "name": "Making food systems more resilient to food safety risks by including artificial intelligence, big data, and internet ofthings into food safety early warning and emerging riskidentification tools",
-        "keywords": "Data sharing, Digital tools, Machine learning, Proactive system, Risk prediction",
-        "authors": "Mu Wenjuan, Kleter Gijs A., Bouzembrak Yamine, Dupouy Eleonora, Frewer Lynn J., Al Natour Fadi Naser Radwan, Marvin H. J. P.",
-        "date-of-publication": "24.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_7.png?itok=D6USRemm"
-    },
-    {
-        "id": "article-1681",
-        "name": "A systems toxicology approach for identification of disruptions in cholesterol homeostasis after aggregated exposure to mixtures of perfluorinated compounds in humans",
-        "keywords": "Exposure, PFAS, PBK model, Cholesterol biokinetic model, Systems toxicology",
-        "authors": "Westerhout Joost, den Heijer-Jordaan Annemiek, Princen Hans M G, Stierum Rob",
-        "date-of-publication": "18.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_7.png?itok=TekReaNy"
-    },
-    {
-        "id": "article-1631",
-        "name": "Brain-derived neurotrophic factor (BDNF): an effect biomarker of neurodevelopment in human biomonitoring programs",
-        "keywords": "Brain-derived neurotrophic factor, Neurodevelopment, Human biomonitoring, Effect biomarkers, Endocrine disruptors, Neurodevelopmental toxicity",
-        "authors": "Rodriguez-Carrillo Andrea, Verheyen Veerle, van Nuijs Alexander, Fernández Mariana F, Remy Sylvie",
-        "date-of-publication": "10.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_8.png?itok=CKlRNer1"
-    },
-    {
-        "id": "article-1322",
-        "name": "Curated mode-of-action data and effect concentrations for chemicals relevant for the aquatic environment",
-        "keywords": "",
-        "authors": "Kramer Lena, Schulze Tobias , Klüver Nils, Altenburger Rolf, Hackermüller Jörg, Krauss Martin, Busch Wibke",
-        "date-of-publication": "10.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_10.png?itok=VupnLZUL"
-
-    },
-    {
-        "id": "article-767",
-        "name": "Why adverse outcome pathways need to be FAIR",
-        "keywords": "Adverse outcome pathways, FAIR data, Machine-actionability, Trust, Visibility",
-        "authors": "Wittwehr Clemens, Clerbaux Laure-Alix, Edwards Stephen, Angrish Michelle, Mortensen Holly, Carusi Annamaria, Gromelski Maciej , Lekka Eftychia, Virvilis Vassilis Virvilis, Martens Marvin, Bonino da Silva Santos Luiz Olavo, Nymark Penny",
-        "date-of-publication": "09.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-03/Cover_March_2024_1.png?itok=RvcAVqJA"
-    },
-    {
-        "id": "article-1469",
-        "name": "A comprehensive battery of flow cytometric immunoassays for the in vitro testing of chemical effects in human blood cells",
-        "keywords": "Immune assays, Human blood, Chemical testing, Activation marker, Immune cells, Immunotox",
-        "authors": "Pierzchalski Arkadiusz, Zenclussen Ana Claudia, Herberth Gunda",
-        "date-of-publication": "02.01.2024",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_7.png?itok=cJKkQBCv"
-    },
-    {
-        "id": "article-1057",
-        "name": "Applicability of food monitoring data for assessing relative exposure contributions of pyrethroids in retrospective human biomonitoring risk estimations",
-        "keywords": " Pyrethroids, Urinary levels, DCCA, CFMP, 3PBA, DBCA, F3PBA, CLF3CA, Pesticide risk, HBM4EU",
-        "authors": "Tarazona Jose V, de Alba-Gonzalez Mercedes, González-Caballero Maria Carmen",
-        "date-of-publication": "28.12.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_2.png?itok=Dde32bwk"
-    },
-    {
-        "id": "article-1496",
-        "name": "Mapping chemical footprints of organic micropollutants in European streams",
-        "keywords": "Environmental contamination, Chemical footprints, Planetary boundaries, Organic micropollutants, Chemical target screening, LC-HRMS, Toxic units, Urban discharge fraction, Stream order",
-        "authors": "Finckh Saskia, Carmona Eric, Borchardt Dietrich, Büttner Olaf, Krauss Martin, Schulze Tobias, Yang Soohyun, Brack Werner",
-        "date-of-publication": "05.12.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_8.png?itok=rc6hPVHr"
-    },
-    {
-        "id": "article-726",
-        "name": "Acetylcholinesterase inhibition in rats and humans following acute fenitrothion exposure predicted by physiologically based kinetic modeling-facilitated quantitative in vitro to in vivo extrapolation",
-        "keywords": "Anatomy, Inhibition, Peptides and proteins, Pest control, Rodent models",
-        "authors": "Chen Jiaqi, Zhao Shensheng, Wesseling Sebastiaan , Kramer Nynke, Rietjens Ivonne, Bouwmeester Hans",
-        "date-of-publication": "26.11.2023"
-    },
-    {
-        "id": "article-720",
-        "name": "Ecotoxicological evaluation of Bisphenol A and alternatives: A comprehensive in silico modelling approach",
-        "keywords": "Bisphenol A (BPA), BPA alternatives, Ecotoxicity assessment, In silico models, Principal component analysis (PCA), Environmental impact, Models, Chemical risk assessment ",
-        "authors": "Liadys Mora Lagares, Marjan Vračko",
-        "date-of-publication": "23.11.2023",
-        "imaeg": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_2.png?itok=is9UpI-_"
-    },
-    {
-        "id": "article-715",
-        "name": "Current-use pesticide exposure pathways in Czech adults and children from the CELSPAC-SPECIMEn cohort",
-        "keywords": "Current-use pesticides, HBM4EU, Dietary exposure, Pesticide application, Environmental exposure, Organic diet, Exposure assessment, Models, Human biomonitoring, Human health",
-        "authors": "Šulc Libor, Figueiredo Daniel, Huss Anke, Kalina Jiří, Gregor Petr, Janoš Tomáš, Šenk Petr, Dalecká Andrea, Andrýsková Lenka, Kodeš Vít, Čupr Pavel",
-        "date-of-publication": "06.11.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_1_2.png?itok=LeqaEsaS"
-    },
-    {
-        "id": "article-1683",
-        "name": "Learning from Safe-by-Design for Safe-and-Sustainable-by-Design: Mapping the current landscape of Safe-by-Design reviews, case studies, and frameworks",
-        "keywords": "Safe-by-Design (SbD), Safe and Sustainable-by-Design (SSbD), Literature mapping, SSbD implementation",
-        "authors": "Sudheshwar Akshat, Apel Christina, Kümmerer Klaus, Wang Zhanyun, Soeteman-Hernández Lya G., Valsami-Jones Eugénia, Som Claudia, Nowack Bernd",
-        "date-of-publication": "04.11.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_8.png?itok=Ibn01O_l"
-    },
-    {
-        "id": "article-751",
-        "name": "Combined chronic dietary exposure to four nephrotoxic metals exceeds tolerable intake levels in the adult population of 10 European countries",
-        "keywords": "Cadmium, Lead, Inorganic arsenic, Inorganic mercury, Nephrotoxicity, Combined exposure",
-        "authors": "Sprong R. Corinne, Van den Brand Annick D., Van Donkersgoed Gerda, Blaznik Urska, Christodoulou Despo, Crépet Amélie, Da Graca Dias Maria, Jensen Bodil Hamborg, Moretto Angelo, Rauscher-Gabernig Elke, Ruprich Jiri, Sokolic Darja, Van Klaveren Jacob D., Luijten Mirjam, Mengelers Marcel J.B.",
-        "date-of-publication": "03.11.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_2.png?itok=GHsbiCBk"
-    },
-    {
-        "id": "article-713",
-        "name": "Potential for machine learning to address data gaps in human toxicity and ecotoxicity characterization",
-        "keywords": "Degradation, Environmental pollution, Natural resources, Soils, Toxicity",
-        "authors": "von Borries Kerstin, Holmquist Hanna, Kosnik Marissa, Katie Beckwith, Jolliet Olivier, Goodman Jonathan, Fantke Peter",
-        "date-of-publication": "01.11.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_2.png?itok=IecRnPmK"
-    },
-    {
-        "id": "article-707",
-        "name": "A benchmark dataset for machine learning in ecotoxicology",
-        "keywords": "Machine learning, Ecotoxicology, Benchmark, Scientificdata, Fish, Algae, Crustaceans, Predictive toxicology, Hazard assessment, Models",
-        "authors": "Schür Christoph, Gasser Lilian, Perez-Cruz Fernando, Schirmer Kristin, Baity-Jesi Marco",
-        "date-of-publication": "18.10.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_3.png?itok=3BddqfQ4"
-    },
-    {
-        "id": "article-741",
-        "name": "Acceptance criteria for new approach methods in toxicology and human health-relevant life science research - part I",
-        "keywords": "BenchMarks series, GIVIMP, In vitro, Methods, Validation,  Quality control, NAM",
-        "authors": "Holzer Anna-Katharina, Dreser Nadine, Pallocca Giorgia, Mangerich Aswin, Stacey Glyn, Dipalo Michele, Van de Water Bob, Rovida Costanza, Wirtz Petra H., Van Vugt Barbara, Panzarella Giulia, Hartung Thomas, Terron Andrea, Mangas Iris, Herzler Matthias, Marx-Stoelting Philip, Coecke Sandra, Leist Marcel",
-        "date-of-publication": "17.10.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_3.png?itok=eqhIMDpi"
-    },
-    {
-        "id": "article-1096",
-        "name": "Comparison of aggregated exposure to perfluorooctanoic acid (PFOA) from diet and personal care products with concentrations in blood using a PBPK model – Results from the Norwegian biomonitoring study in EuroMix",
-        "keywords": "Exposure, Biomonitoring, Physiologically based pharmacokinetic modelling, Diet, Personal care products, Cosmetics",
-        "authors": "Husøy Trine, Caspersen Ida H., Thépaut Elisa, Knutsen Helle, Haug Line S., Andreassen Monica, Gkrillas Athanasios, Lindeman Birgitte, Thomsen Cathrine, Herzke Dorte, Dirven Hubert, Wojewodzic Marcin W.",
-        "date-of-publication": "14.10.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_6.png?itok=8edgI-0a"
-    },
-    {
-        "id": "article-699",
-        "name": "Combined western diet and bisphenol A exposure induces an oxidative stress-based paraoxonase 1 response in larval zebrafish",
-        "keywords": "Bisphenol A, Western diet, Metabolism, Metabolic disorders, Lipid metabolism, Antioxidant",
-        "authors": "Van den Boom Rik, Vergauwen Lucia, Koedijk Noortje, Da Silva Katyeny Manuela, Covaci Adrian, Knapen Dries",
-        "date-of-publication": "26.09.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_4.png?itok=zzUeAlos"
-    },
-    {
-        "id": "article-732",
-        "name": "Identification of the bacterial metabolite aerugine as potential trigger of human dopaminergic neurodegeneration",
-        "keywords": "Dopaminergic neurodegeneration, Streptomyces venezuelae, Bacterial toxin, Ferroptosis, Caenorhabditis elegans, Parkinson’s disease",
-        "authors": "Leist Marcel, Ückert Anna-Katharina, Rütschlin Sina, Gutbier Simon, Wörz Nathalie Christine, Miah Mahfuzur R., Martins Airton C., Hauer Isa, Holzer Anna-Katharina, Meyburg Birthe, Mix Ann-Kathrin, Hauck Christof R., Aschner Michael, Böttcher Thomas",
-        "date-of-publication": "23.09.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_3.png?itok=YymFnw--"
-    },
-    {
-        "id": "article-739",
-        "name": "Ciona spp. and ascidians as bioindicator organisms for evaluating effects of endocrine disrupting chemicals: A discussion paper",
-        "keywords": "Ascidians, Ciona intestinalis, Toxicity bioassay, Endocrine disrupting effects, 3Rs",
-        "authors": "Beyer Jonny, Song You, Lillicrap Adam, Rodríguez-Satizábal Simón, Chatzigeorgiou Marios",
-        "date-of-publication": "09.09.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_4.png?itok=kdNsGVLd"
-    },
-    {
-        "id": "article-532",
-        "name": "Protocol for designing INVITES-IN, a tool for assessing the internal validity of in vitro studies",
-        "keywords": "Cell culture, NAMs, Next generation risk assessment, Risk of bias",
-        "authors": "Svendsen Camilla, Whaley Paul, Vist Gunn Elisabeth, Husøy Trine, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hatzi Vasiliki I., Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Robinson Joshua F., Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Mathisen Gro Haarklou",
-        "date-of-publication": "31.08.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_2.png?itok=08OeR0IH"
-    },
-    {
-        "id": "article-537",
-        "name": "Adverse outcome pathway-based analysis of liver steatosis in vitro using human liver cell lines",
-        "keywords": "Cell culture, Cell-based assays, Gene expression",
-        "authors": "Karaca Mawien, Fritsche Kristin, Lichtenstein Dajana, Vural Ozlem, Kreuzer Katrin, Alarcan Jimmy, Braeuning Albert, Marx-Stoelting Philip, Tralau Tewes",
-        "date-of-publication": "25.08.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_5.png?itok=cDeBhjpP"
-    },
-    {
-        "id": "article-718",
-        "name": "A data-derived reference mixture representative of European wastewater treatment plant effluents to complement mixture assessment",
-        "keywords": "Mixture risk assessment, Cell assays, Organism-based assays, Organic micropollutants, Effect data",
-        "authors": "Beckers Liza-Marie, Busch Wibke, Altenburger Rolf, Brack Werner, Escher Beate Isabella, Hackermüller Jörg, Hassold Enken, Illing Gianina, Krauss Martin, Krüger Janet, Michaelis Paul, Schüttler Andreas, Stevens Sarah",
-        "date-of-publication": "17.08.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_4.png?itok=33S2tZ1t"
-    },
-    {
-        "id": "article-526",
-        "name": "Development of a physiologically based toxicokinetic model for lead in pregnant women: the role of bone tissue in the maternal and fetal internal exposure",
-        "keywords": "P-PBPK Model, Lead, Metal, Pregnancy, Bone remodeling, Resorption, Placental transfer, Fetus exposure, Monte Carlo simulations, Parameter estimation",
-        "authors": "Ali-Daoud Yourdasmine, Tebby Cleo, Beaudouin Rémy, Brochot Céline",
-        "date-of-publication": "06.08.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_1.png?itok=J30UxEEq"
-    },
-    {
-        "id": "article-719",
-        "name": "Deoxynivalenol increases pro-inflammatory cytokine secretion and reduces primary bile acid transport in an inflamed intestinal in vitro co-culture model",
-        "keywords": "Hazard assessment, Innovative methods and tools , Adverse outcome pathways, Biomarkers, Chemical risk assessment ",
-        "authors": "Wang Jingxuan, Bakker Wouter, de Haan Laura, Bouwmeester Hans",
-        "date-of-publication": "25.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_5.png?itok=CcduyHIj"
-    },
-    {
-        "id": "article-521",
-        "name": "A human iPSC-based in vitro neural network formation assay to investigate neurodevelopmental toxicity of pesticides",
-        "keywords": "Developmental neurotoxicity, Microelectrode arrays, Electrical activity, Human induced pluripotent stem cells, New approach methodologies",
-        "authors": "Bartmann Kristina, Bendt Farina, Dönmez Arif, Haag Daniel, Keßel H. Eike, Masjosthusmann Stefan, Noel Christopher, Wu Ji, Zhou Peng, Fritsche Ellen",
-        "date-of-publication": "20.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_1.png?itok=7tql8akW"
-    },
-    {
-        "id": "article-518",
-        "name": "Innovative tools and methods for toxicity testing within PARC work package 5 on hazard assessment",
-        "keywords": "PARC, NGRA, NAMs, Hazard assessment, Human health",
-        "authors": "de Castelbajac Thalia, Aiello Kiara, Garcia Arenas Celia, Svingen Terje, Ramhoj Louise, Zalko Daniel, Barouki Robert, Vanhaecke Tamara, Rogiers Vera, Audebert Marc, Oelgeschlaeger Michael, Braeuning Albert, Blanc Etienne, Tal Tamara, Ruegg Joelle, Fritsche Ellen, Philip Marx-Stoelting, Rivière Gilles",
-        "date-of-publication": "19.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_2.png?itok=6fuUA84o"
-    },
-    {
-        "id": "article-709",
-        "name": "REACH out-numbered! The future of REACH and animal numbers",
-        "keywords": "Human health, Regulatory risk assessment",
-        "authors": "Hartung Thomas, Leist Marcel, Busquet Francois, Rovida Costanza",
-        "date-of-publication": "12.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_7.png?itok=blMjpmgk"
-    },
-    {
-        "id": "article-527",
-        "name": "New approach methodologies to facilitate and improve the hazard assessment of non-genotoxic carcinogens—a PARC project",
-        "keywords": "Non-genotoxic carcinogens, NGTxC, New approach methodologies, NAM, PARC",
-        "authors": "Audebert Marc, Assmann Ann-Sophie, Azqueta Amaya, Benfenati Emilio, Babica Pavel, Bortoli Sylvie, Bouwman Peter, Braeuning Albert, Burgdorf Tanja, Coumoul Xavier, Debizet Kloé, Dusinska Maria, Ertych Norman, Fahrer Jörg, Fetz Verena, Le Hégarat Ludovic, López de Cerai Adela, Heusinkveld Harm J., Hogeveen Kevin, Jacobs Miriam N., Luijten Mirjam, Raitano Giuseppa, Recoules Cynthia, Rundén-Pran Elise, Saleh Mariam, Sovadinová Iva, Stampar Martina, Thibol Lea, Tomkiewicz Céline, Vettorazzi Ariane, Van de Water Bob, El Yamani Naouale, Zegura Bojana, Oelgeschläger Michael",
-        "date-of-publication": "10.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_3.png?itok=T38JtXgr"
-    },
-    {
-        "id": "article-753",
-        "name": "Firefighters and the liver: Exposure to PFAS and PAHs in relation to liver function and serum lipids (CELSPAC-FIREexpo study)",
-        "keywords": "Firefighters, Occupational exposure, PFAS, PAHs, Mixture analysis, Liver Function",
-        "authors": "Pálešová Nina, Maitre Léa, Stratakis Nikos, Řiháčková Katarína, Pindur Aleš, Kohoutek Jiri, Šenk Petr , Bartoskova Polcrova Anna, Petr Gregor, Vrijheid Martine, Čupr Pavel",
-        "date-of-publication": "05.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-03/Cover_March_2024_2.png?itok=FfVnTbRZ"
-    },
-    {
-        "id": "article-781",
-        "name": "Environmental concentrations of tire rubber-derived 6PPD-quinone alter CNS function in zebrafish larvae",
-        "keywords": "6PPD-quinone, Tire rubber, Zebrafish larvae, Neurotoxicity, Circadian rhythms",
-        "authors": "Ricarte Marina, Prats Eva, Montemurro Nicola, Bedrossiantz Juliette, Marina Bellot Marina, Gómez-Canela Cristian, Raldúa Demetrio",
-        "date-of-publication": "03.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_3.png?itok=hYIjLnfd"
-    },
-    {
-        "id": "article-698",
-        "name": "Development of a rat physiologically based kinetic model (PBK) for three organophosphate flame retardants (TDCIPP, TCIPP, TCEP)",
-        "keywords": "Models, Human health",
-        "authors": "Deepika Deepika, Kumar Vikas, Schuhmacher Marta, Sharma Raju Prasad",
-        "date-of-publication": "01.07.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_6.png?itok=sgKDIicu"
-    },
-    {
-        "id": "article-533",
-        "name": "Development of new approach methods for the identification and characterization of endocrine metabolic disruptors-a PARC project",
-        "keywords": "Adipocytes, Endocrine metabolic disruption, Energy metabolism, Liver, Nuclear receptors, Obesogens",
-        "authors": "Braeuning Albert, Balaguer Patrick, Bourguet William, Carreras-Puigvert Jordi, Feiertag Katreece, Kamstra Jorke H., Knapen Dries, Lichtenstein Dajana, Marx-Stoelting Philip, Rietdijk Jonne, Schubert Kristin, Spjuth Ola, Stinckens Evelyn, Thedieck Kathrin, Van den Boom Rik, Vergauwen Lucia, Von Bergen Martin, Wewer Neele, Zalko Daniel",
-        "date-of-publication": "29.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_4.png?itok=gliVdL4L"
-    },
-    {
-        "id": "article-492",
-        "name": "Determination of glyphosate and its derivative, aminomethylphosphonic acid, in human urine by gas chromatography coupled to tandem mass spectrometry and isotope pattern deconvolution",
-        "keywords": "Polar pesticides, Isotope dilution, Biomonitoring, Gas chromatography, Tandem mass spectrometry in negative ion chemical ionization",
-        "authors": "Junqué Eva, Fernández Pilar , Filippi Iohanna , Grimalt Joan O.",
-        "date-of-publication": "21.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_1.png?itok=L8N7V9RR"
-    },
-    {
-        "id": "article-503",
-        "name": "Mixtures of per- and poly-fluoroalkyl substances (PFAS) reduce the in vitro activation of human T cells and basophils",
-        "keywords": "PFAS, Mixtures, Immunotoxicity, T lymphocytes, MAIT cells, Basophils",
-        "authors": "Maddalon Ambra, Pierzchalski Arkadiusz, Kretschmer Tobias, Bauer Mario, Zenclussen Ana C., Marinovich Marina, Corsini Emanuela, Herberth Gunda",
-        "date-of-publication": "12.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_3.png?itok=kb2hRumv"
-    },
-    {
-        "id": "article-519",
-        "name": "PBTK-TD model of the phagocytosis activity in three-spined stickleback exposed to BPA",
-        "keywords": "PBTK-TD model, Immunomarker, Phagocytosis, Fish, BPA, Three-spined stickleback",
-        "authors": "Mit Corentin, Bado-Nilles Annes, Turies Cyril, Gaëlle Daniele, Barbara Giroud, Beaudouin Rémy",
-        "date-of-publication": "10.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_4.png?itok=zRMVU38E"
-    },
-    {
-        "id": "article-768",
-        "name": "AOP-helpFinder 2.0: Integration of an event-event searches module",
-        "keywords": "Adverse outcome pathways, AOP, AOP-helpFinder, Text mining, Artificial intelligence, Toxicology",
-        "authors": "Jaylet Thomas, Coustillet Thibaut, Jornod florence, Margaritte-Jeannin Patricia, Audouze Karine",
-        "date-of-publication": "03.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_4.png?itok=zRMVU38E"
-    },
-    {
-        "id": "article-731",
-        "name": "G × E interactions as a basis for toxicological uncertainty",
-        "keywords": "Epigenetics, Model system, Safety factor, Toxicokinetics, Résilience, AOP",
-        "authors": "Suciu Ilinca, Pamies David, Peruzzo Roberta, Wirtz Petra H., Smirnova Lena, Pallocca Giorgia, Hauck Christof, Cronin Mark T. D., Hengstler Jan G., Brunner Thomas, Hartung Thomas, Amelio Ivano, Leist Marcel",
-        "date-of-publication": "01.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_6.png?itok=_tedoJnr"
-    },
-    {
-        "id": "article-507",
-        "name": "Non-disclosure of developmental neurotoxicity studies obstructs the safety assessment of pesticides in the European Union",
-        "keywords": "Developmental neurotoxicity, Non-disclosure, Pesticides, Plant protection products, Regulatory assessment, Reporting bias",
-        "authors": "Mie Axel, Rudén Christina",
-        "date-of-publication": "01.06.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_5.png?itok=smDCgsor"
-    },
-    {
-        "id": "article-1055",
-        "name": "A review on immudolatory effects of BPA analogues",
-        "keywords": "BPA analogues, Immunomodulation, Immunotoxicology, Endocrine disruptors, Bisphenols",
-        "authors": "Sollner Dolenc Marija, Franko Nina, Kodila Anja",
-        "date-of-publication": "19.05.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_3.png?itok=AIGyXEth"
-    },
-    {
-        "id": "article-520",
-        "name": "New approach methods to improve human health risk assessment of thyroid hormone system disruption - a PARC project",
-        "keywords": "PARC, Endocrine disruption, Thyroid disruption, Non-animal test methods, Regulatory toxicology, Adverse outcome pathways, Chemicals",
-        "authors": "Ramhøj Louise, Axelstad Marta, Baert Yoni, Cañas-Portilla. Ana I., Chalmel Frederic, Dahmen Lars, De La Veja Antonio, Evrard Bertrand, Haigis Ann-Cathrin, Hamers Timo, Heikamp Kim, Holbech Henrik, Iglesias-Hernandez Patricia, Knapen Dries, Marchandise Lorna, Morthorst Jane E., Nikolov Nikolai Georgiev, Nissen Ana C. V. E., Oelgeschlaeger Michael, Renko Kostja, Rogiers Vera, Schüürmann Gerrit, Stinckens Evelyn, Stub Mette H., Torres-Ruiz Monica, Van Duursen Majorie, Vanhaecke Tamara, Vergauwen Lucia, Wedebye Eva Bay, Svingen Terje",
-        "date-of-publication": "17.05.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_6.png?itok=hzTp03w5"
-    },
-    {
-        "id": "article-281",
-        "name": "Rapid extraction and analysis of oxidative stress and DNA damage biomarker 8-hydroxy-2′-deoxyguanosine (8-OHdG) in urine: Application to a study with pregnant women",
-        "keywords": "8-OHdG, Urine, Oxidative stress, Placenta, Pregnancy",
-        "authors": "Bláhová Lucie, Janoš Tomáš, Mustieles Vicente, Rodríguez-Carrillo Andrea, Fernández Mariana F., Bláha Luděk",
-        "date-of-publication": "25.04.2023"
-    },
-    {
-        "id": "article-90",
-        "name": "The exposure of Czech firefighters to perfluoroalkyl substances and polycyclic aromatic hydrocarbons: CELSPAC – FIREexpo case-control human biomonitoring study",
-        "keywords": "Firefighters, Human biomonitoring, Perfluoroalkyl substances, Polycyclic aromatic hydrocarbons, Cohort profile, HBM value",
-        "authors": "Katarína Řiháčková, Aleš Pindur, Klára Komprdová, Nina Pálešová, Jiří Kohoutek, Petr Šenk, Jana Navrátilová, Lenka Andrýsková, Ludmila Šebejová, Richard Hůlek, Mazen Ismael, Pavel Čupr",
-        "date-of-publication": "11.04.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_3.png?itok=F0a6nN9i"
-    },
-    {
-        "id": "article-62",
-        "name": "Modernizing persistence–bioaccumulation–toxicity (PBT) assessment with high throughput animal‑free methods",
-        "keywords": "Hazard assessment, New approach methodologies (NAMs), Persistence, Mobility, Biodegradation, In vitro  bioassay, Toxicity",
-        "authors": "Escher Beate I., Altenburger Rolf, Blüher Matthias, Colbourne John K., Ebinghaus Ralf, Fantke Peter, Hein Michaela, Köck Wolfgang, Kümmerer Klaus, Leipold Sina, Li Xiaojing, Scheringer Martin, Scholz Stefan, Schloter Michael, Schweizer Pia-Johanna, Tal Tamara, Tetko Igor, Traidl-Hoffmann Claudia, Wick Lukas Y., Fenner Kathrin",
-        "date-of-publication": "23.03.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2021.png?itok=rfmi5ikj"
-    },
-    {
-        "id": "article-63",
-        "name": "Development of historic monthly land use regression models of SO2, NOx and suspended particulate matter for birth cohort ELSPAC",
-        "keywords": "Land use regression, Air quality, Cohort, Vulnerable windows, Children's health, ELSPAC",
-        "authors": "Mikeš Ondřej, Sáňka Ondřej, Rafajová Aneta, Vlaanderen Jelle, Chen Jie, Hoek Gerard, Klánová Jana, Čupr Pavel",
-        "date-of-publication": "02.03.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2019.png?itok=RnIoXaeD"
-    },
-    {
-        "id": "article-52",
-        "name": "The role of \"Physiologically Based Pharmacokinetic Model (PBPK)\" New Approach Methodology (NAM) in pharmaceuticals and environmental chemical risk assessment",
-        "keywords": "Physiologically based pharmacokinetic model, Drugs, Environmental chemicals, Adverse outcome pathway, Machine learning",
-        "authors": "Deepika Deekipa, Vikas Kumar",
-        "date-of-publication": "16.02.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2015.png?itok=BIMHHZXi"
-    },
-    {
-        "id": "article-55",
-        "name": "Proteome coverage after simultaneous proteo-metabolome liquid–liquid extraction",
-        "keywords": "Proteomics, Metabolomics, Sample preparation, Simultaneous proteo-metabolomics, In-solution digest, SP3, Mass spectrometry, Label free quantification, Bottom-up proteomics",
-        "authors": "Alienke van Pijkeren, Anna-Sophia Egger, Madlen Hotze, Elisabeth Zimmermann, Tobias Kipura, Julia Grander, André Gollowitzer, Andreas Koeberle, Rainer Bischoff, Kathrin Thedieck, Marcel Kwiatkowski",
-        "date-of-publication": "10.02.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2016.png?itok=KM8PxKDz"
-    },
-    {
-        "id": "article-782",
-        "name": "Linking chemicals, genes and morphological perturbations to diseases",
-        "keywords": "Cell painting, Chemical risk assessment, Integrated approaches, Networks, Innovative methods and tools",
-        "authors": "Cerisier Natacha, Dafniet Bryan, Badel Anne, Taboureau Olivier",
-        "date-of-publication": "02.02.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_4.png?itok=uwvdtror"
-    },
-    {
-        "id": "article-56",
-        "name": "Metabolism-disrupting chemicals affecting the liver: Screening, testing, and molecular pathway identification",
-        "keywords": "Endocrine-disrupting chemicals, Metabolic disorders, Testing, Molecular pathways",
-        "authors": "Kristin Fritsche, Andrea Ziková-Kloas, Philip Marx-Stoelting, Albert Braeuning",
-        "date-of-publication": "31.01.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2017.png?itok=XzUqeIX4"
-    },
-    {
-        "id": "article-35",
-        "name": "A walk in the PARC: Developing and implementing 21st century chemical risk assessment in Europe",
-        "keywords": "Next-generation risk assessment (NGRA), Chemicals, Safety assessment, Exposure assessment, Hazard characterisation, Human biomonitoring (HBM), New approach methods (NAM)",
-        "authors": "P. Marx-Stoelting, G. Rivière, K. Aiello-Holden, N. Bandow, K. Baken, A. Cañas, A. Castano, S. Denys, C. Fillol, M. Herzler, I. Iavicoli, S. Karakitsios, J. Klanova, M. Kolossa-Gehring, A. Koutsodimou, J. Lobo Vicente, I. Lynch, S. Namorado, S. Norager, A. Pittman, S. Rotter, D. Sarigiannis, M. J. Silva, J. Theunis, T. Tralau, M. Uhl, J. van Klaveren, L. Wendt-Rasch, E. Westerholm, C. Rousselle, P. Sanders",
-        "date-of-publication": "16.01.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2014.png?itok=B73R2399"
-    },
-    {
-        "id": "article-740",
-        "name": "Dynamic metabolic and transcriptional responses of proteasome-inhibited neurons",
-        "keywords": "Chemical risk assessment , Hazard assessment, Innovative methods and tools , Integrated approaches",
-        "authors": "Suciu Ilinca, Delp Johannes, Gutbier Simon, Ückert Anna-Katharina, Spreng Anna-Sophie, Eberhard Philipp, Karreman Christiaan, Schreiber Falk, Madjar Katrin, Rahnenführer Jörg, Celardo Ivana, Amelio Ivano, Leist Marcel",
-        "date-of-publication": "10.01.2023",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_5.png?itok=8BrpXFWo"
-    },
-    {
-        "id": "article-508",
-        "name": "Adverse (geno)toxic effects of bisphenol A and its analogues in hepatic 3D cell model",
-        "keywords": "BPA analogues, Cell proliferation, DNA strand breaks, Genotoxic, In vitro 3D cell model",
-        "authors": "Sendra Marta, Štampar Martina, Fras Katarina, Novoa Beatriz, Figueras Antonio, Žegura Bojana",
-        "date-of-publication": "24.12.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_7.png?itok=WbyTSPjH"
-    },
-    {
-        "id": "article-26",
-        "name": "Advancing exposure knowledge and its uptake into policy: The European exposure science strategy 2020–2030 (Special Issue)",
-        "keywords": "",
-        "authors": "Fantke Peter, von Goetz Natalie, Jantunen Matti",
-        "date-of-publication": "12.12.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2013.png?itok=Eka0ppAe"
-    },
-    {
-        "id": "article-28",
-        "name": "Considering degradation kinetics of pesticides in plant uptake models: Proof of concept for potato",
-        "keywords": "Dissipation, Degradation rate constant, Plant protection product, Pesticide residues",
-        "authors": "Li Zijian, Fantke Peter",
-        "date-of-publication": "24.11.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2011.png?itok=KNHV6-Gs"
-    },
-    {
-        "id": "article-27",
-        "name": "Generating environmental sampling and testing data for micro- and nanoplastics for use in life cycle impact assessment",
-        "keywords": "Microplastics, Nanoplastics, Life cycle assessment, Risk assessment, Ecotoxicology, Harmonizing data collection, Monitoring",
-        "authors": "Askham Cecilia, Pauna Valentina H., Boulay Anne-Marie, Fantke Peter, Jolliet Olivier, Lavoie Jérôme, Booth Andy M., Coutris Claire, Verones Francesca, Weber Miriam, Vijver Miriam G., Lusher Amy, Hajjar Carla",
-        "date-of-publication": "14.11.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2012.png?itok=cePVSLNO"
-    },
-    {
-        "id": "article-54",
-        "name": "Establishment of a human cell-based in vitro battery to assess developmental neurotoxicity hazard of chemicals",
-        "keywords": "Testing battery, Stem cell, Brain development, In vitro testing, DNT",
-        "authors": "Jonathan Blum, Stefan Masjosthusmann, Kristina Bartmann, Farina Bendt, Xenia Dolde, Arif Dönmez, Nils Förster, Anna-Katharina Holzer, Ulrike Hübenthal, Hagen Eike Keßel, Sadiye Kilic, Jördis Klose, Melanie Pahl, Lynn-Christin Stürzl, Iris Mangas, Andrea Terron, Kevin M. Crofton, Martin Scholze, Axel Mosig, Marcel Leist, Ellen Fritsche",
-        "date-of-publication": "31.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2010.png?itok=tQ5NtSS_"
-    },
-    {
-        "id": "article-29",
-        "name": "Advancing exposure data analytics and repositories as part of the European Exposure Science Strategy 2020–2030",
-        "keywords": "International Society of Exposure Science, Data analysis, Data management, Chemicals, Exposure assessment, Risk assessment",
-        "authors": "Kosnik Marissa, Kephalopoulos Stylianos, Muñoz Amalia, Aurisano Nicolò, Cusinato Alberto, Dimitroulopoulou Sani, Slobodnik Jaroslav, De Mello Jonathan, Zare Jeddi Maryam, Cascio Claudia, Ahrens Andreas, Bruinen de Bruin Yuri, Lieck Lothar, Fantke Peter",
-        "date-of-publication": "30.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%209.png?itok=NltmqysV"
-    },
-    {
-        "id": "article-25",
-        "name": "Endocrine disrupting chemicals entering European rivers: Occurrence and adverse mixture effects in treated wastewater",
-        "keywords": "Endocrine disrupting chemicals, EDC, Wastewater treatment plant effluents, WWTP, Chemical target analysis, Effect-based analysis, Water quality assessment, Effect based trigger values, EBT",
-        "authors": "Finckh Saskia, Buchinger Sebastian, Escher Beate, Hollert Henner, König Maria, Krauss Martin, Leekitratanapisan Warich, Schiwy Sabrina, Schlichting Rita, Shuliakevich Aliaksandra, Brack Werner",
-        "date-of-publication": "29.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%208.png?itok=cXKwAHqV"
-    },
-    {
-        "id": "article-34",
-        "name": "Application of AOPs to assist regulatory assessment of chemical risks – Case studies, needs and recommendations",
-        "keywords": "Adverse outcome pathways, Mechanistic toxicology, Hazard assessment, Regulatory risk assessment, Biomarkers of effect, New approach methodologies",
-        "authors": "Lola Bajard, Ondrej Adamovsky, Karine Audouze, Kirsten Baken, Robert Barouki, Joost B. Beltman, Anna Beronius, Eva Cecilie Bonefeld-Jørgensen, German Cano-Sancho, Milo L. de Baat, Filippo Di Tillio, Mariana F. Fernández, Rex E. FitzGerald, Claudia Gundacker, Antonio F. Hernández, Klara Hilscherova, Spyros Karakitsios, Eliska Kuchovska, Manhai Long, Mirjam Luijten, Sanah Majid, Philip Marx-Stoelting, Vicente Mustieles, Chander K. Negi, Dimosthenis Sarigiannis, Stefan Scholz, Iva Sovadinova, Rob Stierum, Shihori Tanabe, Knut Erik Tollefsen, Annick D. van den Brand, Carolina Vogs, Maria Wielsøe, Clemens Wittwehr, Ludek Blaha",
-        "date-of-publication": "27.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2018.png?itok=8dkacy22"
-    },
-    {
-        "id": "article-30",
-        "name": "Understanding and addressing the planetary crisis of chemicals and plastics",
-        "keywords": "",
-        "authors": "Carney Almroth Bethanie, Cornell Sarah E., Diamond Miriam L., de Wit Cynthia A., Fantke Peter, Wang Zhanyun",
-        "date-of-publication": "21.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%207.png?itok=6lEVuhHh"
-    },
-    {
-        "id": "article-31",
-        "name": "Framework for defining pesticide maximum residue levels in feed: Applications to cattle and sheep",
-        "keywords": "Plant protection products, Animal husbandry, Livestock health, Food safety, Pesticide regulation",
-        "authors": "Li Zijian, Fantke Peter",
-        "date-of-publication": "19.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%205.png?itok=yHBum5FI"
-    },
-    {
-        "id": "article-53",
-        "name": "Pharmacophore modeling using machine learning for screening the blood–brain barrier permeation of xenobiotics",
-        "keywords": "Blood–brain barrier, P-glycoprotein, Neurotoxicity, Graph neural network, Machine learning, Pharmacophore",
-        "authors": "Kumar Saurav, Deepika Deepika, Kumar Vikas",
-        "date-of-publication": "18.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%206.png?itok=mFE36ed5"
-    },
-    {
-        "id": "article-32",
-        "name": "Ecotoxicity characterization of chemicals: Global recommendations and implementation in USEtox",
-        "keywords": "Ecotoxicological impacts, Life cycle assessment, Species sensitivity distribution, Ecosystem exposure, USEtox, Life cycle impact assessment",
-        "authors": "Owsianiak Mikołaj, Hauschild Michael. Z., Posthuma Leo, Saouter Erwan, Vijver Martina G., Backhaus Thomas, Douziech Mélanie, Schlekat Tamar, Fantke Peter",
-        "date-of-publication": "10.10.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%204.png?itok=USnPgLkh"
-    },
-    {
-        "id": "article-33",
-        "name": "The European exposure science strategy 2020–2030",
-        "keywords": "Human exposure, Ecosystem exposure, Exposure assessment, Risk assessment, Afe and sustainable-by-design, International Society of Exposure Science",
-        "authors": "Fantke Peter, Bruinen de Bruin Yuri, Schlüter Urs, Connolly Alison, Bessems Jos, Kephalopoulos Stylianos, Zare Yeddi Maryam, van Nieuwenhuyse An, Dudzina Tatsiana, Scheepers Paul, von Goetz Natalie",
-        "date-of-publication": "30.09.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%203.png?itok=qdXx12mb"
-    },
-    {
-        "id": "article-290",
-        "name": "Wild fish and seafood species in the western Mediterranean Sea with low safe mercury concentrations",
-        "keywords": "Mercury, Mediterranean Sea, Fish, Seafood, Safe species",
-        "authors": "Marco Capodiferro, Esther Marco, Joan O. Grimalt",
-        "date-of-publication": "24.09.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_4.png?itok=Jr5XVUab"
-    },
-    {
-        "id": "article-61",
-        "name": "Prioritization of chemicals in food for risk assessment by integrating exposure estimates and new approach methodologies: A next generation risk assessment case study",
-        "keywords": "High-throughput screening, Monte Carlo Risk Assessment tool, New approach methodologies, Next generation risk assessment, Dietary exposure, Threshold of toxicological concern, Toxicity prediction models",
-        "authors": "Luijten Mirjam, Sprong Corinne R., Rorije Emiel, van der Ven Leo T. M.",
-        "date-of-publication": "19.09.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2020.png?itok=qFOk6QMB"
-    },
-    {
-        "id": "article-291",
-        "name": "Occupational and residential exposures to organophosphate and pyrethroid pesticides in a rural setting",
-        "keywords": "Farmworker, Occupational exposure,  Organophosphate pesticides,  Pyrethroids, Personal protective equipment, Urinary metabolites, Rural area",
-        "authors": "Natalia Bravo, Mercè Garí, Joan O. Grimalt",
-        "date-of-publication": "27.08.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_5.png?itok=DGbtcVlB"
-    },
-    {
-        "id": "article-22",
-        "name": "Cardiac PI3K p110α attenuation delays aging and extends lifespan",
-        "keywords": "PI3K, IGF1, Insulin signaling, Cardiomyopathy, Heart failure, Aging, Autophagy, Mitochondrial dysfunction",
-        "authors": "Abdellatif Mahmoud, Eisenberg Tobias, Heberle Alexander Martin, Thedieck Kathrin, Kroemer Guido, Sedej Simon",
-        "date-of-publication": "08.08.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%202.png?itok=klG0nX_w"
-    },
-    {
-        "id": "article-64",
-        "name": "Pesticide exposure among Czech adults and children from the CELSPAC-SPECIMEn cohort: Urinary biomarker levels and associated health risks",
-        "keywords": "Pyrethroids, Chlorpyrifos, Tebuconazole, Urine, HBM4EU, Cumulative Risk Assessment",
-        "authors": "Šulc Libor, Janoš Tomáš, Figueiredo Daniel, Ottenbros Ilse, Šenk Petr, Mikeš Ondřej, Huss Anke, Čupr Pavel",
-        "date-of-publication": "05.08.2022"
-    },
-    {
-        "id": "article-750",
-        "name": "AI for predicting chemical-effect associations at the chemical universe level — deepFPlearn",
-        "keywords": "Deep learning, Toxicology, Binary fingerprint, Autoencoder, Molecular structures",
-        "authors": "Schor Jana, Scheibe Patrick, Bernt Bernt, Busch Wibke, Lai Chih, Hackermüller Jörg",
-        "date-of-publication": "17.07.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%201.png?itok=UqzOJzMs"
-    },
-    {
-        "id": "article-289",
-        "name": "Environmental and dietary determinants of metal exposure in four-year-old children from a cohort located in an industrial area (Asturias, Northern Spain)",
-        "keywords": "Metals in urine, Children exposure, Metals and seafood, Oil pollution metals, Red meat consumption and urinary metals, Traffic exposure and urinary metals",
-        "authors": "Eva Junque, Adonina Tardón, Ana Fernandez-Somoano, Joan O. Grimalt",
-        "date-of-publication": "16.07.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_6.png?itok=-NzPFnEW"
-    },
-
-    {
-        'id': 'article-0140',
-        'type': 'article',
-        'name': "AI for predicting chemical-effect associations at the chemical universe level — deepFPlearn",
-        "keywords": "Deep learning, Toxicology, Binary fingerprint, Autoencoder, Molecular structures",
-        "authors": "Schor Jana, Scheibe Patrick, Bernt Bernt, Busch Wibke, Lai Chih, Hackermüller Jörg",
-        "date-of-publication": "17.07.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_6.png?itok=2ROHm1Ny"
-    },
-    {
-        'id': 'article-0141',
-        'type': 'article',
-        'name': "Environmental and dietary determinants of metal exposure in four-year-old children from a cohort located in an industrial area (Asturias, Northern Spain)",
-        "keywords": "Metals in urine, Children exposure, Metals and seafood, Oil pollution metals, Red meat consumption and urinary metals, Traffic exposure and urinary metals",
-        "authors": "Eva Junque, Adonina Tardón, Ana Fernandez-Somoano, Joan O. Grimalt",
-        "date-of-publication": "16.07.2022",
-        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_6.png?itok=-NzPFnEW"
-    },
-    {
         "name": "Address chemical pollution in the natural environment",
         "id": "project-topic-1001",
         "type": "project-topic",
@@ -1946,7 +674,6 @@ export const data = [
         "type": "project-topic",
         "description": "PARC contributes to EU biodiversity goals by addressing chemical pollution as a key pressure on ecosystems, improving understanding of how hazardous substances affect species, habitats and ecological functions. Its work supports policies under the EU Biodiversity Strategy 2030 and the Green Deal by providing the evidence base needed to limit harmful chemical emissions, manage risks from priority substances and mixtures, and thereby help safeguard biodiversity and ecosystem resilience."
     },
-
     {
         "id": "partner-AU",
         "name": "AU",
@@ -1996,8 +723,8 @@ export const data = [
         "id": "partner-UKCEH",
         "name": "UKCEH",
         "fullname": "UK CENTRE FOR ECOLOGY & HYDROLOGY",
-        "type": "partner"
-        , "itype": "Research Institute",
+        "type": "partner",
+        "itype": "Research Institute",
         "country": "United Kingdom",
         "description": "Independent environmental research institute based in the United Kingdom, focused on ecology and hydrology. It conducts long-term environmental science and data-driven research on climate change, biodiversity, pollution, and natural resource management."
     },
@@ -2249,7 +976,7 @@ export const data = [
         "name": "TTL",
         "fullname": "TYÖTERVEYSLAITOS",
         "description": "Finnish Institute of Occupational Health; an independent research and specialist organization in Finland focused on occupational health, safety, and well-being at work.",
-        "country":"Finland",
+        "country": "Finland",
         "itype": "Research Institute",
         "type": "partner"
     },
@@ -2423,7 +1150,6 @@ export const data = [
         "itype": "Research Institute",
         "country": "Belgium",
         "description": "Independent Flemish research and technology organization in Belgium, based in Mol. It focuses on cleantech, sustainable development, and science-based solutions and advice for industry, government, and society."
-
     },
     {
         "id": "partner-BfG",
@@ -2489,7 +1215,7 @@ export const data = [
         "name": "UCPH",
         "fullname": "KØBENHAVNS UNIVERSITET",
         "type": "partner",
-        "itype":"university",
+        "itype": "university",
         "country": "Denmark",
         "description": "Public research university in Copenhagen, Denmark, focused on higher education and research across a broad range of disciplines. It is one of the Nordic region's largest universities."
     },
@@ -2542,7 +1268,7 @@ export const data = [
         "id": "partner-SU",
         "name": "SU",
         "fullname": "STOCKHOLMS UNIVERSITET",
-        "itype" : "University",
+        "itype": "University",
         "type": "partner",
         "country": "Sweden",
         "description": "Stockholm University is a public research university in Stockholm, Sweden, focused on education and research across humanities, social sciences, natural sciences, and law."
@@ -2699,7 +1425,6 @@ export const data = [
         "country": "France",
         "description": "French public industrial and commercial establishment based in Paris. It serves as France’s national laboratory for metrology and testing, supporting measurement standards, calibration, certification, and technical research."
     },
-
     {
         "id": "partner-NCPHP",
         "name": "NCPHP",
@@ -2735,7 +1460,6 @@ export const data = [
         "itype": "Private/For-profit",
         "country": "Spain",
         "description": "Public health institution in Granada, Spain. It focuses on training, research, consultancy, and knowledge transfer to improve health systems, public health, and the management of health and social services."
-
     },
     {
         "id": "partner-INSERM",
@@ -2754,7 +1478,6 @@ export const data = [
         "itype": "Research Institute",
         "country": "Slovenia",
         "description": "Slovenia’s independent public research institute for natural sciences and biology, based in Ljubljana. It focuses on basic, developmental and applied research in life sciences, biotechnology, biophysics, biomedicine, systems biology, and environmental and agricultural topics."
-
     },
     {
         "id": "partner-NIPH",
@@ -2817,7 +1540,7 @@ export const data = [
         "type": "partner",
         "itype": "Research Institute",
         "country": "Poland",
-        "description" :"Poland's national environmental protection research institute, based in Warsaw. It conducts scientific and applied research on environmental protection, climate, air quality, waste, chemicals, and related policy support."
+        "description": "Poland's national environmental protection research institute, based in Warsaw. It conducts scientific and applied research on environmental protection, climate, air quality, waste, chemicals, and related policy support."
     },
     {
         "id": "partner-NIB",
@@ -2870,7 +1593,7 @@ export const data = [
         "fullname": "FACULDADE DE MEDICINA DA UNIVERSIDADE DE LISBOA",
         "type": "partner",
         "itype": "University",
-        "country":"Portugal",
+        "country": "Portugal",
         "description": "Public medical school of the University of Lisbon in Lisbon, Portugal. It focuses on medical education, research, and postgraduate training in health sciences."
     },
     {
@@ -2917,7 +1640,6 @@ export const data = [
         "itype": "University",
         "country": "United Kingdom",
         "description": "The University Court is the University of Aberdeen’s governing body in Scotland, with ultimate responsibility for the institution. It oversees strategy, resources, and governance for a broad-based research-intensive university in Aberdeen, UK."
-
     },
     {
         "id": "partner-FOPH",
@@ -2927,7 +1649,6 @@ export const data = [
         "country": "Switzerland",
         "itype": "Government/Public Body",
         "description": "The Federal Office of Public Health (FOPH) is dedicated to the health of the Swiss population. It’s responsible for national healthcare policy and for health and accident insurance; and it promotes healthcare issues and interests on the international stage."
-
     },
     {
         "id": "partner-INSST",
@@ -2970,7 +1691,7 @@ export const data = [
         "name": "UOULU",
         "fullname": "OULUN YLIOPISTO",
         "type": "partner",
-        "itype" : "University",
+        "itype": "University",
         "country": "Finland",
         "description": "A public university in Oulu, Finland. Its mission is research and education that produce new scientific knowledge and solutions for a more sustainable, intelligent, and humane world."
     },
@@ -3052,9 +1773,8 @@ export const data = [
         "fullname": "STÁTNÍ ZDRAVOTNÍ ÚSTAV",
         "type": "partner",
         "country": "Czech Republic",
-        "itype" : "Research Institute",
+        "itype": "Research Institute",
         "description": "Czechia’s National Institute of Public Health, based in Prague. It is a state-funded public health institute focused on health protection and promotion, disease prevention, research, reference services, and public-health guidance."
-        
     },
     {
         "id": "partner-UCD",
@@ -3079,8 +1799,8 @@ export const data = [
         "name": "UKHSA",
         "fullname": "Department of Health",
         "itype": "Research Institute",
-        "type": "partner"
-        ,"country": "United Kingdom",
+        "type": "partner",
+        "country": "United Kingdom",
         "description": "Ministerial department of the UK government based in London. It leads health and social care policy in England, overseeing public health, the NHS, and adult social care."
     },
     {
@@ -3157,12 +1877,11 @@ export const data = [
     {
         "id": "partner-SFA",
         "name": "SFA",
-        "fullname" : "LIVSMEDELSVERKET",
+        "fullname": "LIVSMEDELSVERKET",
         "type": "partner",
         "itype": "Regulatory Agency",
         "country": "Sweden",
         "description": "Swedish Food Agency, a national government authority in Sweden based in Uppsala. It protects consumers by ensuring safe food and drinking water, fair practices in the food chain, and evidence-based dietary guidance."
-
     },
     {
         "id": "partner-LIST",
@@ -3216,7 +1935,6 @@ export const data = [
         "itype": "other",
         "description": "An independent non-profit research institute in Düsseldorf, Germany, focused on preventing environmentally induced ageing and disease. It studies the health effects of air pollution, radiation, selected chemicals, and climate factors on the lung, skin, nervous system, and immune system.",
         "country": "Germany"
-
     },
     {
         "id": "partner-LIH",
@@ -3316,7 +2034,6 @@ export const data = [
         "country": "United Kingdom",
         "itype": "Research Institute",
         "description": "UK executive non-departmental public body based in Bristol, England. It protects and improves the environment by regulating pollution, managing flood risk, and overseeing water, waste, fisheries, and other environmental resources in England."
-
     },
     {
         "id": "partner-RPTU",
@@ -3523,7 +2240,2236 @@ export const data = [
         "name": "Immunotoxicity, Neurotoxicity and Sensitisation Testing",
         "type": "cluster",
         "description": "Projects developing NAM-based test methods for specific toxicological endpoints (immunotoxicity, neurotoxicity, skin/respiratory sensitisation) to close ECHA-identified regulatory data gaps."
+    },
+    {
+        "id": "article-2394",
+        "type": "article",
+        "name": "Effect-based spatiotemporal assessment of suspended particulate matter in the River Rhine: An early warning platform for environmental monitoring",
+        "journal": "Journal of Hazardous Materials",
+        "keywords": "Bioassays, Temporal trends, Cell painting, River Rhine, Early warning system (EWS)",
+        "authors": "Selin Erica, Södergren Seilitz Fredric, Mottaghipisheh Javad, mandava geeta, Lundqvist Johan, Kärrman Anna, Engwall Magnus, Ahrens Lutz, Repsilber Dirk, Kotlyar Oleksandr, Alijagic Andi, Koschorreck Jan, Larsson Maria",
+        "date-of-publication": "04.06.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/effectbased-spatiotemporal-assessment-of-suspended-MC1jLXMtci0wLTA.png?itok=OmCk_C8S",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2394",
+        "link": "https://doi.org/10.1016/j.jhazmat.2026.142578"
+    },
+    {
+        "id": "article-2360",
+        "type": "article",
+        "name": "A framework for chemical hazard assessments under 'Safe and Sustainable by Design' using multiple in silico tools",
+        "journal": "Integrated Environmental Assessment and Management",
+        "keywords": "Safe and sustainable by design, In silico tools, (Q)SARs, Hazard assessment, Uncertainty",
+        "authors": "van Dijk Joanke, Agalliadou Anna, Battistelli Chiara Laura, Benfenati Emilio, Bossa Cecilia, Halling Maja, Karakitsios Spyros, Karakoltzidis Achilleas, Nikiforou Fotini, Sarigiannis Dimosthenis A., Selvestrel Gianluca, Sharma Anežka, Siivola Kirsi M, Zheng Ziye",
+        "date-of-publication": "29.05.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-06/a-framework-for-chemical-hazard-MC1yLXMtci0wLTA.png?itok=ChWF8Wdx",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2360",
+        "link": "https://doi.org/10.1093/inteam/vjag067"
+    },
+    {
+        "id": "article-2393",
+        "type": "article",
+        "name": "Identification of estrogenic and DNA damaging chemicals using a combined morphological and genotoxic biomarker assay",
+        "journal": "Toxicology",
+        "keywords": "E-Morph Screening, Non-genotoxic carcinogens, ER-agonist, Genotoxicity, YH2AX",
+        "authors": "Aßmann Ann-Sophie, Recoules Cynthia, Ertych Norman, Oelgeschlaeger Michael, Audebert Marc, Fetz Verena",
+        "date-of-publication": "22.05.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/identification-of-estrogenic-and-dna-MC1jLXMtci0wLTA.png?itok=MOP1BMPa",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2393",
+        "link": "https://doi.org/10.1016/j.tox.2026.154506"
+    },
+    {
+        "id": "article-2361",
+        "type": "article",
+        "name": "Zebrafish startle habituation: How readout choice influences the interpretation of chemical effects in neurotoxicity screening",
+        "journal": "Ecotoxicology and Environmental Safety",
+        "keywords": "Zebrafish, Eleutheroembryo, Acoustic startle response, Habituation, Behavioral profiling, Environmental neurotoxicity, Chemical hazard assessment, Kinematic analysis",
+        "authors": "Colín-García Karla, Tagkalidou Niki, Aljabasini Ouwais, Prats Eva, Barata Carlos, Gómez-Oliván Leobardo, Raldua Demetrio",
+        "date-of-publication": "20.05.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/zebrafish-startle-habituation-how-readout-MC1oLXMtci0wLTA.png?itok=1kPb5OGJ",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2361",
+        "link": "https://doi.org/10.1016/j.ecoenv.2026.120289"
+    },
+    {
+        "id": "article-2370",
+        "type": "article",
+        "name": "Challenges and solutions in transitioning to animal-free standards: a comprehensive analysis of components in human cell-based developmental neurotoxicity assays",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Chemical defined cell culture systems, Developmental neurotoxicity assays, Human cell-based testing, Regulatory toxicology, Xeno-free cell culture",
+        "authors": "Spänle Julia Vanessa, Haiber Lisa Maria, Seeger Bettina",
+        "date-of-publication": "12.05.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/challenges-and-solutions-in-transitioning-MC14LXMtci0wLTA.png?itok=ml6OWfte",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2370",
+        "link": "https://doi.org/10.3389/ftox.2026.1800157"
+    },
+    {
+        "id": "article-2392",
+        "type": "article",
+        "name": "New approach methodologies (NAMs) to support regulatory assessment of developmental immunotoxicity – a new PARC project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Developmental immunotoxicity, Environmental chemicals, Hazard assessment, New approach methodologies, PARC, Regulatory science",
+        "authors": "Smith Nicola M., de Bruijn Véronique M. P., Vandebriel Rob J., Hargitai Rita, Lumniczky Katalin, Janssen Aafke W. F., Beekmann Karsten, Usta Birol, Tigges Julia, Spruck Christiane, Hurem Selma, Iulini Martina, Corsini Emanuela, Bado-Nilles Anne, Beaudouin Rémy, Katsiadaki Ioanna, Cano Irene, Sebire Marion, Ayuk Humblenoble Stembridge, Stojanovska Violeta, Zenclussen Ana C., Blanc Etienne B., Kerdine-Römer Saadia, Lacerda Rafaela, Romão Luísa, Monfort-Lanzas Pablo, Gostner Johanna M., Mposhi Archibold, Turner Jonathan D., Del Favero Giorgia, Lindeman Birgitte",
+        "date-of-publication": "17.04.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/new-approach-methodologies-nams-to-MC1zLXMtci0wLTA.png?itok=iKNwQUM1",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2392",
+        "link": "https://doi.org/10.3389/ftox.2026.1740390"
+    },
+    {
+        "id": "article-2254",
+        "type": "article",
+        "name": "Zebrafish neuromast development: a target for endocrine disrupting chemicals?",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Aquatic toxicity, Developmental neurotoxicity, Endocrine disruption, Lateral line, Neurosensory system, New approach methodologies (NAM), Thyroid hormone system disruption, Zebrafish embryo",
+        "authors": "Vandeputte Ellen, Stinckens Evelyn, Verreth Jade, Sørensen Simone Fibiger, Fransen Erik, Holbech Henrik, Vergauwen Lucia, Knapen Dries",
+        "date-of-publication": "17.03.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-06/zebrafish-neuromast-development-a-target-OTc1MzEtci1zLXItMC0w.png?itok=WAIY01qs",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2254",
+        "link": "https://doi.org/10.3389/ftox.2026.1733477"
+    },
+    {
+        "id": "article-2391",
+        "type": "article",
+        "name": "In vitro endocrine-disrupting effects of the natural toxins Enniatins and Beauvericin on steroidogenesis",
+        "journal": "Emerging Contaminants",
+        "keywords": "Risk assessment, Steroidogenesis, Mycotoxins, Endocrine disruptors, H295R",
+        "authors": "Lori Gabriele, Coppola Lucia, Sadutto Daniele, Bossù Elena, Manna Livia, Tait Sabrina",
+        "date-of-publication": "11.03.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-08/in-vitro-endocrinedisrupting-effects-of-MC10LXMtci0wLTA.png?itok=c0Gf3Y_J",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2391",
+        "link": "https://doi.org/10.1016/j.emcon.2026.100655"
+    },
+    {
+        "id": "article-2246",
+        "type": "article",
+        "name": "Identification of pharmaceuticals and environmental contaminants as obesogens inducing a locomotion-independent thrifty phenotype",
+        "journal": "Communications Biology",
+        "keywords": "Obesity, Obesogens, Resistance to fat loss, Locomotion-independent thrifty phenotype, Zebrafish obesogenic test",
+        "authors": "Al Kassir Sara, Mercé Théo, Bourcier Laure M., Pedemay Sandra, Soares Magalie, Knoll-Gellida Anja, Babin Patrick J.",
+        "date-of-publication": "10.03.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-05/01.identification-of-pharmaceuticals-and-environmental-MC1yLXMtci0wLTA.png?itok=-XfyWR6V",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2246",
+        "link": "https://doi.org/10.1038/s42003-026-09842-1"
+    },
+    {
+        "id": "article-2134",
+        "type": "article",
+        "name": "From prioritization to implementation: updating the PARC WP5 project portfolio through the second prioritization round",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Chemical hazard assessment, NAMs, New approach methods, Next-generation risk assessment, Partnership for the assessment of risks from chemicals, Regulatory readiness",
+        "authors": "Garcia Arenas Celia, Aiello Holden Kiara, Svingen Terje, Knapen Dries, Kerdine-Römer Saadia, Lindeman Birgitte, Smith Nicola Margareta, LE HEGARAT Ludovic, Vanhaecke Tamara, RIVIERE Gilles, Marx-Stoelting Philip",
+        "date-of-publication": "09.02.2026",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/from-prioritization-to-implementation-updating-MC1yLXMtci0wLTA.png?itok=U4rrvG31",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2134",
+        "link": "https://doi.org/10.3389/ftox.2026.1746437"
+    },
+    {
+        "id": "article-2121",
+        "type": "article",
+        "name": "Age-specific DNA methylation alterations in sperm at imprint control regions may contribute to the risk of autism spectrum disorder in offspring",
+        "journal": "Aging",
+        "keywords": "Epigenome, Sperm, 450K, Imprinting, Autism",
+        "authors": "Casella Eugenia, Depovere Jana, Delger Chantal, Butynets Mariia, Antczak Philipp, Price Thomas, L. Jirtle Randy, K. Murphy Susan, Hoyo Cathrine, Soubry Adelheid",
+        "date-of-publication": "29.12.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/agespecific-dna-methylation-alterations-in-MC1yLXMtci0wLTA.png?itok=USVs7HeM",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2121",
+        "link": "https://doi.org/10.18632/aging.206348"
+    },
+    {
+        "id": "article-1870",
+        "type": "article",
+        "name": "Zebra_K+ : High-throughput analysis of acoustic startle response plasticity in zebrafish embryos and larvae in neurotoxicity testing",
+        "journal": "NeuroToxicology",
+        "keywords": "Zebrafish larvae, Acoustic startle response, Prepulse inhibition, Habituation, Neuroplasticity, Neurotoxicity screening",
+        "authors": "Tagkalidou Niki, Aljabasini Ouwais, Pujol Sergi, Porta José María, Prats Eva, Barata Carlos, Raldua Demetrio",
+        "date-of-publication": "23.12.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/zebrak-highthroughput-analysis-of-MTk1MDYyLWMtcy1yLTAtMA.png?itok=rkCQbkRO",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1870",
+        "link": "https://doi.org/10.1016/j.neuro.2025.103372"
+    },
+    {
+        "id": "article-2352",
+        "type": "article",
+        "name": "Hazard identification and characterization of leachable chemicals from plastic products - A new PARC project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Plastics, Chemicals, Leachables, PARC, New approach methodologies, Hazard assessment, Toxicity, Risk assessment",
+        "authors": "Dirven Hubert, Bogusz Aleksandra, Bouwmeester Hans, Busch Mathias Busch, Duflos Guillaume, Eriksen Gunnar S., Fardilha Margarida, Flores-Gomez Daniela, Franko Nina, Gaté Laurent, Guichard Yves, Silva Maria João, Kamstra Jorke H., Kasiotis Konstantinos M., Kim Sunmi, Kim Young Jun, Kim Youngsam, Koogh Elise van der, Loureiro Susana, Louro Henriqueta, Machera Kyriaki, Pieters Raymond H. H., Spyropoulou Anastasia, Tzanetou Evangelia N., Malheiro Catarina, Ravnjak Tim, Repetto Guillermo, Rivière Gilles, Ryu Chang Seon, Papadopoulou Evgenia Anna, Aliferis Konstantinos A., Solhaug Anita, Sollner Dolenc Marija, Štampar Martina, Tavares Ana M., Tollefsen Knut Erik, Ventura Célia, Walkowiak Radoslaw, Zobl Walter, Žegura Bojana, Snapkow Igor, Herzke Dorte",
+        "date-of-publication": "27.11.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-06/hazard-identification-and-characterization-of-MTk1MDYyLXItcy1yLTAtMA.png?itok=VDAk8wD6",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2352",
+        "link": "https://doi.org/10.3389/ftox.2025.1719035"
+    },
+    {
+        "id": "article-1869",
+        "type": "article",
+        "name": "A regulatory perspective on the applicability of NAMs in genotoxicity and carcinogenicity assessment in EU: current practices and future directions",
+        "journal": "Environment International",
+        "keywords": "",
+        "authors": "Bossa Cecilia, Alivernini Silvia, Andreoli Cristina, Aquilina Gabriele, Attias Leonello, Benfenati Emilio, Dusinska Maria, El Yamani Naouale, Louro Henriqueta, Marcon Francesca, Raitano Giuseppa, Rundén-Pran Elise, Russo Maria Teresa, Silva Maria Joao, Battistelli Chiara Laura",
+        "date-of-publication": "21.11.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/a-regulatory-perspective-on-the-MTk1MDYyLWgtcy1yLTAtMA.png?itok=dOrOujwB",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1869",
+        "link": "https://doi.org/10.1016/j.envint.2025.109948"
+    },
+    {
+        "id": "article-1832",
+        "type": "article",
+        "name": "The European Commission's safe and sustainable by design framework: bridging innovation and legislation",
+        "journal": "Environmental Sciences Europe",
+        "keywords": "",
+        "authors": "Schwirn Kathrin, Völker Doris, Løfstedt Magnus, Fantke Peter, Bossa Cecilia, Sharma Anežka, Posthuma Leo, Karakoltzidis Achilleas, Nikiforou Fotini, Mikołajczyk Alicja, Westra Jaco, Karakitsios Spyros, Sarigiannis Dimosthenis, Garmendia Aguirre Irantzu",
+        "date-of-publication": "07.11.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/the-european-commissions-safe-and-MTk1MDYyLXgtcy1yLTAtMA.png?itok=rPUDV0sO",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1832",
+        "link": "https://doi.org/10.1186/s12302-025-01246-y"
+    },
+    {
+        "id": "article-2120",
+        "type": "article",
+        "name": "Chemical mixture risk drivers and their heterogeneity in European freshwaters",
+        "journal": "Environment International",
+        "keywords": "Chemical pollution, Mixtures, Data re-use, Freshwater, Unintentional mixtures, Chemical risk assessment",
+        "authors": "Schor Jana, Schulze Tobias, Ulrich Nadin, Mutlu İlhan, Krauss Martin, Brack Werner, Doan Triet, Bingert Sven, Bumberger Jan, Busch Wibke, Hackermüller Jörg",
+        "date-of-publication": "24.10.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/chemical-mixture-risk-drivers-and-MC1zLXMtci0wLTA.png?itok=RDjjXljH",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2120",
+        "link": "https://doi.org/10.1016/j.envint.2025.109881"
+    },
+    {
+        "id": "article-1721",
+        "type": "article",
+        "name": "Exploring the genotoxic potential of bisphenol A and its emerging alternatives in an advanced in vitro 3D zebrafish hepatic cell model",
+        "journal": "Science of the Total Environment",
+        "keywords": "BPA, BPAF, BPAP, BPPH, Cytotoxicity, Genotoxicity, ZFL spheroids",
+        "authors": "Štern Alja, Kološa Katja, Rozman Špela, Žegura Bojana",
+        "date-of-publication": "22.09.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/exploring-the-genotoxic-potential-of-NzgwMjQ4LWMtcy1yLTAtMA.png?itok=H4q054yE",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1721",
+        "link": "https://doi.org/10.1016/j.scitotenv.2025.180527"
+    },
+    {
+        "id": "article-1676",
+        "type": "article",
+        "name": "Identification of concepts of importance for the assessment of internal validity of in vitro toxicology studies using a modified Delphi technique",
+        "journal": "Evidence-Based Toxicology",
+        "keywords": "Cell culture, NAMs, Generation risk assessment, Risk of bias",
+        "authors": "Mathisen Gro Haarklou, Svendsen Camilla, Vist Gunn E., Husøy Trine, Ames Heather, Bearth Angela, Audebert Marc, Bernhard Annette, Beronius Anna, Bruzell Ellen M., Di Consiglio Emma, Davenport Miles, Druwe Ingrid, Geci René, Gundert-Remy Ursula, Hartung Thomas, Hoffmann Sebastian, Hogberg Helena, Hooijmans Carlijn R, Lizarraga Lucina, Olker Jennifer, Prieto Pilar, Robinson Joshua, Rooney Andrew, Sebollela Adriano, Smith Nicola, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Wang Amy, Yost Erin, Zilliacus Johanna, Whaley Paul",
+        "date-of-publication": "05.09.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_1.png?itok=puSamoSW",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1676",
+        "link": "https://doi.org/10.1080/2833373X.2025.2551013"
+    },
+    {
+        "id": "article-2351",
+        "type": "article",
+        "name": "Combination of toxicological and epidemiological approaches for estimating the health impact of atmospheric pollutants. A proof of concept for NO2",
+        "journal": "Chemosphere",
+        "keywords": "Health impact pathways, NO2, Adversity, Probabilistic approach, Toxicological data, Epidemiological studies",
+        "authors": "Pallarés Porcar Susana, Sánchez-Íñigo Francisco Javier, Nuñez-Corcuera Beatriz, Lozano Suárez Joaquín, Arca-Lafuente Sonia, Moyano Cárdaba Clara, Fernandez Agudo Ana, de Alba-Gonzalez Mercedes, Ramis Rebeca, Galán-Madruga David, González-Caballero Maria del Carmen, Briz Verónica, Guevara-Hernandez Susana, de Vega Pastor Ma Encarnación, Sarigiannis Denis, Dos Santos Saul Garcia, Tarazona Jose V.",
+        "date-of-publication": "01.09.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-06/combination-of-toxicological-and-epidemiological-MjkyNTkzLXItcy1yLTAtMA.png?itok=j_HAk907",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2351",
+        "link": "https://doi.org/10.1016/j.chemosphere.2024.142883"
+    },
+    {
+        "id": "article-1718",
+        "type": "article",
+        "name": "Beyond estrogenicity: a comparative assessment of bisphenol A and its alternatives in in vitro assays questions safety of replacements",
+        "journal": "Environmental Science & Technology",
+        "keywords": "BPA, In vitro bioassay, New approach methodologies (NAM), Bisphenol alternatives, Metabolic activation",
+        "authors": "Srebny Vanessa, Henneberger Luise, König Maria, Huchthausen Julia, Braasch Jenny, Escher Beate Isabella",
+        "date-of-publication": "16.08.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/beyond-estrogenicity-a-comparative-assessment-MC1zLXMtci0wLTA.png?itok=CtAVITUv",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1718",
+        "link": "https://doi.org/10.5281/zenodo.16762455"
+    },
+    {
+        "id": "article-1602",
+        "type": "article",
+        "name": "MCDA applications in chemical alternatives assessment: a narrative review",
+        "journal": "Environment Systems & Decisions",
+        "keywords": "Multicriteria decision analysis, Chemical alternatives assessment, Chemical hazard assessment, Chemical product development, Regrettable substitution",
+        "authors": "Lantto Eero",
+        "date-of-publication": "06.08.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_1.png?itok=npsrowPQ",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1602",
+        "link": "https://doi.org/10.1007/s10669-025-10043-0"
+    },
+    {
+        "id": "article-2119",
+        "type": "article",
+        "name": "Disrupting defenses: effects of bisphenol A and its analogs on human antibody production in vitro",
+        "journal": "Life",
+        "keywords": "Bisphenols, Immunoglobulins, PBMCs, In vitro, New approach methodologies (NAMs)",
+        "authors": "Passoni Francesca Carlotta, Iulini Martina, Galbiati Valentina, Marinovich Marina, Corsini Emanuela",
+        "date-of-publication": "28.07.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/disrupting-defenses-effects-of-bisphenol-OTc1MzEtdC1zLXItMC0w.png?itok=a-clag94",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2119",
+        "link": "https://doi.org/10.3390/life15081203"
+    },
+    {
+        "id": "article-2109",
+        "type": "article",
+        "name": "Methodological approach for a simultaneous determination of persistent and non-persistent organic pollutants in human blood (serum/plasma) using gas chromatography and mass spectrometry techniques",
+        "journal": "Journal of Chromatography A",
+        "keywords": "Persistent organic pollutants, Human serum/plasma, Human biomonitoring, Gas chromatography and mass spectrometry, Deca-BDE, Vinclozolin",
+        "authors": "Bustamante Carolina M., Ruiz Paula, Rifat Atiya B., Bravo Natalia, Grimalt Joan O., Garí Mercè",
+        "date-of-publication": "19.07.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/methodological-approach-for-a-simultaneous-MTk1MDYyLXQtcy1yLTAtMA.png?itok=44u4n2Bh",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2109",
+        "link": "https://doi.org/10.1016/j.chroma.2025.466235"
+    },
+    {
+        "id": "article-1594",
+        "type": "article",
+        "name": "Genetic and epigenetic biomarkers in human biomonitoring: why needed and how can Oxford Nanopore sequencing contribute?",
+        "journal": "Frontiers in Public Health",
+        "keywords": "Susceptibility biomarker, Effect biomarker, SNP, Human biomonitoring, Oxford nanopore technologies, Large-population study",
+        "authors": "Gand Mathieu, Soubry Adelheid, Mertens Birgit, Roosens Nancy H C J, De Keersmaecker Sigrid C.J.",
+        "date-of-publication": "01.07.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_2.png?itok=AYOeYBay",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1594",
+        "link": "https://doi.org/10.3389/fpubh.2025.1610248"
+    },
+    {
+        "id": "article-1690",
+        "type": "article",
+        "name": "Shinyscreen: mass spectrometry data inspection and quality checking utility",
+        "journal": "Journal of Cheminformatics",
+        "keywords": "High Resolution Mass Spectrometry, Shiny, Spectral data analysis, Data processing, Visualisation, Metfrag, Compound identification, Non-targeted analysis, Docker",
+        "authors": "Kondić Todor, Elapavalore Anjana, Krier Jessy, Lai Shuen Lyn Adelene, Mohammed Taha Hiba, Narayanan Mira, Schymanski Emma",
+        "date-of-publication": "20.06.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/shinyscreen-mass-spectrometry-data-inspection-MC14LXMtci0wLTA.png?itok=uP_I26jZ",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1690",
+        "link": "https://doi.org/10.1186/s13321-025-01044-x"
+    },
+    {
+        "id": "article-1495",
+        "type": "article",
+        "name": "Interdisciplinary assessment of children's lead exposure in residential areas degraded by mining (Upper Meža Valley, Slovenia)",
+        "journal": "Exposure and Health",
+        "keywords": "IEUBK model, Blood lead level, Soil, House dust, Dietary exposure, Risk assessment",
+        "authors": "Bavec Špela, Čeru Teja, Kirinčič Stanislava, Ivartnik Matej, Golja Viviana, Turšič Janja, Teran Klemen, Miler Miloš",
+        "date-of-publication": "14.06.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_3.png?itok=_QtUfrdd",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1495",
+        "link": "https://doi.org/10.1007/s12403-025-00716-1"
+    },
+    {
+        "id": "article-1691",
+        "type": "article",
+        "name": "Unravelling immunomodulatory effects of bisphenol A substitutes on human macrophages, T and B lymphocytes using in vitro models",
+        "journal": "Ecotoxicology and Environmental Safety",
+        "keywords": "Bisphenol A, BPA substitutes, Pergafast201, Immunotoxicity, Cytokine, Endocrine disruption, Immunomodulation, TLR4, MHC-I, NF-kB/AP-1",
+        "authors": "Franko Nina, Markovič Tijana, Žižek Pia, Kodila Anja, Mlinarič Raščan Irena, Sollner Dolenc Marija",
+        "date-of-publication": "30.05.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/unravelling-immunomodulatory-effects-of-bisphenol-MC1oLXMtci0wLTA.png?itok=jxE9CyQU",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1691",
+        "link": "https://doi.org/10.1016/j.ecoenv.2025.118406"
+    },
+    {
+        "id": "article-1585",
+        "type": "article",
+        "name": "A tiered next-generation risk assessment framework integrating toxicokinetics and NAM-based toxicodynamics: \"Proof of Concept\" case study using pyrethroids",
+        "journal": "Archives of Toxicology",
+        "keywords": "Next-generation risk assessment (NGRA), New Alternative Methods (NAMs), ADME toxicokinetics, Toxicodynamics, Pyrethroids",
+        "authors": "Fernandez-Agudo Ana, Tarazona Jose V.",
+        "date-of-publication": "07.05.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Nextgeneration.png?itok=Uy6hMa_3",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1585",
+        "link": "https://doi.org/10.1007/s00204-025-04045-9"
+    },
+    {
+        "id": "article-1692",
+        "type": "article",
+        "name": "In vitro to in vivo extrapolation modeling to facilitate the integration of transcriptomics data into genotoxicity assessment",
+        "journal": "Toxicology",
+        "keywords": "Transcriptomics, Genotoxicity, In vitro to in vivo extrapolation, New approach methodologies, Benchmark dose modeling, TempO-Seq®",
+        "authors": "Thienpont Anouck, Cho Eunnara, Williams Andrew, Meier Matthew J., Yauk Carole L., Beal Marc A., Van Goethem Freddy, Rogiers Vera, Vanhaecke Tamara, Mertens Birgit",
+        "date-of-publication": "25.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/in-vitro-to-in-vivo-MC1jLXMtci0wLTA.png?itok=iDH6O6v4",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1692",
+        "link": "https://doi.org/10.1016/j.tox.2025.154165"
+    },
+    {
+        "id": "article-1424",
+        "type": "article",
+        "name": "Mapping chemicals across EU's legal frameworks towards a 'one substance, one assessment' approach",
+        "journal": "Environmental International",
+        "keywords": "Chemical regulation, One substance one assessment, Regulatory risk assessment, Chemical identifiers",
+        "authors": "Andreassen Mathilda, Rudén Christina, Ågerstrand Marlene",
+        "date-of-publication": "22.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_4.png?itok=drrl-gVV",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1424",
+        "link": "https://doi.org/10.1016/j.envint.2025.109460"
+    },
+    {
+        "id": "article-1628",
+        "type": "article",
+        "name": "Spatio-temporal transcriptomic analysis reveals distinct nephrotoxicity, DNA damage, and regeneration response after cisplatin",
+        "journal": "Cell Biology and Toxicology",
+        "keywords": "Nephrons, Cisplatin, Transcriptomics, Nephrotoxicity, Spatial, Temporal",
+        "authors": "Wijaya Lukas S., Kunnen Steven J., Trairatphisan Panuwat, Fisher Ciarán P., Crosby Meredith E., Schaefer Kai, Bodié Karen, Vaughan Erin E., Breidenbach Laura, Reich Thomas, Clausznitzer Diana, Bonnet Sylvestre, Zheng Sipeng, Pont Chantal, Stevens James L., Le Dévédec Sylvia E., van de Water Bob",
+        "date-of-publication": "21.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_2.png?itok=20qa_Kbz",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1628",
+        "link": "https://doi.org/10.1007/s10565-025-10003-z"
+    },
+    {
+        "id": "article-1640",
+        "type": "article",
+        "name": "Reusing chemical data across disciplines initiatives and common challenges",
+        "journal": "Chemistry International",
+        "keywords": "",
+        "authors": "Mustafa Fatima, Lynch Iseult, Theunis Jan, Elapavalore Anjana, Taha Hiba Mohammed, Frey Jeremy, Bach Felix, Bonatto Minella Christian, McEwen Leah",
+        "date-of-publication": "21.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_1.png?itok=6JGoz50d",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1640",
+        "link": "https://doi.org/10.1515/ci-2025-0203"
+    },
+    {
+        "id": "article-1308",
+        "type": "article",
+        "name": "Towards prospective identification of respiratory sensitizers: effects of piperazine, chloramine-T, and toluene-diisocyanate in an air-liquid interface model comprising human bronchial epithelial cells",
+        "journal": "Archives of Toxicology",
+        "keywords": "Air–liquid interface, Calu-3 human bronchial epithelial cell line, IL-6, Epithelial barrier, AOP",
+        "authors": "Duistermaat Evert, de Bruijn Véronique M. P., Vermeulen Jolanda P., Gremmer Eric R., Vandebriel Rob J.",
+        "date-of-publication": "06.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_1.png?itok=JnR5iy36",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1308",
+        "link": "https://doi.org/10.1007/s00204-025-04029-9"
+    },
+    {
+        "id": "article-2111",
+        "type": "article",
+        "name": "Report of the European Commission workshop on \"The roadmap towards phasing out animal testing for chemical safety assessments\", Brussels, 11–12 December 2023",
+        "journal": "Regulatory Toxicology and Pharmacology",
+        "keywords": "Roadmap, Alternatives to animal testing, Chemicals, Pharmaceuticals, Regulatory policy, European Commission, European Citizens' Initiative, Save cruelty-free cosmetics, Next generation risk assessment, Three Rs",
+        "authors": "Cronin Mark T.D., Berggren Elisabet, Camorani Sofia, Desaintes Christian, Fabbri Marco, Fabrega Julia, Herzler Matthias, Ingram Jay D.E., Lacasse Katia, Louhimies Susanna, Maxwell Gavin, Schutte Katrin, Sobanski Tomasz, Streck Georg, Terron Andrea, Worth Andrew P.",
+        "date-of-publication": "04.04.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/report-of-the-european-commission-MTk1MDYyLWMtcy1yLTAtMA.png?itok=ZBahmVZx",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2111",
+        "link": "https://doi.org/10.1016/j.yrtph.2025.105818"
+    },
+    {
+        "id": "article-2118",
+        "type": "article",
+        "name": "Hazard characterization of the mycotoxins enniatins and beauvericin to identify data gaps and improve risk assessment for human health",
+        "journal": "Archives of Toxicology",
+        "keywords": "Enniatins, Beauvericin, Genotoxicity, Endocrine effects, Immunotoxicology, Toxicokinetics",
+        "authors": "Behr Anne-Cathrin, Fæste Christiane Kruse, Azqueta Amaya, Tavares Ana M., Spyropoulou Anastasia, Solhaug Anita, Olsen Ann-Karin, Vettorazzi Ariane, Mertens Birgit, Zegura Bojana, Streel Camille, Ndiaye Dieynaba, Spilioti Eliana, Dubreil Estelle, Buratti Franca Maria, Crudo Francesco, Eriksen Gunnar Sundstøl, Snapkow Igor, Teixeira João Paulo, Rasinger Josef D., Sanders Julie, Machera Kyriaki, Ivanova Lada, Gaté Laurent, Le Hegarat Ludovic, Novak Matjaz, Smith Nicola M., Tait Sabrina, Fraga Sónia, Hager Sonja, Marko Doris, Braeuning Albert, Louro Henriqueta, Silva Maria João, Dirven Hubert, Dietrich Jessica",
+        "date-of-publication": "26.03.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/hazard-characterization-of-the-mycotoxins-OTc1MzEtYy1zLXItMC0w.png?itok=zh5-VKO6",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2118",
+        "link": "https://doi.org/10.1007/s00204-025-03988-3"
+    },
+    {
+        "id": "article-1716",
+        "type": "article",
+        "name": "EU roadmap for phasing out animal testing for chemical safety assessments: Recommendations from a multi-stakeholder roundtable",
+        "journal": "ALTEX – Alternatives to Animal Experimentation",
+        "keywords": "Non-animal methods, Regulatory framework, Transition to non-animal science, Change management, Validation",
+        "authors": "Walder Laurence, Pallocca Giorgia, Bastos Luísa F., Beekhuijzen Manon, Busquet Francois, Constantino Helder, Corvaro Marco, Courtot Lilas, Escher Beate, Fernandez Rebeca, Gougeon Emeline, Hansell Love, Herzler Matthias, Holden Laura, Hornek-Gausterer Romana, Irizar Amaia, Kandarova Helena, Kern Petra, Kolle Susanne, Lacasse Katia, Lee Isabelle, Macmillan Donna S., Maxwell Gavin, Moriarty Orla, Nadzialek Stephanie, Pochat Julia, Reid Kirsty, Revel Marion, Ritskes-Hoitinga Merel, Sobanski Tomasz, Stoddart Gilly, Underhill Dylan, Veillette Mandy, Vriend Jelle, Westmoreland Carl, Baines Julia",
+        "date-of-publication": "26.03.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/eu-roadmap-for-phasing-out-MC10LXMtci0wLTA.png?itok=h1KvH0cz",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1716",
+        "link": "https://doi.org/10.14573/altex.2503241"
+    },
+    {
+        "id": "article-1481",
+        "type": "article",
+        "name": "Evaluating PFAS-Induced modulation of peripheral blood mononuclear cells (PBMCs) immune response to SARS-CoV-2 spike in COVID-19 Vaccinees",
+        "journal": "Environment International",
+        "keywords": "PFAS mixtures, PFAS exposure, Severe Acute Respiratory Coronavirus (SARS-CoV-2), Spike protein, Peripheral blood mononuclear cells (PBMCs), COVID-19 vaccination, COVID-19 infection, Proinflammatory chemokines",
+        "authors": "Ayuk Humblenoble Stembridge, Pierzchalski Arkadiusz, Tal Tamara, Myhre Oddvar, Lindeman Birgitte, Smith Nicola Margareta, Stojanovska Violeta, Zenclussen Ana Claudia",
+        "date-of-publication": "25.03.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_1.png?itok=Fa1buxZX",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1481",
+        "link": "https://doi.org/10.1016/j.envint.2025.109409"
+    },
+    {
+        "id": "article-1257",
+        "type": "article",
+        "name": "Modeling zebrafish escape swim reveals maximum neuromuscular power output and efficient body movement adaptation to increased water viscosity",
+        "journal": "iScience",
+        "keywords": "Kinematics, Neuroscience, Biophysics",
+        "authors": "Ravel Guillaume, Mercé Théo, Bergmann Michel, Knoll-Gellida Anja, Bouharguane Afaf, Al Kassir Sara, Iollo Angelo, Babin Patrick J.",
+        "date-of-publication": "17.02.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_1.png?itok=V9b0oGjn",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1257",
+        "link": "https://doi.org/10.1016/j.isci.2025.112056"
+    },
+    {
+        "id": "article-1270",
+        "type": "article",
+        "name": "Motor and non-motor effects of acute MPTP in adult zebrafish: insights into Parkinson's disease",
+        "journal": "International Journal of Molecular Sciences",
+        "keywords": "MPTP, Adult zebrafish, Parkinson's disease, Prepulse inhibition, Psychosis, Turning difficulties, Hypokinesia",
+        "authors": "Tagkalidou Niki, Stevanović Marija, Romero Alfano Irene, Elizalde-Velazquez Gustavo Axel, Herrera-Vazquez Selene Elizabeth, Prats Eva, Gómez-Canela Cristian, Gómez-Oliván Leobardo Manuel, Raldúa Demetrio",
+        "date-of-publication": "16.02.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_2.png?itok=J-24djEI",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1270",
+        "link": "https://doi.org/10.3390/ijms26041674"
+    },
+    {
+        "id": "article-1245",
+        "type": "article",
+        "name": "MLinvitroTox reloaded for high‑throughput hazard‑based prioritization of high‑resolution mass spectrometry data",
+        "journal": "Journal of Cheminformatics",
+        "keywords": "ToxCast, Tox21, Toxicity, In vitro assay, Activity prediction, HRMS/MS, Binary classifcation, XGBoost, SIRIUS",
+        "authors": "Hollender Juliane, Arturi Katarzyna, Harris Eliza J., Gasser Lilian, Escher Beate I., Braun Georg, Bosshard Robin",
+        "date-of-publication": "31.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_1.png?itok=uxHqzuSl",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1245",
+        "link": "https://doi.org/10.1186/s13321-025-00950-4"
+    },
+    {
+        "id": "article-1639",
+        "type": "article",
+        "name": "The European Partnership PARC's role in actively promoting the uptake of new approach methodologies and next-generation risk assessment into regulatory risk assessment practice",
+        "journal": "Current Opinion in Toxicology",
+        "keywords": "",
+        "authors": "Herzler Matthias, Luijten Mirjam, Marx-Stoelting Philip, Rivière Gilles",
+        "date-of-publication": "29.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_3.png?itok=yZUx4xSe",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1639",
+        "link": "https://doi.org/10.1016/j.cotox.2025.100517"
+    },
+    {
+        "id": "article-1300",
+        "type": "article",
+        "name": "Automated curation of spatial metadata in environmental monitoring data",
+        "journal": "Ecological Informatics",
+        "keywords": "Environmental monitoring, Spatial data accuracy, Automated data curation, Big data analytics, AI applications in hydrology",
+        "authors": "Mutlu Ilhan, Hackermüller Jörg, Schor Jana",
+        "date-of-publication": "27.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_3.png?itok=5m_evBQC",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1300",
+        "link": "https://doi.org/10.1016/j.ecoinf.2025.103038"
+    },
+    {
+        "id": "article-1475",
+        "type": "article",
+        "name": "Metabolic and molecular characterization, following dietary exposure to  DINCH, reveals new Implications for its role as a  metabolism-disrupting chemical",
+        "journal": "Environmental Research",
+        "keywords": "DINCH, MINCH, Metabolic disruption, Obesity, Adipose tissue",
+        "authors": "Krupka Sontje, Aldehoff Alix Sarah, Goerdeler Cornelius, Engelmann Beatrice, Rolle-Kampczyk Ulrike, Schubert Kristin, Klöting Nora, von Bergen Martin, Blüher Matthias",
+        "date-of-publication": "26.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_2.png?itok=F5bzFm7F",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1475",
+        "link": "https://doi.org/10.1016/j.envint.2025.10930"
+    },
+    {
+        "id": "article-1244",
+        "type": "article",
+        "name": "Toward product safety and circularity: understanding the information structure of global databases on chemicals in products and articles",
+        "journal": "Environmental Science & Technology",
+        "keywords": "Consumer products, REACH, Compliance, Regulations, Enforcement",
+        "authors": "Olisah Chijioke, Melymuk Lisa, Vestergren Robin, Rumar Karin, Wickman Tonie, Melander Nina, Talasniemi Petteri, Brandsma Sicco, af Gennäs Urban Boije, Scheringer Martin",
+        "date-of-publication": "26.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_2.png?itok=eto5zOsT",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1244",
+        "link": "https://doi.org/10.1021/acs.est.4c07992"
+    },
+    {
+        "id": "article-1719",
+        "type": "article",
+        "name": "PubChemLite plus collision cross section (CCS) values for enhanced interpretation of nontarget environmental data",
+        "journal": "Environmental Science & Technology Letters",
+        "keywords": "Nontarget screening, Identification, PubChemLite, Exposomics, Ion mobility, Collision cross section, PubChem",
+        "authors": "Elapavalore Anjana, Ross Dylan, GROUÈS Valentin, Aurich Dagny, Krinsky Allison, Kim Sunghwan, Thiessen Paul, Zhang Jian, Dodds James, Baker Erin, Bolton Evan, Xu Libin, Schymanski Emma",
+        "date-of-publication": "24.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/pubchemlite-plus-collision-cross-section-MC1oLXMtci0wLTA.png?itok=ah93rlqb",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1719",
+        "link": "https://doi.org/10.1021/acs.estlett.4c01003"
+    },
+    {
+        "id": "article-1684",
+        "type": "article",
+        "name": "AOP-networkFinder - A versatile and user-friendly tool for FAIR reconstruction of Adverse Outcome Pathway networks from the AOP-Wiki",
+        "journal": "Bioinformatics Advances",
+        "keywords": "",
+        "authors": "Nurettin Yarar, Martens Marvin, Torbjørn Rognes, Jan Lavender, Hubert Dirven, Audouze Karine, Marcin W. Wojewodzic",
+        "date-of-publication": "22.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_2.png?itok=DvG7tAYC",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1684",
+        "link": "https://doi.org/10.1093/bioadv/vbaf007"
+    },
+    {
+        "id": "article-1586",
+        "type": "article",
+        "name": "Unveiling landscape-level drivers of freshwater biodiversity dynamics",
+        "journal": "Environmental DNA",
+        "keywords": "Biodiversity, Environmental DNA, Environmental pollutants, Lakes, Machine learning",
+        "authors": "Eastwood Niamh, Watson Arron, Zhou Jiarui, Orsini Luisa",
+        "date-of-publication": "21.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Unveiling.png?itok=qYDDtNwZ",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1586",
+        "link": "https://doi.org/10.1002/edn3.70058"
+    },
+    {
+        "id": "article-1470",
+        "type": "article",
+        "name": "Daphnids can safeguard the use of alternative bioassays to the acute fish toxicity test: a focus on neurotoxicity",
+        "journal": "Environmental Toxicology and Chemistry",
+        "keywords": "Aquatic toxicology, Variability, Alternative methods, Integrated approaches to testing and assessment",
+        "authors": "Schür Christoph, Paparella Martin, Faßbender Christopher, Stoddart Gilly, Jesi Marco Baity, Schirmer Kristin",
+        "date-of-publication": "21.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_3.png?itok=BxHS9mqk",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1470",
+        "link": "https://doi.org/10.1093/etojnl/vgaf014"
+    },
+    {
+        "id": "article-1685",
+        "type": "article",
+        "name": "Endocrine disrupting toxicity of bisphenol A and its analogs: implications in the neuro-immune milieu",
+        "journal": "Journal of Xenobiotics",
+        "keywords": "EDC, RACK1, In vitro screening tool, Immune system, INEN, System toxicology, HPA axis, Glucocorticoids, BDNF, Neurodegeneration",
+        "authors": "Buoso Erica, Masi Mirco, Limosani Roberta Valeria, Oliviero Chiara, Saeed Sabrina, Iulini Martina, Passoni Francesca Carlotta, Racchi Marco, Corsini Emanuela",
+        "date-of-publication": "17.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_3.png?itok=jnNsNJbL",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1685",
+        "link": "https://doi.org/10.3390/jox15010013"
+    },
+    {
+        "id": "article-1246",
+        "type": "article",
+        "name": "New approach methodologies in human health risk assessment across European regulatory frameworks: Status quo, barriers and drivers for regulatory acceptance and use",
+        "journal": "Environment International",
+        "keywords": "Next generation risk assessment, New approach methodologies, Chemical regulation, Barriers, Drivers, Perspectives, Social science, Survey",
+        "authors": "Bearth Angela, Roth Nicolas, Jansen Tom, Holden Laura, Cavoski Aleksandra, Di Consiglio Emma, Hauzenberger Ingrid, Lee Robert, Mombelli Enrico, Tcheremenskaia Olga, Wendt-Rasch Lina, Wilks Martin",
+        "date-of-publication": "11.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_3.png?itok=7YfthbRG",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1246",
+        "link": "https://doi.org/10.1016/j.envint.2025.109279"
+    },
+    {
+        "id": "article-1258",
+        "type": "article",
+        "name": "Collecting perspectives on project prioritisation process in the EU co-funded multinational partnership for the assessment of risks from chemicals (PARC) through focus group discussion",
+        "journal": "Environmental Sciences Europe",
+        "keywords": "PARC, Chemical risk assessment, Research and innovation need prioritisation, EU partnership coordination, Focus group discussion, Regulatory relevance",
+        "authors": "Permana Katya Manuella, Tannous Maria, Mouaziz Hanna, Sanders Pascal, Bonvallot Nathalie, Rousselle Christophe",
+        "date-of-publication": "03.01.2025",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_2.png?itok=2XucnT7D",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1258",
+        "link": "https://doi.org/10.1186/s12302-024-01041-1"
+    },
+    {
+        "id": "article-1188",
+        "type": "article",
+        "name": "Zebra_K, a kinematic analysis automated platform for assessing sensitivity, habituation and prepulse inhibition of the acoustic startle response in adult zebrafish",
+        "journal": "Science of The Total Environment",
+        "keywords": "Acoustic startle response, Neuroplasticity, Habituation, Prepulse inhibition, Sensorimotor gating, Adult zebrafish, Kinematic analysis platform",
+        "authors": "Stevanović Marija, Tagkalidou Niki, Multisanti Cristiana Roberta, Pujol Sergi, Aljabasini Ouwais, Prats Eva, Faggio Caterina, Porta Josep M, Barata Carlos, Raldua Demetrio",
+        "date-of-publication": "15.12.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_4.png?itok=BReLgU0k",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1188",
+        "link": "https://doi.org/10.1016/j.scitotenv.2024.178028"
+    },
+    {
+        "id": "article-1256",
+        "type": "article",
+        "name": "A cognitive and sensory approach based on workshops using the zebrafish model promotes the discovery of life sciences in the classroom",
+        "journal": "Biology Methods and Protocols",
+        "keywords": "Cognitive and sensory approach, Biology education, Teacher-researcher partnership, Zebrafish",
+        "authors": "Bourcier Laure M., Babin Patrick J.",
+        "date-of-publication": "06.12.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_3.png?itok=CMG5MHyo",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1256",
+        "link": "https://doi.org/10.1093/biomethods/bpae092"
+    },
+    {
+        "id": "article-1251",
+        "type": "article",
+        "name": "Association of environmental pollutants with asthma and allergy, and the mediating role of oxidative stress and immune markers in adolescents",
+        "journal": "Environmental Research",
+        "keywords": "Asthma, Allergy, Airway inflammation, Oxidative stress, Immune biomarkers, Human biomonitoring, Mixture, Adolescents",
+        "authors": "Hassen Y. Hamid, Govarts Eva, Remy Sylvie, Cox Bianca, Iszatt Nina, Portengen Lützen, Covaci Adrian, Schoeters Greet, Den Hond Elly, De Henauw Stefaan, Bruckers Liesbeth, Koppen Gudrun, Verheyen Veerle J.",
+        "date-of-publication": "23.11.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_4.png?itok=9nBrtIfu",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1251",
+        "link": "https://doi.org/10.1016/j.envres.2024.120445"
+    },
+    {
+        "id": "article-1303",
+        "type": "article",
+        "name": "A comprehensive library of lifetime physiological equations for PBK models: Enhancing dietary exposure modeling with mercury as a case study",
+        "journal": "Environmental Research",
+        "keywords": "ADME toxicokinetics, Lifetime dietary exposure, Total mercury, Toxicological reference values",
+        "authors": "Gastellu Thomas, Karakoltzidis Achilleas, Ratier Aude, Bellouard Marie, Alavarez jean claude, Rivière Gilles, Le Bizec Bruno, Karakitsios Spyros, Sarigiannis Dimosthenis, Vogs Carolina",
+        "date-of-publication": "22.11.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_4.png?itok=n_ALfKkn",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1303",
+        "link": "https://doi.org/10.1016/j.envres.2024.120393"
+    },
+    {
+        "id": "article-2339",
+        "type": "article",
+        "name": "A 2024 inventory of test methods relevant to thyroid hormone system disruption for human health and environmental regulatory hazard assessment",
+        "journal": "Open Research Europe",
+        "keywords": "Thyroid hormone system disruption, Endocrine disruption, New approach methods, One Health",
+        "authors": "Vergauwen Lucia, Bajard Lola, Tait Sabrina, Langezaal Ingrid, Sosnowska Anita, Roncaglioni Alessandra, Hessel Ellen, van den Brand Annick D, Haigis Ann-Cathrin, Novák Jiří, Hilscherova Klara, Buławska Natalia, Papaioannou Nafsika, Renieri Elisavet, Spilioti Eliana, Spyropoulou Anastasia, Gutleb Arno C, Holbech Henrik, Nikolopoulou Dimitra, Jacobs Miriam, Knapen Dries",
+        "date-of-publication": "06.11.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-05/02.a-2024-inventory-of-test-OTc1MzEtci1zLXItMC0w.png?itok=f7omm-I7",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2339",
+        "link": "https://doi.org/10.5281/zenodo.14753802"
+    },
+    {
+        "id": "article-1250",
+        "type": "article",
+        "name": "Developing quantitative Adverse Outcome Pathways: An ordinary differential equation-based computational framework",
+        "journal": "Computational Toxicology",
+        "keywords": "Ordinary differential equations (ODEs), Quantitative Adverse Outcome Pathway (qAOP), Key event relationships (KERs), Adverse outcome (AO), Response–response modeling, Predictive toxicology, Markov chain Monte Carlo (MCMC), Population variability",
+        "authors": "Di Tillio Filippo, Beltman Joost",
+        "date-of-publication": "02.11.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-03/Cover_March_2025_5.png?itok=5tou9_5_",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1250",
+        "link": "https://doi.org/10.3390/pharmaceutics15092199"
+    },
+    {
+        "id": "article-1152",
+        "type": "article",
+        "name": "A comprehensive item bank of internal validity issues of relevance to invitro toxicology studies",
+        "journal": "Evidence-Based Toxicology",
+        "keywords": "In vitro methods, Toxicology, NAMs, Risk of bias, Internal validity",
+        "authors": "Vist Gunn E., Ames Heather M., Mathisen Gro H., Husøy Trine, Svendsen Camilla, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Prieto Pilar, Robinson Joshua F., Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Whaley Paul",
+        "date-of-publication": "31.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_1.png?itok=FE_P3xpl",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1152",
+        "link": "https://doi.org/10.1080/2833373X.2024.2418045"
+    },
+    {
+        "id": "article-1306",
+        "type": "article",
+        "name": "A preliminary estimate of the environmental burden of disease associated with exposure to pyrethroid insecticides and ADHD in Europe based on human biomonitoring",
+        "journal": "Environmental Health",
+        "keywords": "",
+        "authors": "Purece Anthony, Thomsen Sofie Theresa, Plass Dietrich, Spyropoulou Anastasia, Machera Kyriaki, Palmont Philippe, Crépet Amélie, Benchrih Rafiqa, Devleesschauwer Brecht, Wieland Nina, Scheepers Paul, Deepika Deepika, Kumar Vikas, Sanchez Gerardo, Bessems Jos, Piselli Dario, Buekers Jurgen",
+        "date-of-publication": "23.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_5.png?itok=0LhAdd2v",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1306",
+        "link": "https://doi.org/10.1186/s12940-024-01131-w"
+    },
+    {
+        "id": "article-1541",
+        "type": "article",
+        "name": "Evaluating the performance of multi-omics integration - a thyroid toxicity case study",
+        "journal": "Archives of Toxicology",
+        "keywords": "Multi-omics, Toxicology, Chemical exposure, Risk assessment, Data integration",
+        "authors": "Canzler Sebastian, Schubert Kristin, Rolle-Kampczyk Ulrike E., Wang Zhipeng, Schreiber Stephan, Seitz Hervé, Mockly Sophie, Kamp Hennicke, Haake Volker, Huisinga Maike, von Bergen Martin, Buesen Roland, Hackermüller Jörg",
+        "date-of-publication": "23.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Evaluating.png?itok=_850Gu-T",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1541",
+        "link": "https://doi.org/10.1007/s00204-024-03876-2"
+    },
+    {
+        "id": "article-1144",
+        "type": "article",
+        "name": "A critical review to identify data gaps and improve risk assessment of bisphenol A alternatives for human health",
+        "journal": "Critical Reviews in Toxicology",
+        "keywords": "Bisphenol A alternatives, Endocrine disruption, Metabolism, Toxicokinetic, Immunotoxicity, Developmental neurotoxicity, Genotoxicity, Carcinogenesis, Human health",
+        "authors": "Mhaouty-Kodja Sakina, Zalko Daniel, Tait Sabrina, Testai Emanuela, Viguié Catherine, Corsini Emanuela, Grova Nathalie, Buratti Franca Maria, Cabaton Nicolas J., Coppola Lucia, De la Vieja Antonio, Dusinska Maria, El Yamani Naouale, Galbiati Valentina, Iglesias-Hernández Patricia, Kohl Yvonne, Maddalon Ambra, Marcon Francesca, Naulé Lydie, Rundén-Pran Elise, Salani Francesca, Santori Nicoletta, Torres-Ruiz Mónica, Turner Jonathan D., Adamovsky Ondrej, Aiello-Holden Kiara, Dirven Hubert, Louro Henriqueta, Silva Maria Joao",
+        "date-of-publication": "22.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_2.png?itok=Ox3byZiG",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1144",
+        "link": "https://doi.org/10.1080/10408444.2024.2388712"
+    },
+    {
+        "id": "article-1187",
+        "type": "article",
+        "name": "Extremely high levels of PBDEs in children's toys from European markets: causes and implications for the circular economy",
+        "journal": "Environmental Sciences Europe",
+        "keywords": "Flame retardants, Consumer products, Plastic recycling, E-waste, Enforcement, Compliance",
+        "authors": "Olisah Chijioke, Melymuk Lisa, Audy Ondrej, Kukucka Petr, Pribylova Petra, Boudot Martin",
+        "date-of-publication": "14.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_5.png?itok=BVa9jcA1",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1187",
+        "link": "https://doi.org/10.1186/s12302-024-00999-2"
+    },
+    {
+        "id": "article-1158",
+        "type": "article",
+        "name": "Computational tools to facilitate early warning of new emerging risk chemicals",
+        "journal": "Toxics",
+        "keywords": "Early warning system (EWS), New and emerging risk chemicals (NERCs), Computational toxicology, Risk assessment, Artificial intelligence (AI), QSAR, Exposure assessment, Effect assessment",
+        "authors": "Farina Tariq, Lutz Ahrens, Nikiforos A. Alygizakis, Karine Audouze, Emilio Benfenati, Pedro N. Carvalho, Ioana Chelcea, Spyros Karakitsios, Achilleas Karakoltzidis, Vikas Kumar, Liadys Mora Lagares, Dimosthenis Sarigiannis, Gianluca Selvestrel, Olivier Taboureau, Katrin Vorkamp, Patrik L. Andersson",
+        "date-of-publication": "12.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_6.png?itok=EX9AkMxS",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1158",
+        "link": "https://doi.org/10.3390/toxics12100736"
+    },
+    {
+        "id": "article-1675",
+        "type": "article",
+        "name": "New approach methodologies to enhance human health risk assessment of immunotoxic properties of chemicals — a PARC (Partnership for the Assessment of Risk from Chemicals) project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "PARC, New approach methodologies, NAMs, Immunotoxicology, Immunosuppression, Regulatory toxicology, Chemical toxicology",
+        "authors": "Snapkow Igor, Smith Nicola M., Arnesdotter Emma, Beekmann Karsten, Blanc Etienne B., Braeuning Albert, Corsini Emanuela, Dolenc Marija Sollner, Duivenvoorde Loes P. M., Eriksen Gunnar Sundstøl, Franko Nina, Galbiati Valentina, Gostner Johanna M., Grova Nathalie, Gutleb Arno C., Hargitai Rita, Janssen Aafke W. F., Krapf Solveig A., Lindeman Birgitte, Lumniczky Katalin, Maddalon Ambra, Mollerup Steen, Parráková Lucia, Pierzchalski Arkadiusz, Pieters Raymond H. H., Silva Maria J., Solhaug Anita, Staal Yvonne C. M., Straumfors Anne, Szatmári Tünde, Turner Jonathan D., Vandebriel Rob J., Zenclussen Ana Claudia, Barouki Robert",
+        "date-of-publication": "09.10.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_6.png?itok=G5ACox8N",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1675",
+        "link": "https://doi.org/10.3389/ftox.2024.1339104"
+    },
+    {
+        "id": "article-1139",
+        "type": "article",
+        "name": "A conceptual framework for landscape-based environmental risk assessment (ERA) of pesticides",
+        "journal": "Environment International",
+        "keywords": "Functional ecotoxicology, Landscape, Modelling, Pesticide exposure and effects, Biodiversity, Ecological framework",
+        "authors": "Tarazona Jose V., de Alba-Gonzalez Mercedes, Bedos Carole, Benoit Pierre, Bertrand Colette, Crouzet Olivier, Dagès Cécile, CM Dorne Jean-Lou, Fernandez-Agudo Ana, Focks Andreas, Gonzalez-Caballero Maria del Carmen, Kroll Alexandra, Liess Matthias, Loureiro Susana, Ortiz-Santaliestra Manuel E., Rasmussen Jes J., Royauté Raphaël, Rundlöf Maj, Schäfer Ralf B., Short Stephen, Siddique Ayesha, Sousa José Paulo, Spurgeon Dave, Staub Pierre-François, Topping Chris J., Voltz Marc, Axelman Johan, Aldrich Annette, Duquesne Sabine, Mazerolles Vanessa, Devos Yann",
+        "date-of-publication": "10.09.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_1.png?itok=U2ppql3w",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1139",
+        "link": "https://doi.org/10.1016/j.envint.2024.108999"
+    },
+    {
+        "id": "article-1150",
+        "type": "article",
+        "name": "Associations between urinary phthalate metabolites with BDNF and behavioral function among european children from five HBM4EU aligned studies",
+        "journal": "Toxics",
+        "keywords": "Phthalate, Behavior, BDNF, Effect biomarker, Exposure biomarker, HBM4EU, PARC",
+        "authors": "Salamanca-Fernandez Elena, Espín-Moreno Lydia, Olivas-Martínez Alicia, Pérez-Cantero Ainhoa, Martín-Rodríguez José L., Poyatos Rafael M., Barbone Fabio, Rosolen Valentina, Mariuz Marika, Ronfani Luca, Palkovičová Murínová Ľubica, Fábelová Lucia, Szigeti Tamás, Kakucs Réka, Sakhi Amrit K., Haug Line S., Lindeman Birgitte, Snoj Tratnik Janja, Kosjek Tina, Jacobs Griet, Voorspoels Stefan, Jurdáková Helena, Górová Renáta, Petrovičová Ida, Kolena Branislav, Esteban Marta, Pedraza-Díaz Susana, Kolossa-Gehring Marike, Remy Sylvie, Govarts Eva, Schoeters Greet, Fernández Mariana F., Mustieles Vicente",
+        "date-of-publication": "31.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_3.png?itok=TUVslfDy",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1150",
+        "link": "https://doi.org/10.3390/toxics12090642"
+    },
+    {
+        "id": "article-1682",
+        "type": "article",
+        "name": "Evaluation of THP-1 and jurkat cell lines coculture for the in vitro assessment of the effects of immunosuppressive substances",
+        "journal": "Toxics",
+        "keywords": "Immunosuppression, Coculture, In vitro, New approach method, Cell lines, Bisphenols",
+        "authors": "Franko Nina, Dolenc Marija Sollner",
+        "date-of-publication": "19.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_5.png?itok=6YYkjhRo",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1682",
+        "link": "https://doi.org/10.3390/toxics12080607"
+    },
+    {
+        "id": "article-1674",
+        "type": "article",
+        "name": "Adverse outcomes of the newly emerging bisphenol A substitutes",
+        "journal": "Chemosphere",
+        "keywords": "BPA substitutes, Thermal paper, Endocrine disruption, Adverse outcomes, Bisphenol occurrence, Pergafast 201",
+        "authors": "Franko Nina, Kodila Anja, Dolenc Marija Sollner",
+        "date-of-publication": "19.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_4.png?itok=Mb0QSXXR",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1674",
+        "link": "https://doi.org/10.1016/j.chemosphere.2024.143147"
+    },
+    {
+        "id": "article-1595",
+        "type": "article",
+        "name": "A systematic workflow for compliancetesting of emerging international classwide restrictions on PFAS",
+        "journal": "Environmental Science & Technology",
+        "keywords": "PFAS, Compliance testing, Analytical methods, Classwide restrictions",
+        "authors": "Vestergren Robin, Appelblom Anders, Bălan Simona A., Brandsma Sicco H., Bruton Thomas A., Cousins Ian T., Gauthier Jeremy R., Heggelund Audun, Ivarsson Jenny, Kärrman Anna, Melymuk Lisa, Olisah Chijioke, Rosen Amanda, Savvidou Eleni K., Schellenberger Steffen, Skedung Lisa, Talasniemi Petteri, Wickman Tonie, Zweigle Jonathan, Zwiener Christian, Benskin Jonathan P.",
+        "date-of-publication": "14.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_5.png?itok=fRbrbddo",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1595",
+        "link": "https://doi.org/10.1021/acs.est.4c06570"
+    },
+    {
+        "id": "article-1108",
+        "type": "article",
+        "name": "A short-term exposure to saxitoxin triggers a multitude of deleterious effects in Daphnia magna at levels deemed safe for human health",
+        "journal": "Science of The Total Environment",
+        "keywords": "Neurotoxins, Harmful algal blooms, Cyanotoxins, Saxitoxins, Oxidative stress biomarkers, Epigenetic biomarkers",
+        "authors": "Ribeiro Pinto Albano, Asselman Jana, Pereira Patricia, Pereira Joana Luisa, Macário Inês P.E., Marques Sérgio M, Lourenço Joana, Domingues Inês, Botelho Maria João",
+        "date-of-publication": "14.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_1.png?itok=EOOD7HF3",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1108",
+        "link": "https://doi.org/10.1016/j.scitotenv.2024.175431"
+    },
+    {
+        "id": "article-1159",
+        "type": "article",
+        "name": "Pioneering an effect-based early warning system for hazardous chemicals in the environment",
+        "journal": "TrAC Trends in Analytical Chemistry",
+        "keywords": "Contaminants of emerging concern, Bioassays, Effect-based methods, Effect-directed analysis, Environmental monitoring, Toxicity",
+        "authors": "Niarchos Georgios, Alygizakis Nikiforos, Carere Mario, Dulio Valeria, Engwall Magnus, Hyötyläinen Tuulia, Kallenborn Roland, Karakitsios Spyros, Karakoltzidis Achilleas, Kärrman Anna, Lamoree Marja, Larsson Maria, Lundqvist Johan, Mancini Laura, Mottaghipisheh Javad, Rostkowski Pawel, Sarigiannis Dimosthenis, Vorkamp Katrin, Ahrens Lutz",
+        "date-of-publication": "05.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_7.png?itok=vBMcznb3",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1159",
+        "link": "https://doi.org/10.1016/j.trac.2024.117901"
+    },
+    {
+        "id": "article-1109",
+        "type": "article",
+        "name": "High precision blood lead radiogenic isotope signatures in a community exposed to Pb contaminated soils and implications for the current Pb exposure of the European population",
+        "journal": "Science of The Total Environment",
+        "keywords": "Epidemiology, Biokinetic model, Urban environment, Allotment garden, Historical metallurgy, Isotope forensics",
+        "authors": "Petit Jérôme C.J., Mattielli Nadine, De Jong Jeroen, Bouhoulle Elodie, Debouge Wendy, Maggi Patrick, Hublet Geneviève, Fagel Nathalie, Pirard Catherine, Charlier Corinne, Suzanne Remy",
+        "date-of-publication": "02.08.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_2.png?itok=-2bgNsPY",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1109",
+        "link": "https://doi.org/10.1016/j.scitotenv.2024.174763"
+    },
+    {
+        "id": "article-1307",
+        "type": "article",
+        "name": "Chemical respiratory sensitization — Current status of mechanistic understanding, knowledge gaps and possible identification methods of sensitizers",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Adverse outcome pathway (AOP), Chemical respiratory allergy, Chemical sensitizer, Chemical-induced hypersensitivity, Key event, New approach methodology (NAM), Occupational asthma, Respiratory sensitization",
+        "authors": "Hargitai Rita, Parráková Lucia, Szatmári Tünde, Monfort-Lanzas Pablo, Galbiati Valentina, Audouze Karine, Jornod Florence, Staal Yvonne C. M., Burla Sabina, Chary Aline, Gutleb Arno C., Lumniczky Katalin, Vandebriel Rob J., Gostner Johanna M.",
+        "date-of-publication": "29.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_7.png?itok=8hhV0Lph",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1307",
+        "link": "https://doi.org/10.3389/ftox.2024.1331803"
+    },
+    {
+        "id": "article-1540",
+        "type": "article",
+        "name": "Investigation of peroxisome proliferator-activated receptor genes as requirements for visual startle response hyperactivity in larval zebrafish exposed to structurally similar per- and polyfluoroalkyl substances (PFAS)",
+        "journal": "Environmental Health Perspectives",
+        "keywords": "",
+        "authors": "Gutsfeld Sebastian, Wehmas Leah, Omoyeni Ifeoluwa, Schweiger Nicole, Leuthold David, Michaelis Paul, Howey Xia Meng, Gaballah Shaza, Herold Nadia, Vogs Carolina, Wood Carmen, Bertotto Luísa, Wu Gi-Mick, Klüver Nils, Busch Wibke, Scholz Stefan, Schor Jana, Tal Tamara",
+        "date-of-publication": "24.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Investigation.png?itok=aJZuMIOt",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1540",
+        "link": "https://doi.org/10.1289/EHP13667"
+    },
+    {
+        "id": "article-1157",
+        "type": "article",
+        "name": "Cross-mapping of terms used in chemical risk assessment with those used in systematic review: research protocol",
+        "journal": "Evidence-Based Toxicology",
+        "keywords": "Conceptual overlap, Cross-mapping, Definitions, Interoperability, Terminology",
+        "authors": "Svendsen Camilla, Mathisen Gro Haarklou, Vist Gunn E., Husøy Trine, Ames Heather, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Robinson Joshua F., Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Whaley Paul",
+        "date-of-publication": "12.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-11/Cover_November_2024_4.png?itok=StK0mT2u",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1157",
+        "link": "https://doi.org/10.1080/2833373X.2024.2371285"
+    },
+    {
+        "id": "article-1283",
+        "type": "article",
+        "name": "Progress, applications, and challenges in high-throughput effect-directed analysis for toxicity driver identification — is it time for HT-EDA?",
+        "journal": "Analytical and Bioanalytical Chemistry",
+        "keywords": "HT-EDA, NTS, Bioanalytical methods, Mass spectrometry",
+        "authors": "Alvarez Mora Iker, Arturi Katarzyna, Béen Frederic, Buchinger Sebastian, El Mais Abd El Rahman, Gallampois Christine, Hahn Meike, Hollender Juliane, Houtman Corine, Johann Sarah, Krauss Martin, Lamoree Marja, Margalef Maria, Massei Riccardo, Brack Werner, Muz Melis",
+        "date-of-publication": "12.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_6.png?itok=RG-izC3R",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1283",
+        "link": "https://doi.org/10.1007/s00216-024-05424-4"
+    },
+    {
+        "id": "article-1480",
+        "type": "article",
+        "name": "Predicting the combined effects of multiple stressors and stress adaptation in Gammarus pulex",
+        "journal": "Environmental Science & Technology",
+        "keywords": "Combined effects, Mixture toxicity, Fitness costs, Genetic adaptation",
+        "authors": "Shahid Naeem, Siddique Ayesha, Liess Matthias",
+        "date-of-publication": "10.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_4.png?itok=5830fxOh",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1480",
+        "link": "https://doi.org/10.1021/acs.est.4c02014"
+    },
+    {
+        "id": "article-2233",
+        "type": "article",
+        "name": "Combined effects of herbicides and insecticides reduce biomass of sensitive aquatic invertebrates",
+        "journal": "Science of the Total Environment",
+        "keywords": "Pesticide pressure, Indirect stress, Food limitation, Functional feeding groups, SPEARpesticides, Image analysis",
+        "authors": "Liebmann Liana, Schreiner Verena C., Vormeier Philipp, Weisner Oliver, Liess Matthias",
+        "date-of-publication": "01.07.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-05/03.combined-effects-of-herbicides-and-MTk1MDYyLXItcy1yLTAtMA.png?itok=BueaQou7",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2233",
+        "link": "https://doi.org/10.1016/j.scitotenv.2024.174343"
+    },
+    {
+        "id": "article-1593",
+        "type": "article",
+        "name": "Automated liquid handling extraction and rapid quantification of underivatized  amino acids and tryptophan metabolites from human serum and plasma using dual-column U(H)PLC-MRM-MS and its application to prostate cancer study",
+        "journal": "Metabolites",
+        "keywords": "Tryptophan metabolites analysis, LC-MS, Mixed-mode chromatography",
+        "authors": "Kipura Tobias, Hotze Madlen, Hofer Alexa, Egger Anna-Sophia, Timpen Lea E., Opitz Christiane A., Townsend Paul A., Gethings Lee A., Thedieck Kathrin, Kwiatkowski Marcel",
+        "date-of-publication": "30.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_6.png?itok=vsQoyMuT",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1593",
+        "link": "https://doi.org/10.3390/metabo14070370"
+    },
+    {
+        "id": "article-1102",
+        "type": "article",
+        "name": "Occupational exposure limits for reproductive toxicants – A comparative analysis",
+        "journal": "Reproductive Toxicology",
+        "keywords": "Health risk assessment, Industrial hygiene, Maximum allowable concentration, Route-to-route extrapolation, Uncertainty factors, TLV, DNEL, Reproductive toxicology",
+        "authors": "Schenk Linda, Ho Meng-Rung, Taxell Piia, Huuskonen Pasi, Leite Mimmi, Martinsone Inese, Nordby Karl-Christian, Paegle Linda, Strumylaite Loreta",
+        "date-of-publication": "26.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_3.png?itok=LyhAviLO",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1102",
+        "link": "https://doi.org/10.1016/j.reprotox.2024.108649"
+    },
+    {
+        "id": "article-2110",
+        "type": "article",
+        "name": "Method optimization for a simultaneous determination of neonicotinoid, carbamate/thiocarbamate, triazole, organophosphate and pyrethroid pesticides and their metabolites in urine using UPLC-MS/MS",
+        "journal": "Journal of Chromatography A",
+        "keywords": "Human biomonitoring, Neonicotinoid pesticides, Method optimization, UPLC-MS/MS, Urinary metabolites",
+        "authors": "Bustamante Carolina M., Bravo Natalia, Ruiz Paula, Grimalt Joan O., Garí Mercè",
+        "date-of-publication": "19.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-02/method-optimization-for-a-simultaneous-MjkyNTkzLWgtcy1yLTAtMA.png?itok=JzCnMsm2",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2110",
+        "link": "https://doi.org/10.1016/j.chroma.2024.465054"
+    },
+    {
+        "id": "article-2231",
+        "type": "article",
+        "name": "An in vitro model system for testing chemical effects on microbiome-immune interactions – examples with BPX and PFAS mixtures",
+        "journal": "Frontiers in Immunology",
+        "keywords": "Microbiome-immune interaction, Immune cell activation, T cells, Bioreactor, Microbial community, Chemical mixtures, Bisphenols, PFAS",
+        "authors": "Fischer Florence, Pierzchalski Arkadiusz, Riesbeck Sarah, Aldehoff Alix Sarah, Castaneda-Monsalve Victor Alfonso, Haange Sven-Bastiaan, von Bergen Martin, Rolle-Kampczyk Ulrike Elisabeth, Jehmlich Nico, Zenclussen Ana Claudia, Herberth Gunda",
+        "date-of-publication": "17.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-05/04.an-in-vitro-model-system-MjkyNTkzLXItcy1yLTAtMA.png?itok=gP1d-9rB",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2231",
+        "link": "https://doi.org/10.3389/fimmu.2024.1298971"
+    },
+    {
+        "id": "article-1114",
+        "type": "article",
+        "name": "Internal flames: Metal(loid) exposure linked to alteration of the lipid profile in Czech male firefighters (CELSPAC-FIREexpo study)",
+        "journal": "Environmental Science & Technology Letters",
+        "keywords": "Firefighters, Occupational exposure, Metals, Cholesterol, Cardiovascular disease, Mixture analysis",
+        "authors": "Pálešová Nina, Řiháčková Katarína, Kuta Jan, Pindur Aleš, Šebejová Ludmila, Čupr Pavel",
+        "date-of-publication": "12.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_2.png?itok=YQLOPgtI",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1114",
+        "link": "https://doi.org/10.1021/acs.estlett.4c00272"
+    },
+    {
+        "id": "article-1127",
+        "type": "article",
+        "name": "Effects of metabolic disruption on lipid metabolism and yolk retention in zebrafish embryos",
+        "journal": "Environmental Toxicology and Chemistry",
+        "keywords": "Aquatic toxicology, Developmental toxicity, Endocrine-disrupting compounds, Toxicity mechanisms",
+        "authors": "van den Boom Rik, Vergauwen Lucia, Knapen Dries",
+        "date-of-publication": "11.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_3.png?itok=yxvCYSGz",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1127",
+        "link": "https://doi.org/10.1002/etc.5930"
+    },
+    {
+        "id": "article-1630",
+        "type": "article",
+        "name": "Machine learning-based prediction of fish acute mortality: Implementation, interpretation, and regulatory relevance",
+        "journal": "Environmental Science: Advances",
+        "keywords": "Machine learning, Ecotoxicology, Fish, Hazard assessment, Chemical regulation",
+        "authors": "Gasser Lilian, Schür Christoph, Perez-Cruz Fernando, Schirmer Kristin, Baity-Jesi Marco",
+        "date-of-publication": "03.06.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_4.png?itok=civiMCP6",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1630",
+        "link": "https://doi.org/10.1039/D4VA00072B"
+    },
+    {
+        "id": "article-1243",
+        "type": "article",
+        "name": "How wastewater reflects human metabolism - suspect screening of pharmaceutical metabolites in wastewater influent",
+        "journal": "Environmental Science & Technology",
+        "keywords": "Drug Metabolites, Human Pharmaceutical Metabolism, Suspect Screening, Wastewater, High Resolution Mass Spectrometry, Sirius/csi:fingerid, Metfrag, Molecular Network",
+        "authors": "Hollender Juliane, Meyer Corina, Stravs Michael A.",
+        "date-of-publication": "24.05.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_8.png?itok=LnW2UHPq",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1243",
+        "link": "https://doi.org/10.1021/acs.est.4c00968"
+    },
+    {
+        "id": "article-1103",
+        "type": "article",
+        "name": "Exploring BPA alternatives – Environmental levels and toxicity review",
+        "journal": "Environment International",
+        "keywords": "BPA alternatives, Biological activity, In silico, Invertebrates, Vertebrates",
+        "authors": "Adamovsky Ondrej, Groh Ksenia J., Białk-Bielińska Anna, Escher Beate I., Beaudouin R., Lagares Liadys Mora, Tollefsen Knut Erik, Fenske Martina, Mulkiewicz Ewa, Creusot Nicolas, Sosnowska Anita, Loureiro Susana, Beyer Jonny, Repetto Guillermo, Štern Alja, Lopes Isabel, Monteiro Marta, Zikova-Kloas Andrea, Eleršek Tina, Vračko Marjan, Kyriakopoulou Katerina, Zdybel Szymon, Puzyn Tomasz, Koczur Weronika, Morthorst Jane Ebsen, Holbech Henrik, Carlsson Gunnar, Örn Stefan, Herrero Óscar, Siddique Ayesha, Liess Matthias, Braun Georg, Srebny Vanessa, Žegura Bojana, Hinfray Nathalie, Brion François, Knapen Dries, Vandeputte Ellen, Stinckens Evelyn, Vergauwen Lucia, Behrendt Lars, Silva Maria João, Blaha Ludek",
+        "date-of-publication": "23.05.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_4.png?itok=WR3-FayU",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1103",
+        "link": "https://doi.org/10.1016/j.envint.2024.108728"
+    },
+    {
+        "id": "article-1093",
+        "type": "article",
+        "name": "Regulatory and practical considerations on the implementation of a mixture allocation factor in REACH",
+        "journal": "Environmental Sciences Europe",
+        "keywords": "Co-exposure, Mixture risk assessment, Risk management measures, Unintentional mixtures, MAF",
+        "authors": "Hassold Enken, Schulze Jona, Galert Wiebke, Treu Gabriele",
+        "date-of-publication": "19.05.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_5.png?itok=RDoWml3q",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1093",
+        "link": "https://doi.org/10.1186/s12302-024-00910-z"
+    },
+    {
+        "id": "article-1601",
+        "type": "article",
+        "name": "Two-stage machine learning-based approach to predict points of departure for human noncancer and developmental/reproductive effects",
+        "journal": "Environmental Science & Technology",
+        "keywords": "QSAR model, Toxicity prediction, Chemical risk assessment, High-throughput screening, Life cycle impact assessment (LCIA)",
+        "authors": "Kvasnicka Jacob, Aurisano Nicolo, von Borries Kerstin, lU En-Hsuan, Fantke Peter, Jolliet Olivier, Wright Fred A., Chiu Weihsueh A.",
+        "date-of-publication": "02.05.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-09/Cover_September_2025_7.png?itok=UhU7PV8r",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1601",
+        "link": "https://doi.org/10.1021/acs.est.4c00172"
+    },
+    {
+        "id": "article-742",
+        "type": "article",
+        "name": "Protocol: Testing the performance of INVITES-IN, a tool for assessing the internal validity of in vitro studies",
+        "journal": "Evidence-Based Toxicology",
+        "keywords": "Cell culture, Evidence-based toxicology, Risk of bias, User testing",
+        "authors": "Mathisen Gro Haarklou, Vist Gunn E, Whaley Paul, White Richard A, Husøy Trine, Ames Heather M, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Prieto Pilar, Robin Joshua F, Roggen Erwin, Rooney Andrew A, Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Svendsen Camilla",
+        "date-of-publication": "01.05.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_1.png?itok=SxAUESrA",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=742",
+        "link": "https://doi.org/10.1080/2833373X.2023.2293289"
+    },
+    {
+        "id": "article-1629",
+        "type": "article",
+        "name": "The integrated stress response-related expression of CHOP dueto mitochondrial toxicity is a warning sign for DILI liability",
+        "journal": "Liver international",
+        "keywords": "CHOP, Drug-induced liver injury, High-throughput screening, Integrated stress response, Mitochondrial toxicity",
+        "authors": "Vlasveld Matthijs, Callegaro Giulia, Fisher Ciarán, Eakins Julie, Walker Paul, Lok Samantha, van Oost Siddh, de Jong Brechtje, Pellegrino-Coppola Damiano, Burger Gerhard, Wink Steven, van de Water Bob",
+        "date-of-publication": "28.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_6.png?itok=BuwOWKNY",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1629",
+        "link": "https://doi.org/10.1111/liv.15822"
+    },
+    {
+        "id": "article-1638",
+        "type": "article",
+        "name": "Physiologically based kinetic (PBK) modeling as a new approach methodology (NAM) for predicting systemic levels of gut microbial metabolites",
+        "journal": "Toxicology Letters",
+        "keywords": "Kinetic modeling, New approach methodologies, Gut microbial metabolism, Ex vivo/in vitro models, Gut microbiome",
+        "authors": "Stevanoska Maja, Folz Jacob, Beekmann Karsten, Aichinger Georg",
+        "date-of-publication": "27.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_5.png?itok=uONuXPcR",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1638",
+        "link": "https://doi.org/10.1016/j.toxlet.2024.04.013"
+    },
+    {
+        "id": "article-1587",
+        "type": "article",
+        "name": "New approach methods to assess developmental and adult neurotoxicity for regulatory use: a PARC work package 5 project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Developmental neurotoxicity (DNT), New approach method (NAM), Adult neurotoxicity (ANT), DNT-IVB, Applicability domain",
+        "authors": "Tal Tamara, Myhre Oddvar, Fritsche Ellen, Rüegg Joëlle, Craenen Kai, Aiello-Holden Kiara, Agrillo Caroline, Babin Patrick J., Escher Beate I., Dirven Hubert, Hellsten Kati, Dolva Kristine, Hessel Ellen, Heusinkveld Harm J., Hadzhiev Yavor, Hurem Selma, Jagiello Karolina, Judzinska Beata, Klüver Nils, Knoll-Gellida Anja, Kühne Britta A., Leist Marcel, Lislien Malene, Lyche Jan L., Müller Ferenc, Colbourne John K., Neuhaus Winfried, Pallocca Giorgia, Seeger Bettina, Scharkin Ilka, Scholz Stefan, Spjuth Ola, Torres-Ruiz Monica, Bartmann Kristina",
+        "date-of-publication": "26.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Approach.png?itok=ewoDHpZe",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1587",
+        "link": "https://doi.org/10.3389/ftox.2024.1359507"
+    },
+    {
+        "id": "article-1467",
+        "type": "article",
+        "name": "Single and mixture effects of bisphenol A and benzophenone-3 on in vitro T helper cell differentiation",
+        "journal": "Chemico-Biological Interactions",
+        "keywords": "TH17 cell, Regulatory T cell, In vitro differentiation, Endocrine disruptor, Bisphenol A, Benzophenone-3, Chemical mixture",
+        "authors": "Fischer Florence, Ermer Miriam Rebecca, Howanski Julia, Yin Ziran, Bauer Mario, Wagner Marita, Fink Beate, Zenclussen Ana C., Schumacher Anne",
+        "date-of-publication": "21.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_5.png?itok=olijBlAx",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1467",
+        "link": "https://doi.org/10.1016/j.cbi.2024.111011"
+    },
+    {
+        "id": "article-1479",
+        "type": "article",
+        "name": "Metabolomics in human SGBS cells as new approach method for studying adipogenic effects: Analysis of the effects of DINCH and MINCH on central carbon metabolism",
+        "journal": "Environmental Research",
+        "keywords": "LOD, MDC, Metabolism-disrupting chemical, PPARA, Peroxisome proliferator-activated receptor alpha, PPARG, Peroxisome proliferator-activated receptor gamma, PPP, TCA, Tricarboxylic acid, TZD, Thiazolidinedione",
+        "authors": "Goerdeler Cornelius, Engelmann Beatrice, Aldehoff Alix Sarah, Schaffert Alexandra, Blüher Matthias, Heiker John T., Wabitsch Martin, Schubert Kristin, Rolle-Kampczyk Ulrike, von Bergen Martin",
+        "date-of-publication": "04.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_6.png?itok=uav0NTLh",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1479",
+        "link": "https://doi.org/10.1016/j.envres.2024.118847"
+    },
+    {
+        "id": "article-889",
+        "type": "article",
+        "name": "Estimating the dynamic early life exposure to PFOA and PFOS of the HELIX children: Emerging profiles via prenatal exposure, breastfeeding, and diet",
+        "journal": "Environment International",
+        "keywords": "PBPK model, Reverse dosimetry, Longitudinal cohorts, Children, Human biomonitoring",
+        "authors": "Ratier Aude, Casas Maribel, Grazuleviciene Regina, Slama Rémy, Haug Line Småstuen, Thomsen Cathrine, Vafeiadi Marina, Wright John, Zeman Florence A, Vrijheid Martine, Brochot Céline",
+        "date-of-publication": "02.04.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_1.png?itok=y3I9w0Gt",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=889",
+        "link": "https://doi.org/10.1016/j.envint.2024.108621"
+    },
+    {
+        "id": "article-1056",
+        "type": "article",
+        "name": "Inconsistencies in the EU regulatory risk assessment of PFAS call for readjustment",
+        "journal": "Environment International",
+        "keywords": "PFAS, Risk assessment, Health protection, Contamination, Quality standard, Policy",
+        "authors": "Reinikainen Jussi, Bouhoulle Elodie, Sorvari Jaana",
+        "date-of-publication": "29.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_1.png?itok=-odT8t-m",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1056",
+        "link": "https://doi.org/10.1016/j.envint.2024.108614"
+    },
+    {
+        "id": "article-1113",
+        "type": "article",
+        "name": "Exposure to benzotriazoles and benzothiazoles in Czech male population and its associations with biomarkers of liver function, serum lipids and oxidative stress",
+        "journal": "International Archives of Occupational and Environmental Health",
+        "keywords": "Benzotriazole, Human biomonitoring, Liver Function, Serum lipids, Oxidative stress",
+        "authors": "Pálešová Nina, Bláhová Lucie, Janoš Tomáš, Řiháčková Katarína, Pindur Aleš, Šebejová Ludmila, Čupr Pavel",
+        "date-of-publication": "28.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-10/Cover_October_2024_4.png?itok=pvcCVQ3f",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1113",
+        "link": "https://doi.org/10.1007/s00420-024-02059-x"
+    },
+    {
+        "id": "article-1302",
+        "type": "article",
+        "name": "AOPWIKI-EXPLORER: An interactive graph-based query engine leveraging large language models",
+        "journal": "Computational Toxicology",
+        "keywords": "Adverse outcome pathway, Large language model, Graph database, Risk assessment, Artificial intelligence, Data integration, Information retrieval, Information extraction",
+        "authors": "Kumar Saurav, Deepika Deepika, Slater Karin, Kumar Vikas",
+        "date-of-publication": "21.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_8.png?itok=Vu6-h5qj",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1302",
+        "link": "https://doi.org/10.1016/j.comtox.2024.100308"
+    },
+    {
+        "id": "article-1589",
+        "type": "article",
+        "name": "Water quality monitoring with the multiplexed assay MitoOxTox for mitochondrial toxicity, oxidative stress response and cytotoxicity in AREc32 cells",
+        "journal": "Environmental Science and Technology",
+        "keywords": "Mitochondrial membrane potential, Mitochondrial toxicity, Oxidative stress, Environmental monitoring, Mixture, AREc32",
+        "authors": "Lee Jungeun, König Maria, Braun Georg, Escher Beate Isabella",
+        "date-of-publication": "19.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-08/Water.png?itok=FJPfGtYK",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1589",
+        "link": "https://doi.org/10.1021/acs.est.3c09844"
+    },
+    {
+        "id": "article-783",
+        "type": "article",
+        "name": "Innovative analytical methodologies for characterizing chemical exposure with a view to next-generation risk assessment",
+        "journal": "Environment International",
+        "keywords": "High-resolution mass spectrometry, Effect-based methods, Sampling strategies, Chemical exposure, Chemical risk assessment, Effect-directed analysis",
+        "authors": "Tkalec Žiga, Antignac Jean-Philippe, Bandow Nicole, Béen Frederic M., Belova Lidia, Bessems Jos, Le Bizec Bruno, Brack Werner, Cano-Sancho German, Chaker Jade, Covaci Adrian, Creusot Nicolas, David Arthur, Debrauwer Laurent, Dervilly Gaud, Duca Radu - Corneliu, Fessard Valerie, Grimalt Joan, Guerin Thierry, Habchi Baninia, Hecht Helge, Hollender Juliane, Jamin Emilien L., Klanova Jana, Kosjek Tina, Krauss Martin, Lamoree Marja, Lavison-Bompard Gwenaelle, Meijer Jeroen, Moeller Ruth, Mol Hans, Mompelat Sophie, Van Nieuwenhuyse An, Oberacher Herbert, Parinet Julien, Van Poucke Christof, Roškar Robert, Togola Anne, Trontelj Jurij, Price Elliott",
+        "date-of-publication": "17.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_2.png?itok=BLZ_IZxL",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=783",
+        "link": "https://doi.org/10.1016/j.envint.2024.108585"
+    },
+    {
+        "id": "article-1247",
+        "type": "article",
+        "name": "Intuitive toxicology in the 21st century—Bridging the perspectives of the public and risk assessors in Europe",
+        "journal": "Risk Analysis",
+        "keywords": "Chemical risk assessment, intuitive toxicology, New approach methodologies, next-generation riskassessment, risk perception",
+        "authors": "Bearth Angela, Roth Nicolas, Wilks Martin, Siegrist Michael",
+        "date-of-publication": "15.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-02/Cover_February_2025_9.png?itok=H8gKJrRe",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1247",
+        "link": "https://doi.org/10.1111/risa.14296"
+    },
+    {
+        "id": "article-1717",
+        "type": "article",
+        "name": "Comprehensive mapping of the AOP-Wiki database: identifying biological and disease gaps",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Adverse outcome pathway, AOP network, Immunotoxicity, Neurotoxicity, Nongenotoxic carcinogenesis, Diseases, PARC",
+        "authors": "Jaylet Thomas, Coustillet Thibaut, Smith Nicola M., Viviani Barbara, Lindeman Birgitte, Vergauwen Lucia, Myhre Oddvar, Yarar Nurettin, Gostner Johanna M., Monfort-Lanzas Pablo, Jornod Florence, Holbech Henrik, Coumoul Xavier, Sarigiannis Dimosthenis A., Antczak Philipp, Bal-Price Anna, Fritsche Ellen, Kuchovska Eliska, Stratidakis Antonios, Barouki Robert, Kim Min Ji, Taboureau Olivier, Wojewodzic Marcin, Knapen Dries, Audouze Karine",
+        "date-of-publication": "08.03.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-01/comprehensive-mapping-of-the-aopwiki-MC1oLXMtci0wLTA.png?itok=RYIexVi4",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1717",
+        "link": "https://doi.org/10.5281/zenodo.10813189"
+    },
+    {
+        "id": "article-1301",
+        "type": "article",
+        "name": "Revealing the cascade of pesticide effects from gene to community",
+        "journal": "Science of the Total Environment",
+        "keywords": "Adaptation, Neonicotinoids, Genetic diversity, AFLP, G. pulex",
+        "authors": "Siddique Ayesha, Shahid Naeem, Liess Matthias",
+        "date-of-publication": "29.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_9.png?itok=AKlIgwRO",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1301",
+        "link": "https://doi.org/10.1016/j.scitotenv.2024.170472"
+    },
+    {
+        "id": "article-1637",
+        "type": "article",
+        "name": "Making food systems more resilient to food safety risks by including artificial intelligence, big data, and internet ofthings into food safety early warning and emerging riskidentification tools",
+        "journal": "Comprehensive Reviews in Food Science and Food Safety",
+        "keywords": "Data sharing, Digital tools, Machine learning, Proactive system, Risk prediction",
+        "authors": "Mu Wenjuan, Kleter Gijs A., Bouzembrak Yamine, Dupouy Eleonora, Frewer Lynn J., Al Natour Fadi Naser Radwan, Marvin H. J. P.",
+        "date-of-publication": "24.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_7.png?itok=D6USRemm",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1637",
+        "link": "https://doi.org/10.1111/1541-4337.13296"
+    },
+    {
+        "id": "article-1681",
+        "type": "article",
+        "name": "A systems toxicology approach for identification of disruptions in cholesterol homeostasis after aggregated exposure to mixtures of perfluorinated compounds in humans",
+        "journal": "Toxicological Sciences",
+        "keywords": "Exposure, PFAS, PBK model, Cholesterol biokinetic model, Systems toxicology",
+        "authors": "Westerhout Joost, den Heijer-Jordaan Annemiek, Princen Hans M G, Stierum Rob",
+        "date-of-publication": "18.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_7.png?itok=TekReaNy",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1681",
+        "link": "https://doi.org/10.1093/toxsci/kfae006"
+    },
+    {
+        "id": "article-1631",
+        "type": "article",
+        "name": "Brain-derived neurotrophic factor (BDNF): an effect biomarker of neurodevelopment in human biomonitoring programs",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Brain-derived neurotrophic factor, Neurodevelopment, Human biomonitoring, Effect biomarkers, Endocrine disruptors, Neurodevelopmental toxicity",
+        "authors": "Rodriguez-Carrillo Andrea, Verheyen Veerle, van Nuijs Alexander, Fernández Mariana F, Remy Sylvie",
+        "date-of-publication": "10.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-10/Cover_October_2025_8.png?itok=CKlRNer1",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1631",
+        "link": "https://doi.org/10.3389/ftox.2023.1319788"
+    },
+    {
+        "id": "article-1322",
+        "type": "article",
+        "name": "Curated mode-of-action data and effect concentrations for chemicals relevant for the aquatic environment",
+        "journal": "Scientific Data",
+        "keywords": "",
+        "authors": "Kramer Lena, Schulze Tobias, Klüver Nils, Altenburger Rolf, Hackermüller Jörg, Krauss Martin, Busch Wibke",
+        "date-of-publication": "10.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-05/Cover_May_2025_10.png?itok=VupnLZUL",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1322",
+        "link": "https://doi.org/10.1038/s41597-023-02904-7"
+    },
+    {
+        "id": "article-767",
+        "type": "article",
+        "name": "Why adverse outcome pathways need to be FAIR",
+        "journal": "ALTEX",
+        "keywords": "Adverse outcome pathways, FAIR data, Machine-actionability, Trust, Visibility",
+        "authors": "Wittwehr Clemens, Clerbaux Laure-Alix, Edwards Stephen, Angrish Michelle, Mortensen Holly, Carusi Annamaria, Gromelski Maciej, Lekka Eftychia, Virvilis Vassilis  Virvilis, Martens Marvin, Bonino da Silva Santos Luiz Olavo, Nymark Penny",
+        "date-of-publication": "09.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-03/Cover_March_2024_1.png?itok=RvcAVqJA",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=767",
+        "link": "https://doi.org/10.14573/altex.2307131"
+    },
+    {
+        "id": "article-1469",
+        "type": "article",
+        "name": "A comprehensive battery of flow cytometric immunoassays for the in vitro testing of chemical effects in human blood cells",
+        "journal": "Frontiers in Immunology",
+        "keywords": "Immune assays, Human blood, Chemical testing, Activation marker, Immune cells, Immunotox",
+        "authors": "Pierzchalski Arkadiusz, Zenclussen Ana Claudia, Herberth Gunda",
+        "date-of-publication": "02.01.2024",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_7.png?itok=cJKkQBCv",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1469",
+        "link": "https://doi.org/10.3389/fimmu.2023.1327960"
+    },
+    {
+        "id": "article-1057",
+        "type": "article",
+        "name": "Applicability of food monitoring data for assessing relative exposure contributions of pyrethroids in retrospective human biomonitoring risk estimations",
+        "journal": "Toxics",
+        "keywords": "Pyrethroids, Urinary levels, DCCA, CFMP, 3PBA, DBCA, F3PBA, CLF3CA, Pesticide risk, HBM4EU",
+        "authors": "Tarazona Jose V, de Alba-Gonzalez Mercedes, González-Caballero Maria Carmen",
+        "date-of-publication": "28.12.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_2.png?itok=Dde32bwk",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1057",
+        "link": "https://doi.org/10.3390/toxics12010024"
+    },
+    {
+        "id": "article-1095",
+        "type": "article",
+        "name": "Hazard characterization of Alternaria toxins to identify data gaps and improve risk assessment for human health",
+        "journal": "Archives of Toxicology",
+        "keywords": "Mycotoxin, Exposure routes, Genotoxicity, Endocrine disruption, Immunosuppression, Biotransformation, Toxicokinetics, Tenuazonic acid, Alternariol, Altenuene, Tentoxin, Altertoxin",
+        "authors": "Louro Henriqueta, Vettorazzi Ariane, de Cerain Adela López, Spyropoulou Anastasia, Solhaug Anita, Straumfors Anne, Behr Anne-Cathrin, Mertens Birgit, Žegura Bojana, Fæste Christiane Kruse, Ndiaye Dieynaba, Spilioti Eliana, Varga Elisabeth, Dubreil Estelle, Borsos Eszter, Crudo Francesco, Eriksen Gunnar Sundstøl, Snapkow Igor, Henri Jérôme, Sanders Julie, Machera Kyriaki, Gaté Laurent, Le Hegarat Ludovic, Novak Matjaž, Marko Doris, Smith Nicola M., Krapf Solveig, Hager Sonja, Fessard Valérie, Kohl Yvonne, Silva Maria João, Dirven Hubert, Dietrich Jessica",
+        "date-of-publication": "26.12.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-03/hazard-characterization-of-alternaria-toxins-OTc1MzEtaC1zLXItMC0w.png?itok=8GfwAKFs",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1095",
+        "link": "https://doi.org/10.1007/s00204-023-03636-8"
+    },
+    {
+        "id": "article-1496",
+        "type": "article",
+        "name": "Mapping chemical footprints of organic micropollutants in European streams",
+        "journal": "Environment International",
+        "keywords": "Environmental contamination, Chemical footprints, Planetary boundaries, Organic micropollutants, Chemical target screening, LC-HRMS, Toxic units, Urban discharge fraction, Stream order",
+        "authors": "Finckh Saskia, Carmona Eric, Borchardt Dietrich, Büttner Olaf, Krauss Martin, Schulze Tobias, Yang Soohyun, Brack Werner",
+        "date-of-publication": "05.12.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-07/Cover_July_2025_8.png?itok=rc6hPVHr",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1496",
+        "link": "https://doi.org/10.1016/j.envint.2023.108371"
+    },
+    {
+        "id": "article-726",
+        "type": "article",
+        "name": "Acetylcholinesterase inhibition in rats and humans following acute fenitrothion exposure predicted by physiologically based kinetic modeling-facilitated quantitative in vitro to in vivo extrapolation",
+        "journal": "Environmental Science & Technology",
+        "keywords": "Anatomy, Inhibition, Peptides and proteins, Pest control, Rodent models",
+        "authors": "Chen Jiaqi, Zhao Shensheng, Wesseling Sebastiaan, Kramer Nynke, Rietjens Ivonne, Bouwmeester Hans",
+        "date-of-publication": "26.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_1.png?itok=1iSD83EU",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=726",
+        "link": "https://doi.org/10.1021/acs.est.3c07077"
+    },
+    {
+        "id": "article-720",
+        "type": "article",
+        "name": "Ecotoxicological evaluation of Bisphenol A and alternatives: A comprehensive in silico modelling approach",
+        "journal": "Journal of Xenobiotics",
+        "keywords": "Bisphenol A (BPA), BPA alternatives, Ecotoxicity assessment, In silico models, Principal component analysis (PCA), Environmental impact, Models, Chemical risk assessment",
+        "authors": "Liadys Mora Lagares, Marjan Vračko",
+        "date-of-publication": "23.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_2.png?itok=is9UpI-_",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=720",
+        "link": "https://doi.org/10.3390/jox13040046"
+    },
+    {
+        "id": "article-2232",
+        "type": "article",
+        "name": "Latent pesticide effects and their mechanisms",
+        "journal": "Science of the Total Environment",
+        "keywords": "Short-term exposure, Long-term delayed effects, Tri-phasic dose response relationship, Stressor-Addition-Model, Endocrine-disrupting chemicals",
+        "authors": "Liess Matthias, Gröning Jonas",
+        "date-of-publication": "10.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-05/05.latent-pesticide-effects-and-their-MzkwMTI0LXItcy1yLTAtMA.png?itok=UZYlkTCq",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=2232",
+        "link": "https://doi.org/10.1016/j.scitotenv.2023.168368"
+    },
+    {
+        "id": "article-715",
+        "type": "article",
+        "name": "Current-use pesticide exposure pathways in Czech adults and children from the CELSPAC-SPECIMEn cohort",
+        "journal": "Environment International",
+        "keywords": "Current-use pesticides, HBM4EU, Dietary exposure, Pesticide application, Environmental exposure, Organic diet, Exposure assessment, Models, Human biomonitoring, Human health",
+        "authors": "Šulc Libor, Figueiredo Daniel, Huss Anke, Kalina Jiří, Gregor Petr, Janoš Tomáš, Šenk Petr, Dalecká Andrea, Andrýsková Lenka, Kodeš Vít, Čupr Pavel",
+        "date-of-publication": "06.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_1_2.png?itok=LeqaEsaS",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=715",
+        "link": "https://doi.org/10.1016/j.envint.2023.108297"
+    },
+    {
+        "id": "article-1683",
+        "type": "article",
+        "name": "Learning from Safe-by-Design for Safe-and-Sustainable-by-Design: Mapping the current landscape of Safe-by-Design reviews, case studies, and frameworks",
+        "journal": "Environment International",
+        "keywords": "Safe-by-Design (SbD), Safe and Sustainable-by-Design (SSbD), Literature mapping, SSbD implementation",
+        "authors": "Sudheshwar Akshat, Apel Christina, Kümmerer Klaus, Wang Zhanyun, Soeteman-Hernández Lya G., Valsami-Jones Eugénia, Som Claudia, Nowack Bernd",
+        "date-of-publication": "04.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2025-11/Cover_November_2025_8.png?itok=Ibn01O_l",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1683",
+        "link": "https://doi.org/10.1016/j.envint.2023.108305"
+    },
+    {
+        "id": "article-751",
+        "type": "article",
+        "name": "Combined chronic dietary exposure to four nephrotoxic metals exceeds tolerable intake levels in the adult population of 10 European countries",
+        "journal": "Food Additives and Contaminants Part A",
+        "keywords": "Cadmium, Lead, Inorganic arsenic, Inorganic mercury, Nephrotoxicity, Combined exposure",
+        "authors": "Sprong R. Corinne, Van den Brand Annick D., Van Donkersgoed Gerda, Blaznik Urska, Christodoulou Despo, Crépet Amélie, Da Graca Dias Maria, Jensen Bodil Hamborg, Moretto Angelo, Rauscher-Gabernig Elke, Ruprich Jiri, Sokolic Darja, Van Klaveren Jacob D., Luijten Mirjam, Mengelers Marcel J.B.",
+        "date-of-publication": "03.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_2.png?itok=GHsbiCBk",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=751",
+        "link": "https://doi.org/10.1080/19440049.2023.2272716"
+    },
+    {
+        "id": "article-713",
+        "type": "article",
+        "name": "Potential for machine learning to address data gaps in human toxicity and ecotoxicity characterization",
+        "journal": "Environmental Science and Technology",
+        "keywords": "Degradation, Environmental pollution, Natural resources, Soils, Toxicity",
+        "authors": "von Borries Kerstin, Holmquist Hanna, Kosnik Marissa, Katie Beckwith, Jolliet Olivier, Goodman Jonathan, Fantke Peter",
+        "date-of-publication": "01.11.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_2.png?itok=IecRnPmK",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=713",
+        "link": "https://doi.org/10.1021/acs.est.3c05300"
+    },
+    {
+        "id": "article-707",
+        "type": "article",
+        "name": "A benchmark dataset for machine learning in ecotoxicology",
+        "journal": "Nature Scientific Data",
+        "keywords": "Machine learning, Ecotoxicology, Benchmark, Scientificdata, Fish, Algae, Crustaceans, Predictive toxicology, Hazard assessment, Models",
+        "authors": "Schür Christoph, Gasser Lilian, Perez-Cruz Fernando, Schirmer Kristin, Baity-Jesi Marco",
+        "date-of-publication": "18.10.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_3.png?itok=3BddqfQ4",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=707",
+        "link": "https://doi.org/10.1038/s41597-023-02612-2"
+    },
+    {
+        "id": "article-741",
+        "type": "article",
+        "name": "Acceptance criteria for new approach methods in toxicology and human health-relevant life science research - part I",
+        "journal": "ALTEX",
+        "keywords": "BenchMarks series, GIVIMP, In vitro, Methods, Validation, Quality control, NAM",
+        "authors": "Holzer Anna-Katharina, Dreser Nadine, Pallocca Giorgia, Mangerich Aswin, Stacey Glyn, Dipalo Michele, Van de Water Bob, Rovida Costanza, Wirtz Petra H., Van Vugt Barbara, Panzarella Giulia, Hartung Thomas, Terron Andrea, Mangas Iris, Herzler Matthias, Marx-Stoelting Philip, Coecke Sandra, Leist Marcel",
+        "date-of-publication": "17.10.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_3.png?itok=eqhIMDpi",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=741",
+        "link": "https://doi.org/10.14573/altex.2310021"
+    },
+    {
+        "id": "article-1096",
+        "type": "article",
+        "name": "Comparison of aggregated exposure to perfluorooctanoic acid (PFOA) from diet and personal care products with concentrations in blood using a PBPK model – Results from the Norwegian biomonitoring study in EuroMix",
+        "journal": "Environmental Research",
+        "keywords": "Exposure, Biomonitoring, Physiologically based pharmacokinetic modelling, Diet, Personal care products, Cosmetics",
+        "authors": "Husøy Trine, Caspersen Ida H., Thépaut Elisa, Knutsen Helle, Haug Line S., Andreassen Monica, Gkrillas Athanasios, Lindeman Birgitte, Thomsen Cathrine, Herzke Dorte, Dirven Hubert, Wojewodzic Marcin W.",
+        "date-of-publication": "14.10.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-09/Cover_September_2024_6.png?itok=8edgI-0a",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1096",
+        "link": "https://doi.org/10.1016/j.envres.2023.117341"
+    },
+    {
+        "id": "article-699",
+        "type": "article",
+        "name": "Combined western diet and bisphenol A exposure induces an oxidative stress-based paraoxonase 1 response in larval zebrafish",
+        "journal": "Comparative Biochemistry and Physiology Part C: Toxicology & Pharmacology",
+        "keywords": "Bisphenol A, Western diet, Metabolism, Metabolic disorders, Lipid metabolism, Antioxidant",
+        "authors": "Van den Boom Rik, Vergauwen Lucia, Koedijk Noortje, Da Silva Katyeny Manuela, Covaci Adrian, Knapen Dries",
+        "date-of-publication": "26.09.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_4.png?itok=zzUeAlos",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=699",
+        "link": "https://doi.org/10.1016/j.cbpc.2023.109758"
+    },
+    {
+        "id": "article-732",
+        "type": "article",
+        "name": "Identification of the bacterial metabolite aerugine as potential trigger of human dopaminergic neurodegeneration",
+        "journal": "Environment International",
+        "keywords": "Dopaminergic neurodegeneration, Streptomyces venezuelae, Bacterial toxin, Ferroptosis, Caenorhabditis elegans, Parkinson’s disease",
+        "authors": "Leist Marcel, Ückert Anna-Katharina, Rütschlin Sina, Gutbier Simon, Wörz Nathalie Christine, Miah Mahfuzur R., Martins Airton C., Hauer Isa, Holzer Anna-Katharina, Meyburg Birthe, Mix Ann-Kathrin, Hauck Christof R., Aschner Michael, Böttcher Thomas",
+        "date-of-publication": "23.09.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_3.png?itok=YymFnw--",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=732",
+        "link": "https://doi.org/10.1016/j.envint.2023.108229"
+    },
+    {
+        "id": "article-739",
+        "type": "article",
+        "name": "Ciona spp. and ascidians as bioindicator organisms for evaluating effects of endocrine disrupting chemicals: A discussion paper",
+        "journal": "Marine Environmental Research",
+        "keywords": "Ascidians, Ciona intestinalis, Toxicity bioassay, Endocrine disrupting effects, 3Rs",
+        "authors": "Beyer Jonny, Song You, Lillicrap Adam, Rodríguez-Satizábal Simón, Chatzigeorgiou Marios",
+        "date-of-publication": "09.09.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_4.png?itok=kdNsGVLd",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=739",
+        "link": "https://doi.org/10.1016/j.marenvres.2023.106170"
+    },
+    {
+        "id": "article-532",
+        "type": "article",
+        "name": "Protocol for designing INVITES-IN, a tool for assessing the internal validity of in vitro studies",
+        "journal": "Evidence-Based Toxicology",
+        "keywords": "Cell culture, NAMs, Next generation risk assessment, Risk of bias",
+        "authors": "Svendsen Camilla, Whaley Paul, Vist Gunn Elisabeth, Husøy Trine, Beronius Anna, Di Consiglio Emma, Druwe Ingrid, Hartung Thomas, Hatzi Vasiliki I., Hoffmann Sebastian, Hooijmans Carlijn R., Machera Kyriaki, Robinson Joshua F., Roggen Erwin, Rooney Andrew A., Roth Nicolas, Spilioti Eliana, Spyropoulou Anastasia, Tcheremenskaia Olga, Testai Emanuela, Vinken Mathieu, Mathisen Gro Haarklou",
+        "date-of-publication": "31.08.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_2.png?itok=08OeR0IH",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=532",
+        "link": "https://doi.org/10.1080/2833373X.2023.2232415"
+    },
+    {
+        "id": "article-537",
+        "type": "article",
+        "name": "Adverse outcome pathway-based analysis of liver steatosis in vitro using human liver cell lines",
+        "journal": "STAR Protocols",
+        "keywords": "Cell culture, Cell-based assays, Gene expression",
+        "authors": "Karaca Mawien, Fritsche Kristin, Lichtenstein Dajana, Vural Ozlem, Kreuzer Katrin, Alarcan Jimmy, Braeuning Albert, Marx-Stoelting Philip, Tralau Tewes",
+        "date-of-publication": "25.08.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_5.png?itok=cDeBhjpP",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=537",
+        "link": "https://doi.org/10.1016/j.xpro.2023.102500"
+    },
+    {
+        "id": "article-1094",
+        "type": "article",
+        "name": "A review on aquatic toxins - Do we really know it all regarding the environmental risk posed by phytoplankton neurotoxins?",
+        "journal": "Journal of Environmental Management",
+        "keywords": "Harmful algal blooms, Toxic cyanobacteria, Cyanotoxins, Marine algal toxins, Neurotoxins, Human and environmental health",
+        "authors": "Pinto Albano, Botelho Maria João, Churro Catarina, Asselman Jana, Pereira Patrícia, Pereira Joana Luísa",
+        "date-of-publication": "17.08.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/a-review-on-aquatic-toxins-OTc1MzEtci1zLXItMC0w.png?itok=6KFm4-vI",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1094",
+        "link": "https://doi.org/10.1016/j.jenvman.2023.118769"
+    },
+    {
+        "id": "article-718",
+        "type": "article",
+        "name": "A data-derived reference mixture representative of European wastewater treatment plant effluents to complement mixture assessment",
+        "journal": "Environment International",
+        "keywords": "Mixture risk assessment, Cell assays, Organism-based assays, Organic micropollutants, Effect data",
+        "authors": "Beckers Liza-Marie, Busch Wibke, Altenburger Rolf, Brack Werner, Escher Beate Isabella, Hackermüller Jörg, Hassold Enken, Illing Gianina, Krauss Martin, Krüger Janet, Michaelis Paul, Schüttler Andreas, Stevens Sarah",
+        "date-of-publication": "17.08.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_4.png?itok=33S2tZ1t",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=718",
+        "link": "https://doi.org/10.1016/j.envint.2023.108155"
+    },
+    {
+        "id": "article-526",
+        "type": "article",
+        "name": "Development of a physiologically based toxicokinetic model for lead in pregnant women: the role of bone tissue in the maternal and fetal internal exposure",
+        "journal": "Toxicology and Applied Pharmacology",
+        "keywords": "P-PBPK Model, Lead, Metal, Pregnancy, Bone remodeling, Resorption, Placental transfer, Fetus exposure, Monte Carlo simulations, Parameter estimation",
+        "authors": "Ali-Daoud Yourdasmine, Tebby Cleo, Beaudouin Rémy, Brochot Céline",
+        "date-of-publication": "06.08.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_1.png?itok=J30UxEEq",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=526",
+        "link": "https://doi.org/10.1016/j.taap.2023.116651"
+    },
+    {
+        "id": "article-719",
+        "type": "article",
+        "name": "Deoxynivalenol increases pro-inflammatory cytokine secretion and reduces  primary bile acid transport in an inflamed intestinal in vitro  co-culture model",
+        "journal": "Food Research International",
+        "keywords": "Hazard assessment, Innovative methods and tools, Adverse outcome pathways, Biomarkers, Chemical risk assessment",
+        "authors": "Wang Jingxuan, Bakker Wouter, de Haan Laura, Bouwmeester Hans",
+        "date-of-publication": "25.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_5.png?itok=CcduyHIj",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=719",
+        "link": "https://doi.org/10.1016/j.foodres.2023.113323"
+    },
+    {
+        "id": "article-521",
+        "type": "article",
+        "name": "A human iPSC-based in vitro neural network formation assay to investigate neurodevelopmental toxicity of pesticides",
+        "journal": "ALTEX",
+        "keywords": "Developmental neurotoxicity, Microelectrode arrays, Electrical activity, Human induced pluripotent stem cells, New approach methodologies",
+        "authors": "Bartmann Kristina, Bendt Farina, Dönmez Arif, Haag Daniel, Keßel H. Eike, Masjosthusmann Stefan, Noel Christopher, Wu Ji, Zhou Peng, Fritsche Ellen",
+        "date-of-publication": "20.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_1.png?itok=7tql8akW",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=521",
+        "link": "https://doi.org/10.14573/altex.2206031"
+    },
+    {
+        "id": "article-518",
+        "type": "article",
+        "name": "Innovative tools and methods for toxicity testing within PARC work package 5 on hazard assessment",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "PARC, NGRA, NAMs, Hazard assessment, Human health",
+        "authors": "de Castelbajac Thalia, Aiello Kiara, Garcia Arenas Celia, Svingen Terje, Ramhoj Louise, Zalko Daniel, Barouki Robert, Vanhaecke Tamara, Rogiers Vera, Audebert Marc, Oelgeschlaeger Michael, Braeuning Albert, Blanc Etienne, Tal Tamara, Ruegg Joelle, Fritsche Ellen, Philip Marx-Stoelting, Rivière Gilles",
+        "date-of-publication": "19.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_2.png?itok=6fuUA84o",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=518",
+        "link": "https://doi.org/10.3389/ftox.2023.1216369"
+    },
+    {
+        "id": "article-709",
+        "type": "article",
+        "name": "REACH out-numbered! The future of REACH and animal numbers",
+        "journal": "ALTEX",
+        "keywords": "Human health, Regulatory risk assessment",
+        "authors": "Hartung Thomas, Leist Marcel, Busquet Francois, Rovida Costanza",
+        "date-of-publication": "12.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_7.png?itok=blMjpmgk",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=709",
+        "link": "https://doi.org/10.14573/altex.2307121"
+    },
+    {
+        "id": "article-527",
+        "type": "article",
+        "name": "New approach methodologies to facilitate and improve the hazard assessment of non-genotoxic carcinogens—a PARC project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Non-genotoxic carcinogens, NGTxC, New approach methodologies, NAM, PARC",
+        "authors": "Audebert Marc, Assmann Ann-Sophie, Azqueta Amaya, Benfenati Emilio, Babica Pavel, Bortoli Sylvie, Bouwman Peter, Braeuning Albert, Burgdorf Tanja, Coumoul Xavier, Debizet Kloé, Dusinska Maria, Ertych Norman, Fahrer Jörg, Fetz Verena, Le Hégarat Ludovic, López de Cerai Adela, Heusinkveld Harm J., Hogeveen Kevin, Jacobs Miriam N., Luijten Mirjam, Raitano Giuseppa, Recoules Cynthia, Rundén-Pran Elise, Saleh Mariam, Sovadinová Iva, Stampar Martina, Thibol Lea, Tomkiewicz Céline, Vettorazzi Ariane, Van de Water Bob, El Yamani Naouale, Zegura Bojana, Oelgeschläger Michael",
+        "date-of-publication": "10.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_3.png?itok=T38JtXgr",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=527",
+        "link": "https://doi.org/10.3389/ftox.2023.1220998"
+    },
+    {
+        "id": "article-753",
+        "type": "article",
+        "name": "Firefighters and the liver: Exposure to PFAS and PAHs in relation to liver function and serum lipids (CELSPAC-FIREexpo study)",
+        "journal": "International Journal of Hygiene and Environmental Health",
+        "keywords": "Firefighters, Occupational exposure, PFAS, PAHs, Mixture analysis, Liver Function",
+        "authors": "Pálešová Nina, Maitre Léa, Stratakis Nikos, Řiháčková Katarína, Pindur Aleš, Kohoutek Jiri, Šenk Petr, Bartoskova Polcrova Anna, Petr Gregor, Vrijheid Martine, Čupr Pavel",
+        "date-of-publication": "05.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-03/Cover_March_2024_2.png?itok=FfVnTbRZ",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=753",
+        "link": "https://doi.org/10.1016/j.ijheh.2023.114215"
+    },
+    {
+        "id": "article-781",
+        "type": "article",
+        "name": "Environmental concentrations of tire rubber-derived 6PPD-quinone alter CNS function in zebrafish larvae",
+        "journal": "Science of the Total Environment",
+        "keywords": "6PPD-quinone, Tire rubber, Zebrafish larvae, Neurotoxicity, Circadian rhythms",
+        "authors": "Ricarte Marina, Prats Eva, Montemurro Nicola, Bedrossiantz Juliette, Marina Bellot Marina, Gómez-Canela Cristian, Raldúa Demetrio",
+        "date-of-publication": "03.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_3.png?itok=hYIjLnfd",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=781",
+        "link": "https://doi.org/10.1016/j.scitotenv.2023.165240"
+    },
+    {
+        "id": "article-698",
+        "type": "article",
+        "name": "Development of a rat physiologically based kinetic model (PBK) for three organophosphate flame retardants (TDCIPP, TCIPP, TCEP)",
+        "journal": "Toxicology Letters",
+        "keywords": "Models, Human health",
+        "authors": "Deepika Deepika, Kumar Vikas, Schuhmacher Marta, Sharma Raju Prasad",
+        "date-of-publication": "01.07.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-11/Cover_November%202023_6.png?itok=sgKDIicu",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=698",
+        "link": "https://doi.org/10.1016/j.toxlet.2023.06.006"
+    },
+    {
+        "id": "article-533",
+        "type": "article",
+        "name": "Development of new approach methods for the identification and characterization of endocrine metabolic disruptors-a PARC project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Adipocytes, Endocrine metabolic disruption, Energy metabolism, Liver, Nuclear receptors, Obesogens",
+        "authors": "Braeuning Albert, Balaguer Patrick, Bourguet William, Carreras-Puigvert Jordi, Feiertag Katreece, Kamstra Jorke H., Knapen Dries, Lichtenstein Dajana, Marx-Stoelting Philip, Rietdijk Jonne, Schubert Kristin, Spjuth Ola, Stinckens Evelyn, Thedieck Kathrin, Van den Boom Rik, Vergauwen Lucia, Von Bergen Martin, Wewer Neele, Zalko Daniel",
+        "date-of-publication": "29.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-09/Cover_September%202023_4.png?itok=gliVdL4L",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=533",
+        "link": "https://doi.org/10.3389/ftox.2023.1212509"
+    },
+    {
+        "id": "article-492",
+        "type": "article",
+        "name": "Determination of glyphosate and its derivative, aminomethylphosphonic acid, in human urine by gas chromatography coupled to tandem mass spectrometry and isotope pattern deconvolution",
+        "journal": "Journal of Chromatography Open",
+        "keywords": "Polar pesticides, Isotope dilution, Biomonitoring, Gas chromatography, Tandem mass spectrometry in negative ion chemical ionization",
+        "authors": "Junqué Eva, Fernández Pilar, Filippi Iohanna, Grimalt Joan O.",
+        "date-of-publication": "21.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_1.png?itok=L8N7V9RR",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=492",
+        "link": "https://doi.org/10.1016/j.jcoa.2023.100087"
+    },
+    {
+        "id": "article-503",
+        "type": "article",
+        "name": "Mixtures of per- and poly-fluoroalkyl substances (PFAS) reduce the in vitro activation of human T cells and basophils",
+        "journal": "Chemosphere",
+        "keywords": "PFAS, Mixtures, Immunotoxicity, T lymphocytes, MAIT cells, Basophils",
+        "authors": "Maddalon Ambra, Pierzchalski Arkadiusz, Kretschmer Tobias, Bauer Mario, Zenclussen Ana C., Marinovich Marina, Corsini Emanuela, Herberth Gunda",
+        "date-of-publication": "12.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_3.png?itok=kb2hRumv",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=503",
+        "link": "https://doi.org/10.1016/j.chemosphere.2023.139204"
+    },
+    {
+        "id": "article-519",
+        "type": "article",
+        "name": "PBTK-TD model of the phagocytosis activity in three-spined stickleback exposed to BPA",
+        "journal": "Aquatic Toxicology",
+        "keywords": "PBTK-TD model, Immunomarker, Phagocytosis, Fish, BPA, Three-spined stickleback",
+        "authors": "Mit Corentin, Bado-Nilles Annes, Turies Cyril, Gaëlle Daniele, Barbara Giroud, Beaudouin Rémy",
+        "date-of-publication": "10.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_4.png?itok=zRMVU38E",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=519",
+        "link": "https://doi.org/10.1016/j.aquatox.2023.106608"
+    },
+    {
+        "id": "article-1099",
+        "type": "article",
+        "name": "FAIR environmental and health registry (FAIREHR)- supporting the science to policy interface and life science research, development and innovation",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "Open science, Preregistration, Environmental medicine, Metadata, Exposure science, Data-driven decision making, Exposure-disease continuum, Real-world data",
+        "authors": "Jeddi Maryam Zare, Galea Karen S., Viegas Susana, Fantke Peter, Louro Henriqueta, Theunis Jan, Govarts Eva, Denys Sébastien, Fillol Clémence, Rambaud Loïc, Kolossa-Gehring Marike, Santonen Tiina, van der Voet Hilko, Ghosh Manosij, Costa Carla, Teixeira João Paulo, Verhagen Hans, Duca Radu-Corneliu, Van Nieuwenhuyse An, Jones Kate, Sams Craig, Sepai Ovnair, Tranfo Giovanna, Bakker Martine, Palmen Nicole, van Klaveren Jacob, Scheepers Paul T. J., Paini Alicia, Canova Cristina, von Goetz Natalie, Katsonouri Andromachi, Karakitsios Spyros, Sarigiannis Dimosthenis A., Bessems Jos, Machera Kyriaki, Harrad Stuart, Hopf Nancy B.",
+        "date-of-publication": "05.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/fair-environmental-and-health-registry-MTk1MDYyLXItcy1yLTAtMA.png?itok=PPN3rKaH",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1099",
+        "link": "https://doi.org/10.3389/ftox.2023.1116707"
+    },
+    {
+        "id": "article-768",
+        "type": "article",
+        "name": "AOP-helpFinder 2.0: Integration of an event-event searches module",
+        "journal": "Environment International",
+        "keywords": "Adverse outcome pathways, AOP, AOP-helpFinder, Text mining, Artificial intelligence, Toxicology",
+        "authors": "Jaylet Thomas, Coustillet Thibaut, Jornod florence, Margaritte-Jeannin Patricia, Audouze Karine",
+        "date-of-publication": "03.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-03/Cover_March_2024_3.png?itok=jd4B73Yg",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=768",
+        "link": "https://doi.org/10.1016/j.envint.2023.108017"
+    },
+    {
+        "id": "article-731",
+        "type": "article",
+        "name": "G × E interactions as a basis for toxicological uncertainty",
+        "journal": "Archives of Toxicology",
+        "keywords": "Epigenetics, Model system, Safety factor, Toxicokinetics, Résilience, AOP",
+        "authors": "Suciu Ilinca, Pamies David, Peruzzo Roberta, Wirtz Petra H., Smirnova Lena, Pallocca Giorgia, Hauck Christof, Cronin Mark T. D., Hengstler Jan G., Brunner Thomas, Hartung Thomas, Amelio Ivano, Leist Marcel",
+        "date-of-publication": "01.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-01/Cover_January%20%202024_6.png?itok=_tedoJnr",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=731",
+        "link": "https://doi.org/10.1007/s00204-023-03500-9"
+    },
+    {
+        "id": "article-507",
+        "type": "article",
+        "name": "Non-disclosure of developmental neurotoxicity studies obstructs the safety assessment of pesticides in the European Union",
+        "journal": "Environmental Health",
+        "keywords": "Developmental neurotoxicity, Non-disclosure, Pesticides, Plant protection products, Regulatory assessment, Reporting bias",
+        "authors": "Mie Axel, Rudén Christina",
+        "date-of-publication": "01.06.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_5.png?itok=smDCgsor",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=507",
+        "link": "https://doi.org/10.1186/s12940-023-00994-9"
+    },
+    {
+        "id": "article-1055",
+        "type": "article",
+        "name": "A review on immudolatory effects of BPA analogues",
+        "journal": "Archives of Toxicology",
+        "keywords": "BPA analogues, Immunomodulation, Immunotoxicology, Endocrine disruptors, Bisphenols",
+        "authors": "Sollner Dolenc Marija, Franko Nina, Kodila Anja",
+        "date-of-publication": "19.05.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-05/Cover_May_2024_3.png?itok=AIGyXEth",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1055",
+        "link": "https://doi.org/10.1007/s00204-023-03519-y"
+    },
+    {
+        "id": "article-520",
+        "type": "article",
+        "name": "New approach methods to improve human health risk assessment of thyroid hormone system disruption - a PARC project",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "PARC, Endocrine disruption, Thyroid disruption, Non-animal test methods, Regulatory toxicology, Adverse outcome pathways, Chemicals",
+        "authors": "Ramhøj Louise, Axelstad Marta, Baert Yoni, Cañas-Portilla. Ana I., Chalmel Frederic, Dahmen Lars, De La Veja Antonio, Evrard Bertrand, Haigis Ann-Cathrin, Hamers Timo, Heikamp Kim, Holbech Henrik, Iglesias-Hernandez Patricia, Knapen Dries, Marchandise Lorna, Morthorst Jane E., Nikolov Nikolai Georgiev, Nissen Ana C. V. E., Oelgeschlaeger Michael, Renko Kostja, Rogiers Vera, Schüürmann Gerrit, Stinckens Evelyn, Stub Mette H., Torres-Ruiz Monica, Van Duursen Majorie, Vanhaecke Tamara, Vergauwen Lucia, Wedebye Eva Bay, Svingen Terje",
+        "date-of-publication": "17.05.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_6.png?itok=hzTp03w5",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=520",
+        "link": "https://doi.org/10.3389/ftox.2023.1189303"
+    },
+    {
+        "id": "article-1097",
+        "type": "article",
+        "name": "Molecular and functional characterization of different brain sphere models for use in neurotoxicity testing on microelectrode arrays",
+        "journal": "Cells",
+        "keywords": "HiPSCs, Organoids, Neural induction, Neural differentiation, Brain, In vitro, Neural network, BrainSphere, Multielectrode arrays (MEA), PARC",
+        "authors": "Hartmann Julia, Henschel Noah, Bartmann Kristina, Dönmez Arif, Brockerhoff Gabriele, Koch Katharina, Fritsche Ellen",
+        "date-of-publication": "27.04.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/molecular-and-functional-characterization-of-MjkyNTkzLXItcy1yLTAtMA.png?itok=vnANlwZD",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1097",
+        "link": "https://doi.org/10.3390/cells12091270"
+    },
+    {
+        "id": "article-281",
+        "type": "article",
+        "name": "Rapid extraction and analysis of oxidative stress and DNA damage biomarker 8-hydroxy-2′-deoxyguanosine (8-OHdG) in urine: Application to  a study with pregnant women",
+        "journal": "International Journal of Hygiene and Environmental Health",
+        "keywords": "8-OHdG, Urine, Oxidative stress, Placenta, Pregnancy",
+        "authors": "Bláhová Lucie, Janoš Tomáš, Mustieles Vicente, Rodríguez-Carrillo Andrea, Fernández Mariana F., Bláha Luděk",
+        "date-of-publication": "25.04.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_2.png?itok=f-Rkagxq",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=281",
+        "link": "https://doi.org/10.1016/j.ijheh.2023.114175"
+    },
+    {
+        "id": "article-90",
+        "type": "article",
+        "name": "The exposure of Czech firefighters to perfluoroalkyl substances and polycyclic aromatic hydrocarbons: CELSPAC – FIREexpo case-control human biomonitoring study",
+        "journal": "Science of The Total Environment",
+        "keywords": "Firefighters, Human biomonitoring, Perfluoroalkyl substances, Polycyclic aromatic hydrocarbons, Cohort profile, HBM value",
+        "authors": "Katarína Řiháčková, Aleš Pindur, Klára Komprdová, Nina Pálešová, Jiří Kohoutek, Petr Šenk, Jana Navrátilová, Lenka Andrýsková, Ludmila Šebejová, Richard Hůlek, Mazen Ismael, Pavel Čupr",
+        "date-of-publication": "11.04.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_3.png?itok=F0a6nN9i",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=90",
+        "link": "https://doi.org/10.1016/j.scitotenv.2023.163298"
+    },
+    {
+        "id": "article-62",
+        "type": "article",
+        "name": "Modernizing persistence–bioaccumulation–toxicity (PBT) assessment with high throughput animal‑free methods",
+        "journal": "Archives of Toxicology",
+        "keywords": "Hazard assessment, New approach methodologies (NAMs), Persistence, Mobility, Biodegradation, In vitro  bioassay, Toxicity",
+        "authors": "Escher Beate I., Altenburger Rolf, Blüher Matthias, Colbourne John K., Ebinghaus Ralf, Fantke Peter, Hein Michaela, Köck Wolfgang, Kümmerer Klaus, Leipold Sina, Li Xiaojing, Scheringer Martin, Scholz Stefan, Schloter Michael, Schweizer Pia-Johanna, Tal Tamara, Tetko Igor, Traidl-Hoffmann Claudia, Wick Lukas Y., Fenner Kathrin",
+        "date-of-publication": "23.03.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2021.png?itok=rfmi5ikj",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=62",
+        "link": "https://doi.org/10.1007/s00204-023-03485-5"
+    },
+    {
+        "id": "article-1101",
+        "type": "article",
+        "name": "Carnosic acid ameliorates indomethacin-induced gastric ulceration in rats by alleviating oxidative stress and inflammation",
+        "journal": "Biomedicins",
+        "keywords": "Indometacin, Gastric ulcer, Carnosic acid, Inflammation, Oxidative stress",
+        "authors": "Danisman Betul, Cicek Betul, Yildirim Serkan, Bolat Ismail, Kantar Deniz, Golokhvast Kirill S., Nikitovic Dragana, Tsatsakis Aristidis, Taghizadehghalehjoughi Ali",
+        "date-of-publication": "09.03.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2026-04/carnosic-acid-ameliorates-indomethacininduced-gastric-OTc1MzEteC1zLXItMC0w.png?itok=dU7YLOjs",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=1101",
+        "link": "https://doi.org/10.3390/biomedicines11030829"
+    },
+    {
+        "id": "article-63",
+        "type": "article",
+        "name": "Development of historic monthly land use regression models of SO2, NOx and suspended particulate matter for birth cohort ELSPAC",
+        "journal": "Atmospheric Environment",
+        "keywords": "Land use regression, Air quality, Cohort, Vulnerable windows, Children's health, ELSPAC",
+        "authors": "Mikeš Ondřej, Sáňka Ondřej, Rafajová Aneta, Vlaanderen Jelle, Chen Jie, Hoek Gerard, Klánová Jana, Čupr Pavel",
+        "date-of-publication": "02.03.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2019.png?itok=RnIoXaeD",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=63",
+        "link": "https://doi.org/10.1016/j.atmosenv.2023.119688"
+    },
+    {
+        "id": "article-52",
+        "type": "article",
+        "name": "The role of \"Physiologically Based Pharmacokinetic Model (PBPK)\" New Approach Methodology (NAM) in pharmaceuticals and environmental chemical risk assessment",
+        "journal": "International Journal of Environmental Research and Public Health",
+        "keywords": "Physiologically based pharmacokinetic model, Drugs, Environmental chemicals, Adverse outcome pathway, Machine learning",
+        "authors": "Deepika Deekipa, Vikas Kumar",
+        "date-of-publication": "16.02.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2015.png?itok=BIMHHZXi",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=52",
+        "link": "https://doi.org/10.3390/ijerph20043473"
+    },
+    {
+        "id": "article-55",
+        "type": "article",
+        "name": "Proteome coverage after simultaneous proteo-metabolome liquid–liquid extraction",
+        "journal": "Journal of Proteome Research",
+        "keywords": "Proteomics, Metabolomics, Sample preparation, Simultaneous proteo-metabolomics, In-solution digest, SP3, Mass spectrometry, Label free quantification, Bottom-up proteomics",
+        "authors": "Alienke van Pijkeren, Anna-Sophia Egger, Madlen Hotze, Elisabeth Zimmermann, Tobias Kipura, Julia Grander, André Gollowitzer, Andreas Koeberle, Rainer Bischoff, Kathrin Thedieck, Marcel Kwiatkowski",
+        "date-of-publication": "10.02.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2016.png?itok=KM8PxKDz",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=55",
+        "link": "https://doi.org/10.1021/acs.jproteome.2c00758"
+    },
+    {
+        "id": "article-782",
+        "type": "article",
+        "name": "Linking chemicals, genes and morphological perturbations to diseases",
+        "journal": "Toxicology and Applied Pharmacology",
+        "keywords": "Cell painting, Chemical risk assessment, Integrated approaches, Networks, Innovative methods and tools",
+        "authors": "Cerisier Natacha, Dafniet Bryan, Badel Anne, Taboureau Olivier",
+        "date-of-publication": "02.02.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-04/Cover_April_2024_4.png?itok=uwvdtror",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=782",
+        "link": "https://doi.org/10.1016/j.taap.2023.116407"
+    },
+    {
+        "id": "article-56",
+        "type": "article",
+        "name": "Metabolism-disrupting chemicals affecting the liver: Screening, testing, and molecular pathway identification",
+        "journal": "International Journal of Molecular Sciences",
+        "keywords": "Endocrine-disrupting chemicals, Metabolic disorders, Testing, Molecular pathways",
+        "authors": "Kristin Fritsche, Andrea Ziková-Kloas, Philip Marx-Stoelting, Albert Braeuning",
+        "date-of-publication": "31.01.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2017.png?itok=XzUqeIX4",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=56",
+        "link": "https://www.mdpi.com/1422-0067/24/3/2686"
+    },
+    {
+        "id": "article-35",
+        "type": "article",
+        "name": "A walk in the PARC: Developing and implementing 21st century chemical risk assessment in Europe",
+        "journal": "Archives of Toxicology",
+        "keywords": "Next-generation risk assessment (NGRA), Chemicals, Safety assessment, Exposure assessment, Hazard characterisation, Human biomonitoring (HBM), New approach methods (NAM)",
+        "authors": "P. Marx-Stoelting, G. Rivière, K. Aiello-Holden, N. Bandow, K. Baken, A. Cañas, A. Castano, S. Denys, C. Fillol, M. Herzler, I. Iavicoli, S. Karakitsios, J. Klanova, M. Kolossa-Gehring, A. Koutsodimou, J. Lobo Vicente, I. Lynch, S. Namorado, S. Norager, A. Pittman, S. Rotter, D. Sarigiannis, M. J. Silva, J. Theunis, T. Tralau, M. Uhl, J. van Klaveren, L. Wendt-Rasch, E. Westerholm, C. Rousselle, P. Sanders",
+        "date-of-publication": "16.01.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2014.png?itok=B73R2399",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=35",
+        "link": "https://doi.org/10.1007/s00204-022-03435-7"
+    },
+    {
+        "id": "article-740",
+        "type": "article",
+        "name": "Dynamic metabolic and transcriptional responses of proteasome-inhibited neurons",
+        "journal": "Antioxidants",
+        "keywords": "Chemical risk assessment, Hazard assessment, Innovative methods and tools, Integrated approaches",
+        "authors": "Suciu Ilinca, Delp Johannes, Gutbier Simon, Ückert Anna-Katharina, Spreng Anna-Sophie, Eberhard Philipp, Karreman Christiaan, Schreiber Falk, Madjar Katrin, Rahnenführer Jörg, Celardo Ivana, Amelio Ivano, Leist Marcel",
+        "date-of-publication": "10.01.2023",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_5.png?itok=8BrpXFWo",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=740",
+        "link": "https://doi.org/10.3390/antiox12010164"
+    },
+    {
+        "id": "article-508",
+        "type": "article",
+        "name": "Adverse (geno)toxic effects of bisphenol A and its analogues in hepatic 3D cell model",
+        "journal": "Environment International",
+        "keywords": "BPA analogues, Cell proliferation, DNA strand breaks, Genotoxic, In vitro 3D cell model",
+        "authors": "Sendra Marta, Štampar Martina, Fras Katarina, Novoa Beatriz, Figueras Antonio, Žegura Bojana",
+        "date-of-publication": "24.12.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-08/Cover_August%202023_7.png?itok=WbyTSPjH",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=508",
+        "link": "https://doi.org/10.1016/j.envint.2022.107721"
+    },
+    {
+        "id": "article-26",
+        "type": "article",
+        "name": "Advancing exposure knowledge and its uptake into policy: The European exposure science strategy 2020–2030 (Special Issue)",
+        "journal": "Environment International",
+        "keywords": "",
+        "authors": "Fantke Peter, von Goetz Natalie, Jantunen Matti",
+        "date-of-publication": "12.12.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2013.png?itok=Eka0ppAe",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=26",
+        "link": "https://doi.org/10.1016/j.envint.2022.107692"
+    },
+    {
+        "id": "article-28",
+        "type": "article",
+        "name": "Considering degradation kinetics of pesticides in plant uptake models: Proof of concept for potato",
+        "journal": "Pest Management Science",
+        "keywords": "Dissipation, Degradation rate constant, Plant protection product, Pesticide residues",
+        "authors": "Li Zijian, Fantke Peter",
+        "date-of-publication": "24.11.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2011.png?itok=KNHV6-Gs",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=28",
+        "link": "https://doi.org/10.1002/ps.7288"
+    },
+    {
+        "id": "article-27",
+        "type": "article",
+        "name": "Generating environmental sampling and testing data for micro- and nanoplastics for use in life cycle impact assessment",
+        "journal": "Science of the Total Environment",
+        "keywords": "Microplastics, Nanoplastics, Life cycle assessment, Risk assessment, Ecotoxicology, Harmonizing data collection, Monitoring",
+        "authors": "Askham Cecilia, Pauna Valentina H., Boulay Anne-Marie, Fantke Peter, Jolliet Olivier, Lavoie Jérôme, Booth Andy M., Coutris Claire, Verones Francesca, Weber Miriam, Vijver Miriam G., Lusher Amy, Hajjar Carla",
+        "date-of-publication": "14.11.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2012.png?itok=cePVSLNO",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=27",
+        "link": "https://doi.org/10.1016/j.scitotenv.2022.160038"
+    },
+    {
+        "id": "article-54",
+        "type": "article",
+        "name": "Establishment of a human cell-based in vitro battery to assess developmental neurotoxicity hazard of chemicals",
+        "journal": "Chemosphere",
+        "keywords": "Testing battery, Stem cell, Brain development, In vitro testing, DNT",
+        "authors": "Jonathan Blum, Stefan Masjosthusmann, Kristina Bartmann, Farina Bendt, Xenia Dolde, Arif Dönmez, Nils Förster, Anna-Katharina Holzer, Ulrike Hübenthal, Hagen Eike Keßel, Sadiye Kilic, Jördis Klose, Melanie Pahl, Lynn-Christin Stürzl, Iris Mangas, Andrea Terron, Kevin M. Crofton, Martin Scholze, Axel Mosig, Marcel Leist, Ellen Fritsche",
+        "date-of-publication": "31.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2010.png?itok=tQ5NtSS_",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=54",
+        "link": "https://doi.org/10.1016/j.chemosphere.2022.137035"
+    },
+    {
+        "id": "article-29",
+        "type": "article",
+        "name": "Advancing exposure data analytics and repositories as part of the European Exposure Science Strategy 2020–2030",
+        "journal": "Environment International",
+        "keywords": "International Society of Exposure Science, Data analysis, Data management, Chemicals, Exposure assessment, Risk assessment",
+        "authors": "Kosnik Marissa, Kephalopoulos Stylianos, Muñoz Amalia, Aurisano Nicolò, Cusinato Alberto, Dimitroulopoulou Sani, Slobodnik Jaroslav, De Mello Jonathan, Zare Jeddi Maryam, Cascio Claudia, Ahrens Andreas, Bruinen de Bruin Yuri, Lieck Lothar, Fantke Peter",
+        "date-of-publication": "30.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%209.png?itok=NltmqysV",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=29",
+        "link": "https://doi.org/10.1016/j.envint.2022.107610"
+    },
+    {
+        "id": "article-25",
+        "type": "article",
+        "name": "Endocrine disrupting chemicals entering European rivers: Occurrence and adverse mixture effects in treated wastewater",
+        "journal": "Environment International",
+        "keywords": "Endocrine disrupting chemicals, EDC, Wastewater treatment plant effluents, WWTP, Chemical target analysis, Effect-based analysis, Water quality assessment, Effect based trigger values, EBT",
+        "authors": "Finckh Saskia, Buchinger Sebastian, Escher Beate, Hollert Henner, König Maria, Krauss Martin, Leekitratanapisan Warich, Schiwy Sabrina, Schlichting Rita, Shuliakevich Aliaksandra, Brack Werner",
+        "date-of-publication": "29.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%208.png?itok=cXKwAHqV",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=25",
+        "link": "https://doi.org/10.1016/j.envint.2022.107608"
+    },
+    {
+        "id": "article-34",
+        "type": "article",
+        "name": "Application of AOPs to assist regulatory assessment of chemical risks – Case studies, needs and recommendations",
+        "journal": "Environmental Research",
+        "keywords": "Adverse outcome pathways, Mechanistic toxicology, Hazard assessment, Regulatory risk assessment, Biomarkers of effect, New approach methodologies",
+        "authors": "Lola Bajard, Ondrej Adamovsky, Karine Audouze, Kirsten Baken, Robert Barouki, Joost B. Beltman, Anna Beronius, Eva Cecilie Bonefeld-Jørgensen, German Cano-Sancho, Milo L. de Baat, Filippo Di Tillio, Mariana F. Fernández, Rex E. FitzGerald, Claudia Gundacker, Antonio F. Hernández, Klara Hilscherova, Spyros Karakitsios, Eliska Kuchovska, Manhai Long, Mirjam Luijten, Sanah Majid, Philip Marx-Stoelting, Vicente Mustieles, Chander K. Negi, Dimosthenis Sarigiannis, Stefan Scholz, Iva Sovadinova, Rob Stierum, Shihori Tanabe, Knut Erik Tollefsen, Annick D. van den Brand, Carolina Vogs, Maria Wielsøe, Clemens Wittwehr, Ludek Blaha",
+        "date-of-publication": "27.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%2018.png?itok=8dkacy22",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=34",
+        "link": "https://doi.org/10.1016/j.envres.2022.114650"
+    },
+    {
+        "id": "article-30",
+        "type": "article",
+        "name": "Understanding and addressing the planetary crisis of chemicals and plastics",
+        "journal": "One Earth",
+        "keywords": "",
+        "authors": "Carney Almroth Bethanie, Cornell Sarah E., Diamond Miriam L., de Wit Cynthia A., Fantke Peter, Wang Zhanyun",
+        "date-of-publication": "21.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%207.png?itok=6lEVuhHh",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=30",
+        "link": "https://doi.org/10.1016/j.oneear.2022.09.012"
+    },
+    {
+        "id": "article-31",
+        "type": "article",
+        "name": "Framework for defining pesticide maximum residue levels in feed: Applications to cattle and sheep",
+        "journal": "Pest Management Science",
+        "keywords": "Plant protection products, Animal husbandry, Livestock health, Food safety, Pesticide regulation",
+        "authors": "Li Zijian, Fantke Peter",
+        "date-of-publication": "19.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%205.png?itok=yHBum5FI",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=31",
+        "link": "https://doi.org/10.1002/ps.7241"
+    },
+    {
+        "id": "article-53",
+        "type": "article",
+        "name": "Pharmacophore modeling using machine learning for screening the blood–brain barrier permeation of xenobiotics",
+        "journal": "International Journal of Environmental Research and Public Health",
+        "keywords": "Blood–brain barrier, P-glycoprotein, Neurotoxicity, Graph neural network, Machine learning, Pharmacophore",
+        "authors": "Kumar Saurav, Deepika Deepika, Kumar Vikas",
+        "date-of-publication": "18.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%206.png?itok=mFE36ed5",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=53",
+        "link": "https://doi.org/10.3390/ijerph192013471"
+    },
+    {
+        "id": "article-32",
+        "type": "article",
+        "name": "Ecotoxicity characterization of chemicals: Global recommendations and implementation in USEtox",
+        "journal": "Chemosphere",
+        "keywords": "Ecotoxicological impacts, Life cycle assessment, Species sensitivity distribution, Ecosystem exposure, USEtox, Life cycle impact assessment",
+        "authors": "Owsianiak Mikołaj, Hauschild Michael. Z., Posthuma Leo, Saouter Erwan, Vijver Martina G., Backhaus Thomas, Douziech Mélanie, Schlekat Tamar, Fantke Peter",
+        "date-of-publication": "10.10.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%204.png?itok=USnPgLkh",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=32",
+        "link": "https://doi.org/10.1016/j.chemosphere.2022.136807"
+    },
+    {
+        "id": "article-33",
+        "type": "article",
+        "name": "The European exposure science strategy 2020–2030",
+        "journal": "Environment International",
+        "keywords": "Human exposure, Ecosystem exposure, Exposure assessment, Risk assessment, Afe and sustainable-by-design, International Society of Exposure Science",
+        "authors": "Fantke Peter, Bruinen de Bruin Yuri, Schlüter Urs, Connolly Alison, Bessems Jos, Kephalopoulos Stylianos, Zare Yeddi Maryam, van Nieuwenhuyse An, Dudzina Tatsiana, Scheepers Paul, von Goetz Natalie",
+        "date-of-publication": "30.09.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%203.png?itok=qdXx12mb",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=33",
+        "link": "https://doi.org/10.1016/j.envint.2022.107555"
+    },
+    {
+        "id": "article-290",
+        "type": "article",
+        "name": "Wild fish and seafood species in the western Mediterranean Sea with low safe mercury concentrations",
+        "journal": "Environmental Pollution",
+        "keywords": "Mercury, Mediterranean Sea, Fish, Seafood, Safe species",
+        "authors": "Marco Capodiferro, Esther Marco, Joan O. Grimalt",
+        "date-of-publication": "24.09.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_4.png?itok=Jr5XVUab",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=290",
+        "link": "https://doi.org/10.1016/j.envpol.2022.120274"
+    },
+    {
+        "id": "article-61",
+        "type": "article",
+        "name": "Prioritization of chemicals in food for risk assessment by integrating exposure estimates and new approach methodologies: A next generation risk assessment case study",
+        "journal": "Frontiers in Toxicology",
+        "keywords": "High-throughput screening, Monte Carlo Risk Assessment tool, New approach methodologies, Next generation risk assessment, Dietary exposure, Threshold of toxicological concern, Toxicity prediction models",
+        "authors": "Luijten Mirjam, Sprong Corinne R., Rorije Emiel, van der Ven Leo T. M.",
+        "date-of-publication": "19.09.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%2020.png?itok=qFOk6QMB",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=61",
+        "link": "https://doi.org/10.3389/ftox.2022.933197"
+    },
+    {
+        "id": "article-291",
+        "type": "article",
+        "name": "Occupational and residential exposures to organophosphate and pyrethroid pesticides in a rural setting",
+        "journal": "Environmental Research",
+        "keywords": "Farmworker, Occupational exposure, Organophosphate pesticides, Pyrethroids, Personal protective equipment, Urinary metabolites, Rural area",
+        "authors": "Natalia Bravo, Mercè Garí, Joan O. Grimalt",
+        "date-of-publication": "27.08.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_5.png?itok=DGbtcVlB",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=291",
+        "link": "https://doi.org/10.1016/j.envres.2022.114186"
+    },
+    {
+        "id": "article-22",
+        "type": "article",
+        "name": "Cardiac PI3K p110α attenuation delays aging and extends lifespan",
+        "journal": "Cell Stress",
+        "keywords": "PI3K, IGF1, Insulin signaling, Cardiomyopathy, Heart failure, Aging, Autophagy, Mitochondrial dysfunction",
+        "authors": "Abdellatif Mahmoud, Eisenberg Tobias, Heberle Alexander Martin, Thedieck Kathrin, Kroemer Guido, Sedej Simon",
+        "date-of-publication": "08.08.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-03/Cover%202.png?itok=klG0nX_w",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=22",
+        "link": "https://doi.org/10.15698/cst2022.08.270"
+    },
+    {
+        "id": "article-64",
+        "type": "article",
+        "name": "Pesticide exposure among Czech adults and children from the CELSPAC-SPECIMEn cohort: Urinary biomarker levels and associated health risks",
+        "journal": "Environmental Research",
+        "keywords": "Pyrethroids, Chlorpyrifos, Tebuconazole, Urine, HBM4EU, Cumulative Risk Assessment",
+        "authors": "Šulc Libor, Janoš Tomáš, Figueiredo Daniel, Ottenbros Ilse, Šenk Petr, Mikeš Ondřej, Huss Anke, Čupr Pavel",
+        "date-of-publication": "05.08.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-04/Cover%201.png?itok=UqzOJzMs",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=64",
+        "link": "https://doi.org/10.1016/j.envres.2022.114002"
+    },
+    {
+        "id": "article-750",
+        "type": "article",
+        "name": "AI for predicting chemical-effect associations at the chemical universe level — deepFPlearn",
+        "journal": "Briefings in Bioinformatics",
+        "keywords": "Deep learning, Toxicology, Binary fingerprint, Autoencoder, Molecular structures",
+        "authors": "Schor Jana, Scheibe Patrick, Bernt Bernt, Busch Wibke, Lai Chih, Hackermüller Jörg",
+        "date-of-publication": "17.07.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2024-02/Cover_February_2024_6.png?itok=2ROHm1Ny",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=750",
+        "link": "https://doi.org/10.1093/bib/bbac257"
+    },
+    {
+        "id": "article-289",
+        "type": "article",
+        "name": "Environmental and dietary determinants of metal exposure in four-year-old children from a cohort located in an industrial area (Asturias, Northern Spain)",
+        "journal": "Environmental Research",
+        "keywords": "Metals in urine, Children exposure, Metals and seafood, Oil pollution metals, Red meat consumption and urinary metals, Traffic exposure and urinary metals",
+        "authors": "Eva Junque, Adonina Tardón, Ana Fernandez-Somoano, Joan O. Grimalt",
+        "date-of-publication": "16.07.2022",
+        "image": "https://www.eu-parc.eu/sites/default/files/styles/large/public/2023-06/Cover_June%202023_6.png?itok=-NzPFnEW",
+        "url": "https://www.eu-parc.eu/scientific-publications?publication=289",
+        "link": "https://doi.org/10.1016/j.envres.2022.113862"
+    },
+    {
+        "name": "Closing data gaps on the hazards of BPA alternatives for human health",
+        "id": "project-980",
+        "type": "project",
+        "url": "https://www.eu-parc.eu/projects/closing-data-gaps-hazards-bpa-alternatives-human-health",
+        "description": "Generates hazard data on chemical substitutes for Bisphenol A to close knowledge gaps on their potential adverse effects on human health, supporting a science-based hazard assessment and future regulation of BPA alternatives."
+    },
+    {
+        "name": "Enhancing welders’ safety through integrated exposure assessment",
+        "id": "project-2350",
+        "type": "project",
+        "url": "https://www.eu-parc.eu/projects/enhancing-welders-safety-through-integrated-exposure-assessment",
+        "description": "Combines human biomonitoring, direct-reading instruments and controlled chamber studies to characterise welders' exposure to hazardous fume metals and particles, strengthening occupational hazard and risk assessment frameworks and exposure reduction strategies for welding workers."
+    },
+    {
+        "name": "Non-genotoxic carcinogens",
+        "id": "project-2376",
+        "type": "project",
+        "url": "https://www.eu-parc.eu/projects/non-genotoxic-carcinogens",
+        "description": "Develops and validates combinations of New Approach Methodologies to identify non-genotoxic carcinogens - substances that induce cancer without directly damaging DNA - supporting their use in regulatory hazard identification for industrial chemicals, pesticides and biocides."
+    },
+    {
+        "name": "MIND platform: Advancing chemical risk assessment to better protect biodiversity",
+        "id": "project-2345",
+        "type": "project",
+        "url": "https://www.eu-parc.eu/projects/mind-platform-advancing-chemical-risk-assessment-better-protect-biodiversity",
+        "description": "Establishes a coordination platform linking predictive and monitoring-based approaches to next-generation, systems-based environmental risk assessment, integrating mixture and monitoring data across REACH/CLP, BPR, PPP and water legislation in line with the EU's One Substance One Assessment and Biodiversity Strategy goals."
+    },
+    {
+        "id": "partner-ECHA",
+        "name": "ECHA",
+        "fullname": "EUROPEAN CHEMICALS AGENCY",
+        "type": "partner",
+        "itype": "EU Agency",
+        "country": "Finland",
+        "description": "EU agency based in Helsinki, Finland, responsible for implementing EU chemicals legislation (REACH, CLP and related regulations) to protect human health and the environment."
+    },
+    {
+        "name": "Occupational exposure and risk assessment of PFAS and mycotoxins in textile waste management",
+        "id": "project-2349",
+        "type": "project",
+        "url": "https://www.eu-parc.eu/projects/occupational-exposure-and-risk-assessment-pfas-and-mycotoxins-textile-waste-management",
+        "description": "Assesses occupational exposure to PFAS and mycotoxins in textile waste management, evaluating whether current EU regulations effectively keep hazardous substances out of the circular economy and generating data to support risk management and policy for workers and the wider population."
+    },
+    {
+        "name": "Promoting the circular economy through safe materials",
+        "id": "project-topic-1808",
+        "type": "project-topic",
+        "description": "PARC supports the EU's transition to a circular economy by generating data and tools to ensure that recycled and secondary materials are free from hazardous legacy chemicals, enabling risk assessors to identify safe substitutes and 'safe and sustainable by design' materials. This work underpins the EU Circular Economy Action Plan and Chemicals Strategy for Sustainability, helping prevent hazardous substances from re-entering the economy through recycling streams while supporting substitution of chemicals of concern with safer alternatives."
+    },
+    {
+        "id": "partner-FISABIO",
+        "name": "FISABIO",
+        "fullname": "FUNDACION PARA EL FOMENTO DE LA INVESTIGACION SANITARIA Y BIOMEDICA DE LA COMUNITAT VALENCIANA",
+        "type": "partner",
+        "itype": "Research Institute",
+        "country": "Spain",
+        "description": "Spanish public health research foundation based in the Valencia region, conducting biomedical and public health research including epidemiology and environmental health studies."
     }
-
-
-]
+];

@@ -1354,7 +1354,6 @@ export const edges = [
         "target": "project-999",
         "type": "project-keyword_project"
     },
-
     {
         "source": "project-topic-1001",
         "target": "project-1282",
@@ -1930,8 +1929,6 @@ export const edges = [
         "target": "project-999",
         "type": "project-topic_project"
     },
-
-
     {
         "source": "project-1282",
         "target": "partner-AU",
@@ -2092,7 +2089,6 @@ export const edges = [
         "target": "partner-VUA",
         "type": "project_partner"
     },
-
     {
         "source": "project-972",
         "target": "partner-ENSP",
@@ -2183,7 +2179,6 @@ export const edges = [
         "target": "partner-UGR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1279",
         "target": "partner-MU",
@@ -2249,7 +2244,6 @@ export const edges = [
         "target": "partner-VITO",
         "type": "project_partner"
     },
-
     {
         "source": "project-1281",
         "target": "partner-AU",
@@ -2325,7 +2319,6 @@ export const edges = [
         "target": "partner-SLU",
         "type": "project_partner"
     },
-
     {
         "source": "project-996",
         "target": "partner-ANSES",
@@ -2572,12 +2565,6 @@ export const edges = [
         "type": "project_partner"
     },
     {
-        "source": "project-994",
-        "target": "partner-WULS-SGGW",
-        "type": "project_partner"
-    },
-
-    {
         "source": "project-995",
         "target": "partner-ONIRIS",
         "type": "project_partner"
@@ -2652,7 +2639,6 @@ export const edges = [
         "target": "partner-VUA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1554",
         "target": "partner-AU",
@@ -2703,7 +2689,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-986",
         "target": "partner-MU",
@@ -2809,7 +2794,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1613",
         "target": "partner-UBA",
@@ -2890,7 +2874,6 @@ export const edges = [
         "target": "partner-UAVR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1491",
         "target": "partner-AU",
@@ -2997,12 +2980,6 @@ export const edges = [
         "type": "project_partner"
     },
     {
-        "source": "project-1491",
-        "target": "partner-CSIC",
-        "type": "project_partner"
-    },
-
-    {
         "source": "project-990",
         "target": "partner-VITO",
         "type": "project_partner"
@@ -3037,7 +3014,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1555",
         "target": "partner-EHESP",
@@ -3113,7 +3089,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1271",
         "target": "partner-ANSES",
@@ -3249,7 +3224,6 @@ export const edges = [
         "target": "partner-WULS-SGGW",
         "type": "project_partner"
     },
-
     {
         "source": "project-1581",
         "target": "partner-LNS",
@@ -3300,7 +3274,6 @@ export const edges = [
         "target": "partner-ENSP",
         "type": "project_partner"
     },
-
     {
         "source": "project-985",
         "target": "partner-VITO",
@@ -3426,7 +3399,6 @@ export const edges = [
         "target": "partner-UU-IRAS",
         "type": "project_partner"
     },
-
     {
         "source": "project-989",
         "target": "partner-KEMI",
@@ -3462,7 +3434,6 @@ export const edges = [
         "target": "partner-VITO",
         "type": "project_partner"
     },
-
     {
         "source": "project-1556",
         "target": "partner-NIPH",
@@ -3518,7 +3489,6 @@ export const edges = [
         "target": "partner-BPI",
         "type": "project_partner"
     },
-
     {
         "source": "project-978",
         "target": "partner-ANSES",
@@ -3552,7 +3522,7 @@ export const edges = [
     {
         "source": "project-978",
         "target": "partner-GCSL",
-        "type": "project_partner",
+        "type": "project_partner"
     },
     {
         "source": "project-978",
@@ -3619,98 +3589,6 @@ export const edges = [
         "target": "partner-WULS-SGGW",
         "type": "project_partner"
     },
-
-    {
-        "source": "project-972",
-        "target": "partner-ENSP",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-TTL",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-AU",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-AUTH",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-INSA",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-IOM",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-ISS",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-LNS",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-MOH-CY/SGL",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-NIOM",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-STAMI",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-ULUND",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-UMIL",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-UNINA",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-UNIPD",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-WULS-SGGW",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-HSE",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-972",
-        "target": "partner-UGR",
-        "type": "project_partner"
-    },
-
     {
         "source": "project-1425",
         "target": "partner-VITO",
@@ -3811,7 +3689,6 @@ export const edges = [
         "target": "partner-USI",
         "type": "project_partner"
     },
-
     {
         "source": "project-976",
         "target": "partner-AU",
@@ -3942,7 +3819,6 @@ export const edges = [
         "target": "partner-LNS",
         "type": "project_partner"
     },
-
     {
         "source": "project-975",
         "target": "partner-VITO",
@@ -3993,7 +3869,6 @@ export const edges = [
         "target": "partner-UBA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1274",
         "target": "partner-VITO",
@@ -4059,7 +3934,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-971",
         "target": "partner-TTL",
@@ -4140,7 +4014,6 @@ export const edges = [
         "target": "partner-UNIPD",
         "type": "project_partner"
     },
-
     {
         "source": "project-973",
         "target": "partner-UBA",
@@ -4201,7 +4074,6 @@ export const edges = [
         "target": "partner-UNISANTE",
         "type": "project_partner"
     },
-
     {
         "source": "project-1293",
         "target": "partner-ANSES",
@@ -4287,7 +4159,6 @@ export const edges = [
         "target": "partner-WU-TOX",
         "type": "project_partner"
     },
-
     {
         "source": "project-968",
         "target": "partner-VITO",
@@ -4508,7 +4379,6 @@ export const edges = [
         "target": "partner-WULS-SGGW",
         "type": "project_partner"
     },
-
     {
         "source": "project-970",
         "target": "partner-AU",
@@ -4544,7 +4414,6 @@ export const edges = [
         "target": "partner-UNINA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1545",
         "target": "partner-JSI",
@@ -4660,7 +4529,6 @@ export const edges = [
         "target": "partner-AU",
         "type": "project_partner"
     },
-
     {
         "source": "project-1490",
         "target": "partner-UBA",
@@ -4711,7 +4579,6 @@ export const edges = [
         "target": "partner-LNS",
         "type": "project_partner"
     },
-
     {
         "source": "project-1430",
         "target": "partner-UU-IRAS",
@@ -4882,7 +4749,6 @@ export const edges = [
         "target": "partner-WULS-SGGW",
         "type": "project_partner"
     },
-
     {
         "source": "project-1542",
         "target": "partner-LNS",
@@ -4938,7 +4804,6 @@ export const edges = [
         "target": "partner-RSU",
         "type": "project_partner"
     },
-
     {
         "source": "project-974",
         "target": "partner-VITO",
@@ -5144,7 +5009,6 @@ export const edges = [
         "target": "partner-WULS-SGGW",
         "type": "project_partner"
     },
-
     {
         "source": "project-1544",
         "target": "partner-KI",
@@ -5210,7 +5074,6 @@ export const edges = [
         "target": "partner-SFA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1543",
         "target": "partner-SpFrance",
@@ -5261,7 +5124,6 @@ export const edges = [
         "target": "partner-VITO",
         "type": "project_partner"
     },
-
     {
         "source": "project-983",
         "target": "partner-UU-IRAS",
@@ -5342,7 +5204,6 @@ export const edges = [
         "target": "partner-STAMI",
         "type": "project_partner"
     },
-
     {
         "source": "project-969",
         "target": "partner-TTL",
@@ -5368,7 +5229,6 @@ export const edges = [
         "target": "partner-SpFrance",
         "type": "project_partner"
     },
-
     {
         "source": "project-1612",
         "target": "partner-AUTH",
@@ -5424,7 +5284,6 @@ export const edges = [
         "target": "partner-IRSN",
         "type": "project_partner"
     },
-
     {
         "source": "project-1614",
         "target": "partner-KEMI",
@@ -5505,7 +5364,6 @@ export const edges = [
         "target": "partner-TTL",
         "type": "project_partner"
     },
-
     {
         "source": "project-1043",
         "target": "partner-UCL",
@@ -5531,7 +5389,6 @@ export const edges = [
         "target": "partner-SU",
         "type": "project_partner"
     },
-
     {
         "source": "project-1611",
         "target": "partner-INSERM",
@@ -5552,7 +5409,6 @@ export const edges = [
         "target": "partner-RIVM",
         "type": "project_partner"
     },
-
     {
         "source": "project-1558",
         "target": "partner-INSERM",
@@ -5603,7 +5459,6 @@ export const edges = [
         "target": "partner-UMIL",
         "type": "project_partner"
     },
-
     {
         "source": "project-1564",
         "target": "partner-RIVM",
@@ -5636,11 +5491,6 @@ export const edges = [
     },
     {
         "source": "project-1564",
-        "target": "partner-Fraunhofer",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-1564",
         "target": "partner-IRFMN",
         "type": "project_partner"
     },
@@ -5664,7 +5514,6 @@ export const edges = [
         "target": "partner-WU-TOX",
         "type": "project_partner"
     },
-
     {
         "source": "project-1546",
         "target": "partner-MU",
@@ -5700,7 +5549,6 @@ export const edges = [
         "target": "partner-ORU",
         "type": "project_partner"
     },
-
     {
         "source": "project-1565",
         "target": "partner-UAntwerpen",
@@ -5746,7 +5594,6 @@ export const edges = [
         "target": "partner-VUA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1563",
         "target": "partner-BfR",
@@ -5789,11 +5636,6 @@ export const edges = [
     },
     {
         "source": "project-1563",
-        "target": "partner-UHC",
-        "type": "project_partner"
-    },
-    {
-        "source": "project-1563",
         "target": "partner-KIT",
         "type": "project_partner"
     },
@@ -5802,7 +5644,6 @@ export const edges = [
         "target": "partner-Sciensano",
         "type": "project_partner"
     },
-
     {
         "source": "project-1562",
         "target": "partner-ANSES",
@@ -5823,7 +5664,6 @@ export const edges = [
         "target": "partner-UL-LACDR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1566",
         "target": "partner-REGIONH",
@@ -5844,7 +5684,6 @@ export const edges = [
         "target": "partner-AGES",
         "type": "project_partner"
     },
-
     {
         "source": "project-1045",
         "target": "partner-SYKE",
@@ -5945,7 +5784,6 @@ export const edges = [
         "target": "partner-TTL",
         "type": "project_partner"
     },
-
     {
         "source": "project-1044",
         "target": "partner-BPI",
@@ -6031,7 +5869,6 @@ export const edges = [
         "target": "partner-UT",
         "type": "project_partner"
     },
-
     {
         "source": "project-1557",
         "target": "partner-DTU",
@@ -6072,7 +5909,6 @@ export const edges = [
         "target": "partner-UKHSA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1294",
         "target": "partner-BfR",
@@ -6113,7 +5949,6 @@ export const edges = [
         "target": "partner-UU-IRAS",
         "type": "project_partner"
     },
-
     {
         "source": "project-1298",
         "target": "partner-UAntwerpen",
@@ -6224,7 +6059,6 @@ export const edges = [
         "target": "partner-UU-IRAS",
         "type": "project_partner"
     },
-
     {
         "source": "project-1432",
         "target": "partner-UFZ",
@@ -6275,7 +6109,6 @@ export const edges = [
         "target": "partner-NLZOH",
         "type": "project_partner"
     },
-
     {
         "source": "project-1005",
         "target": "partner-INRAE",
@@ -6336,7 +6169,6 @@ export const edges = [
         "target": "partner-UNAV",
         "type": "project_partner"
     },
-
     {
         "source": "project-1429",
         "target": "partner-INERIS",
@@ -6392,7 +6224,6 @@ export const edges = [
         "target": "partner-UT",
         "type": "project_partner"
     },
-
     {
         "source": "project-1316",
         "target": "partner-INSERM",
@@ -6543,7 +6374,6 @@ export const edges = [
         "target": "partner-Cefas-Defra",
         "type": "project_partner"
     },
-
     {
         "source": "project-1016",
         "target": "partner-UGot",
@@ -6629,7 +6459,6 @@ export const edges = [
         "target": "partner-UKHSA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1273",
         "target": "partner-ANSES",
@@ -6825,7 +6654,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1012",
         "target": "partner-RIVM",
@@ -6881,7 +6709,6 @@ export const edges = [
         "target": "partner-WU-TOX",
         "type": "project_partner"
     },
-
     {
         "source": "project-1277",
         "target": "partner-DTU",
@@ -6922,7 +6749,6 @@ export const edges = [
         "target": "partner-VUA",
         "type": "project_partner"
     },
-
     {
         "source": "project-1009",
         "target": "partner-UFZ",
@@ -6998,7 +6824,6 @@ export const edges = [
         "target": "partner-UU",
         "type": "project_partner"
     },
-
     {
         "source": "project-1278",
         "target": "partner-INSERM",
@@ -7059,7 +6884,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1615",
         "target": "partner-UNIBAS",
@@ -7105,7 +6929,6 @@ export const edges = [
         "target": "partner-ISS",
         "type": "project_partner"
     },
-
     {
         "source": "project-1014",
         "target": "partner-Sciensano",
@@ -7336,7 +7159,6 @@ export const edges = [
         "target": "partner-WR",
         "type": "project_partner"
     },
-
     {
         "source": "project-1428",
         "target": "partner-Fraunhofer",
@@ -7442,7 +7264,6 @@ export const edges = [
         "target": "partner-WU-TOX",
         "type": "project_partner"
     },
-
     {
         "source": "project-1039",
         "target": "partner-VITO",
@@ -7693,7 +7514,6 @@ export const edges = [
         "target": "partner-Fraunhofer",
         "type": "project_partner"
     },
-
     {
         "source": "project-1038",
         "target": "partner-UL-LACDR",
@@ -7919,7 +7739,6 @@ export const edges = [
         "target": "partner-UBA",
         "type": "project_partner"
     },
-
     {
         "source": "project-998",
         "target": "partner-UGent",
@@ -8311,146 +8130,6 @@ export const edges = [
         "type": "project_partner"
     },
     {
-        "source": "article-1158",
-        "target": "project-1315",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1159",
-        "target": "project-1315",
-        "type": "article_project"
-    },
-    {
-        "source": "article-783",
-        "target": "project-986",
-        "type": "article_project"
-    },
-    {
-        "source": "article-783",
-        "target": "project-1271",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1150",
-        "target": "project-985",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1306",
-        "target": "project-1425",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1144",
-        "target": "project-1428",
-        "type": "article_project"
-    },
-    {
-        "source": "article-707",
-        "target": "project-973",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1246",
-        "target": "project-1614",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1102",
-        "target": "project-1045",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1056",
-        "target": "project-1045",
-        "type": "article_project"
-    },
-    {
-        "source": "article-507",
-        "target": "project-1044",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1479",
-        "target": "project-1294",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1322",
-        "target": "project-1432",
-        "type": "article_project"
-    },
-    {
-        "source": "article-718",
-        "target": "project-1432",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1113",
-        "target": "project-1273",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1157",
-        "target": "project-1426",
-        "type": "article_project"
-    },
-    {
-        "source": "article-742",
-        "target": "project-1426",
-        "type": "article_project"
-    },
-    {
-        "source": "article-532",
-        "target": "project-1426",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1302",
-        "target": "project-1317",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1638",
-        "target": "project-1428",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1109",
-        "target": "project-1039",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1250",
-        "target": "project-1038",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1139",
-        "target": "project-1297",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1108",
-        "target": "project-998",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1246",
-        "target": "project-1295",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1247",
-        "target": "project-1295",
-        "type": "article_project"
-    },
-    {
-        "source": "article-1103",
-        "target": "project-999",
-        "type": "article_project"
-    },
-    {
         "source": "article-1159",
         "target": "partner-SLU",
         "type": "article_partner"
@@ -8731,11 +8410,6 @@ export const edges = [
         "type": "article_partner"
     },
     {
-        "source": "article-1150",
-        "target": "partner-UBA",
-        "type": "article_partner"
-    },
-    {
         "source": "article-1244",
         "target": "partner-MU",
         "type": "article_partner"
@@ -8982,11 +8656,6 @@ export const edges = [
     },
     {
         "source": "article-1675",
-        "target": "partner-UIBK",
-        "type": "article_partner"
-    },
-    {
-        "source": "article-1675",
         "target": "partner-FMUL",
         "type": "article_partner"
     },
@@ -9038,11 +8707,6 @@ export const edges = [
     {
         "source": "article-520",
         "target": "partner-VUA",
-        "type": "article_partner"
-    },
-    {
-        "source": "article-520",
-        "target": "partner-RIVM",
         "type": "article_partner"
     },
     {
@@ -9243,11 +8907,6 @@ export const edges = [
     {
         "source": "article-1587",
         "target": "partner-IEP-NRI",
-        "type": "article_partner"
-    },
-    {
-        "source": "article-1587",
-        "target": "partner-UOB",
         "type": "article_partner"
     },
     {
@@ -9621,11 +9280,6 @@ export const edges = [
         "type": "cluster_project"
     },
     {
-        "source": "cluster-1",
-        "target": "project-1427",
-        "type": "cluster_project"
-    },
-    {
         "source": "cluster-2",
         "target": "project-1294",
         "type": "cluster_project"
@@ -9738,11 +9392,6 @@ export const edges = [
     {
         "source": "cluster-4",
         "target": "project-1432",
-        "type": "cluster_project"
-    },
-    {
-        "source": "cluster-4",
-        "target": "project-1016",
         "type": "cluster_project"
     },
     {
@@ -10039,5 +9688,645 @@ export const edges = [
         "source": "cluster-14",
         "target": "project-1566",
         "type": "cluster_project"
+    },
+    {
+        "source": "article-1158",
+        "target": "project-1315",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1159",
+        "target": "project-1315",
+        "type": "article_project"
+    },
+    {
+        "source": "article-783",
+        "target": "project-986",
+        "type": "article_project"
+    },
+    {
+        "source": "article-783",
+        "target": "project-1271",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1150",
+        "target": "project-985",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1306",
+        "target": "project-1425",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1144",
+        "target": "project-980",
+        "type": "article_project"
+    },
+    {
+        "source": "article-707",
+        "target": "project-973",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1246",
+        "target": "project-1614",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1102",
+        "target": "project-1045",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1056",
+        "target": "project-1045",
+        "type": "article_project"
+    },
+    {
+        "source": "article-507",
+        "target": "project-1044",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1479",
+        "target": "project-1294",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1322",
+        "target": "project-1432",
+        "type": "article_project"
+    },
+    {
+        "source": "article-718",
+        "target": "project-1432",
+        "type": "article_project"
+    },
+    {
+        "source": "article-768",
+        "target": "project-1316",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1113",
+        "target": "project-1273",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1157",
+        "target": "project-1426",
+        "type": "article_project"
+    },
+    {
+        "source": "article-742",
+        "target": "project-1426",
+        "type": "article_project"
+    },
+    {
+        "source": "article-532",
+        "target": "project-1426",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1302",
+        "target": "project-1317",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1638",
+        "target": "project-1428",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1109",
+        "target": "project-1039",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1250",
+        "target": "project-1038",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1139",
+        "target": "project-1297",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1108",
+        "target": "project-998",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1094",
+        "target": "project-998",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1246",
+        "target": "project-1295",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1247",
+        "target": "project-1295",
+        "type": "article_project"
+    },
+    {
+        "source": "article-1103",
+        "target": "project-999",
+        "type": "article_project"
+    },
+    {
+        "source": "project-topic-1000",
+        "target": "project-980",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-keyword-1066",
+        "target": "project-980",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1058",
+        "target": "project-980",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1061",
+        "target": "project-980",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1063",
+        "target": "project-980",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-BfR",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-Fraunhofer",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-CNRS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-ISCIII",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-INRAE",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-INRS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-INSA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-ISS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-LIH",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-MUI",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-NILU",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-TTL",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-ULFFA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-980",
+        "target": "partner-UMIL",
+        "type": "project_partner"
+    },
+    {
+        "source": "cluster-2",
+        "target": "project-980",
+        "type": "cluster_project"
+    },
+    {
+        "source": "project-topic-1000",
+        "target": "project-2350",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-keyword-1059",
+        "target": "project-2350",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1058",
+        "target": "project-2350",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1064",
+        "target": "project-2350",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-UNISANTE",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-TTL",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-STAMI",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-INRS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-ULUND",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-Sciensano",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-RSU",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-UMIL",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-ENSP",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-KU Leuven",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-INSA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-IOM",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-MOH-CY/SGL",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-UNINA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-NIOM",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2350",
+        "target": "partner-HSE",
+        "type": "project_partner"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-2350",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-3",
+        "target": "project-2350",
+        "type": "cluster_project"
+    },
+    {
+        "source": "project-topic-1000",
+        "target": "project-2376",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-topic-1003",
+        "target": "project-2376",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-keyword-1063",
+        "target": "project-2376",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1058",
+        "target": "project-2376",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1066",
+        "target": "project-2376",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-INRAE",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-BfR",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-ANSES",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-IRFMN",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-NIB",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-MU",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-RIVM",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-UL-LACDR",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-UNAV",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2376",
+        "target": "partner-NILU",
+        "type": "project_partner"
+    },
+    {
+        "source": "cluster-1",
+        "target": "project-2376",
+        "type": "cluster_project"
+    },
+    {
+        "source": "project-topic-1002",
+        "target": "project-2345",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-topic-1003",
+        "target": "project-2345",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-keyword-1065",
+        "target": "project-2345",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1060",
+        "target": "project-2345",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1066",
+        "target": "project-2345",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1061",
+        "target": "project-2345",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-EEA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-EFSA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-ECHA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-BfR",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-UBA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-KEMI",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-FOEN",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-ISS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2345",
+        "target": "partner-ANSES",
+        "type": "project_partner"
+    },
+    {
+        "source": "cluster-12",
+        "target": "project-2345",
+        "type": "cluster_project"
+    },
+    {
+        "source": "project-topic-1000",
+        "target": "project-2349",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-topic-1001",
+        "target": "project-2349",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-topic-1808",
+        "target": "project-2349",
+        "type": "project-topic_project"
+    },
+    {
+        "source": "project-keyword-1065",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1059",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1058",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1062",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1060",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1061",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-keyword-1064",
+        "target": "project-2349",
+        "type": "project-keyword_project"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-ENSP",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-UMIL",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-STAMI",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-INSA",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-Sciensano",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-LNS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-INRS",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-HSE",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-UNISANTE",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-ULUND",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-UGent",
+        "type": "project_partner"
+    },
+    {
+        "source": "project-2349",
+        "target": "partner-FISABIO",
+        "type": "project_partner"
+    },
+    {
+        "source": "cluster-8",
+        "target": "project-2349",
+        "type": "cluster_project"
+    },
+    {
+        "source": "cluster-13",
+        "target": "project-2349",
+        "type": "cluster_project"
     }
-]
+];
